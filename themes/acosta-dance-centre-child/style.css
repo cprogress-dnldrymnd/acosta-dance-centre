@@ -126,6 +126,8 @@ p {
   .newsletter .row {
     flex-wrap: nowrap; } }
 
+.wpcf7-form .row {
+  align-items: flex-end; }
 .wpcf7-form h3 {
   font-size: 60px; }
 .wpcf7-form input[type="text"],

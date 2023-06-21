@@ -184,6 +184,9 @@ p {
 }
 
 .wpcf7-form {
+  .row {
+    align-items: flex-end;
+  }
   h3 {
     font-size: 60px;
   }

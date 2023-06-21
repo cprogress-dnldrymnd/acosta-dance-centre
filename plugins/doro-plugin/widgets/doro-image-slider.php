@@ -453,6 +453,18 @@ class Doro_Image_Slider extends Widget_Base
 																<?php }
 																; ?>
 															</div>
+															<div class="button-group-box">
+																<?php if ($doro_slide['button_text_1'] && $doro_slide['button_link_1']) { ?>
+																	<div class="button-box button-black">
+																		<a href="<?= $doro_slide['button_link_1'] ?>"><?= $doro_slide['button_text_1'] ?></a>
+																	</div>
+																<?php } ?>
+																<?php if ($doro_slide['button_text_2'] && $doro_slide['button_link_2']) { ?>
+																	<div class="button-box button-white">
+																		<a href="<?= $doro_slide['button_link_2'] ?>"><?= $doro_slide['button_text_2'] ?></a>
+																	</div>
+																<?php } ?>
+															</div>
 														</div>
 													</div>
 												</div>

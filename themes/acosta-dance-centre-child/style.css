@@ -61,11 +61,21 @@ p {
   font-size: 20px;
   line-height: 1;
   display: inline-block; }
-.button-box.button-black a, .button-box.button-black button {
+.button-box.button-black a,
+.button-box.button-black button {
   background-color: var(--black-color);
   color: var(--white-color); }
-  .button-box.button-black a:hover, .button-box.button-black button:hover {
+  .button-box.button-black a:hover,
+  .button-box.button-black button:hover {
     background-color: var(--adc-color-1);
+    color: var(--black-color); }
+.button-box.button-white a,
+.button-box.button-white button {
+  background-color: var(--black-color);
+  color: var(--white-color); }
+  .button-box.button-white a:hover,
+  .button-box.button-white button:hover {
+    background-color: var(--adc-color-2);
     color: var(--black-color); }
 
 .button-group-box {

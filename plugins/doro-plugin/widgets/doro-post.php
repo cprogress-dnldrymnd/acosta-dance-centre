@@ -326,7 +326,6 @@ class Doro_Post extends Widget_Base
 										<a href="<?php the_permalink(); ?>">READ MORE</a>
 									</div>
 								</div>
-
 							</div>
 						</div>
 						<?php

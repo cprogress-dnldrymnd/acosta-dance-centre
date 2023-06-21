@@ -67,7 +67,7 @@ p {
   font-weight: 500;
   line-height: 1em;
   @media(min-width: 1200px) {
-    font-size: 6vw;
+    font-size: 6vw !important;
   }
   @media(max-width: 1199px) {
 

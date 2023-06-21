@@ -409,7 +409,7 @@ class Doro_Image_Slider extends Widget_Base
 																	<h1><?php echo esc_html($doro_slide['data_title']); ?></h1>
 																<?php }
 																; ?>
-																<div class="button-group-box">
+																<div class="button-group-box d-flex flex-wrap">
 																	<?php if ($doro_slide['button_text_1'] && $doro_slide['button_link_1']) { ?>
 																		<div class="button-box button-black">
 																			<a href="<?= $doro_slide['button_link_1'] ?>"><?= $doro_slide['button_text_1'] ?></a>
@@ -452,7 +452,7 @@ class Doro_Image_Slider extends Widget_Base
 																	<h1><?php echo esc_html($doro_slide['data_title']); ?></h1>
 																<?php }
 																; ?>
-																<div class="button-group-box">
+																<div class="button-group-box d-flex flex-wrap">
 																	<?php if ($doro_slide['button_text_1'] && $doro_slide['button_link_1']) { ?>
 																		<div class="button-box button-black">
 																			<a href="<?= $doro_slide['button_link_1'] ?>"><?= $doro_slide['button_text_1'] ?></a>

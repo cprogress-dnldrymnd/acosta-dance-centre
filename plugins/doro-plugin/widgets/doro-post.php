@@ -322,10 +322,11 @@ class Doro_Post extends Widget_Base
 									<h<?php echo esc_attr($settings['title_tag']); ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									</h<?php echo esc_attr($settings['title_tag']); ?>>
 									<?php the_excerpt(); ?>
+									<div class="read-more">
+										<a href="<?php the_permalink(); ?>">READ MORE</a>
+									</div>
 								</div>
-								<div class="read-more">
-									<a href="<?php the_permalink(); ?>">READ MORE</a>
-								</div>
+
 							</div>
 						</div>
 						<?php

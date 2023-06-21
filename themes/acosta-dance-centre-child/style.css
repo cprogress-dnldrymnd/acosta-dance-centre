@@ -92,12 +92,14 @@ p {
   color: var(--white-color);
   left: 23px;
   top: 0;
+  text-align: center;
   padding: 10px; }
   .sec-blog .blog-entry .blog-img .date .d {
     font-size: 37px;
     font-weight: 500; }
   .sec-blog .blog-entry .blog-img .date .m {
     font-size: 13px;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

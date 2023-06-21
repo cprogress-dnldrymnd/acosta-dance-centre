@@ -129,6 +129,7 @@ p {
     color: var(--white-color);
     left: 23px;
     top: 0;
+    text-align: center;
     padding: 10px;
     .d {
       font-size: 37px;
@@ -137,6 +138,7 @@ p {
     .m {
       font-size: 13px;
       letter-spacing: 4px;
+      text-transform: uppercase;
     }
   }
 }

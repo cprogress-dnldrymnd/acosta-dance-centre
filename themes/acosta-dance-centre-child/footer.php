@@ -2,7 +2,7 @@
 <!-- Footer -->
 <?php if (Doro_AfterSetupTheme::return_thme_option('footer-section') != 'no') { ?>
   <div id="doro-footer2">
-    <div class="doro-narrow-content">
+    <div class="container">
       <?php if (Doro_AfterSetupTheme::return_thme_option('index-footer-animate') == 'yes') { ?>
         <div class="animate-box" data-animate-effect="fadeInLeft">
         <?php } ?>

@@ -136,6 +136,17 @@ p {
 
 #doro-footer2 .row .col {
   flex: 0 0 20%; }
+  #doro-footer2 .row .col .widget-title {
+    font-size: 22px; }
+  #doro-footer2 .row .col p,
+  #doro-footer2 .row .col li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.2; }
+    #doro-footer2 .row .col p:not(:last-child),
+    #doro-footer2 .row .col li:not(:last-child) {
+      margin-bottom: 10px; }
   @media (max-width: 991px) {
     #doro-footer2 .row .col {
       flex: 0 0 50%; } }

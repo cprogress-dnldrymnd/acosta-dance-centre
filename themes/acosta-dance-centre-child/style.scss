@@ -131,14 +131,17 @@ p {
     top: 0;
     text-align: center;
     padding: 10px;
+
     .d {
       font-size: 37px;
       font-weight: 500;
     }
+
     .m {
       font-size: 13px;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       text-transform: uppercase;
+      margin-top: 5px;
     }
   }
 }

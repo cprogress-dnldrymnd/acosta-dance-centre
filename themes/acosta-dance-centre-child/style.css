@@ -99,7 +99,8 @@ p {
     font-weight: 500; }
   .sec-blog .blog-entry .blog-img .date .m {
     font-size: 13px;
-    letter-spacing: 4px;
-    text-transform: uppercase; }
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */

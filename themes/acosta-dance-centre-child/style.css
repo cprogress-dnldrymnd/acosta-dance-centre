@@ -20,6 +20,9 @@ Text Domain: acosta-dance-centre-child
   font-size: 60px;
   letter-spacing: 0;
   line-height: 1; }
+  @media (max-width: 991px) {
+    .doro-heading {
+      font-size: 55px; } }
   @media (max-width: 767px) {
     .doro-heading {
       font-size: 50px; } }

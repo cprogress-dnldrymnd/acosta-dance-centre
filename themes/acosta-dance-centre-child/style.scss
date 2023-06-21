@@ -22,6 +22,10 @@ Text Domain: acosta-dance-centre-child
   letter-spacing: 0;
   line-height: 1;
 
+  @media(max-width: 991px) {
+    font-size: 55px;
+  }
+
   @media(max-width: 767px) {
     font-size: 50px;
   }

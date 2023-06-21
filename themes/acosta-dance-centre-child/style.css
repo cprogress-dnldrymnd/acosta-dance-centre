@@ -11,7 +11,9 @@ Text Domain: acosta-dance-centre-child
 /*******Add Your Css Below This Line*********/
 :root {
   --black-color: #000;
-  --white-color: #fff; }
+  --white-color: #fff;
+  --adc-color-1: #E1D9CC;
+  --adc-color-2: #FDE1D7; }
 
 .doro-heading {
   font-size: 60px;
@@ -50,5 +52,22 @@ p {
   font-size: 120px;
   font-weight: 500;
   line-height: 1em; }
+
+.button-box a,
+.button-box button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  padding: 30px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 1; }
+.button-box.button-black a, .button-box.button-black button {
+  background-color: var(--black-color);
+  color: var(--white-color); }
+  .button-box.button-black a:hover, .button-box.button-black button:hover {
+    background-color: var(--adc-color-1);
+    color: var(--black-color); }
+
+.button-group-box .button-box:not(:last-child) {
+  margin-right: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

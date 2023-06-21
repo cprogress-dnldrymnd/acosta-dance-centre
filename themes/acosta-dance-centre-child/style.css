@@ -134,36 +134,41 @@ p {
 .wpcf7-form input[type="email"] {
   border-bottom: 2px solid var(--black-color); }
 
-#doro-footer2 .row .col {
-  flex: 0 0 20%; }
-  #doro-footer2 .row .col .widget-title {
-    font-size: 22px; }
-  #doro-footer2 .row .col ul {
-    padding-left: 0; }
-  #doro-footer2 .row .col p,
-  #doro-footer2 .row .col li {
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.2; }
-    #doro-footer2 .row .col p:not(:last-child),
-    #doro-footer2 .row .col li:not(:last-child) {
-      margin-bottom: 10px; }
-  #doro-footer2 .row .col .social-network {
-    margin-top: 2rem; }
-  @media (max-width: 991px) {
-    #doro-footer2 .row .col {
-      flex: 0 0 50%; } }
-  @media (max-width: 575px) {
-    #doro-footer2 .row .col {
-      flex: 0 0 100%; } }
-#doro-footer2 .copyright > div {
-  border-top: 1px solid #707070;
-  padding-top: 24px;
-  margin-top: 24px; }
-  #doro-footer2 .copyright > div p {
-    font-size: 15px;
-    font-weight: 300; }
+#doro-footer2 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0; }
+  #doro-footer2 .row .col {
+    flex: 0 0 20%; }
+    #doro-footer2 .row .col .widget-title {
+      font-size: 22px; }
+    #doro-footer2 .row .col ul {
+      padding-left: 0; }
+    #doro-footer2 .row .col p,
+    #doro-footer2 .row .col li {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.2; }
+      #doro-footer2 .row .col p:not(:last-child),
+      #doro-footer2 .row .col li:not(:last-child) {
+        margin-bottom: 10px; }
+    #doro-footer2 .row .col .social-network {
+      margin-top: 2rem; }
+    @media (max-width: 991px) {
+      #doro-footer2 .row .col {
+        flex: 0 0 50%; } }
+    @media (max-width: 575px) {
+      #doro-footer2 .row .col {
+        flex: 0 0 100%; } }
+  #doro-footer2 .copyright > div {
+    border-top: 1px solid #707070;
+    padding-top: 24px;
+    margin-top: 24px; }
+    #doro-footer2 .copyright > div p {
+      font-size: 15px;
+      font-weight: 300; }
 
 .social-network.social-network {
   float: none;

@@ -77,6 +77,7 @@ p {
     padding: 30px 40px 30px 40px;
     font-size: 20px;
     line-height: 1;
+    display: inline-block;
   }
   &.button-black {
     a, button {
@@ -91,6 +92,7 @@ p {
 }
 
 .button-group-box {
+  margin-top: 2rem;
   .button-box {
     &:not(:last-child) {
       margin-right: 1rem;

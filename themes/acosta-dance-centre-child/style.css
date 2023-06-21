@@ -138,6 +138,8 @@ p {
   flex: 0 0 20%; }
   #doro-footer2 .row .col .widget-title {
     font-size: 22px; }
+  #doro-footer2 .row .col ul {
+    padding-left: 0; }
   #doro-footer2 .row .col p,
   #doro-footer2 .row .col li {
     font-family: 'Oswald', sans-serif;

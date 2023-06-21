@@ -106,7 +106,8 @@ p {
   font-size: 36px;
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-transform: uppercase; }
 .sec-blog .blog-entry .read-more {
   text-align: right;
   margin-top: 45px; }

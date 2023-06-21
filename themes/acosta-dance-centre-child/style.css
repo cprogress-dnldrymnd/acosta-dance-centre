@@ -126,10 +126,10 @@ p {
   .newsletter .row {
     flex-wrap: nowrap; } }
 
-.wp-cf7 h3 {
+.wpcf7-form h3 {
   font-size: 60px; }
-.wp-cf7 input[type="text"],
-.wp-cf7 input[type="email"] {
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
   border-bottom: 2px solid var(--black-color); }
 
 /*# sourceMappingURL=style.css.map */

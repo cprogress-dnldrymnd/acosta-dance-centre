@@ -54,7 +54,7 @@ p {
   line-height: 1em; }
   @media (min-width: 1200px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
-      font-size: 6vw !important; } }
+      font-size: 6vw; } }
   @media (max-width: 1199px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
       font-size: 70px; } }

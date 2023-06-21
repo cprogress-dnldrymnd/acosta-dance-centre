@@ -138,7 +138,55 @@ class Doro_Image_Slider extends Widget_Base {
 					'image[url]!' => '',
 				],
 			]
-		);	
+		);
+		$repeater->add_control(
+			'button_text_1',
+			[
+				'label'       => __('Button Text[1]', 'doro-plugin'),
+				'type'        => Controls_Manager::TEXT,
+				'default'     => __('Add Button Text', 'doro-plugin'),
+				'label_block' => true,
+				'condition'   => [
+					'image[url]!' => '',
+				],
+			]
+		);
+		$repeater->add_control(
+			'button_link_1',
+			[
+				'label'       => __('Button Link[1]', 'doro-plugin'),
+				'type'        => Controls_Manager::TEXT,
+				'default'     => __('Add Button Link', 'doro-plugin'),
+				'label_block' => true,
+				'condition'   => [
+					'image[url]!' => '',
+				],
+			]
+		);
+		$repeater->add_control(
+			'button_text_2',
+			[
+				'label'       => __('Button Text[1]', 'doro-plugin'),
+				'type'        => Controls_Manager::TEXT,
+				'default'     => __('Add Button Text', 'doro-plugin'),
+				'label_block' => true,
+				'condition'   => [
+					'image[url]!' => '',
+				],
+			]
+		);
+		$repeater->add_control(
+			'button_link_2',
+			[
+				'label'       => __('Button Link[2]', 'doro-plugin'),
+				'type'        => Controls_Manager::TEXT,
+				'default'     => __('Add Button Link', 'doro-plugin'),
+				'label_block' => true,
+				'condition'   => [
+					'image[url]!' => '',
+				],
+			]
+		);
 		$repeater->add_control(
 			'overlay',
 			[

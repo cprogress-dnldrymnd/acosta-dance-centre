@@ -119,3 +119,24 @@ p {
     }
   }
 }
+
+.sec-blog .blog-entry .blog-img {
+  .date {
+    z-index: 1;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    left: 23px;
+    top: 0;
+    padding: 10px;
+    .d {
+      font-size: 37px;
+      font-weight: 500;
+    }
+    .m {
+      font-size: 13px;
+      letter-spacing: 4px;
+    }
+  }
+}

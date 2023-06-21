@@ -71,8 +71,8 @@ p {
     color: var(--black-color); }
 .button-box.button-white a,
 .button-box.button-white button {
-  background-color: var(--black-color);
-  color: var(--white-color); }
+  background-color: var(--white-color);
+  color: var(--black-color); }
   .button-box.button-white a:hover,
   .button-box.button-white button:hover {
     background-color: var(--adc-color-2);

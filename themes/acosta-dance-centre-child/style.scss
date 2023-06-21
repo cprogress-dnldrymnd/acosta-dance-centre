@@ -1,0 +1,67 @@
+/*
+Theme Name: Acosta Dance Centre Child
+Theme URL: https://themeforest.net/item/doro-creative-agency-wordpress-theme/23975046?ref=webRedox
+Description: Child theme of Doro
+Author: webRedox WordPress team
+Author URI: http://webredox.net/
+Template: acosta-dance-centre
+Version: 1.0
+Text Domain: acosta-dance-centre-child
+*/
+/*******Add Your Css Below This Line*********/
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+.doro-heading {
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+p {
+  color: var(--black-color);
+  font-size: 22px;
+}
+
+.adc-border-bottom {
+  border-bottom: 3px solid var(--black-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-slider h1 {
+  max-width: 920px
+}
+
+.home-slider .container-fluid {
+  padding-bottom: 40px;
+}
+
+#doro-aside #doro-main-menu>ul>li>a {
+  color: var(--black-color)
+}
+
+.elementor-button-wrapper {
+  .elementor-button {
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: bold !important;
+  }
+}
+
+.pricing-box {
+  .price-button {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+#doro-hero .flexslider .slider-text>.slider-text-inner h1 {
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 1em;
+}

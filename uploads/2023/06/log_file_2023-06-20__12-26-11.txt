@@ -1,0 +1,40 @@
+
+---Downloaded files---
+The import files for: Multi Page Demo - Light were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/acosta-dance-centre
+Data file = C:\xampp\htdocs\acosta-dance-centre/wp-content/themes/acosta-dance-centre/includes/doro-demo/el/multi/light/demo-content.xml
+Widget file = C:\xampp\htdocs\acosta-dance-centre/wp-content/themes/acosta-dance-centre/includes/doro-demo/el/multi/light/widgets.wie
+Customizer file = not defined!
+Redux files:
+doro -> C:\xampp\htdocs\acosta-dance-centre/wp-content/themes/acosta-dance-centre/includes/doro-demo/el/multi/light/redux.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Imported
+Categories - No Title - Imported
+Archives - No Title - Imported
+Tag Cloud - No Title - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: doro finished successfully!
+
+---ocdi/after_import---
+

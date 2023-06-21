@@ -55,6 +55,15 @@ p {
   @media (min-width: 1200px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
       font-size: 6vw !important; } }
+  @media (max-width: 1199px) {
+    #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
+      font-size: 70px; } }
+  @media (max-width: 991px) {
+    #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
+      font-size: 60px; } }
+  @media (max-width: 767px) {
+    #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
+      font-size: 40px; } }
 
 .button-box a,
 .button-box button,

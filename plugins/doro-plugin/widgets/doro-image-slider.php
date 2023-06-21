@@ -378,7 +378,7 @@ class Doro_Image_Slider extends Widget_Base
 
 		?>
 		<div class="sec-slider">
-			<aside id="doro-hero sssxsxs" class="js-fullheight">
+			<aside id="doro-hero" class="js-fullheight">
 				<div class="flexslider js-fullheight" data-slider-speed="<?php echo esc_attr($settings['slider_speed']); ?>"
 					data-slider-slideshow="<?php echo esc_attr($settings['slider_slideshow']); ?>">
 					<?php if ($settings['doro_sliders']) { ?>

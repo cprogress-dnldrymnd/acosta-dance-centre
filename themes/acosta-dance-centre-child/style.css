@@ -116,7 +116,7 @@ p {
   text-transform: uppercase; }
 .sec-blog .blog-entry .desc p {
   color: var(--light-color);
-  font-size: 20px; }
+  font-weight: 300; }
 .sec-blog .blog-entry .read-more {
   text-align: right;
   margin-top: 45px; }

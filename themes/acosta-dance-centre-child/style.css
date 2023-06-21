@@ -190,4 +190,8 @@ p {
   .container {
     max-width: 1395px; } }
 
+#doro-aside #doro-main-menu > ul > li > a {
+  font-size: 20px;
+  color: var(--black-color); }
+
 /*# sourceMappingURL=style.css.map */

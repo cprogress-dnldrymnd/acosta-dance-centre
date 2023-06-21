@@ -60,7 +60,8 @@ p {
   padding: 30px 40px 30px 40px;
   font-size: 20px;
   line-height: 1;
-  display: inline-block; }
+  display: inline-block;
+  letter-spacing: 7px; }
 .button-box.button-black a,
 .button-box.button-black button {
   background-color: var(--black-color);

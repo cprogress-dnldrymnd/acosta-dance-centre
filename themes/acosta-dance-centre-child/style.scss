@@ -206,9 +206,11 @@ p {
       .widget-title {
         font-size: 22px;
       }
+
       ul {
         padding-left: 0;
       }
+
       p,
       li {
         font-family: 'Oswald', sans-serif;
@@ -221,12 +223,29 @@ p {
         }
       }
 
+      .social-network {
+        margin-top: 2rem;
+      }
+
       @media(max-width: 991px) {
         flex: 0 0 50%;
       }
 
       @media(max-width: 575px) {
         flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+.social-network {
+  float: none;
+  li {
+    margin-left: 0;
+    a {
+      i {
+        color: var(--black-color);
+        font-size: 16px;
       }
     }
   }

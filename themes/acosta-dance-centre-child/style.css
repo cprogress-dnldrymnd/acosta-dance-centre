@@ -149,11 +149,21 @@ p {
     #doro-footer2 .row .col p:not(:last-child),
     #doro-footer2 .row .col li:not(:last-child) {
       margin-bottom: 10px; }
+  #doro-footer2 .row .col .social-network {
+    margin-top: 2rem; }
   @media (max-width: 991px) {
     #doro-footer2 .row .col {
       flex: 0 0 50%; } }
   @media (max-width: 575px) {
     #doro-footer2 .row .col {
       flex: 0 0 100%; } }
+
+.social-network {
+  float: none; }
+  .social-network li {
+    margin-left: 0; }
+    .social-network li a i {
+      color: var(--black-color);
+      font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */

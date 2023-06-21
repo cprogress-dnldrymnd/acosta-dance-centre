@@ -134,4 +134,13 @@ p {
 .wpcf7-form input[type="email"] {
   border-bottom: 2px solid var(--black-color); }
 
+#doro-footer2 .row .col {
+  flex: 0 0 20%; }
+  @media (max-width: 991px) {
+    #doro-footer2 .row .col {
+      flex: 0 0 50%; } }
+  @media (max-width: 575px) {
+    #doro-footer2 .row .col {
+      flex: 0 0 100%; } }
+
 /*# sourceMappingURL=style.css.map */

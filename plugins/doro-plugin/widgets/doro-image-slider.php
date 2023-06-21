@@ -144,7 +144,6 @@ class Doro_Image_Slider extends Widget_Base {
 			[
 				'label'       => __('Button Text[1]', 'doro-plugin'),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __('Add Button Text', 'doro-plugin'),
 				'label_block' => true,
 				'condition'   => [
 					'image[url]!' => '',
@@ -156,7 +155,6 @@ class Doro_Image_Slider extends Widget_Base {
 			[
 				'label'       => __('Button Link[1]', 'doro-plugin'),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __('Add Button Link', 'doro-plugin'),
 				'label_block' => true,
 				'condition'   => [
 					'image[url]!' => '',
@@ -168,7 +166,6 @@ class Doro_Image_Slider extends Widget_Base {
 			[
 				'label'       => __('Button Text[1]', 'doro-plugin'),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __('Add Button Text', 'doro-plugin'),
 				'label_block' => true,
 				'condition'   => [
 					'image[url]!' => '',
@@ -180,7 +177,6 @@ class Doro_Image_Slider extends Widget_Base {
 			[
 				'label'       => __('Button Link[2]', 'doro-plugin'),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __('Add Button Link', 'doro-plugin'),
 				'label_block' => true,
 				'condition'   => [
 					'image[url]!' => '',

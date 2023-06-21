@@ -12,6 +12,7 @@ Text Domain: acosta-dance-centre-child
 :root {
   --black-color: #000;
   --white-color: #fff;
+  --light-color: #797979;
   --adc-color-1: #E1D9CC;
   --adc-color-2: #FDE1D7; }
 
@@ -113,6 +114,8 @@ p {
   font-family: 'Oswald', sans-serif;
   line-height: 1.2;
   text-transform: uppercase; }
+.sec-blog .blog-entry .desc p {
+  color: var(--light-color); }
 .sec-blog .blog-entry .read-more {
   text-align: right;
   margin-top: 45px; }

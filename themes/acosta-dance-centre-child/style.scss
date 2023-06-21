@@ -12,6 +12,7 @@ Text Domain: acosta-dance-centre-child
 :root {
   --black-color: #000;
   --white-color: #fff;
+  --light-color: #797979;
   --adc-color-1: #E1D9CC;
   --adc-color-2: #FDE1D7;
 }
@@ -159,6 +160,10 @@ p {
         line-height: 1.2;
         text-transform: uppercase;
       }
+    }
+
+    p {
+      color: var(--light-color);
     }
   }
 

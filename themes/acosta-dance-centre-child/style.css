@@ -126,4 +126,8 @@ p {
   .newsletter .row {
     flex-wrap: nowrap; } }
 
+.wp-cf7 input[type="text"],
+.wp-cf7 input[type="email"] {
+  border-bottom: 2px solid var(--black-color); }
+
 /*# sourceMappingURL=style.css.map */

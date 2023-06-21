@@ -182,3 +182,10 @@ p {
     }
   }
 }
+
+.wp-cf7 {
+  input[type="text"],
+  input[type="email"] {
+    border-bottom: 2px solid var(--black-color);
+  }
+}

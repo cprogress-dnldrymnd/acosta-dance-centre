@@ -54,7 +54,8 @@ p {
   line-height: 1em; }
 
 .button-box a,
-.button-box button {
+.button-box button,
+.button-box input[type="submit"] {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   padding: 30px 40px 30px 40px;
@@ -63,19 +64,23 @@ p {
   display: inline-block;
   letter-spacing: 7px; }
 .button-box.button-black a,
-.button-box.button-black button {
+.button-box.button-black button,
+.button-box.button-black input[type="submit"] {
   background-color: var(--black-color);
   color: var(--white-color); }
   .button-box.button-black a:hover,
-  .button-box.button-black button:hover {
+  .button-box.button-black button:hover,
+  .button-box.button-black input[type="submit"]:hover {
     background-color: var(--adc-color-1);
     color: var(--black-color); }
 .button-box.button-white a,
-.button-box.button-white button {
+.button-box.button-white button,
+.button-box.button-white input[type="submit"] {
   background-color: var(--white-color);
   color: var(--black-color); }
   .button-box.button-white a:hover,
-  .button-box.button-white button:hover {
+  .button-box.button-white button:hover,
+  .button-box.button-white input[type="submit"]:hover {
     background-color: var(--adc-color-2);
     color: var(--black-color); }
 

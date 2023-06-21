@@ -1138,7 +1138,7 @@
                             'title'       => esc_attr__('Intro Slider Title', 'doro'),
                             'google'      => true, 
                             'font-backup' => false,
-                            'output'      => array('#doro-hero .flexslider .slider-text > .slider-text-inner h1, #doro-hero .flexslider .slider-text > .slider-text-inner h1'),
+                            'output'      => array('#doro-herox .flexslider .slider-text > .slider-text-inner h1, #doro-hero .flexslider .slider-text > .slider-text-inner h1'),
                             'units'       =>'px',
                             'subtitle'    => esc_attr__('Specify the permalink font properties.', 'doro'),
                             'default'     => array(

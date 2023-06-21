@@ -174,3 +174,11 @@ p {
     }
   }
 }
+
+.newsletter {
+  @media(min-width: 992px) {
+    .row {
+      flex-wrap: nowrap;
+    }
+  }
+}

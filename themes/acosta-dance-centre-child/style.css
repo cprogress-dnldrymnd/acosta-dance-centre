@@ -232,6 +232,7 @@ body:not(.page-template-default) #doro-main {
 .woocommerce-breadcrumb {
   font-size: 20px;
   letter-spacing: 7px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif !important; }
 
 /*# sourceMappingURL=style.css.map */

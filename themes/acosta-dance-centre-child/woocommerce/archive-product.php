@@ -57,9 +57,17 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 </header>
 <?php
 
-if($is_classes) {
+if ($is_classes) {
 	get_template_part('template-parts/woocommerce/classes-category');
 }
+
+?>
+<div class="sec-title text-left">
+	<span class="heading-meta">FIND A CLASS</span>
+	<h2 class="doro-heading">BOOK A CLASS TODAY</h2>
+</div>
+<?php
+
 if (woocommerce_product_loop()) {
 
 	/**

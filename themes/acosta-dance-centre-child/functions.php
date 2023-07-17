@@ -273,14 +273,20 @@ function treeify_terms($terms, $root_id = 0)
 
 function get__terms($taxonomy = 'product_cat', $parent = false)
 {
-	$terms = get_terms(
-		array(
-			'taxonomy'   => $taxonomy,
-			'orderby'    => 'name',
-			'hide_empty' => false,
-			'parent'     => $parent,
-		)
+
+	$args = array(
+		'taxonomy'   => $taxonomy,
+		'orderby'    => 'name',
+		'hide_empty' => false,
 	);
+
+	if ($parent) {
+		$args['parent'] = $parent;
+	}
+
+	$terms = get_terms($args);
+
+
 	$terms_arr = array();
 
 	foreach ($terms as $term) {

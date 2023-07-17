@@ -5,6 +5,6 @@ echo $term_id;
 
 <pre>
   <?php
-  var_dump(list_terms());
+  var_dump(get__terms());
   ?>
 </pre>

@@ -316,5 +316,14 @@ section.featured-product {
       letter-spacing: 7.96px;
       font-size: 22px;
       line-height: 1; }
+  .product-box-style-1 .row .image-box {
+    padding: 50%; }
+    .product-box-style-1 .row .image-box img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

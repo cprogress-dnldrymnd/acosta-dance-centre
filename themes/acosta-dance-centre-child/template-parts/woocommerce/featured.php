@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="image-box">
+              <div class="image-box position-relative">
                 <img src="<?= get_the_post_thumbnail_url($class['id']) ?>" alt="<?= get_the_title($class['id']) ?>">
               </div>
             </div>

@@ -314,6 +314,7 @@ section.featured-product {
       font-weight: 500; }
     .product-box-style-1 .row .meta-date span.month {
       letter-spacing: 7.96px;
-      font-size: 22px; }
+      font-size: 22px;
+      line-height: 1; }
 
 /*# sourceMappingURL=style.css.map */

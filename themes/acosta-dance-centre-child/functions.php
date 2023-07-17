@@ -313,6 +313,6 @@ add_action('init', 'adc_remove_default_sorting_storefront');
 
 function adc_remove_default_sorting_storefront()
 {
-	remove_action('woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10);
-	remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10);
+	remove_action('woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 30);
+	remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
 }

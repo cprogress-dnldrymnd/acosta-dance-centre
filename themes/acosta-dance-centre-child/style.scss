@@ -370,7 +370,8 @@ body {
   }
 }
 
-.post-type-archive-product, .tax-product_cat {
+.post-type-archive-product,
+.tax-product_cat {
   #doro-main {
     #doro-inner {
       display: -ms-flexbox;
@@ -380,10 +381,20 @@ body {
       margin-right: -15px;
       margin-left: -15px;
 
+      #primary {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
       #sidebar {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
+        padding-right: 15px;
+        padding-left: 15px;
       }
     }
   }

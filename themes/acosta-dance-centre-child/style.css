@@ -240,16 +240,27 @@ p {
 body:not(.page-template-default) #doro-main #doro-inner {
   padding: 40px 70px; }
 
-.post-type-archive-product #doro-main #doro-inner, .tax-product_cat #doro-main #doro-inner {
+.post-type-archive-product #doro-main #doro-inner,
+.tax-product_cat #doro-main #doro-inner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
-  .post-type-archive-product #doro-main #doro-inner #sidebar, .tax-product_cat #doro-main #doro-inner #sidebar {
+  .post-type-archive-product #doro-main #doro-inner #primary,
+  .tax-product_cat #doro-main #doro-inner #primary {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .post-type-archive-product #doro-main #doro-inner #sidebar,
+  .tax-product_cat #doro-main #doro-inner #sidebar {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,11 +12,11 @@ $product_category = get__terms('product_cat', $term_id);
     <div class="row">
       <?php foreach ($product_category as $cat) { ?>
         <div class="col-lg-4">
-          <div class="column-holder">
+          <a class="column-holder d-block">
             <div class="image-box">
               <img src="<?= $cat['thumbnail_url'] ?>" alt="">
             </div>
-          </div>
+          </a>
         </div>
       <?php } ?>
     </div>

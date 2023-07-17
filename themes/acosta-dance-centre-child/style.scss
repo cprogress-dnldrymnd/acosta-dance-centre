@@ -344,3 +344,9 @@ p {
     font-family: inherit;
   }
 }
+
+body {
+  &:not(.page-template-default) {
+    padding: 40px 70px;
+  }
+}

@@ -58,6 +58,8 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 <?php
 if ($is_classes) {
 	get_template_part('template-parts/woocommerce/classes-category');
+	get_template_part('template-parts/woocommerce/featured');
+
 }
 ?>
 <div class="sec-title text-left">
@@ -108,10 +110,6 @@ else {
 	 * @hooked wc_no_products_found - 10
 	 */
 	do_action('woocommerce_no_products_found');
-}
-
-if ($is_classes) {
-	get_template_part('template-parts/woocommerce/featured');
 }
 
 /**

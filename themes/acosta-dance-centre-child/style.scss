@@ -363,13 +363,17 @@ p {
 body {
   &:not(.page-template-default) {
     #doro-main {
-      padding: 40px 70px;
+      #doro-inner {
+        padding: 40px 70px;
+      }
     }
   }
 }
 
 .post-type-archive-product {
-    #doro-main {
+  #doro-main {
+    #doro-inner {
       display: flex;
     }
+  }
 }

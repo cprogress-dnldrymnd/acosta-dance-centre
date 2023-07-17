@@ -237,10 +237,10 @@ p {
   font-weight: 500;
   line-height: 1; }
 
-body:not(.page-template-default) #doro-main {
+body:not(.page-template-default) #doro-main #doro-inner {
   padding: 40px 70px; }
 
-.post-type-archive-product #doro-main {
+.post-type-archive-product #doro-main #doro-inner {
   display: flex; }
 
 /*# sourceMappingURL=style.css.map */

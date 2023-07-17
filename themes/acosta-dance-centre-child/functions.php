@@ -290,13 +290,13 @@ function get__terms($taxonomy = 'product_cat', $parent = false)
 	$terms_arr = array();
 
 	foreach ($terms as $term) {
+		$thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
 		array_push(
 			$terms_arr,
 			array(
-				'name'     => $term->name,
-				'slug'     => $term->slug,
-				'id'       => $term->term_id,
-				'children' => treeify_terms($terms, $term->term_id),
+				'name' => $term->name,
+				'id'   => $term->term_id,
+				'thumbnail_id' => $thumbnail_id
 			)
 		);
 	}

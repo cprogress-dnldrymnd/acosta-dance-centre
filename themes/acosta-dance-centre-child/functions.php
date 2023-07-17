@@ -233,7 +233,7 @@ function get__theme_option($value)
  *
  * @return array
  */
-function list_terms($taxonomy = 'product_cat', $parent = false)
+function list_terms($taxonomy = 'product_cat', $parent = 0)
 {
 	$categories = get_terms(
 		array(

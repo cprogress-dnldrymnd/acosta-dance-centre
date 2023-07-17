@@ -1,7 +1,7 @@
 <?php $featured_classes = get__theme_option('featured_classes'); ?>
 
 <?php if ($featured_classes) { ?>
-  <section class="featured-product background-light-red md-padding-bottom d-flex">
+  <section class="featured-product background-light-red d-flex">
     <div class="inner">
       <div class="heading-box mb-5">
         <h2 class="big-title">

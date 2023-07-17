@@ -11,7 +11,7 @@
 
       <div class="product-box-style-1">
         <?php foreach ($featured_classes as $class) { ?>
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-2">
               <div class="meta-date">
                 <span class="day">25</span>

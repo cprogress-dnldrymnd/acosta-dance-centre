@@ -317,6 +317,8 @@ section.featured-product {
     .product-box-style-1 .product-box-item .meta-date span.month {
       letter-spacing: 7.96px;
       font-size: 22px; }
+  .product-box-style-1 .product-box-item .heading-box h3 {
+    font-size: 44px; }
   .product-box-style-1 .product-box-item .image-box {
     padding: 50%; }
     .product-box-style-1 .product-box-item .image-box img {

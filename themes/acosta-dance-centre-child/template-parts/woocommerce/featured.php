@@ -23,6 +23,11 @@
                 <img src="<?= get_the_post_thumbnail_url($class['id']) ?>" alt="<?= get_the_title($class['id']) ?>">
               </div>
             </div>
+            <div class="col-lg-5">
+              <div class="heading-box">
+                <h3><?= get_the_title($class['id']) ?></h3>
+              </div>
+            </div>
           </div>
         <?php } ?>
       </div>

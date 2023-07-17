@@ -9,7 +9,7 @@ use Carbon_Fields\Field;
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
 Container::make('term_meta', __('Category Properties'))
-  ->where('term_taxonomy', '=', 'category')
+  ->where('term_taxonomy', '=', 'product_cat')
   ->add_fields(
     array(
       Field::make('text', 'alt_title', __('Alt Title')),

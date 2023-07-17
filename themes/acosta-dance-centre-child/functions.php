@@ -5,6 +5,18 @@ function doro_add_stylesheet()
 	wp_enqueue_style('doro-child-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0', 'all');
 }
 
+/*-----------------------------------------------------------------------------------*/
+/* After Theme Setup
+/*-----------------------------------------------------------------------------------*/
+function action_after_setup_theme()
+{
+	add_theme_support('woocommerce');
+	add_theme_support('wc-product-gallery-zoom');
+	add_theme_support('wc-product-gallery-lightbox');
+	add_theme_support('wc-product-gallery-slider');
+}
+add_action('after_setup_theme', 'action_after_setup_theme');
+
 function action_widgets_init()
 {
 	register_sidebar(

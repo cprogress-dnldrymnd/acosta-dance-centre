@@ -229,4 +229,9 @@ p {
 body:not(.page-template-default) #doro-main {
   padding: 40px 70px; }
 
+.woocommerce-breadcrumb {
+  font-size: 20px;
+  letter-spacing: 7px;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */

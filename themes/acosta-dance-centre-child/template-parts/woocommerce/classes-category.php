@@ -10,7 +10,15 @@ $product_category = get__terms('product_cat', $term_id);
 <?php if ($product_category) { ?>
   <div class="product-category-holder">
     <div class="row">
-
+      <?php foreach ($product_category as $cat) { ?>
+        <div class="col-lg-4">
+          <div class="column-holder">
+            <div class="image-box">
+              <img src="<?= $cat['thumbnail_url'] ?>" alt="">
+            </div>
+          </div>
+        </div>
+      <?php } ?>
     </div>
   </div>
 <?php } ?>

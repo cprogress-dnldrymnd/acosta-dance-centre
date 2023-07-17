@@ -294,9 +294,9 @@ function get__terms($taxonomy = 'product_cat', $parent = false)
 		array_push(
 			$terms_arr,
 			array(
-				'name' => $term->name,
-				'id'   => $term->term_id,
-				'thumbnail_id' => $thumbnail_id
+				'name'          => $term->name,
+				'id'            => $term->term_id,
+				'thumbnail_url' => wp_get_attachment_image_url($thumbnail_id, 'large')
 			)
 		);
 	}

@@ -319,6 +319,10 @@ section.featured-product {
       font-size: 22px; }
   .product-box-style-1 .product-box-item .heading-box h3 {
     font-size: 44px; }
+  .product-box-style-1 .product-box-item .book-box a {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif; }
   .product-box-style-1 .product-box-item .image-box img {
     height: 195px;
     max-width: 195px;

@@ -345,14 +345,6 @@ p {
   }
 }
 
-body {
-  &:not(.page-template-default) {
-    #doro-main {
-      padding: 40px 70px;
-    }
-  }
-}
-
 .woocommerce-breadcrumb {
   font-size: 20px;
   letter-spacing: 7px;
@@ -366,4 +358,18 @@ body {
     font-weight: 500;
     line-height: 1;
   }
+}
+
+body {
+  &:not(.page-template-default) {
+    #doro-main {
+      padding: 40px 70px;
+    }
+  }
+}
+
+.post-type-archive-product {
+    #doro-main {
+      display: flex;
+    }
 }

@@ -412,9 +412,10 @@ section.product-category-section {
 
 .box-style-1 {
   .image-box {
+    padding: 60% 0;
+
     img {
       position: absolute;
-      padding: 60% 0;
       left: 0;
       top: 0;
       width: 100%;
@@ -425,6 +426,7 @@ section.product-category-section {
 
   .heading-box {
     border-bottom: 3px solid #000;
+
     h3 {
       font-size: 50px;
       margin: 0;

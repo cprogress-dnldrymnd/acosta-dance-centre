@@ -319,14 +319,9 @@ section.featured-product {
       font-size: 22px; }
   .product-box-style-1 .product-box-item .heading-box h3 {
     font-size: 44px; }
-  .product-box-style-1 .product-box-item .image-box {
-    padding: 50%; }
-    .product-box-style-1 .product-box-item .image-box img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+  .product-box-style-1 .product-box-item .image-box img {
+    height: 195px;
+    width: 195px;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

@@ -306,5 +306,13 @@ section.featured-product {
   padding-bottom: 35px;
   margin-bottom: 35px;
   border-bottom: 3px solid #000; }
+  .product-box-style-1 .row .meta-date {
+    font-family: 'Oswald', sans-serif; }
+    .product-box-style-1 .row .meta-date span.day {
+      font-size: 60px;
+      font-weight: 500; }
+    .product-box-style-1 .row .meta-date span.month {
+      letter-spacing: 7.96px;
+      font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */

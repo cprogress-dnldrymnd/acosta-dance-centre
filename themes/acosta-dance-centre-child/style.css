@@ -242,5 +242,9 @@ body:not(.page-template-default) #doro-main #doro-inner {
 
 .post-type-archive-product #doro-main #doro-inner {
   display: flex; }
+  .post-type-archive-product #doro-main #doro-inner #sidebar {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ $term_id = get_queried_object()->term_id;
 $product_category = get__terms('product_cat', $term_id);
 ?>
 <?php if ($product_category) { ?>
-  <section class="product-category">
+  <section class="product-category-section">
     <div class="row">
       <?php foreach ($product_category as $cat) { ?>
         <div class="col-lg-4" id="term-<?= $cat['id'] ?>">

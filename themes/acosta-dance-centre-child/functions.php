@@ -226,3 +226,56 @@ function get__theme_option($value)
 		return 'Error: Carbonfield not activated';
 	}
 }
+
+
+/**
+ * Lists all product categories and sub-categories in a tree structure.
+ *
+ * @return array
+ */
+function list_terms($taxonomy = 'product_cat', $parent = false)
+{
+	$categories = get_terms(
+		array(
+			'taxonomy'   => $taxonomy,
+			'orderby'    => 'name',
+			'hide_empty' => false,
+			'parent'     => $parent,
+		)
+	);
+
+	$categories = treeify_terms($categories);
+
+	return $categories;
+}
+
+/**
+ * Converts a flat array of terms into a hierarchical tree structure.
+ *
+ * @param WP_Term[] $terms Terms to sort.
+ * @param integer   $root_id Id of the term which is considered the root of the tree.
+ *
+ * @return array Returns an array of term data. Note the term data is an array, rather than
+ * term object.
+ */
+function treeify_terms($terms, $root_id = 0)
+{
+	$tree = array();
+
+	foreach ($terms as $term) {
+		if ($term->parent === $root_id) {
+			array_push(
+				$tree,
+				array(
+					'name'     => $term->name,
+					'slug'     => $term->slug,
+					'id'       => $term->term_id,
+					'count'    => $term->count,
+					'children' => treeify_terms($terms, $term->term_id),
+				)
+			);
+		}
+	}
+
+	return $tree;
+}

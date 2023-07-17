@@ -33,7 +33,7 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 
 <header class="woocommerce-products-header">
 	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
-		<h1 class="woocommerce-products-header__title page-title">
+		<h1 class="woocommerce-products-header__title page-title big-title">
 			<?php
 			if ($alt_title) {
 				echo $alt_title;

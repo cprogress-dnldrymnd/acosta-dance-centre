@@ -1,3 +1,7 @@
 <section class="featured-product">
-  featured products
+  <div class="heading-box">
+    <h2 class="big-title">
+      SUMMER 23<br> FEATURED CLASSES
+    </h2>
+  </div>
 </section>

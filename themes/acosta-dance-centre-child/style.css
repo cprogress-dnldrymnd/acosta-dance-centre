@@ -232,7 +232,7 @@ p {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif !important; }
 
-.woocommerce-products-header .woocommerce-products-header__title {
+.big-title {
   font-size: 100px;
   font-weight: 500;
   line-height: 1; }

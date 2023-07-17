@@ -188,10 +188,6 @@ function tissue_paper_register_custom_fields()
 	require_once('includes/post-meta.php');
 }
 
-function tissue_paper_register_custom_fields()
-{
-	require_once('includes/post-meta.php');
-}
 function get__post_meta($value)
 {
 	if (function_exists('carbon_get_the_post_meta')) {

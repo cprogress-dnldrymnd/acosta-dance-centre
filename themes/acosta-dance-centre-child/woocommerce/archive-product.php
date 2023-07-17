@@ -28,6 +28,7 @@ get_header('shop');
  */
 do_action('woocommerce_before_main_content');
 $alt_title = get__term_meta(get_queried_object()->term_id, 'alt_title');
+$is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 ?>
 
 <header class="woocommerce-products-header">
@@ -55,6 +56,10 @@ $alt_title = get__term_meta(get_queried_object()->term_id, 'alt_title');
 	?>
 </header>
 <?php
+
+if($is_classes) {
+	get_template_part('template-parts/woocommerce/classes-category');
+}
 if (woocommerce_product_loop()) {
 
 	/**

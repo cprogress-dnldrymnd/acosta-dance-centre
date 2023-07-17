@@ -20,6 +20,7 @@ Container::make('term_meta', __('Category Properties'))
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
 Container::make('theme_options', __('Classes Settings'))
+->set_page_parent('edit.php?post_type=product')
   ->add_fields(
     array(
       Field::make('association', 'featured_classes', __('FEATURED CLASSES'))

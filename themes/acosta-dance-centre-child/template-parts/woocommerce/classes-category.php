@@ -3,11 +3,12 @@ $term_id = get_queried_object()->term_id;
 $product_category = get__terms('product_cat', $term_id);
 ?>
 <?php if ($product_category) { ?>
-  <div class="sec-title text-left">
-    <span class="heading-meta">TRY A NEW CLASS</span>
-    <h2 class="doro-heading">DANCE STYLES</h2>
-  </div>
+
   <section class="product-category-section">
+    <div class="sec-title text-left">
+      <span class="heading-meta">TRY A NEW CLASS</span>
+      <h2 class="doro-heading">DANCE STYLES</h2>
+    </div>
     <div class="row">
       <?php foreach ($product_category as $cat) { ?>
         <div class="col-lg-4" id="term-<?= $cat['id'] ?>">

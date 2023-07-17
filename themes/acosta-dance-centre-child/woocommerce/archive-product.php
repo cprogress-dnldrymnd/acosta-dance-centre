@@ -34,7 +34,7 @@ do_action('woocommerce_before_main_content');
 	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
 		<h1 class="woocommerce-products-header__title page-title">
 			<?php //woocommerce_page_title(); ?>
-			FIND CLASSES FOR EVERY AGE & ABILITY
+			FIND CLASSES <br>FOR EVERY AGE & ABILITY
 		</h1>
 	<?php endif; ?>
 

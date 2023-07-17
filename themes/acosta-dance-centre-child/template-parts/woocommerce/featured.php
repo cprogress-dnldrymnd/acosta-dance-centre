@@ -9,7 +9,7 @@
         </h2>
       </div>
 
-      <div class="product-box-style-1">.
+      <div class="product-box-style-1">
         <?php foreach ($featured_classes as $class) { ?>
           <div class="row">
             <div class="col-lg-2">

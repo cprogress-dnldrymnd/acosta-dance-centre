@@ -302,4 +302,9 @@ section.featured-product {
 .md-padding-bottom {
   padding-bottom: 100px; }
 
+.product-box-style-1 .row {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 3px solid #000; }
+
 /*# sourceMappingURL=style.css.map */

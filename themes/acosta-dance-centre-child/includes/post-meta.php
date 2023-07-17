@@ -5,7 +5,6 @@ use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 
 /*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
 Container::make('term_meta', __('Category Properties'))
@@ -14,5 +13,23 @@ Container::make('term_meta', __('Category Properties'))
     array(
       Field::make('text', 'alt_title', __('Alt Title')),
       Field::make('checkbox', 'is_classes', __('Is Classes'))
-      ->set_help_text('Check if this category is classes'),
-    ));
+        ->set_help_text('Check if this category is classes'),
+    )
+  );
+/*-----------------------------------------------------------------------------------*/
+/* Product Category Options
+/*-----------------------------------------------------------------------------------*/
+Container::make('theme_options', __('Theme Options'))
+  ->add_fields(
+    array(
+      Field::make('association', 'featured_classes', __('FEATURED CLASSES'))
+        ->set_types(
+          array(
+            array(
+              'type'      => 'post',
+              'post_type' => 'product',
+            )
+          )
+        ),
+    )
+  );

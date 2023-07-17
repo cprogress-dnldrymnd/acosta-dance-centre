@@ -4,7 +4,7 @@ $product_category = get__terms('product_cat', $term_id);
 ?>
 <?php if ($product_category) { ?>
 
-  <section class="product-category-section">
+  <section class="product-category-section md-padding">
     <div class="sec-title text-left">
       <span class="heading-meta">TRY A NEW CLASS</span>
       <h2 class="doro-heading">DANCE STYLES</h2>

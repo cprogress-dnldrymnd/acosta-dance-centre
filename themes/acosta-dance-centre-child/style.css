@@ -266,10 +266,6 @@ body:not(.page-template-default) #doro-main #doro-inner {
 .heading-meta {
   font-size: 20px; }
 
-section.product-category-section {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
 .box-style-1 .image-box {
   padding: 72% 0; }
   .box-style-1 .image-box img {
@@ -291,5 +287,9 @@ section.product-category-section {
 
 section.featured-product .heading-box {
   margin-top: -80px; }
+
+.md-padding {
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -263,15 +263,17 @@ function treeify_terms($terms, $root_id = 0)
 	$tree = array();
 
 	foreach ($terms as $term) {
-		array_push(
-			$tree,
-			array(
-				'name'     => $term->name,
-				'slug'     => $term->slug,
-				'id'       => $term->term_id,
-				'children' => treeify_terms($terms, $term->term_id),
-			)
-		);
+		if ($term->parent === $root_id) {
+			array_push(
+				$tree,
+				array(
+					'name'     => $term->name,
+					'slug'     => $term->slug,
+					'id'       => $term->term_id,
+					'children' => treeify_terms($terms, $term->term_id),
+				)
+			);
+		}
 	}
 
 	return $tree;

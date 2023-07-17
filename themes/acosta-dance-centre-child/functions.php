@@ -233,7 +233,7 @@ function get__theme_option($value)
  *
  * @return array
  */
-function list_terms($taxonomy = 'product_cat', $parent = 0)
+function list_terms($taxonomy = 'product_cat', $parent = false)
 {
 	$categories = get_terms(
 		array(
@@ -267,9 +267,10 @@ function treeify_terms($terms, $root_id = 0)
 			array_push(
 				$tree,
 				array(
-					'id'       => $term->term_id,
 					'name'     => $term->name,
-					'children' => list_terms('product_cat', $term->term_id),
+					'slug'     => $term->slug,
+					'id'       => $term->term_id,
+					'children' => treeify_terms($terms, $term->term_id),
 				)
 			);
 		}

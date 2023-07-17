@@ -36,7 +36,6 @@ Text Domain: acosta-dance-centre-child
 }
 
 p {
-  font-family: 'Hind', sans-serif;
   color: var(--black-color);
   font-size: 22px;
 }
@@ -339,7 +338,7 @@ p {
   }
 }
 
-.elementor-widget-container {
+.inherit-elementor {
   p {
     font-size: inherit;
     font-family: inherit;

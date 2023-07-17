@@ -286,7 +286,7 @@ body:not(.page-template-default) #doro-main #doro-inner {
   background-color: #FDE1D7 !important; }
 
 section.featured-product {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-left: 15px;
   padding-right: 15px; }
   section.featured-product .inner {

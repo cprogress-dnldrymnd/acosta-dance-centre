@@ -433,12 +433,18 @@ body {
 }
 
 section.featured-product {
-  .heading-box {
+  .inner {
     margin-top: -80px;
   }
 }
 
 .md-padding {
   padding-top: 100px;
+  padding-bottom: 100px;
+}
+.md-padding-top {
+  padding-top: 100px;
+}
+.md-padding-bottom {
   padding-bottom: 100px;
 }

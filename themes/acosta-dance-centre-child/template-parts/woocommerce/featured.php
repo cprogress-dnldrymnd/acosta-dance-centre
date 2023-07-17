@@ -1,4 +1,4 @@
-<section class="featured-product background-light-red md-padding">
+<section class="featured-product background-light-red md-padding-bottom">
   <div class="inner">
     <div class="heading-box">
       <h2 class="big-title">

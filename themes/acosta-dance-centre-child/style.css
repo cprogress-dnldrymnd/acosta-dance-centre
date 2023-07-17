@@ -302,23 +302,23 @@ section.featured-product {
 .md-padding-bottom {
   padding-bottom: 100px; }
 
-.product-box-style-1 .row {
+.product-box-style-1 .product-box-item {
   padding-bottom: 35px;
   margin-bottom: 35px;
   border-bottom: 3px solid #000; }
-  .product-box-style-1 .row .meta-date {
+  .product-box-style-1 .product-box-item .meta-date {
     font-family: 'Oswald', sans-serif;
     color: #000; }
-    .product-box-style-1 .row .meta-date span.day {
+    .product-box-style-1 .product-box-item .meta-date span.day {
       font-size: 60px;
       font-weight: 500;
       line-height: 1; }
-    .product-box-style-1 .row .meta-date span.month {
+    .product-box-style-1 .product-box-item .meta-date span.month {
       letter-spacing: 7.96px;
       font-size: 22px; }
-  .product-box-style-1 .row .image-box {
+  .product-box-style-1 .product-box-item .image-box {
     padding: 50%; }
-    .product-box-style-1 .row .image-box img {
+    .product-box-style-1 .product-box-item .image-box img {
       position: absolute;
       left: 0;
       top: 0;

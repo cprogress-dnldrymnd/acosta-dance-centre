@@ -1,5 +1,6 @@
 <?php
 $term_id = get_queried_object()->term_id;
+echo $term_id;
 ?>
 
 <pre>

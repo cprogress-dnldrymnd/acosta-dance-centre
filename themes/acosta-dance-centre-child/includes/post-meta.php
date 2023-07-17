@@ -6,32 +6,13 @@ use Carbon_Fields\Field;
 
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
-/* Page Options
+/* Product Category Options
 /*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', 'Page Options')
-  ->where('post_type', '=', 'page')
-  ->set_context('side')
+Container::make('term_meta', __('Category Properties'))
+  ->where('term_taxonomy', '=', 'category')
   ->add_fields(
     array(
-      Field::make('select', 'page_theme', 'Page Theme')
-        ->set_options(
-          array(
-            'background-body'  => 'Light',
-            'background-black' => 'Dark',
-          )
-        ),
-      Field::make('select', 'header_type', 'Header Type')
-        ->set_options(
-          array(
-            'background-white'       => 'Light',
-            'background-black'       => 'Dark',
-            'background-transparent' => 'Transparent',
-          )
-        ),
-
-
-
-
-      //Field::make('checkbox', 'hide_page_banner', 'Hide Page Banner'),
-    )
-  );
+      Field::make('text', 'alt_title', __('Alt Title')),
+      Field::make('checkbox', 'is_classes', __('Is Classes'))
+      ->set_help_text('Check if this category is classes'),
+    ));

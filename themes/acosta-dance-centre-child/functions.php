@@ -187,3 +187,46 @@ function tissue_paper_register_custom_fields()
 {
 	require_once('includes/post-meta.php');
 }
+
+function tissue_paper_register_custom_fields()
+{
+	require_once('includes/post-meta.php');
+}
+function get__post_meta($value)
+{
+	if (function_exists('carbon_get_the_post_meta')) {
+		return carbon_get_the_post_meta($value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+
+function get__term_meta($term_id, $value)
+{
+	if (function_exists('carbon_get_term_meta')) {
+		return carbon_get_term_meta($term_id, $value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+
+function get__post_meta_by_id($id, $value)
+{
+	if (function_exists('carbon_get_post_meta')) {
+		return carbon_get_post_meta($id, $value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+function get__theme_option($value)
+{
+	if (function_exists('carbon_get_theme_option')) {
+		return carbon_get_theme_option($value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}

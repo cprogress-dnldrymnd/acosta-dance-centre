@@ -285,8 +285,10 @@ body:not(.page-template-default) #doro-main #doro-inner {
 .background-light-red {
   background-color: #FDE1D7 !important; }
 
-section.featured-product .inner {
-  margin-top: -80px; }
+section.featured-product {
+  padding-top: -60px; }
+  section.featured-product .inner {
+    margin-top: -60px; }
 
 .md-padding {
   padding-top: 100px;

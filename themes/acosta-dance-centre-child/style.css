@@ -321,7 +321,8 @@ section.featured-product {
     font-size: 44px; }
   .product-box-style-1 .product-box-item .image-box img {
     height: 195px;
-    width: 195px;
+    max-width: 195px;
+    width: 100%;
     object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

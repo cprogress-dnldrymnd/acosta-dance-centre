@@ -347,6 +347,8 @@ p {
 
 body {
   &:not(.page-template-default) {
-    padding: 40px 70px;
+    #doro-main {
+      padding: 40px 70px;
+    }
   }
 }

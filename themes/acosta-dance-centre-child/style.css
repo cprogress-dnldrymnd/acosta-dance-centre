@@ -226,7 +226,7 @@ p {
   font-size: inherit;
   font-family: inherit; }
 
-body:not(.page-template-default) {
+body:not(.page-template-default) #doro-main {
   padding: 40px 70px; }
 
 /*# sourceMappingURL=style.css.map */

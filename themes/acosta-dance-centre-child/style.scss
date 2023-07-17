@@ -359,3 +359,10 @@ body {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif !important;
 }
+
+.woocommerce-products-header {
+  .woocommerce-products-header__title {
+    font-size: 120px;
+    font-weight: 500;
+  }
+}

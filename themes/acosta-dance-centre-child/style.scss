@@ -373,7 +373,12 @@ body {
 .post-type-archive-product {
   #doro-main {
     #doro-inner {
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
 
       #sidebar {
         -ms-flex: 0 0 25%;

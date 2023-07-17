@@ -241,7 +241,12 @@ body:not(.page-template-default) #doro-main #doro-inner {
   padding: 40px 70px; }
 
 .post-type-archive-product #doro-main #doro-inner {
-  display: flex; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
   .post-type-archive-product #doro-main #doro-inner #sidebar {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;

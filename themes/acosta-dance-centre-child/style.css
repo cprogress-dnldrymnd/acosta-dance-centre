@@ -31,6 +31,7 @@ Text Domain: acosta-dance-centre-child
       font-size: 40px; } }
 
 p {
+  font-family: 'Oswald', sans-serif !important;
   color: var(--black-color);
   font-size: 22px; }
 
@@ -221,5 +222,8 @@ p {
 #doro-aside #doro-main-menu > ul > li > a {
   font-size: 20px;
   color: var(--black-color); }
+
+.elementor-widget-container p {
+  font-size: inherit; }
 
 /*# sourceMappingURL=style.css.map */

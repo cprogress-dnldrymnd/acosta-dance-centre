@@ -3,7 +3,7 @@
 <?php if ($featured_classes) { ?>
   <section class="featured-product background-light-red md-padding-bottom d-flex">
     <div class="inner">
-      <div class="heading-box">
+      <div class="heading-box mb-5">
         <h2 class="big-title">
           SUMMER 23<br> FEATURED CLASSES
         </h2>

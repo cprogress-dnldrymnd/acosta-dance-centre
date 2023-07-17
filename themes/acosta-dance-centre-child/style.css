@@ -311,11 +311,11 @@ section.featured-product {
     color: #000; }
     .product-box-style-1 .row .meta-date span.day {
       font-size: 60px;
-      font-weight: 500; }
+      font-weight: 500;
+      line-height: 1; }
     .product-box-style-1 .row .meta-date span.month {
       letter-spacing: 7.96px;
-      font-size: 22px;
-      line-height: 1; }
+      font-size: 22px; }
   .product-box-style-1 .row .image-box {
     padding: 50%; }
     .product-box-style-1 .row .image-box img {

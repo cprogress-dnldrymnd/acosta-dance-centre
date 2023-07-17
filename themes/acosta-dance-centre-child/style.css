@@ -263,4 +263,8 @@ body:not(.page-template-default) #doro-main #doro-inner {
     padding-right: 15px;
     padding-left: 15px; }
 
+section.product-category-section {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
 /*# sourceMappingURL=style.css.map */

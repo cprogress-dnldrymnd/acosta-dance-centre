@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <div class="book-box">
+                <div class="book-box text-right">
                   <a href="<?= get_permalink($class['id']) ?>">BOOK</a>
                 </div>
               </div>

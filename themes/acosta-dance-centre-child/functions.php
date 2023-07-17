@@ -270,7 +270,6 @@ function treeify_terms($terms, $root_id = 0)
 					'name'     => $term->name,
 					'slug'     => $term->slug,
 					'id'       => $term->term_id,
-					'count'    => $term->count,
 					'children' => treeify_terms($terms, $term->term_id),
 				)
 			);

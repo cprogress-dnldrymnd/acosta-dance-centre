@@ -14,8 +14,8 @@
           <div class="row align-items-center">
             <div class="col-lg-2 text-center">
               <div class="meta-date">
-                <span class="day">25</span>
-                <span class="month">JULY</span>
+                <span class="day d-block">25</span>
+                <span class="month d-block">JULY</span>
               </div>
             </div>
             <div class="col-lg-3">

@@ -267,9 +267,8 @@ function treeify_terms($terms, $root_id = 0)
 			array_push(
 				$tree,
 				array(
-					'name'     => $term->name,
-					'slug'     => $term->slug,
 					'id'       => $term->term_id,
+					'name'     => $term->name,
 					'children' => list_terms('product_cat', $term->term_id),
 				)
 			);

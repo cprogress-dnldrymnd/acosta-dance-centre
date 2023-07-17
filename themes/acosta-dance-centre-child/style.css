@@ -270,4 +270,19 @@ section.product-category-section {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.box-style-1 .image-box img {
+  position: absolute;
+  padding: 60% 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+.box-style-1 .heading-box {
+  border-bottom: 3px solid #000; }
+  .box-style-1 .heading-box h3 {
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */

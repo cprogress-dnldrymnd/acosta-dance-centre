@@ -12,8 +12,8 @@ $product_category = get__terms('product_cat', $term_id);
     <div class="row">
       <?php foreach ($product_category as $cat) { ?>
         <div class="col-lg-4" id="term-<?= $cat['id'] ?>">
-          <a class="column-holder d-block" href="<?= $cat['term_link'] ?>">
-            <div class="image-box">
+          <a class="column-holder box-style-1 d-block" href="<?= $cat['term_link'] ?>">
+            <div class="image-box position-relative">
               <img src="<?= $cat['thumbnail_url'] ?>" alt="">
             </div>
             <div class="heading-box">

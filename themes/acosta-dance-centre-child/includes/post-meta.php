@@ -19,7 +19,7 @@ Container::make('term_meta', __('Category Properties'))
 /*-----------------------------------------------------------------------------------*/
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
-Container::make('theme_options', __('Theme Options'))
+Container::make('theme_options', __('Classes Settings'))
   ->add_fields(
     array(
       Field::make('association', 'featured_classes', __('FEATURED CLASSES'))

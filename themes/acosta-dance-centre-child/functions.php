@@ -322,16 +322,3 @@ function adc_remove_default_sorting_storefront()
 
 
 add_action('admin_init', 'my_redirect_if_user_not_logged_in');
-
-function my_redirect_if_user_not_logged_in()
-{
-
-	if (!is_user_logged_in()) {
-
-		wp_redirect('https://acostadancecentre.co.uk/holding-page/ ');
-
-		exit;
-
-	}
-
-}

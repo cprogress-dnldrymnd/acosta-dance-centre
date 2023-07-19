@@ -318,3 +318,20 @@ function adc_remove_default_sorting_storefront()
 	remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 	remove_action('woocommerce_after_shop_loop', 'woocommerce_result_count', 20);
 }
+
+
+
+add_action('admin_init', 'my_redirect_if_user_not_logged_in');
+
+function my_redirect_if_user_not_logged_in()
+{
+
+	if (!is_user_logged_in()) {
+
+		wp_redirect('https://acostadancecentre.co.uk/holding-page/ ');
+
+		exit;
+
+	}
+
+}

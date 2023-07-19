@@ -187,6 +187,7 @@ function tissue_paper_register_custom_fields()
 {
 	require_once('includes/post-meta.php');
 }
+require_once('includes/woocommerce.php');
 
 function get__post_meta($value)
 {

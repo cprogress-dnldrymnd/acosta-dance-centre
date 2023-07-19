@@ -5,3 +5,13 @@ function woocommerce_add_to_cart_button_text_archives()
 {
   return __('BOOK', 'woocommerce');
 }
+
+/**
+ * @snippet       WooCommerce Hide Prices on the Shop Page
+ * @how-to        Get CustomizeWoo.com FREE
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 5.1
+ * @donate $9     https://businessbloomer.com/bloomer-armada/
+ */
+
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);

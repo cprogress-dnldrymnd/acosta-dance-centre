@@ -321,7 +321,7 @@ function adc_remove_default_sorting_storefront()
 
 
 
-add_action('admin_init', 'my_redirect_if_user_not_logged_in');
+add_action('init', 'my_redirect_if_user_not_logged_in');
 
 function my_redirect_if_user_not_logged_in()
 {

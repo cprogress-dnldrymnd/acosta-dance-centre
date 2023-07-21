@@ -330,7 +330,8 @@ section.featured-product {
     object-fit: cover; }
 
 .events-holder .title-box {
-  line-height: 1; }
+  line-height: 1;
+  font-family: "Oswald", sans-serif; }
   .events-holder .title-box .month,
   .events-holder .title-box .time {
     letter-spacing: 7px;
@@ -341,7 +342,6 @@ section.featured-product {
     margin-right: 15px; }
     .events-holder .title-box .month-day .day {
       font-size: 60px;
-      font-family: "Oswald", sans-serif;
       font-weight: 500; }
   .events-holder .title-box .title-time h3 {
     font-size: 60px; }

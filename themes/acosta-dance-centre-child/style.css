@@ -322,6 +322,8 @@ section.featured-product {
     line-height: 1; }
   .product-box-style-1 .product-box-item .title-box .time {
     color: #6D6D6D; }
+  .product-box-style-1 .product-box-item .title-box .type {
+    color: #000; }
   .product-box-style-1 .product-box-item .book-box a {
     font-size: 22px;
     font-weight: 500;

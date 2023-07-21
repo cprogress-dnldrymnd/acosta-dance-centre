@@ -377,19 +377,20 @@ function events()
 		'post_type'      => 'tc_events'
 	);
 	$query = new WP_Query($args);
-	$event_date_time = get_post_meta(get_the_ID(), 'event_date_time', true);
-	echo $event_date_time;
 	?>
 	<div class="events-holder">
 		<div class="row">
 			<?php while ($query->have_posts()) { ?>
 				<?php
 				$query->the_post();
-				?>
+				$event_date_time = get_post_meta(get_the_ID(), 'event_date_time', true);
+	echo $event_date_time;
+
+					?>
 				<div class="col-lg-4">
 					<pre>
-								<?php var_dump(get_post_meta(get_the_ID())) ?>
-							</pre>
+												<?php var_dump(get_post_meta(get_the_ID())) ?>
+											</pre>
 					<div class="event-box">
 						<div class="image-box">
 							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" />

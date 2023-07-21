@@ -31,7 +31,7 @@
                 <div class="title-box">
                   <h3><?= get_the_title($class['id']) ?></h3>
                   <div class="meta text-uppercase">
-                    <span class="type meta-style-1 me-4 d-inline-block">STUDIO</span>
+                    <span class="type meta-style-1 mr-4 d-inline-block">STUDIO</span>
                     <span class="time meta-style-1 d-inline-block">TIME: <?= $ticket_time ?></span>
                   </div>
                 </div>

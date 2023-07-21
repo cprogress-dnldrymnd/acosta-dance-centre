@@ -396,9 +396,11 @@ function events()
 				<div class="col-lg-4">
 					<pre class="d-none"><?php var_dump(get_post_meta(get_the_ID())) ?></pre>
 					<div class="event-box">
-						<div class="image-box mb-3">
-							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" alt="">
-						</div>
+						<a href="<?php the_permalink() ?>">
+							<div class="image-box mb-3">
+								<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" alt="">
+							</div>
+						</a>
 						<div class="title-box d-flex">
 							<div class="month-day d-flex flex-column justify-content-between">
 								<span class="day d-block"><?= $event_day ?></span>

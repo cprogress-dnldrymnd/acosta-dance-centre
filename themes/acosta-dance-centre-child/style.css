@@ -344,6 +344,7 @@ section.featured-product {
       font-size: 60px;
       font-weight: 500; }
   .events-holder .title-box .title-time h3 {
+    line-height: 1;
     font-size: 60px; }
 
 /*# sourceMappingURL=style.css.map */

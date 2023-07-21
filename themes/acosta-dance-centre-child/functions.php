@@ -400,7 +400,7 @@ function events()
 							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" alt="">
 						</div>
 						<div class="title-box d-flex">
-							<div class="month-day d-flex flex-column">
+							<div class="month-day d-flex flex-column justify-content-between">
 								<span class="day d-block"><?= $event_day ?></span>
 								<span class="month d-block text-uppercase"><?= $event_month ?></span>
 							</div>

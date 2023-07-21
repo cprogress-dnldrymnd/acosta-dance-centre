@@ -398,7 +398,7 @@ function events()
 						<div class="image-box">
 							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" />
 						</div>
-						<div class="title-box">
+						<div class="title-box d-flex">
 							<div class="month-day d-flex flex-column">
 								<span class="day"><?= $event_day ?></span>
 								<span class="time"><?= $event_month ?></span>

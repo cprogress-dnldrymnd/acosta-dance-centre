@@ -8,9 +8,12 @@
           SUMMER 23<br> FEATURED CLASSES
         </h2>
       </div>
-
       <div class="product-box-style-1">
         <?php foreach ($featured_classes as $class) { ?>
+          <?php
+          $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+          $ticket_time = date('g:i a', $dateformat);
+          ?>
           <div class="product-box-item">
             <div class="row align-items-center">
               <div class="col-lg-2 text-center">
@@ -25,8 +28,9 @@
                 </div>
               </div>
               <div class="col-lg-5">
-                <div class="heading-box">
+                <div class="title-box">
                   <h3><?= get_the_title($class['id']) ?></h3>
+                  <span class="time d-block"><?= $ticket_time ?></span>
                 </div>
               </div>
               <div class="col-lg-2">

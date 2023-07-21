@@ -385,8 +385,8 @@ function events()
 				$query->the_post();
 				$event_date_time = get_post_meta(get_the_ID(), 'event_date_time', true);
 				$dateformat = strtotime($event_date_time);
-				echo $ticket_date = date('D j M Y', $dateformat) . '<br>';
-				echo $ticket_time = date('g:i a', $dateformat);
+				//echo $ticket_date = date('D j M Y', $dateformat) . '<br>';
+				//echo $ticket_time = date('g:i a', $dateformat);
 
 				$event_month = date('M', $dateformat);
 				$event_day = date('j', $dateformat);

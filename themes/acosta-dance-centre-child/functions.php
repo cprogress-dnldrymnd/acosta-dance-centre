@@ -396,7 +396,7 @@ function events()
 				<div class="col-lg-4">
 					<pre class="d-none"><?php var_dump(get_post_meta(get_the_ID())) ?></pre>
 					<div class="event-box">
-						<div class="image-box">
+						<div class="image-box mb-3">
 							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" alt="">
 						</div>
 						<div class="title-box d-flex">

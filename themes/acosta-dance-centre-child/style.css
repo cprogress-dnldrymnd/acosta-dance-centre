@@ -329,4 +329,13 @@ section.featured-product {
     width: 100%;
     object-fit: cover; }
 
+.events-holder .title-box .month,
+.events-holder .title-box .time {
+  letter-spacing: 7px;
+  font-size: 22px; }
+.events-holder .title-box .month-day .day {
+  font-size: 60px; }
+.events-holder .title-box .title-time h3 {
+  font-size: 60px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -402,9 +402,9 @@ function events()
 						<div class="title-box d-flex">
 							<div class="month-day d-flex flex-column">
 								<span class="day"><?= $event_day ?></span>
-								<span class="time"><?= $event_month ?></span>
+								<span class="month"><?= $event_month ?></span>
 							</div>
-							<div class="title-time">
+							<div class="title-time d-flex flex-column">
 								<h3>
 									<?php the_title() ?>
 								</h3>

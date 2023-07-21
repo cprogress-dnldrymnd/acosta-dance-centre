@@ -358,8 +358,9 @@ function action_admin_head()
 		#toplevel_page_doro {
 			display: none !important;
 		}
+
 		#redux-header {
-		display: none;
+			display: none;
 		}
 	</style>
 	<?php
@@ -377,30 +378,41 @@ function events()
 	);
 	$query = new WP_Query($args);
 	?>
-		<div class="events-holder">
-			<div class="row">
-				<?php while ($query->have_posts()) { ?>
-					<?php
-					$query->the_post();
-					?>
-					<div class="col-lg-4">
-						<div class="event-box">
-							<div class="image-box">
-								<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" />
+	<div class="events-holder">
+		<div class="row">
+			<?php while ($query->have_posts()) { ?>
+				<?php
+				$query->the_post();
+				?>
+				<div class="col-lg-4">
+					<pre>
+						<?php var_dump(get_post_meta(get_the_ID())) ?>
+					</pre>
+					<div class="event-box">
+						<div class="image-box">
+							<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" />
+						</div>
+						<div class="title-box">
+							<div class="month-day">
+
 							</div>
-							<div class="title-box">
+							<div class="title-time">
 								<h3>
 									<?php the_title() ?>
 								</h3>
+								<span class="time">
+
+								</span>
 							</div>
 						</div>
 					</div>
+				</div>
 			<?php } ?>
-				<?php wp_reset_postdata() ?>
-			</div>
+			<?php wp_reset_postdata() ?>
 		</div>
-		<?php
-		return ob_get_clean();
+	</div>
+	<?php
+	return ob_get_clean();
 }
 
 add_shortcode('events', 'events');

@@ -61,9 +61,7 @@ if ($is_classes) {
 		'featured_classes' => true,
 	);
 	get_template_part('template-parts/woocommerce/classes-category');
-
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
-
 }
 ?>
 

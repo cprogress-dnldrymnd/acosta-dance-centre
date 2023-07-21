@@ -334,7 +334,9 @@ section.featured-product {
   letter-spacing: 7px;
   font-size: 22px; }
 .events-holder .title-box .month-day .day {
-  font-size: 60px; }
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500; }
 .events-holder .title-box .title-time h3 {
   font-size: 60px; }
 

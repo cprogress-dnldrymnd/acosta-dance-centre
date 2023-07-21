@@ -505,6 +505,29 @@ section.featured-product {
 }
 
 .events-holder {
+  a {
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    padding: 60% 0;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 300ms;
+    }
+  }
   .title-box {
     line-height: 1;
     font-family: "Oswald", sans-serif;

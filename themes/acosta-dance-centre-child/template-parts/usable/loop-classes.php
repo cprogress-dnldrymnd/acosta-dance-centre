@@ -1,3 +1,4 @@
+<?php $featured_classes = get__theme_option('featured_classes'); ?>
 
 <?php if ($featured_classes) { ?>
   <section class="featured-product background-light-red d-flex">

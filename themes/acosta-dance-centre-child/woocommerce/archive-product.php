@@ -59,7 +59,7 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 if ($is_classes) {
 	get_template_part('template-parts/woocommerce/classes-category');
 	$featured_classes = get__theme_option('featured_classes');
-	include 'template-parts/usable/loop-classes.php';
+	include get_stylesheet_directory_uri() . '/template-parts/usable/loop-classes.php';
 }
 ?>
 

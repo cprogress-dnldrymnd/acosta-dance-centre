@@ -336,3 +336,71 @@ function my_redirect_if_user_not_logged_in()
 	}
 
 }
+
+
+add_filter('gettext', 'translate_text', 30);
+add_filter('ngettext', 'translate_text', 30);
+function translate_text($translated)
+{
+	$words = array(
+		// 'word to translate' => 'translation'
+		'Doro' => 'ADC',
+	);
+	$translated = str_ireplace(array_keys($words), $words, $translated);
+	return $translated;
+}
+
+
+function action_admin_head()
+{
+	?>
+	<style>
+		#toplevel_page_doro {
+			display: none !important;
+		}
+		#redux-header {
+		display: none;
+		}
+	</style>
+	<?php
+}
+
+add_action('admin_head', 'action_admin_head');
+
+
+function events()
+{
+	ob_start();
+	$args = array(
+		'posts_per_page' => 3,
+		'post_type'      => 'tc_events'
+	);
+	$query = new WP_Query($args);
+	?>
+		<div class="events-holder">
+			<div class="row">
+				<?php while ($query->have_posts()) { ?>
+					<?php
+					$query->the_post();
+					?>
+					<div class="col-lg-4">
+						<div class="event-box">
+							<div class="image-box">
+								<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" />
+							</div>
+							<div class="title-box">
+								<h3>
+									<?php the_title() ?>
+								</h3>
+							</div>
+						</div>
+					</div>
+			<?php } ?>
+				<?php wp_reset_postdata() ?>
+			</div>
+		</div>
+		<?php
+		return ob_get_clean();
+}
+
+add_shortcode('events', 'events');

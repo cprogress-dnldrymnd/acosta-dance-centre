@@ -64,7 +64,7 @@ add_shortcode('events', 'events');
 function upcoming_classes()
 {
   $args = array(
-    'featured_classes' => true,
+    'type' => 'featured_classes',
   );
 
   return get_template_part('template-parts/usable/loop-classes', 'null', $args);

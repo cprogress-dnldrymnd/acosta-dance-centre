@@ -1,16 +1,21 @@
 <?php
-if ($args['featured_classes']) {
+if ($args['type'] == 'featured_classes') {
+  $classes = get__theme_option('featured_classes');
+}
+else {
   $classes = get__theme_option('featured_classes');
 }
 ?>
 
 <section class="featured-product background-light-red d-flex">
   <div class="inner">
-    <div class="heading-box mb-5">
-      <h2 class="big-title">
-        SUMMER 23<br> FEATURED CLASSES
-      </h2>
-    </div>
+    <?php if ($args['heading']) { ?>
+      <div class="heading-box mb-5">
+        <h2 class="big-title">
+          SUMMER 23<br> FEATURED CLASSES
+        </h2>
+      </div>
+    <?php } ?>
     <div class="product-box-style-1">
       <?php foreach ($classes as $class) { ?>
         <?php

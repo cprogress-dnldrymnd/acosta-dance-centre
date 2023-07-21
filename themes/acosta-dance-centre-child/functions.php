@@ -400,21 +400,22 @@ function events()
 							<div class="image-box mb-3">
 								<img src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" alt="">
 							</div>
+
+							<div class="title-box d-flex">
+								<div class="month-day d-flex flex-column justify-content-between">
+									<span class="day d-block"><?= $event_day ?></span>
+									<span class="month d-block text-uppercase"><?= $event_month ?></span>
+								</div>
+								<div class="title-time d-flex flex-column">
+									<h3>
+										<?php the_title() ?>
+									</h3>
+									<span class="time text-uppercase d-block">
+										<?= $event_time ?>
+									</span>
+								</div>
+							</div>
 						</a>
-						<div class="title-box d-flex">
-							<div class="month-day d-flex flex-column justify-content-between">
-								<span class="day d-block"><?= $event_day ?></span>
-								<span class="month d-block text-uppercase"><?= $event_month ?></span>
-							</div>
-							<div class="title-time d-flex flex-column">
-								<h3>
-									<?php the_title() ?>
-								</h3>
-								<span class="time text-uppercase d-block">
-									<?= $event_time ?>
-								</span>
-							</div>
-						</div>
 					</div>
 				</div>
 			<?php } ?>

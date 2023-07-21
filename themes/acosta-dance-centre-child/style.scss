@@ -481,6 +481,12 @@ section.featured-product {
     .title-box {
       h3 {
         font-size: 44px;
+        line-height: 1;
+      }
+
+      .time {
+
+        color: #6D6D6D;
       }
     }
 
@@ -514,10 +520,12 @@ section.featured-product {
       }
     }
   }
+
   .image-box {
     position: relative;
     padding: 60% 0;
     overflow: hidden;
+
     img {
       position: absolute;
       left: 0;
@@ -528,6 +536,7 @@ section.featured-product {
       transition: 300ms;
     }
   }
+
   .title-box {
     line-height: 1;
     font-family: "Oswald", sans-serif;
@@ -557,4 +566,10 @@ section.featured-product {
       }
     }
   }
+}
+
+.meta-style-1 {
+  letter-spacing: 7px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
 }

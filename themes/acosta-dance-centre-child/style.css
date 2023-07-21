@@ -318,7 +318,10 @@ section.featured-product {
       letter-spacing: 7.96px;
       font-size: 22px; }
   .product-box-style-1 .product-box-item .title-box h3 {
-    font-size: 44px; }
+    font-size: 44px;
+    line-height: 1; }
+  .product-box-style-1 .product-box-item .title-box .time {
+    color: #6D6D6D; }
   .product-box-style-1 .product-box-item .book-box a {
     font-size: 22px;
     font-weight: 500;
@@ -360,5 +363,10 @@ section.featured-product {
   .events-holder .title-box .title-time h3 {
     line-height: 1;
     font-size: 60px; }
+
+.meta-style-1 {
+  letter-spacing: 7px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

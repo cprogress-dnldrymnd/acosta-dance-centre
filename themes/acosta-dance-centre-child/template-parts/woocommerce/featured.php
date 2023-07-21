@@ -30,7 +30,10 @@
               <div class="col-lg-5">
                 <div class="title-box">
                   <h3><?= get_the_title($class['id']) ?></h3>
-                  <span class="time meta-style-1 d-block text-uppercase">TIME: <?= $ticket_time ?></span>
+                  <div class="meta text-uppercase">
+                    <span class="type meta-style-1">STUDIO</span>
+                    <span class="time meta-style-1">TIME: <?= $ticket_time ?></span>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-2">

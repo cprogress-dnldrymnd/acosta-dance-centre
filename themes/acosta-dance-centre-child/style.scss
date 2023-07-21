@@ -526,7 +526,7 @@ section.featured-product {
 
   .image-box {
     position: relative;
-    padding: 60% 0;
+    padding: 70% 0;
     overflow: hidden;
 
     img {
@@ -575,4 +575,12 @@ section.featured-product {
   letter-spacing: 7px;
   font-size: 22px;
   font-family: "Oswald", sans-serif;
+}
+
+.elementor-same-height-image {
+  .elementor-widget-image {
+    .elementor-widget-container {
+
+    }
+  }
 }

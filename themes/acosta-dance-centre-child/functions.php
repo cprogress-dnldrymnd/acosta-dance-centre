@@ -387,9 +387,10 @@ function events()
 				$dateformat = strtotime($event_date_time);
 				//echo $ticket_date = date('D j M Y', $dateformat) . '<br>';
 				//echo $ticket_time = date('g:i a', $dateformat);
-
+		
 				$event_month = date('M', $dateformat);
 				$event_day = date('j', $dateformat);
+				$event_time = date('g:i a', $dateformat);
 
 				?>
 				<div class="col-lg-4">
@@ -408,7 +409,7 @@ function events()
 									<?php the_title() ?>
 								</h3>
 								<span class="time">
-
+									<?= $event_time ?>
 								</span>
 							</div>
 						</div>

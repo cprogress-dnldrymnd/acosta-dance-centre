@@ -390,17 +390,26 @@ section.featured-product {
     padding: 10px 20px;
     align-items: center;
     float: none;
-    position: relative; }
+    position: relative;
+    overflow: visible; }
     #doro-aside #doro-logo {
       max-width: 100px;
       margin-right: 3rem;
       margin-bottom: 0; }
-    #doro-aside #doro-main-menu ul {
+    #doro-aside #doro-main-menu > ul {
       display: flex;
       flex-wrap: wrap; }
-      #doro-aside #doro-main-menu ul li a {
+      #doro-aside #doro-main-menu > ul > li a {
         border-bottom: none !important; }
-      #doro-aside #doro-main-menu ul li:not(:last-child) {
+      #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu {
+        position: absolute;
+        background-color: var(--adc-color-1); }
+        #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu li {
+          padding: 10px;
+          width: 100%; }
+      #doro-aside #doro-main-menu > ul > li.menu-item-has-children a {
+        padding-right: 30px; }
+      #doro-aside #doro-main-menu > ul > li:not(:last-child) {
         margin-right: 1rem; }
 
   #doro-main {

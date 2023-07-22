@@ -611,8 +611,10 @@ section.featured-product {
     display: flex;
     padding: 10px 20px;
     align-items: center;
-    float: none;  
+    float: none;
     position: relative;
+    overflow: visible;
+
     #doro-logo {
       max-width: 100px;
       margin-right: 3rem;
@@ -620,13 +622,29 @@ section.featured-product {
     }
 
     #doro-main-menu {
-      ul {
+      >ul {
         display: flex;
         flex-wrap: wrap;
 
-        li {
+        >li {
           a {
             border-bottom: none !important;
+          }
+
+          &.menu-item-has-children {
+            .sub-menu {
+              position: absolute;
+              background-color: var(--adc-color-1);
+
+              li {
+                padding: 10px;
+                width: 100%;
+              }
+            }
+
+            a {
+              padding-right: 30px;
+            }
           }
 
           &:not(:last-child) {

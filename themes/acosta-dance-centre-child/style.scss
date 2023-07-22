@@ -649,8 +649,10 @@ section.featured-product {
             }
 
             &.open {
-              a {
-                font-size: 20px;
+              >li {
+                >a {
+                  font-size: 20px;
+                }
               }
             }
           }

@@ -637,8 +637,10 @@ section.featured-product {
               background-color: var(--adc-color-1);
 
               li {
-                padding: 10px;
-                width: 100%;
+                a {
+                  padding: 10px;
+                  width: 100%;
+                }
               }
             }
 

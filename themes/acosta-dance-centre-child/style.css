@@ -404,7 +404,7 @@ section.featured-product {
       #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu {
         position: absolute;
         background-color: var(--adc-color-1); }
-        #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu li {
+        #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu li a {
           padding: 10px;
           width: 100%; }
       #doro-aside #doro-main-menu > ul > li.menu-item-has-children a {

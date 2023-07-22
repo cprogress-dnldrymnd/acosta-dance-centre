@@ -610,16 +610,23 @@ section.featured-product {
     bottom: auto;
     display: flex;
     padding: 20px;
+    align-items: center;
 
     #doro-logo {
       max-width: 100px;
       margin-right: 1rem;
+      margin-bottom: 0;
     }
 
     #doro-main-menu {
       ul {
         display: flex;
         flex-wrap: wrap;
+        li {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
       }
     }
   }

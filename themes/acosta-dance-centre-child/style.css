@@ -391,12 +391,16 @@ section.featured-product {
     width: 100%;
     bottom: auto;
     display: flex;
-    padding: 20px; }
+    padding: 20px;
+    align-items: center; }
     #doro-aside #doro-logo {
       max-width: 100px;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      margin-bottom: 0; }
     #doro-aside #doro-main-menu ul {
       display: flex;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap; }
+      #doro-aside #doro-main-menu ul li:not(:last-child) {
+        margin-right: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

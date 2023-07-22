@@ -647,6 +647,10 @@ section.featured-product {
             a {
               padding-right: 30px;
             }
+
+            &.open {
+              font-size: 20px;
+            }
           }
 
           &:not(:last-child) {

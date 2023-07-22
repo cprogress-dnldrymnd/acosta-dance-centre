@@ -383,17 +383,14 @@ section.featured-product {
     object-fit: cover; }
 
 @media (min-width: 769px) {
-  .admin-bar #doro-aside {
-    top: 32px; } }
-
-@media (min-width: 769px) {
   #doro-aside {
     width: 100%;
     bottom: auto;
     display: flex;
     padding: 20px;
     align-items: center;
-    float: none; }
+    float: none;
+    position: relative; }
     #doro-aside #doro-logo {
       max-width: 100px;
       margin-right: 1rem;
@@ -407,7 +404,6 @@ section.featured-product {
         margin-right: 1rem; }
 
   #doro-main {
-    padding-top: 137px;
     width: 100%;
     float: none; } }
 

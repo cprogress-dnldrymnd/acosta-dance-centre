@@ -382,4 +382,16 @@ section.featured-product {
     height: 100%;
     object-fit: cover; }
 
+@media (min-width: 769px) {
+  #doro-aside {
+    width: 100%;
+    bottom: auto;
+    display: flex; }
+    #doro-aside #doro-logo {
+      max-width: 100px;
+      margin-right: 1rem; }
+    #doro-aside #doro-main-menu ul {
+      display: flex;
+      flex-wrap: wrap; } }
+
 /*# sourceMappingURL=style.css.map */

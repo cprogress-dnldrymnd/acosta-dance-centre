@@ -583,6 +583,7 @@ section.featured-product {
     .elementor-widget-container {
       position: relative;
       padding: 60% 0;
+
       img {
         position: absolute;
         left: 0;
@@ -590,6 +591,24 @@ section.featured-product {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  #doro-aside {
+    width: 100%;
+    bottom: auto;
+    display: flex;
+    #doro-logo {
+      max-width: 100px;
+      margin-right: 1rem;
+    }
+    #doro-main-menu {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
       }
     }
   }

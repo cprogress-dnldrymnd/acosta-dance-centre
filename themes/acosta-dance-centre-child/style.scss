@@ -623,6 +623,9 @@ section.featured-product {
         display: flex;
         flex-wrap: wrap;
         li {
+          a {
+            border-bottom: none !important;
+          }
           &:not(:last-child) {
             margin-right: 1rem;
           }

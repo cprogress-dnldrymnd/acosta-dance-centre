@@ -400,6 +400,8 @@ section.featured-product {
     #doro-aside #doro-main-menu ul {
       display: flex;
       flex-wrap: wrap; }
+      #doro-aside #doro-main-menu ul li a {
+        border-bottom: none !important; }
       #doro-aside #doro-main-menu ul li:not(:last-child) {
         margin-right: 1rem; } }
 

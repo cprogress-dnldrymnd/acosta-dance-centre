@@ -596,15 +596,26 @@ section.featured-product {
   }
 }
 
+.admin-bar {
+  @media (min-width: 769px) {
+    #doro-aside {
+      top: 32px;
+    }
+  }
+}
+
 @media (min-width: 769px) {
   #doro-aside {
     width: 100%;
     bottom: auto;
     display: flex;
+    padding: 20px;
+
     #doro-logo {
       max-width: 100px;
       margin-right: 1rem;
     }
+
     #doro-main-menu {
       ul {
         display: flex;

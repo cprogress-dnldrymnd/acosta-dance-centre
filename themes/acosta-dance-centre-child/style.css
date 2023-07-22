@@ -383,10 +383,15 @@ section.featured-product {
     object-fit: cover; }
 
 @media (min-width: 769px) {
+  .admin-bar #doro-aside {
+    top: 32px; } }
+
+@media (min-width: 769px) {
   #doro-aside {
     width: 100%;
     bottom: auto;
-    display: flex; }
+    display: flex;
+    padding: 20px; }
     #doro-aside #doro-logo {
       max-width: 100px;
       margin-right: 1rem; }

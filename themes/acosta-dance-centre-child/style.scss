@@ -611,6 +611,7 @@ section.featured-product {
     display: flex;
     padding: 20px;
     align-items: center;
+    float: none;
 
     #doro-logo {
       max-width: 100px;
@@ -622,15 +623,23 @@ section.featured-product {
       ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
           a {
             border-bottom: none !important;
           }
+
           &:not(:last-child) {
             margin-right: 1rem;
           }
         }
       }
     }
+  }
+
+  #doro-main {
+    padding-top: 137px;
+    width: 100%;
+    float: none;
   }
 }

@@ -330,7 +330,7 @@ function my_redirect_if_user_not_logged_in()
 
 	if (!is_user_logged_in() && is_front_page()) {
 
-		wp_redirect('https://acostadancecentre.co.uk/holding-page/ ');
+		wp_redirect('https://acostadancecentre.com/holding-page/');
 
 		exit;
 

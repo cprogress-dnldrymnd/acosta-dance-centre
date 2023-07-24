@@ -30,7 +30,7 @@ else {
             <div class="col-lg-2 text-center">
               <div class="meta-date">
                 <span class="day d-block"><?= $ticket_day ?></span>
-                <span class="month d-block"><?= $ticket_month ?></span>
+                <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
               </div>
             </div>
             <div class="col-lg-3">

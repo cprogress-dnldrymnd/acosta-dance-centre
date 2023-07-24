@@ -596,7 +596,9 @@ section.featured-product {
 #doro-main {
   width: calc(100% - 300px); }
 
-.woo-icons ul li:not(:last-child) {
-  margin-right: 1.5rem; }
+.woo-icons {
+  margin-top: 70px; }
+  .woo-icons ul li:not(:last-child) {
+    margin-right: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */

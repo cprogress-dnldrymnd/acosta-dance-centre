@@ -37,4 +37,4 @@ echo apply_filters(
 */
 ?>
 
-<a href="<?= get_permalink() ?>" class="button">BOOK</a>
+<a href="<?= get_permalink() ?>" class="button-book">BOOK</a>

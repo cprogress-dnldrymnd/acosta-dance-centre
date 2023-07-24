@@ -228,6 +228,15 @@ p {
 
   h3 {
     font-size: 60px;
+    margin-bottom: 0;
+
+    @media(max-width: 1499px) {
+      font-size: 50px;
+    }
+
+    @media(max-width: 1199px) {
+      font-size: 50px;
+    }
   }
 
   input[type="text"],

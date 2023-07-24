@@ -157,7 +157,14 @@ p {
 .wpcf7-form .row {
   align-items: flex-end; }
 .wpcf7-form h3 {
-  font-size: 60px; }
+  font-size: 60px;
+  margin-bottom: 0; }
+  @media (max-width: 1499px) {
+    .wpcf7-form h3 {
+      font-size: 50px; } }
+  @media (max-width: 1199px) {
+    .wpcf7-form h3 {
+      font-size: 50px; } }
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="email"] {
   border-bottom: 2px solid var(--black-color); }

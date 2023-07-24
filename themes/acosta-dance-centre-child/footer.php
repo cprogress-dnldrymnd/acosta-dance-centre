@@ -13,7 +13,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?= get_site_url() ?> ?s">
+        <form action="<?= get_site_url() ?>?s">
           <div class="row">
             <div class="col-lg-8">
               <input class="form-control form-control-lg" name="s" type="text" placeholder="Input text here...">

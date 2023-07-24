@@ -22,9 +22,17 @@ function action_woocommerce_before_shop_loop_item()
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
   $ticket_time = date('g:i a', $dateformat);
+  $ticket_day = date('d', $dateformat);
+  $ticket_day_week = date('D', $dateformat);
+  $ticket_month = date('M', $dateformat);
   echo ' <div class="image-holder">';
   ?>
   <div class="event-date">
+    <div class="meta-date">
+      <span class="month d-block"><?= $ticket_day_week ?></span>
+      <span class="day d-block"><?= $ticket_day ?></span>
+      <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
+    </div>
   </div>
   <?php
 }

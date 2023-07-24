@@ -22,13 +22,15 @@ else {
         $ticket_date_val = get_post_meta($class['id'], '_ticket_checkin_availability_from_date', true);
         $dateformat = strtotime($ticket_date_val);
         $ticket_time = date('g:i a', $dateformat);
+        $ticket_day = date('d', $dateformat);
+        $ticket_month = date('M', $dateformat);
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">
             <div class="col-lg-2 text-center">
               <div class="meta-date">
-                <span class="day d-block">25</span>
-                <span class="month d-block">JULY</span>
+                <span class="day d-block"><?= $ticket_day ?></span>
+                <span class="month d-block"><?= $ticket_month ?></span>
               </div>
             </div>
             <div class="col-lg-3">

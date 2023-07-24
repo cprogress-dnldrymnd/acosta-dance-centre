@@ -706,7 +706,15 @@ section.featured-product {
         color: #fff;
 
         .m-d {
-          padding: 15px;
+          padding: 15px 15px 5px 15px;
+        }
+
+        .time-holder {
+          border-top: 1px solid;
+          padding-top: 5px;
+          margin-left: 7px;
+          margin-right: 7px;
+          padding-bottom: 10px;
         }
 
         span.day {

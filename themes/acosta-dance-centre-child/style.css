@@ -444,7 +444,13 @@ section.featured-product {
   font-family: 'Oswald', sans-serif;
   color: #fff; }
   .woocommerce ul.products li.product .meta-date .m-d {
-    padding: 15px; }
+    padding: 15px 15px 5px 15px; }
+  .woocommerce ul.products li.product .meta-date .time-holder {
+    border-top: 1px solid;
+    padding-top: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-bottom: 10px; }
   .woocommerce ul.products li.product .meta-date span.day {
     font-size: 43px; }
   .woocommerce ul.products li.product .meta-date span.month {

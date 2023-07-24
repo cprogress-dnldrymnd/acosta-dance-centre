@@ -614,4 +614,8 @@ section.featured-product {
 #searchModal .btn {
   letter-spacing: 1px; }
 
+.woocommerce div.product {
+  display: flex;
+  flex-wrap: wrap; }
+
 /*# sourceMappingURL=style.css.map */

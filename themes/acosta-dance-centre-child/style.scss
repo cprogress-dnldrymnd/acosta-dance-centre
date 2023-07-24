@@ -890,3 +890,10 @@ section.featured-product {
     letter-spacing: 1px;
   }
 }
+
+.woocommerce {
+  div.product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

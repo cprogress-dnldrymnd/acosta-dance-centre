@@ -150,6 +150,9 @@ p {
     font-weight: 400;
     font-family: 'Oswald', sans-serif; }
 
+.newsletter-box {
+  padding-bottom: 80px; }
+
 @media (min-width: 992px) {
   .newsletter .row {
     flex-wrap: nowrap; } }

@@ -28,7 +28,7 @@ function action_woocommerce_before_shop_loop_item_title()
   <?php
 }
 
-add_action('woocommerce_before_shop_loop_item_title', 'action_woocommerce_before_shop_loop_item_title');
+add_action('woocommerce_before_shop_loop_item', 'action_woocommerce_before_shop_loop_item_title');
 
 function action_woocommerce_after_shop_loop_item_title()
 {

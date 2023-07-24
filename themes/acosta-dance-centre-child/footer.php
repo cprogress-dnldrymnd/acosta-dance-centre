@@ -13,11 +13,16 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form action="">
+          <div class="row">
+            <div class="col-lg-7">
+              <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            </div>
+            <div class="col-lg-5">
+               <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

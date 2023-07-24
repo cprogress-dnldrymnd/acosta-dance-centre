@@ -435,48 +435,59 @@ section.featured-product {
   #doro-main {
     width: 100%;
     float: none; } }
-.woocommerce ul.products li.product .meta-date {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #000;
-  font-family: 'Oswald', sans-serif;
-  color: #fff; }
-  .woocommerce ul.products li.product .meta-date .m-d {
-    padding: 15px 15px 5px 15px; }
-  .woocommerce ul.products li.product .meta-date .time-holder {
-    border-top: 1px solid;
-    padding-top: 5px;
-    margin-left: 7px;
-    margin-right: 7px;
-    padding-bottom: 10px; }
-  .woocommerce ul.products li.product .meta-date span.day {
-    font-size: 43px; }
-  .woocommerce ul.products li.product .meta-date span.month {
-    letter-spacing: 5px;
-    font-size: 15px; }
-.woocommerce ul.products li.product h3 {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-top: 10px; }
-.woocommerce ul.products li.product .image-holder {
-  padding: 65% 0;
-  position: relative; }
-  .woocommerce ul.products li.product .image-holder img {
+.woocommerce ul.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .woocommerce ul.products.columns-4 li.product {
+    margin-right: 0;
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .woocommerce ul.products li.product .meta-date {
     position: absolute;
+    bottom: 0;
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 0; }
-.woocommerce ul.products li.product .button-book {
-  font-size: 15px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  letter-spacing: 5px;
-  text-decoration: underline; }
+    z-index: 1;
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    color: #fff; }
+    .woocommerce ul.products li.product .meta-date .m-d {
+      padding: 15px 15px 5px 15px; }
+    .woocommerce ul.products li.product .meta-date .time-holder {
+      border-top: 1px solid;
+      padding-top: 5px;
+      margin-left: 7px;
+      margin-right: 7px;
+      padding-bottom: 10px; }
+    .woocommerce ul.products li.product .meta-date span.day {
+      font-size: 43px; }
+    .woocommerce ul.products li.product .meta-date span.month {
+      letter-spacing: 5px;
+      font-size: 15px; }
+  .woocommerce ul.products li.product h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px; }
+  .woocommerce ul.products li.product .image-holder {
+    padding: 65% 0;
+    position: relative; }
+    .woocommerce ul.products li.product .image-holder img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 0; }
+  .woocommerce ul.products li.product .button-book {
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

@@ -695,6 +695,21 @@ section.featured-product {
 
 .woocommerce {
   ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &.columns-4 {
+      li.product {
+        margin-right: 0;
+        max-width: 25%;
+        flex: 0 0 25%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+
     li.product {
       .meta-date {
         position: absolute;

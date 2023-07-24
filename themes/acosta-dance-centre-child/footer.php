@@ -19,7 +19,7 @@
               <input class="form-control form-control-lg" name="s" type="text" placeholder="Input text here...">
             </div>
             <div class="col-lg-5">
-               <button type="submit" class="btn btn-primary mb-2">Search</button>
+               <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
             </div>
           </div>
         </form>

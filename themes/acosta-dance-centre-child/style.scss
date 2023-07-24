@@ -862,6 +862,7 @@ section.featured-product {
 
 .woo-icons {
   margin-top: 70px;
+
   ul {
     li {
       button {
@@ -870,9 +871,22 @@ section.featured-product {
         padding: 0;
         background-color: transparent;
       }
+
       &:not(:last-child) {
         margin-right: 1.5rem;
       }
     }
+  }
+}
+
+#searchModal {
+  .close {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+  }
+  .btn {
+    letter-spacing: 1px;
   }
 }

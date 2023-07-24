@@ -606,4 +606,12 @@ section.featured-product {
   .woo-icons ul li:not(:last-child) {
     margin-right: 1.5rem; }
 
+#searchModal .close {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 40px; }
+#searchModal .btn {
+  letter-spacing: 1px; }
+
 /*# sourceMappingURL=style.css.map */

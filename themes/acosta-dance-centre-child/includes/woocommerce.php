@@ -20,6 +20,8 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 function action_woocommerce_before_shop_loop_item_title()
 {
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+  $dateformat = strtotime($ticket_date_val);
+  $ticket_time = date('g:i a', $dateformat);
   ?>
   <div class="event-date">
   </div>

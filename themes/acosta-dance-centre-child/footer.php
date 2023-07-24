@@ -29,7 +29,7 @@
 </div>
 
 <div class="newsletter-box">
-  <?= do_shortcode('[contact-form-7 id="832" title="Newsletter"]') ?>
+  <?= do_shortcode('[contact-form-7 id="832" title="Newsletter Form"]') ?>
 </div>
 <?php if (Doro_AfterSetupTheme::return_thme_option('footer-section') != 'no') { ?>
   <div id="doro-footer2">

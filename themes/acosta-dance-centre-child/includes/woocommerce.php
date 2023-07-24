@@ -6,6 +6,13 @@ function woocommerce_add_to_cart_button_text_archives()
   return __('BOOK', 'woocommerce');
 }
 
+// Change add to cart text on product archives page
+add_filter('woocommerce_product_add_to_cart_link', 'woocommerce_add_to_cart_button_text_archives');
+function woocommerce_add_to_cart_button_link_archives()
+{
+  return __(get_the_permalink(), 'woocommerce');
+}
+
 /**
  * @snippet       WooCommerce Hide Prices on the Shop Page
  * @how-to        Get CustomizeWoo.com FREE

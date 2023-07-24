@@ -35,13 +35,13 @@
   <div class="woo-icons">
     <ul class="list-inline d-flex justify-content-center align-items-center p-0">
       <li>
-        <a href="#searchModal" data-toggle="modal" data-target="#searchModal">
+        <button data-toggle="modal" data-target="#searchModal">
           <svg xmlns="http://www.w3.org/2000/svg" width="27.472" height="27.479" viewBox="0 0 27.472 27.479">
             <path id="Icon_ionic-ios-search" data-name="Icon ionic-ios-search"
               d="M31.65,29.983l-7.641-7.712a10.889,10.889,0,1,0-1.653,1.674l7.591,7.662a1.176,1.176,0,0,0,1.66.043A1.184,1.184,0,0,0,31.65,29.983Zm-16.2-5.945a8.6,8.6,0,1,1,6.081-2.518A8.545,8.545,0,0,1,15.453,24.038Z"
               transform="translate(-4.5 -4.493)" fill="#0f0f0f" />
           </svg>
-        </a>
+        </button>
       </li>
       <li>
         <a href="<?= get_permalink(wc_get_page_id('myaccount')) ?>">

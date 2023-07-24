@@ -598,6 +598,10 @@ section.featured-product {
 
 .woo-icons {
   margin-top: 70px; }
+  .woo-icons ul li button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent; }
   .woo-icons ul li:not(:last-child) {
     margin-right: 1.5rem; }
 

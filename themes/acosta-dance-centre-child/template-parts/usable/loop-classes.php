@@ -20,7 +20,7 @@ else {
       <?php foreach ($classes as $class) { ?>
         <?php
         $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-        $ticket_time = date('g:i a', $dateformat);
+        $ticket_time = date('g:i a', $ticket_date_val);
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">

@@ -57,6 +57,7 @@ add_action('woocommerce_after_shop_loop_item_title', 'action_woocommerce_after_s
 
 remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
 
+/*
 add_action('woocommerce_new_product', 'mp_sync_on_product_save', 10, 1);
 add_action('woocommerce_update_product', 'mp_sync_on_product_save', 10, 1);
 function mp_sync_on_product_save($product_id)
@@ -68,4 +69,4 @@ function mp_sync_on_product_save($product_id)
 
 
   update_post_meta($product_id, '_product_attributes', $product_attr);
-}
+}*/

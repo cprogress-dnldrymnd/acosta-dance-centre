@@ -23,3 +23,11 @@ function action_woocommerce_before_shop_loop_item_title()
 }
 
 add_action('woocommerce_before_shop_loop_item_title', 'action_woocommerce_before_shop_loop_item_title');
+
+function action_woocommerce_shop_loop_item_title()
+{
+  echo 'xxx';
+}
+
+add_action('woocommerce_shop_loop_item_title', 'action_woocommerce_shop_loop_item_title');
+

@@ -18,7 +18,7 @@
             <div class="col-lg-8">
               <input class="form-control form-control-lg" name="s" type="text" placeholder="Input text here...">
             </div>
-            <div class="col-lg-4 text-end">
+            <div class="col-lg-4 text-right">
                <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
             </div>
           </div>

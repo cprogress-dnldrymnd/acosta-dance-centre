@@ -673,6 +673,7 @@ section.featured-product {
     }
   }
 }
+
 /*
 .admin-bar {
   @media (min-width: 769px) {
@@ -849,4 +850,12 @@ section.featured-product {
       }
     }
   }
+}
+
+#doro-aside {
+  width: 250px;
+}
+
+#doro-main {
+  width: calc(100% - 300px);
 }

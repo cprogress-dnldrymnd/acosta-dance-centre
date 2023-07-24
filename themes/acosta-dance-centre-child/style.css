@@ -590,4 +590,10 @@ section.featured-product {
     letter-spacing: 5px;
     text-decoration: underline; }
 
+#doro-aside {
+  width: 250px; }
+
+#doro-main {
+  width: calc(100% - 300px); }
+
 /*# sourceMappingURL=style.css.map */

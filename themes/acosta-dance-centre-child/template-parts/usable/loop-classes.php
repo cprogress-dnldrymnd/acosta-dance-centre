@@ -19,7 +19,7 @@ else {
     <div class="product-box-style-1">
       <?php foreach ($classes as $class) { ?>
         <?php
-        $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+        $ticket_date_val = get_post_meta($class['id'], '_ticket_checkin_availability_from_date', true);
         $dateformat = strtotime($ticket_date_val);
         $ticket_time = date('g:i a', $dateformat);
         ?>

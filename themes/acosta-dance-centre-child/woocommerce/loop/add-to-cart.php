@@ -15,12 +15,12 @@
  * @version     3.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
 global $product;
-
+/*
 echo apply_filters(
 	'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
 	sprintf(
@@ -34,3 +34,8 @@ echo apply_filters(
 	$product,
 	$args
 );
+*/
+?>
+
+<a href="<?= get_permalink() ?>" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+	data-product_id="909" rel="nofollow">BOOK</a>

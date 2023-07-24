@@ -699,10 +699,13 @@ section.featured-product {
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 500;
+        padding-top: 10px;
       }
+
       .image-holder {
         padding: 65% 0;
         position: relative;
+
         img {
           position: absolute;
           left: 0;
@@ -710,7 +713,16 @@ section.featured-product {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          margin-bottom: 0;
         }
+      }
+
+      .button-book {
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-decoration: underline;
       }
     }
   }

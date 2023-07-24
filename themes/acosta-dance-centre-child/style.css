@@ -437,7 +437,8 @@ section.featured-product {
 .woocommerce ul.products li.product h3 {
   font-size: 30px;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-top: 10px; }
 .woocommerce ul.products li.product .image-holder {
   padding: 65% 0;
   position: relative; }
@@ -447,6 +448,13 @@ section.featured-product {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    margin-bottom: 0; }
+.woocommerce ul.products li.product .button-book {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

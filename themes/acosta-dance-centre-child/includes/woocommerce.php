@@ -56,3 +56,17 @@ add_action('woocommerce_after_shop_loop_item_title', 'action_woocommerce_after_s
 
 
 remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+
+add_action('woocommerce_new_product', 'mp_sync_on_product_save', 10, 1);
+add_action('woocommerce_update_product', 'mp_sync_on_product_save', 10, 1);
+function mp_sync_on_product_save($product_id)
+{
+
+  $product = wc_get_product($product_id);
+
+  $product_attr = get_post_meta(post_id, '_product_attributes', true); //get the whole product attributes first
+
+  $product_attr['pa_day-of-the-week']['value'] = 'Wednesday'; //your desired attribute value
+
+  update_post_meta(post_id, '_product_attributes', $product_attr);
+}

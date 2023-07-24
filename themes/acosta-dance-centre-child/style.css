@@ -292,7 +292,10 @@ body:not(.page-template-default) #doro-main #doro-inner {
       .tax-product_cat #doro-main #doro-inner #sidebar {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%; } }
+        max-width: 100%; }
+        .post-type-archive-product #doro-main #doro-inner #sidebar ul,
+        .tax-product_cat #doro-main #doro-inner #sidebar ul {
+          padding-left: 0; } }
 
 .heading-meta {
   font-size: 20px; }
@@ -327,12 +330,32 @@ section.featured-product {
 .md-padding {
   padding-top: 100px;
   padding-bottom: 100px; }
+  @media (max-width: 1199px) {
+    .md-padding {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media (max-width: 991px) {
+    .md-padding {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
 
 .md-padding-top {
   padding-top: 100px; }
+  @media (max-width: 1199px) {
+    .md-padding-top {
+      padding-top: 80px; } }
+  @media (max-width: 991px) {
+    .md-padding-top {
+      padding-top: 60px; } }
 
 .md-padding-bottom {
   padding-bottom: 100px; }
+  @media (max-width: 1199px) {
+    .md-padding-bottom {
+      padding-bottom: 80px; } }
+  @media (max-width: 991px) {
+    .md-padding-bottom {
+      padding-bottom: 60px; } }
 
 .meta-date {
   font-family: 'Oswald', sans-serif;

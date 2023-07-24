@@ -64,9 +64,9 @@ function mp_sync_on_product_save($product_id)
 
   $product = wc_get_product($product_id);
 
-  $product_attr = get_post_meta(post_id, '_product_attributes', true); //get the whole product attributes first
+  $product_attr = get_post_meta($product_id, '_product_attributes', true); //get the whole product attributes first
 
   $product_attr['pa_day-of-the-week']['value'] = 'Wednesday'; //your desired attribute value
 
-  update_post_meta(post_id, '_product_attributes', $product_attr);
+  update_post_meta($product_id, '_product_attributes', $product_attr);
 }

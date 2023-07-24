@@ -398,6 +398,12 @@ body {
         max-width: 75%;
         padding-right: 15px;
         padding-left: 15px;
+
+        @media(max-width: 991px) {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
 
       #sidebar {
@@ -406,6 +412,12 @@ body {
         max-width: 25%;
         padding-right: 15px;
         padding-left: 15px;
+
+        @media(max-width: 991px) {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
     }
   }
@@ -702,6 +714,7 @@ section.featured-product {
 
     &.columns-4 {
       li.product {
+        -ms-flex: 0 0 25%;
         margin-right: 0;
         max-width: 25%;
         flex: 0 0 25%;
@@ -709,11 +722,13 @@ section.featured-product {
         padding-left: 15px;
 
         @media(max-width: 1400px) {
+          -ms-flex: 0 0 33.3333333%;
           max-width: 33.3333333%;
           flex: 0 0 33.3333333%;
         }
 
         @media(max-width: 991px) {
+          -ms-flex: 0 0 50%;
           max-width: 50%;
           flex: 0 0 50%;
         }

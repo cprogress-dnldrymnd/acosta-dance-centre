@@ -313,20 +313,21 @@ section.featured-product {
 .md-padding-bottom {
   padding-bottom: 100px; }
 
+.meta-date {
+  font-family: 'Oswald', sans-serif;
+  color: #000; }
+  .meta-date span.day {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1; }
+  .meta-date span.month {
+    letter-spacing: 7.96px;
+    font-size: 22px; }
+
 .product-box-style-1 .product-box-item {
   padding-bottom: 35px;
   margin-bottom: 35px;
   border-bottom: 3px solid #000; }
-  .product-box-style-1 .product-box-item .meta-date {
-    font-family: 'Oswald', sans-serif;
-    color: #000; }
-    .product-box-style-1 .product-box-item .meta-date span.day {
-      font-size: 60px;
-      font-weight: 500;
-      line-height: 1; }
-    .product-box-style-1 .product-box-item .meta-date span.month {
-      letter-spacing: 7.96px;
-      font-size: 22px; }
   .product-box-style-1 .product-box-item .title-box h3 {
     font-size: 44px;
     line-height: 1; }
@@ -434,6 +435,13 @@ section.featured-product {
   #doro-main {
     width: 100%;
     float: none; } }
+.woocommerce ul.products li.product .event-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+  color: #fff; }
 .woocommerce ul.products li.product h3 {
   font-size: 30px;
   text-transform: uppercase;

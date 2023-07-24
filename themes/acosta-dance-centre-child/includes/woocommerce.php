@@ -32,7 +32,7 @@ function action_woocommerce_before_shop_loop_item()
       <span class="month d-block"><?= $ticket_day_week ?></span>
       <span class="day d-block"><?= $ticket_day ?></span>
       <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
-      <span class="time d-block"><?= $ticket_time ?></span>    </div>
+      <span class="time d-block text-uppercase"><?= $ticket_time ?></span>    </div>
   </div>
   <?php
 }

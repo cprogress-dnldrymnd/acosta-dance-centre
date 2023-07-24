@@ -443,6 +443,14 @@ section.featured-product {
     height: 100%;
     object-fit: cover; }
 
+/*
+.admin-bar {
+  @media (min-width: 769px) {
+    #doro-aside {
+      //top: 32px;
+    }
+  }
+}
 @media (min-width: 769px) {
   #doro-aside {
     width: 100%;
@@ -452,33 +460,64 @@ section.featured-product {
     align-items: center;
     float: none;
     position: relative;
-    overflow: visible; }
-    #doro-aside #doro-logo {
+    overflow: visible;
+
+    #doro-logo {
       max-width: 100px;
       margin-right: 3rem;
-      margin-bottom: 0; }
-    #doro-aside #doro-main-menu > ul {
-      display: flex;
-      flex-wrap: wrap; }
-      #doro-aside #doro-main-menu > ul > li a {
-        border-bottom: none !important; }
-      #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu {
-        position: absolute;
-        background-color: var(--adc-color-1);
-        width: 170px; }
-        #doro-aside #doro-main-menu > ul > li.menu-item-has-children .sub-menu li a {
-          padding: 10px;
-          width: 100%; }
-      #doro-aside #doro-main-menu > ul > li.menu-item-has-children a {
-        padding-right: 30px; }
-      #doro-aside #doro-main-menu > ul > li.menu-item-has-children.open > a {
-        font-size: 20px; }
-      #doro-aside #doro-main-menu > ul > li:not(:last-child) {
-        margin-right: 1rem; }
+      margin-bottom: 0;
+    }
+
+    #doro-main-menu {
+      >ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        >li {
+          a {
+            border-bottom: none !important;
+          }
+
+          &.menu-item-has-children {
+            .sub-menu {
+              position: absolute;
+              background-color: var(--adc-color-1);
+              width: 170px;
+
+              li {
+                a {
+                  padding: 10px;
+                  width: 100%;
+                }
+              }
+            }
+
+            a {
+              padding-right: 30px;
+            }
+
+            &.open {
+              >a {
+                font-size: 20px;
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
 
   #doro-main {
+    //padding-top: 137px;
     width: 100%;
-    float: none; } }
+    float: none;
+  }
+}
+*/
 .woocommerce ul.products {
   display: flex;
   flex-wrap: wrap;

@@ -435,20 +435,21 @@ section.featured-product {
   #doro-main {
     width: 100%;
     float: none; } }
-.woocommerce ul.products li.product .event-date {
+.woocommerce ul.products li.product .meta-date {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: #000; }
-  .woocommerce ul.products li.product .event-date .meta-date {
-    font-family: 'Oswald', sans-serif;
-    color: #fff; }
-    .woocommerce ul.products li.product .event-date .meta-date span.day {
-      font-size: 43px; }
-    .woocommerce ul.products li.product .event-date .meta-date span.month {
-      letter-spacing: 5px;
-      font-size: 15px; }
+  background-color: #000;
+  font-family: 'Oswald', sans-serif;
+  color: #fff; }
+  .woocommerce ul.products li.product .meta-date .m-d {
+    padding: 15px; }
+  .woocommerce ul.products li.product .meta-date span.day {
+    font-size: 43px; }
+  .woocommerce ul.products li.product .meta-date span.month {
+    letter-spacing: 5px;
+    font-size: 15px; }
 .woocommerce ul.products li.product h3 {
   font-size: 30px;
   text-transform: uppercase;

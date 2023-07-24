@@ -27,12 +27,13 @@ function action_woocommerce_before_shop_loop_item()
   $ticket_month = date('M', $dateformat);
   echo ' <div class="image-holder">';
   ?>
-  <div class="event-date">
-    <div class="meta-date">
+  <div class="meta-date">
+    <div class="m-d text-uppercase">
       <span class="month d-block"><?= $ticket_day_week ?></span>
       <span class="day d-block"><?= $ticket_day ?></span>
       <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
-      <span class="time d-block text-uppercase"><?= $ticket_time ?></span>    </div>
+    </div>
+    <span class="time d-block text-uppercase"><?= $ticket_time ?></span>
   </div>
   <?php
 }

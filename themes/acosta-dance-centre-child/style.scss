@@ -696,26 +696,27 @@ section.featured-product {
 .woocommerce {
   ul.products {
     li.product {
-      .event-date {
+      .meta-date {
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 1;
         background-color: #000;
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
 
-        .meta-date {
-          font-family: 'Oswald', sans-serif;
-          color: #fff;
+        .m-d {
+          padding: 15px;
+        }
 
-          span.day {
-            font-size: 43px;
+        span.day {
+          font-size: 43px;
 
-          }
+        }
 
-          span.month {
-            letter-spacing: 5px;
-            font-size: 15px;
-          }
+        span.month {
+          letter-spacing: 5px;
+          font-size: 15px;
         }
       }
 

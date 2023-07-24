@@ -31,7 +31,7 @@ Text Domain: acosta-dance-centre-child
   }
 
   @media(max-width: 575px) {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -366,9 +366,20 @@ p {
 }
 
 .big-title {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 500;
   line-height: 1;
+
+  @media(max-width: 1199px) {
+    font-size: 70px;
+  }
+
+  @media(max-width: 991px) {
+    font-size: 60px;
+  }
+  @media(max-width: 767px) {
+    font-size: 50px;
+  }
 }
 
 body {

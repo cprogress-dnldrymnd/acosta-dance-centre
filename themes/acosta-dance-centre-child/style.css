@@ -28,7 +28,7 @@ Text Domain: acosta-dance-centre-child
       font-size: 50px; } }
   @media (max-width: 575px) {
     .doro-heading {
-      font-size: 40px; } }
+      font-size: 35px; } }
 
 p {
   color: var(--black-color);
@@ -243,9 +243,18 @@ p {
   font-family: 'Oswald', sans-serif !important; }
 
 .big-title {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 500;
   line-height: 1; }
+  @media (max-width: 1199px) {
+    .big-title {
+      font-size: 70px; } }
+  @media (max-width: 991px) {
+    .big-title {
+      font-size: 60px; } }
+  @media (max-width: 767px) {
+    .big-title {
+      font-size: 50px; } }
 
 body:not(.page-template-default) #doro-main #doro-inner {
   padding: 40px 60px; }

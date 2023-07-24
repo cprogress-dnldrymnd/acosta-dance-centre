@@ -478,6 +478,11 @@ section.featured-product {
         -ms-flex: 0 0 50%;
         max-width: 50%;
         flex: 0 0 50%; } }
+    @media (max-width: 575px) {
+      .woocommerce ul.products.columns-4 li.product {
+        -ms-flex: 0 0 100%;
+        max-width: 100%;
+        flex: 0 0 100%; } }
   .woocommerce ul.products li.product .meta-date {
     position: absolute;
     bottom: 0;

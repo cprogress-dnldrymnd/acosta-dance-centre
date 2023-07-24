@@ -164,7 +164,7 @@ p {
       font-size: 50px; } }
   @media (max-width: 1199px) {
     .wpcf7-form h3 {
-      font-size: 50px; } }
+      font-size: 40px; } }
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="email"] {
   border-bottom: 2px solid var(--black-color); }

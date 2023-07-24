@@ -374,6 +374,12 @@ section.featured-product {
 .elementor-same-height-image .elementor-widget-image .elementor-widget-container {
   position: relative;
   padding: 60% 0; }
+  .elementor-same-height-image .elementor-widget-image .elementor-widget-container a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
   .elementor-same-height-image .elementor-widget-image .elementor-widget-container img {
     position: absolute;
     left: 0;

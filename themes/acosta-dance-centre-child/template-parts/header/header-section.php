@@ -44,7 +44,7 @@
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="<?= get_permalink(wc_get_page_id('myaccount')) ?>">
           <svg xmlns="http://www.w3.org/2000/svg" width="26.419" height="29.472" viewBox="0 0 26.419 29.472">
             <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(1 1)">
               <path id="Path_2" data-name="Path 2"

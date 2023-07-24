@@ -446,6 +446,10 @@ section.featured-product {
     flex: 0 0 25%;
     padding-right: 15px;
     padding-left: 15px; }
+    @media (max-width: 1400px) {
+      .woocommerce ul.products.columns-4 li.product {
+        max-width: 33.3333333%;
+        flex: 0 0 33.3333333%; } }
   .woocommerce ul.products li.product .meta-date {
     position: absolute;
     bottom: 0;
@@ -474,7 +478,8 @@ section.featured-product {
     padding-top: 10px; }
   .woocommerce ul.products li.product .image-holder {
     padding: 65% 0;
-    position: relative; }
+    position: relative;
+    min-height: 350px; }
     .woocommerce ul.products li.product .image-holder img {
       position: absolute;
       left: 0;

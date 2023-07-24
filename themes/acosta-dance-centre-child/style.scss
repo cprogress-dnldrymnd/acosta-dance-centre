@@ -707,6 +707,11 @@ section.featured-product {
         flex: 0 0 25%;
         padding-right: 15px;
         padding-left: 15px;
+
+        @media(max-width: 1400px) {
+          max-width: 33.3333333%;
+          flex: 0 0 33.3333333%;
+        }
       }
     }
 
@@ -753,6 +758,7 @@ section.featured-product {
       .image-holder {
         padding: 65% 0;
         position: relative;
+        min-height: 350px;
 
         img {
           position: absolute;

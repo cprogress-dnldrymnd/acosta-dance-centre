@@ -1,6 +1,9 @@
 <?php $doro_options = get_option('doro'); ?>
 <!-- Footer -->
 </div>
+<div class="newsletter-box">
+  <?= do_shortcode('[contact-form-7 id="832" title="Newsletter"]') ?>
+</div>
 <?php if (Doro_AfterSetupTheme::return_thme_option('footer-section') != 'no') { ?>
   <div id="doro-footer2">
     <div class="container">

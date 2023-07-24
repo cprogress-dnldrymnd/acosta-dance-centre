@@ -37,5 +37,5 @@ echo apply_filters(
 */
 ?>
 
-<a href="<?= get_permalink() ?>" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+<a href="<?= get_permalink() ?>" class="button"
 	data-product_id="909" rel="nofollow">BOOK</a>

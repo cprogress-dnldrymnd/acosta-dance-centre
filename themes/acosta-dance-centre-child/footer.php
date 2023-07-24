@@ -15,10 +15,10 @@
       <div class="modal-body">
         <form action="/s?">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <input class="form-control form-control-lg" name="s" type="text" placeholder="Input text here...">
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-4 text-end">
                <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
             </div>
           </div>

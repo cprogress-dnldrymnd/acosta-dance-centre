@@ -37,5 +37,4 @@ echo apply_filters(
 */
 ?>
 
-<a href="<?= get_permalink() ?>" class="button"
-	data-product_id="909" rel="nofollow">BOOK</a>
+<a href="<?= get_permalink() ?>" class="button">BOOK</a>

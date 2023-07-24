@@ -33,7 +33,7 @@
   <!-- Woocommerce -->
 
   <div class="woo-icons">
-    <ul class="list-inline d-flex p-0">
+    <ul class="list-inline d-flex justify-content-center align-items-center p-0">
       <li>
         <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="27.472" height="27.479" viewBox="0 0 27.472 27.479">

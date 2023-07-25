@@ -298,3 +298,9 @@ function woocommerce_add_to_cart_button_text_single()
 {
   return __('BOOK NOW', 'woocommerce');
 }
+
+function default_no_quantities( $individually, $product ){
+$individually = true;
+return $individually;
+}
+add_filter( 'woocommerce_is_sold_individually', 'default_no_quantities', 10, 2 )

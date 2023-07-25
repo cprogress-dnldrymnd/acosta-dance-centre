@@ -807,4 +807,7 @@ section.featured-product {
 .single_add_to_cart_button {
   cursor: pointer; }
 
+.pswp__bg.pswp__bg {
+  background: rgba(0, 0, 0, 0.7); }
+
 /*# sourceMappingURL=style.css.map */

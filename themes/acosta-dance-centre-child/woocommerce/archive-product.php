@@ -67,7 +67,7 @@ if ($is_classes) {
 }
 $name = get_queried_object()->name;
 
-if ($name != 'memberships') {
+if ($slug != 'Memberships') {
 	?>
 
 	<section class="product-loop md-padding">

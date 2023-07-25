@@ -854,6 +854,8 @@ section.featured-product {
           font-size: inherit;
           letter-spacing: inherit;
           margin: 0; }
+      .details-box table tr:last-child td {
+        border-bottom: none; }
   .details-box .button-box {
     position: absolute;
     left: 20px;

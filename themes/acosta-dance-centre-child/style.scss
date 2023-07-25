@@ -585,6 +585,10 @@ section.featured-product {
       h3 {
         font-size: 44px;
         line-height: 1;
+
+        @media (max-width: 575px) {
+          font-size: 35px;
+        }
       }
 
       .time {

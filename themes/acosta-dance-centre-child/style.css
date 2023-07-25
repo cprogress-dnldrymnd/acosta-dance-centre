@@ -403,6 +403,9 @@ section.featured-product {
   .product-box-style-1 .product-box-item .title-box h3 {
     font-size: 44px;
     line-height: 1; }
+    @media (max-width: 575px) {
+      .product-box-style-1 .product-box-item .title-box h3 {
+        font-size: 35px; } }
   .product-box-style-1 .product-box-item .title-box .time {
     color: #6D6D6D; }
   .product-box-style-1 .product-box-item .title-box .type {

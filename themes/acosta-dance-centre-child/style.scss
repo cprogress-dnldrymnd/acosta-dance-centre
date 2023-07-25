@@ -1399,5 +1399,10 @@ table.shop_table.shop_table {
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 0;
+    &:hover {
+      background-color: var(--adc-color-2);
+      color: #000
+    }
   }
 }

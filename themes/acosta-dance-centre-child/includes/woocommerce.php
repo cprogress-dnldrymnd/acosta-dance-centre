@@ -312,8 +312,8 @@ function action_single_product_after_image()
             <?php
             $product = wc_get_product($variation);
             ?>
-            <div class="button-box <?= $key == 0 ? 'button-black' : 'button-bordered' ?>">
-              <a href="?add-to-cart=<?= $variation ?>">
+            <div class="button-box <?= $variation == 'Montly' ? 'button-black' : 'button-bordered' ?>">
+              <a href="?add-to-cart=<?= $key ?>">
                 JOIN NOW
               </a>
             </div>

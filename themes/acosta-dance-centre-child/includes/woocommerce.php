@@ -158,7 +158,7 @@ function action_woocommerce_after_single_product()
       <?php do_action('woocommerce_product_additional_information', $product); ?>
     </table>
 
-    <div class="button-box button-black">
+    <div class="button-box text-center button-black">
       <?php
       if ($_product_category == 'workshops') {
         echo '<div class="button-box button-black">';
@@ -263,7 +263,7 @@ function action_single_product_after_image()
       ?>
 
       <?php if ($_product_category != 'other') { ?>
-        <div class="button-box text-center button-bordered" id="join-now">
+        <div class="button-box  button-bordered" id="join-now">
           <a href="/memberships">
             MEMBERSHIPS
           </a>

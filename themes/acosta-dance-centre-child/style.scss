@@ -1171,17 +1171,19 @@ section.featured-product {
   }
 
   ins {
-    display: block;
-    background-color: var(--adc-color-2);
-    display: inline-block;
-    background-color: var(--adc-color-2);
-    text-decoration: none;
-    padding: 5px;
-    color: #000;
+    &:not(.no-before-after) {
+      display: block;
+      background-color: var(--adc-color-2);
+      display: inline-block;
+      background-color: var(--adc-color-2);
+      text-decoration: none;
+      padding: 5px;
+      color: #000;
 
-    &:before {
-      content: 'OFFER PRICE: ';
+      &:before {
+        content: 'OFFER PRICE: ';
 
+      }
     }
   }
 
@@ -1206,7 +1208,7 @@ section.featured-product {
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
         font-weight: 400;
-        padding-bottom: 0;
+        padding-bottom: 10px;
       }
 
       td {

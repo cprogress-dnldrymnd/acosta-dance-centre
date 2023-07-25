@@ -369,7 +369,8 @@ function action_admin_head()
 add_action('admin_head', 'action_admin_head');
 
 
-function single_get_date($id)
+
+function single_get_date($id, $type = 'date')
 {
 	$ticket_date_val = get_post_meta($id, '_ticket_checkin_availability_from_date', true);
 	$ticket_date_val_end = get_post_meta($id, '_ticket_checkin_availability_to_date', true);
@@ -381,12 +382,20 @@ function single_get_date($id)
 	if ($ticket_date_val_end) {
 		$ticket_date_to = date('d M', strtotime($ticket_date_val_end));
 		$ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
-		return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+		if ($type == 'date') {
+			return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+		}
+		else {
+			return $ticket_time_from . ' - ' . $ticket_time_to;
+		}
 	}
 	else {
-		return $ticket_date_from;
+		if ($type == 'date') {
+			return $ticket_date_from;
+		}
+		else {
+			return $ticket_time_from;
+		}
 	}
-
-
 
 }

@@ -287,7 +287,7 @@ body:not(.page-template-default) #doro-main #doro-inner {
   margin-left: -15px; }
   .post-type-archive-product #doro-main #doro-inner .woocommerce-products-header,
   .tax-product_cat #doro-main #doro-inner .woocommerce-products-header {
-    margin-bottom: 50px; }
+    margin-bottom: 130px; }
   .post-type-archive-product #doro-main #doro-inner #primary,
   .tax-product_cat #doro-main #doro-inner #primary {
     -ms-flex: 0 0 75%;

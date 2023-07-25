@@ -748,6 +748,8 @@ section.featured-product {
   color: #6D6D6D; }
 .woocommerce .classes .featured-product {
   background-color: var(--adc-color-1) !important; }
+.woocommerce div.product .flex-control-nav li {
+  width: 100px; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1;

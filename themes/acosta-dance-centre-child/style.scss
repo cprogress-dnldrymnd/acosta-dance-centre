@@ -1066,7 +1066,11 @@ section.featured-product {
   }
 
   div.product {
-
+    .flex-control-nav {
+      li {
+        width: 100px;
+      }
+    }
     section.product-summary.product-summary {
       .product_title {
         font-size: 80px;

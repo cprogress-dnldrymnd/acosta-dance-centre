@@ -229,7 +229,7 @@ function action_single_product_after_image()
       <?= wpautop(get_the_content()) ?>
     </div>
 
-    <div class="button-group-box">
+    <div class="button-group-box text-center">
       <div class="button-box button-bordered">
         <a href="/memberships">
           MEMBERSHIPS

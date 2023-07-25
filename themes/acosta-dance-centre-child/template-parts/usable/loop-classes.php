@@ -68,6 +68,7 @@ else {
         $ticket_month = date('M', $dateformat);
         $product = wc_get_product($class['id']);
         $pa_studio = $product->get_attribute('pa_studio');
+        echo $pa_studio;
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">

@@ -86,7 +86,8 @@ add_action('before_single_product_image', 'action_before_single_product_image');
 
 function action_woocommerce_before_single_product_summary()
 {
-  echo '<div class="product-summary d-flex">';
+  echo '<section class="product-summary">';
+  echo '<div class="row">';
 }
 
 
@@ -95,6 +96,7 @@ add_action('woocommerce_before_single_product_summary', 'action_woocommerce_befo
 function action_woocommerce_after_single_product_summary()
 {
   echo '</div>';
+  echo '</section>';
 }
 
 add_action('woocommerce_after_single_product_summary', 'action_woocommerce_after_single_product_summary');

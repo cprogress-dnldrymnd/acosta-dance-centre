@@ -14,9 +14,9 @@ else if ($args['type'] == 'related') {
   }
 
   $posts = array(
-    'post_type' => 'product',
+    'post_type'      => 'product',
     'posts_per_page' => 3,
-    'tax_query' => array(
+    'tax_query'      => array(
       array(
         'taxonomy' => 'product_cat',
         'field'    => 'term_id',
@@ -66,6 +66,9 @@ else {
         $ticket_time = date('g:i a', $dateformat);
         $ticket_day = date('d', $dateformat);
         $ticket_month = date('M', $dateformat);
+        $product = wc_get_product($class['id']);
+        $pa_studio = $product->get_attribute('pa_studio');
+        var_dump($pa_studio);
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">

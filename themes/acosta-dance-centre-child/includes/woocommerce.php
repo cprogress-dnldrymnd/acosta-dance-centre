@@ -132,10 +132,15 @@ function action_woocommerce_after_single_product()
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
   $ticket_date_val_end = get_post_meta($product->get_id(), '_ticket_checkin_availability_to_date', true);
 
-  echo $ticket_date_val_end;
-  $ticket_date_from = date('d M', strtotime($ticket_date_val));
-  $ticket_date_to = date('d M Y', strtotime($ticket_date_val_end));
-  $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
+  if ($ticket_date_val != $ticket_date_val_end) {
+    $ticket_date_from = date('d M', strtotime($ticket_date_val));
+    $ticket_date_to = date('d M Y', strtotime($ticket_date_val_end));
+    $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
+  } else {
+    $ticket_date = $ticket_date_from;
+  }
+
+
 
   $ticket_time_from = date('g:i a', strtotime($ticket_date_val));
   $ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));

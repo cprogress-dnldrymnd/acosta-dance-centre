@@ -295,31 +295,18 @@ function action_single_product_after_image()
       $variations = $product->get_available_variations();
       $variations_id = wp_list_pluck($variations, 'variation_id');
       ?>
-
-      <div class="memberships-holder md-padding-bottom">
-        <div class="row">
-          <?php foreach ($variations_id as $variation) { ?>
+      <div class="add-to-cart-box md-padding-bottom">
+        <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>
+        <div class="button-group-box">
+          <?php foreach ($variations_id as $key => $variation) { ?>
             <?php
-            $product = wc_get_product($variation)
-              ?>
-            <div class="col-lg-6">
-              <div class="membership-box">
-                <div class="sec-title text-center">
-                  <span class="heading-meta">BECOME A MEMBER</span>
-                  <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
-                </div>
-                <div class="content-box">
-                  <?= wpautop(get_the_excerpt()) ?>
-                </div>
-                <div class="price-box">
-                  <?= $product->get_price_html() ?>
-                </div>
-                <div class="button-box text-center button-bordered">
-                  <a href="?add-to-cart=<?= $variation ?>">
-                    JOIN NOW
-                  </a>
-                </div>
-              </div>
+            $product = wc_get_product($variation);
+
+            ?>
+            <div class="button-box <?= $key == 0 ? 'button-black' : 'button-bordered' ?>">
+              <a href="?add-to-cart=<?= $variation ?>">
+                JOIN NOW
+              </a>
             </div>
           <?php } ?>
         </div>

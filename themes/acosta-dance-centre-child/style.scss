@@ -995,7 +995,7 @@ section.featured-product {
     .cart {
       display: flex;
       align-items: center;
-
+  text-align: center;
       .quantity {
         input {
           border-radius: 0;
@@ -1195,9 +1195,6 @@ section.featured-product {
   }
 }
 
-.cart {
-  text-align: center;
-}
 
 .single_add_to_cart_button {
   cursor: pointer;

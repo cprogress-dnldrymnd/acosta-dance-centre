@@ -13,8 +13,17 @@ else if ($args['type'] == 'other_classes') {
       )
     )
   );
-  $postslist = get_posts($posts);
 
+
+  $post_list = get_posts($posts);
+
+  $classes = array();
+
+  foreach ($post_list as $post) {
+    $classes[] = array(
+      'id' => $post->ID
+    );
+  }
   var_dump($postslist);
 }
 else {

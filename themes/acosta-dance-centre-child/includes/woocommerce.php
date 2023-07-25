@@ -128,7 +128,7 @@ function action_woocommerce_after_single_product()
   echo ' <div class="col-lg-4">';
   ?>
   <div class="details-box">
-    <h3>DETAILS</h3>
+    <h3 class="doro-heading">DETAILS</h3>
   </div>
   <?php
   echo '</div>';

@@ -279,7 +279,7 @@ function action_single_product_after_image()
       $variations_id = wp_list_pluck($variations, 'variation_id');
       ?>
 
-      <div class="memberships-holder">
+      <div class="memberships-holder md-padding-bottom">
         <div class="row">
           <?php foreach ($variations_id as $variation) { ?>
             <div class="col-lg-6">

@@ -259,7 +259,10 @@ p {
   font-size: 20px;
   letter-spacing: 7px;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif !important; }
+  font-family: 'Oswald', sans-serif !important;
+  margin: 0 0 1em;
+  padding: 0;
+  color: #767676; }
 
 .big-title {
   font-size: 80px;

@@ -296,7 +296,7 @@ function action_single_product_after_image()
       $product_variation = array();
       foreach ($variations as $variation) {
         $product_variation = array(
-          'plan' => $variation['attributes'],
+          'plan' => $variation['attributes']['attribute_payment-plan'],
           'id' => $variation['variation_id']
         );
       }

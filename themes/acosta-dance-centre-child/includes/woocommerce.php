@@ -159,6 +159,22 @@ function action_woocommerce_after_single_product()
       <span>AVAILABLE TO BOOK SOON</span>
     </div>
   </div>
+
+  <div class="membership-box">
+    <div class="sec-title text-center">
+      <span class="heading-meta">BECOME A MEMBER</span>
+      <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+    </div>
+
+    <div class="checklist">
+      <ul>
+          
+        <li>Multiple Classes Per Month</li>
+        <li>10% Off Events</li>
+        <li>Access to our online academy</li>
+      </ul>
+    </div>
+  </div>
   <?php
   echo '</div>';
   echo '</div>';

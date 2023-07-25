@@ -367,3 +367,26 @@ function action_admin_head()
 }
 
 add_action('admin_head', 'action_admin_head');
+
+
+function single_get_date($id)
+{
+	$ticket_date_val = get_post_meta($id, '_ticket_checkin_availability_from_date', true);
+	$ticket_date_val_end = get_post_meta($id, '_ticket_checkin_availability_to_date', true);
+
+	$ticket_date_from = date('d M', strtotime($ticket_date_val));
+	$ticket_date_Y = date('Y', strtotime($ticket_date_val_end));
+	$ticket_time_from = date('g:i a', strtotime($ticket_date_val));
+
+	if ($ticket_date_val_end) {
+		$ticket_date_to = date('d M', strtotime($ticket_date_val_end));
+		$ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
+		return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+	}
+	else {
+		return $ticket_date_from;
+	}
+
+
+
+}

@@ -128,24 +128,7 @@ function action_woocommerce_after_single_product()
   do_action('single_product_after_image');
   echo '</div>';
   echo ' <div class="col-xl-4">';
-  $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
-  $ticket_date_val_end = get_post_meta($product->get_id(), '_ticket_checkin_availability_to_date', true);
-  $ticket_date_from = date('d M', strtotime($ticket_date_val));
-  $ticket_date_to = date('d M', strtotime($ticket_date_val_end));
-  $ticket_date_Y = date('Y', strtotime($ticket_date_val_end));
-  $ticket_time_from = date('g:i a', strtotime($ticket_date_val));
-  $ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
-
-  if ($ticket_date_val != $ticket_date_val_end) {
-    $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
-    $ticket_time = $ticket_time_from . ' - ' . $ticket_time_to;
-  }
-  else {
-    $ticket_date = $ticket_date_from;
-    $ticket_time = $ticket_time_from;
-  }
-
-  
+  $ticket_date = single_get_date($product->get_id());
 
   $_product_category = _product_category(get_the_ID());
   ?>

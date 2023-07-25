@@ -219,11 +219,11 @@ function action_woocommerce_after_single_product()
   <?php }
   else { ?>
     <div class="membership-side-buttons">
-      <div class="button-box button-black">
-        <a href="/category/tickets/classes/">FIND A DANCE CLASS</a>
+      <div class="button-box button-black mb-3">
+        <a href="/category/tickets/classes/" class="w-100">FIND A DANCE CLASS</a>
       </div>
       <div class="button-box button-bordered">
-        <a href="/category/tickets/classes/">FIND A WORKSHOP</a>
+        <a href="/category/tickets/classes/" class="w-100">FIND A WORKSHOP</a>
       </div>
     </div>
   <?php } ?>

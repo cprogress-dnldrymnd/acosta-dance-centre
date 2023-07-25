@@ -95,3 +95,29 @@ function action_woocommerce_after_single_product_summary()
 }
 
 add_action('woocommerce_after_single_product_summary', 'action_woocommerce_after_single_product_summary');
+
+
+add_filter('woocommerce_product_tabs', 'conditionaly_removing_product_tabs', 99);
+function conditionaly_removing_product_tabs($tabs)
+{
+
+  // Get the global product object
+  global $product;
+
+  // Get the current product ID
+  $product_id = $product->get_id();
+
+  // Define HERE your targeted categories (Ids, slugs or names)   <===  <===  <===
+  $product_cats = array('classes');
+
+  // If the current product have the same ID than one of the defined IDs in your array,… 
+  // we remove the tab.
+  if (has_term($product_cats, 'product_cat', $product_id)) {
+
+    // KEEP BELOW ONLY THE TABS YOU NEED TO REMOVE   <===  <===  <===  <===
+    unset($tabs['description']); // (Description tab)  
+    unset($tabs['reviews']); // (Reviews tab)
+    unset($tabs['additional_information']); // (Additional information tab)
+  }
+  return $tabs;
+}

@@ -99,13 +99,13 @@ h4 {
   text-transform: uppercase;
   background-color: var(--black-color) !important;
   color: var(--white-color);
-  border: 3px solid var(--black-color); }
+  border: 3px solid var(--black-color) !important; }
   .wpcf7-submit:hover,
   .checkout-button:hover,
   #place_order:hover {
     background-color: var(--adc-color-1) !important;
     color: var(--black-color) !important;
-    border: 3px solid var(--black-color); }
+    border: 3px solid var(--black-color) !important; }
 
 .button-box > a,
 .button-box > button,
@@ -128,7 +128,7 @@ h4 {
 .button-box.button-black .single_add_to_cart_button {
   background-color: var(--black-color) !important;
   color: var(--white-color);
-  border: 3px solid var(--black-color); }
+  border: 3px solid var(--black-color) !important; }
   .button-box.button-black > a:hover,
   .button-box.button-black > button:hover,
   .button-box.button-black > input[type="submit"]:hover,
@@ -136,7 +136,7 @@ h4 {
   .button-box.button-black .single_add_to_cart_button:hover {
     background-color: var(--adc-color-1) !important;
     color: var(--black-color) !important;
-    border: 3px solid var(--black-color); }
+    border: 3px solid var(--black-color) !important; }
 .button-box.button-white > a,
 .button-box.button-white > button,
 .button-box.button-white > input[type="submit"],

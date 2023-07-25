@@ -286,7 +286,9 @@ function action_single_product_after_image()
                 <span class="heading-meta">BECOME A MEMBER</span>
                 <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
               </div>
-        
+              <div class="content">
+                <?= get_the_content(false,false, $variation) ?>
+              </div>
               <div class="button-box text-center button-bordered">
                 <a href="/?add-to-cart=<?= $variation ?>">
                   FIND OUT MORE

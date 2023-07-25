@@ -811,6 +811,8 @@ section.featured-product {
       text-decoration: line-through; }
     .details-box del:not(.no-before-after):before {
       content: 'REGULAR: '; }
+    .details-box del.no-before-after span {
+      text-decoration: none; }
   .details-box ins {
     display: block;
     background-color: var(--adc-color-2);

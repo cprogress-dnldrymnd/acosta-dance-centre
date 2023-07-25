@@ -1169,6 +1169,11 @@ section.featured-product {
         content: 'REGULAR: ';
       }
     }
+    &.no-before-after {
+      span {
+        text-decoration: none;
+      }
+    }
   }
 
   ins {

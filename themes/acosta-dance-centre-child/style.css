@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Acosta Dance Centre Child
 Theme URL: https://themeforest.net/item/doro-creative-agency-wordpress-theme/23975046?ref=webRedox
@@ -799,10 +800,11 @@ section.featured-product {
       letter-spacing: 5.43px;
       font-family: 'Oswald', sans-serif;
       color: #6D6D6D;
-      border-bottom: 1px solid #eaeaea !important;
-      padding-top: 0; }
+      padding-top: 0;
+      margin-bottom: 10px;
+      display: flex; }
       .details-box ul li:before {
-        content: '&#x2022;'; }
+        content: '•'; }
   .details-box del {
     text-decoration: none; }
     .details-box del:before {

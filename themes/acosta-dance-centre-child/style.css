@@ -1021,6 +1021,7 @@ table.shop_table.shop_table {
     color: #000; }
 
 .add-to-cart-box {
+  padding-top: 50px;
   max-width: 810px;
   margin-left: auto;
   margin-right: auto; }

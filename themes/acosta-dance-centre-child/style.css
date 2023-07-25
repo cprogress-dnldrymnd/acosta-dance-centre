@@ -649,6 +649,15 @@ section.featured-product {
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1; }
+  @media (max-width: 1199px) {
+    .woocommerce div.product section.product-summary.product-summary .product_title {
+      font-size: 70px; } }
+  @media (max-width: 991px) {
+    .woocommerce div.product section.product-summary.product-summary .product_title {
+      font-size: 60px; } }
+  @media (max-width: 767px) {
+    .woocommerce div.product section.product-summary.product-summary .product_title {
+      font-size: 50px; } }
 .woocommerce div.product section.product-summary.product-summary .woocommerce-product-gallery {
   width: 100%;
   float: none; }

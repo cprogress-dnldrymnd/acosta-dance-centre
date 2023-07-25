@@ -944,6 +944,18 @@ section.featured-product {
       .product_title {
         font-size: 80px;
         line-height: 1;
+
+        @media(max-width: 1199px) {
+          font-size: 70px;
+        }
+
+        @media(max-width: 991px) {
+          font-size: 60px;
+        }
+
+        @media(max-width: 767px) {
+          font-size: 50px;
+        }
       }
 
       .woocommerce-product-gallery {

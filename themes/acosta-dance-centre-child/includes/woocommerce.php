@@ -216,6 +216,11 @@ function action_woocommerce_after_single_product()
       </div>
     </div>
 
+  <?php }
+  else { ?>
+  <div class="button-box button-black">
+    <a href="">FIND A DANCE CLASS</a>
+  </div>
   <?php } ?>
   <?php
   echo '</div>';
@@ -294,7 +299,8 @@ function action_single_product_after_image()
         .newsletter-box {
           max-width: 66.666667%;
         }
-        .newsletter-box h3{
+
+        .newsletter-box h3 {
           font-size: 50px;
         }
       </style>

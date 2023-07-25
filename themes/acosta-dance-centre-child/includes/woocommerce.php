@@ -249,7 +249,7 @@ function action_single_product_after_image()
 
     <div class="button-group-box text-center justify-content-center ">
       <?php
-      if ($_product_category == 'workshops' && $_product_category == 'other') {
+      if ($_product_category == 'workshops' || $_product_category == 'other') {
         echo '<div class="button-box button-black">';
         do_action('single_add_to_cart');
         echo '</div>';

@@ -61,7 +61,7 @@ function events()
 add_shortcode('events', 'events');
 
 
-function classes($atts)
+function adc_classes($atts)
 {
   ob_start();
   extract(
@@ -80,4 +80,4 @@ function classes($atts)
   return ob_get_clean();
 }
 
-add_shortcode('classes', 'classes');
+add_shortcode('adc_classes', 'adc_classes');

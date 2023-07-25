@@ -423,9 +423,11 @@ body {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
+
       .woocommerce-products-header {
         margin-bottom: 130px;
       }
+
       #primary {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;
@@ -876,6 +878,11 @@ section.featured-product {
 
 #doro-aside {
   width: 300px;
+
+  @media(min-width: 769px) and (max-width: 1199px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #doro-main {

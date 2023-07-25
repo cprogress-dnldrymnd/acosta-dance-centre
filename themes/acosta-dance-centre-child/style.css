@@ -613,6 +613,10 @@ section.featured-product {
 
 #doro-aside {
   width: 300px; }
+  @media (min-width: 769px) and (max-width: 1199px) {
+    #doro-aside {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 @media (min-width: 769px) {
   #doro-main {

@@ -23,6 +23,12 @@ else if ($args['type'] == 'related') {
     )
   );
 
+  if (in_array(79, $terms_val)) {
+    $heading_val = 'CLASSES';
+  } else if(in_array(78, $terms_val)) {
+    $heading_val = 'WORKSHOPS';
+  }
+
 
   $post_list = get_posts($posts);
 
@@ -34,7 +40,7 @@ else if ($args['type'] == 'related') {
     );
   }
 
-  $heading = 'OTHER <br>';
+  $heading = 'OTHER <br>'.$heading_val;
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');

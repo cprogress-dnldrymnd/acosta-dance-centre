@@ -263,6 +263,8 @@ p {
   margin: 0 0 1em;
   padding: 0;
   color: #767676; }
+  .woocommerce-breadcrumb.woocommerce-breadcrumb a {
+    color: inherit; }
 
 .big-title {
   font-size: 80px;

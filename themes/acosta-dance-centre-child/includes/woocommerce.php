@@ -180,6 +180,7 @@ function action_woocommerce_after_single_product()
     </div>
   </div>
   <?php
+  do_action('single_product_after_image');
   echo '</div>';
   echo '</div>';
 
@@ -206,3 +207,15 @@ function action_woocommerce_sidebar()
   }
 }
 add_action('wp', 'action_woocommerce_sidebar');
+
+function action_single_product_after_image()
+{
+  $text_after_image = carbon_get_the_post_meta('text_after_image');
+
+  if ($text_after_image) {
+    echo '<h2 class="doro-heading"> ' . $text_after_image . '</h2>';
+  }
+}
+
+
+add_action('single_product_after_image', 'action_single_product_after_image');

@@ -127,7 +127,7 @@ function action_woocommerce_after_single_product()
   global $product;
   do_action('single_product_after_image');
   echo '</div>';
-  echo ' <div class="col-lg-4">';
+  echo ' <div class="col-xl-4">';
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
   $ticket_time = date('g:i a', $dateformat);
@@ -194,7 +194,7 @@ function action_woocommerce_before_single_product()
 {
   echo '<div class="product-inner">';
   echo '<div class="row">';
-  echo '<div class="col-lg-8">';
+  echo '<div class="col-xl-8">';
 }
 
 add_action('woocommerce_before_single_product', 'action_woocommerce_before_single_product');

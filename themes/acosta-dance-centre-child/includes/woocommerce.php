@@ -135,3 +135,16 @@ function action_single_product_details_box()
 
 
 add_action('single_product_details_box', 'action_single_product_details_box');
+
+
+function action_woocommerce_after_single_product()
+{
+  ?>
+  <div class="col-lg-4">
+
+  </div>
+  <?php
+}
+
+
+add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_product');

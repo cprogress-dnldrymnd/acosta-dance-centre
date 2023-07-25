@@ -126,7 +126,6 @@ function action_woocommerce_after_single_product()
 {
   global $product;
   do_action('single_product_after_image');
-
   echo '</div>';
   echo ' <div class="col-lg-4">';
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
@@ -212,10 +211,20 @@ add_action('wp', 'action_woocommerce_sidebar');
 function action_single_product_after_image()
 {
   $text_after_image = carbon_get_the_post_meta('text_after_image');
-
+  $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+  $dateformat = strtotime($ticket_date_val);
+  $ticket_time = date('g:i a', $dateformat);
+  $ticket_date = date('d . m . Y,  g:i a', $dateformat);
   if ($text_after_image) {
     echo '<h2 class="doro-heading"> ' . $text_after_image . '</h2>';
   }
+  ?>
+
+  <div class="date-box">
+    <?= $ticket_date ?>
+  </div>
+
+  <?php
 }
 
 

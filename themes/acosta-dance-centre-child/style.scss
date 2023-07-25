@@ -1157,14 +1157,16 @@ section.featured-product {
   }
 
   del {
-    text-decoration: none;
+    &:not(.no-before-after) {
+      text-decoration: none;
 
-    &:before {
-      content: 'REGULAR: ';
-    }
+      &:before {
+        content: 'REGULAR: ';
+      }
 
-    span {
-      text-decoration: line-through;
+      span {
+        text-decoration: line-through;
+      }
     }
   }
 

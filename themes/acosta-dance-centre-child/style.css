@@ -805,11 +805,11 @@ section.featured-product {
       display: flex; }
       .details-box ul li:before {
         content: '•'; }
-  .details-box del {
+  .details-box del:not(.no-before-after) {
     text-decoration: none; }
-    .details-box del:before {
+    .details-box del:not(.no-before-after):before {
       content: 'REGULAR: '; }
-    .details-box del span {
+    .details-box del:not(.no-before-after) span {
       text-decoration: line-through; }
   .details-box ins {
     display: block;

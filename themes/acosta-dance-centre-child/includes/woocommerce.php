@@ -225,7 +225,7 @@ function action_single_product_after_image()
   </div>
 
   <div class="content-box">
-    <?= get_the_content() ?>
+    <?= wpautop(get_the_content()) ?>
   </div>
 
   <?php

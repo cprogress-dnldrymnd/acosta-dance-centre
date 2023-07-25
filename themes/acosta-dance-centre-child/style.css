@@ -688,6 +688,7 @@ section.featured-product {
     right: 20px;
     bottom: 0;
     transform: translateY(50%); }
+    .details-box .button-box span,
     .details-box .button-box a {
       padding-left: 20px;
       padding-right: 20px; }

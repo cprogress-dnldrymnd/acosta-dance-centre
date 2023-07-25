@@ -74,7 +74,7 @@ else {
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="title-box">
+              <div class="title-box text-uppercase">
                 <a href="<?= the_permalink() ?>">
                   <h3><?= get_the_title($class['id']) ?></h3>
                 </a>

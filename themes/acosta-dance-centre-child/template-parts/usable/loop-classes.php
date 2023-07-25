@@ -2,6 +2,21 @@
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 }
+else if ($args['type'] == 'other_classes') {
+  $posts = array(
+    'post_type' => 'product',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'product_cat',
+        'field'    => 'slug',
+        'terms'    => 'classes'
+      )
+    )
+  );
+  $postslist = get_posts($posts);
+
+  var_dump($postslist);
+}
 else {
   $classes = get__theme_option('featured_classes');
 }

@@ -142,35 +142,40 @@ function action_woocommerce_after_single_product()
 
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
-    <table class="table">
-      <?php if ($product->get_price_html() && $_product_category != 'memberships') { ?>
-        <tr>
-          <th>PRICE</th>
-        </tr>
-        <tr>
-          <td><?= $product->get_price_html(); ?></td>
-        </tr>
-      <?php } ?>
+    <?php if ($_product_category != 'memberships') { ?>
+      <table class="table">
+        <?php if ($product->get_price_html()) { ?>
+          <tr>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+            <td><?= $product->get_price_html(); ?></td>
+          </tr>
+        <?php } ?>
 
-      <?php if ($ticket_date && $_product_category != 'memberships') { ?>
-        <tr>
-          <th>DATE</th>
-        </tr>
-        <tr>
-          <td><?= $ticket_date ?> </td>
-        </tr>
-      <?php } ?>
+        <?php if ($ticket_date) { ?>
+          <tr>
+            <th>DATE</th>
+          </tr>
+          <tr>
+            <td><?= $ticket_date ?> </td>
+          </tr>
+        <?php } ?>
 
-      <?php if ($ticket_time && $_product_category != 'memberships') { ?>
-        <tr>
-          <th>TIME</th>
-        </tr>
-        <tr>
-          <td><?= $ticket_time ?> </td>
-        </tr>
-      <?php } ?>
-      <?php do_action('woocommerce_product_additional_information', $product); ?>
-    </table>
+        <?php if ($ticket_time) { ?>
+          <tr>
+            <th>TIME</th>
+          </tr>
+          <tr>
+            <td><?= $ticket_time ?> </td>
+          </tr>
+        <?php } ?>
+        <?php do_action('woocommerce_product_additional_information', $product); ?>
+      </table>
+    <?php }
+    else { ?>
+      <?= $product->get_short_description() ?>
+    <?php } ?>
 
     <div class="button-box text-center button-black">
       <?php

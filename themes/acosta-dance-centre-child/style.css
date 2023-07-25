@@ -1031,6 +1031,8 @@ table.shop_table.shop_table {
   margin-left: auto;
   margin-right: auto; }
   .membership-side-buttons .button-box a {
-    padding: 30px 20px !important; }
+    padding: 30px 20px !important;
+    font-size: 15px;
+    letter-spacing: 5.43px; }
 
 /*# sourceMappingURL=style.css.map */

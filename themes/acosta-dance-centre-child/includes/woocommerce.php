@@ -70,3 +70,9 @@ function mp_sync_on_product_save($product_id)
 
   update_post_meta($product_id, '_product_attributes', $product_attr);
 }*/
+
+function action_before_single_product_image() {
+  echo 'sdsds';
+}
+
+add_action('before_single_product_image', 'action_before_single_product_image');

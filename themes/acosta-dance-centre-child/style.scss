@@ -1272,8 +1272,9 @@ section.featured-product {
 
     .form-row {
       flex-direction: column;
-      input {
+      input, textarea {
         font-family: 'Hind', sans-serif;
+        font-size: 22px;
       }
       label {
         font-family: 'Oswald', sans-serif;

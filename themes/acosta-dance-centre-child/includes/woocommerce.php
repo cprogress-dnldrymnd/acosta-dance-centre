@@ -223,10 +223,10 @@ function action_single_product_after_image()
   $text_after_image = carbon_get_the_post_meta('text_after_image');
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
   $ticket_date_val_end = get_post_meta(get_the_ID(), '_ticket_checkin_availability_to_date', true);
-  $dateformat = strtotime($ticket_date_val);
-  $ticket_date_from = date('d M,  g:i a', $dateformat);
+  $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
+  $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
 
-  $ticket_date = $ticket_date_from;
+  $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
   $_product_category = _product_category(get_the_ID());
   ?>
   <div class="content-margin">
@@ -302,8 +302,9 @@ function woocommerce_add_to_cart_button_text_single()
   return __('BOOK NOW', 'woocommerce');
 }
 
-function default_no_quantities( $individually, $product ){
-$individually = true;
-return $individually;
+function default_no_quantities($individually, $product)
+{
+  $individually = true;
+  return $individually;
 }
-add_filter( 'woocommerce_is_sold_individually', 'default_no_quantities', 10, 2 );
+add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);

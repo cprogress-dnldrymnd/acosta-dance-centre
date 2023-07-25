@@ -893,7 +893,12 @@ section.featured-product {
 .tickera_additional_info {
   background-color: var(--adc-color-1);
   padding: 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 1; }
+  .tickera_additional_info .owner-info-wrap .fields-wrap {
+    margin-bottom: 0; }
+    .tickera_additional_info .owner-info-wrap .fields-wrap span {
+      margin-bottom: 0; }
   .tickera_additional_info .owner-info-wrap h5 {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;

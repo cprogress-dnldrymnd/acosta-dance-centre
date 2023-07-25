@@ -152,7 +152,7 @@ function action_woocommerce_after_single_product()
         </tr>
       <?php } ?>
 
-      <?php if ($ticket_date) { ?>
+      <?php if ($ticket_date && $_product_category != 'memberships') { ?>
         <tr>
           <th>DATE</th>
         </tr>
@@ -161,7 +161,7 @@ function action_woocommerce_after_single_product()
         </tr>
       <?php } ?>
 
-      <?php if ($ticket_time) { ?>
+      <?php if ($ticket_time && $_product_category != 'memberships') { ?>
         <tr>
           <th>TIME</th>
         </tr>

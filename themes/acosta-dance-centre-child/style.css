@@ -87,7 +87,8 @@ h4 {
 .button-box > a,
 .button-box > button,
 .button-box > input[type="submit"],
-.button-box > span {
+.button-box > span,
+.button-box .single_add_to_cart_button {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   padding: 30px 40px 30px 40px;
@@ -100,13 +101,13 @@ h4 {
 .button-box.button-black > a,
 .button-box.button-black > button,
 .button-box.button-black > input[type="submit"],
-.button-box.button-black > span {
+.button-box.button-black > span, .button-box.button-black .single_add_to_cart_button {
   background-color: var(--black-color);
   color: var(--white-color); }
   .button-box.button-black > a:hover,
   .button-box.button-black > button:hover,
   .button-box.button-black > input[type="submit"]:hover,
-  .button-box.button-black > span:hover {
+  .button-box.button-black > span:hover, .button-box.button-black .single_add_to_cart_button:hover {
     background-color: var(--adc-color-1);
     color: var(--black-color); }
 .button-box.button-white > a,

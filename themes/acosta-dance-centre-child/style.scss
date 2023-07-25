@@ -113,7 +113,8 @@ h4 {
   >a,
   >button,
   >input[type="submit"],
-  >span {
+  >span,
+  .single_add_to_cart_button {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     padding: 30px 40px 30px 40px;
@@ -130,7 +131,7 @@ h4 {
     >a,
     >button,
     >input[type="submit"],
-    >span {
+    >span, .single_add_to_cart_button {
       background-color: var(--black-color);
       color: var(--white-color);
 

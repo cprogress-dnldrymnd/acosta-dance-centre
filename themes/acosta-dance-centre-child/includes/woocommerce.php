@@ -252,20 +252,8 @@ add_action('wp', 'action_woocommerce_sidebar');
 function action_single_product_after_image()
 {
   $text_after_image = carbon_get_the_post_meta('text_after_image');
-  $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-  $ticket_date_val_end = get_post_meta(get_the_ID(), '_ticket_checkin_availability_to_date', true);
-  $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
-  $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
-  $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
-
-
-  if ($ticket_date_val != $ticket_date_val_end) {
-    $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
-  }
-  else {
-    $ticket_date = $ticket_date_from;
-  }
-
+  $ticket_date = single_get_date(get_the_ID());
+  $ticket_time = single_get_date(get_the_ID(), 'time');
   $_product_category = _product_category(get_the_ID());
   ?>
   <div class="content-margin">
@@ -276,7 +264,7 @@ function action_single_product_after_image()
     <?php } ?>
     <?php if ($_product_category != 'memberships') { ?>
       <div class="date-box text-uppercase">
-        <?= $ticket_date ?>
+        <?= $ticket_date . ',  ' . $ticket_time ?>
       </div>
     <?php } ?>
 

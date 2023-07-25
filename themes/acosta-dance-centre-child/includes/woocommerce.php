@@ -74,7 +74,7 @@ function mp_sync_on_product_save($product_id)
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart'. 30);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart' . 30);
 
 add_filter('woocommerce_variable_sale_price_html', 'businessbloomer_remove_prices', 9999, 2);
 
@@ -84,8 +84,7 @@ add_filter('woocommerce_get_price_html', 'businessbloomer_remove_prices', 9999, 
 
 function businessbloomer_remove_prices($price, $product)
 {
-  if (!is_admin())
-    $price = '';
+  $price = '';
   return $price;
 }
 

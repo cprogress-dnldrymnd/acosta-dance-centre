@@ -110,9 +110,10 @@ p {
     font-weight: bold;
     padding: 30px 40px 30px 40px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.2;
     display: inline-block;
     letter-spacing: 7px;
+    text-align: center;
   }
 
   &.button-black {
@@ -933,7 +934,7 @@ section.featured-product {
 
 .details-box {
   border: 3px solid #000000;
-  padding: 25px;
+  padding: 25px 25px 33px 25px;
 
   table {
     border-collapse: collapse;
@@ -976,5 +977,13 @@ section.featured-product {
         }
       }
     }
+  }
+
+  .button-box {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(50%);
   }
 }

@@ -132,7 +132,7 @@ function action_woocommerce_after_single_product()
   $ticket_time = date('g:i a', $dateformat);
   $ticket_date = date('d . m . Y', $dateformat);
   ?>
-  <div class="details-box">
+  <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
     <table class="table">
       <?php if ($product->get_price_html()) { ?>

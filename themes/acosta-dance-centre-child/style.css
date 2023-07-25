@@ -85,9 +85,10 @@ p {
   font-weight: bold;
   padding: 30px 40px 30px 40px;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   display: inline-block;
-  letter-spacing: 7px; }
+  letter-spacing: 7px;
+  text-align: center; }
 .button-box.button-black a,
 .button-box.button-black button,
 .button-box.button-black input[type="submit"],
@@ -636,7 +637,7 @@ section.featured-product {
 
 .details-box {
   border: 3px solid #000000;
-  padding: 25px; }
+  padding: 25px 25px 33px 25px; }
   .details-box table {
     border-collapse: collapse;
     border: none !important;
@@ -668,5 +669,11 @@ section.featured-product {
           font-size: inherit;
           letter-spacing: inherit;
           margin: 0; }
+  .details-box .button-box {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(50%); }
 
 /*# sourceMappingURL=style.css.map */

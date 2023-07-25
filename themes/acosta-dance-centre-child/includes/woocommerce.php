@@ -141,13 +141,23 @@ function action_woocommerce_after_single_product()
 {
   ?>
   <div class="col-lg-4">
-    sdsdsds
+    
   </div>
   <?php
+
+  echo '</div>';
 }
 
 
 add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_product');
+
+
+function action_woocommerce_before_single_product() {
+ echo '<div class="row">';
+ echo '<div class="col-lg-8">';
+}
+
+add_action( 'woocommerce_before_single_product','action_woocommerce_before_single_product' );
 
 
 function action_woocommerce_sidebar()

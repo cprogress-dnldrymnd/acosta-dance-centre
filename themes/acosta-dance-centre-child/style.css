@@ -780,6 +780,8 @@ section.featured-product {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+  .woocommerce div.product section.product-summary.product-summary .woocommerce-product-gallery.woocommerce-product-gallery--without-images {
+    display: none !important; }
 .woocommerce div.product .summary {
   display: none; }
 

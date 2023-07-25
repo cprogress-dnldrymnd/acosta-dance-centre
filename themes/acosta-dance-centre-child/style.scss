@@ -1113,6 +1113,9 @@ section.featured-product {
             }
           }
         }
+        &.woocommerce-product-gallery--without-images {
+          display: none !important;
+        }
       }
     }
 

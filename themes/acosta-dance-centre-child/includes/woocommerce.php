@@ -139,54 +139,54 @@ function action_woocommerce_after_single_product()
   $ticket_time = $ticket_time_from . ' - ' . $ticket_time_to;
   $_product_category = _product_category(get_the_ID());
   ?>
-
-  <div class="details-box position-relative">
-    <h3 class="doro-heading">DETAILS</h3>
-    <table class="table">
-      <?php if ($product->get_price_html()) { ?>
-        <tr>
-          <th>PRICE</th>
-        </tr>
-        <tr>
-          <td><?= $product->get_price_html(); ?></td>
-        </tr>
-      <?php } ?>
-
-      <?php if ($ticket_date) { ?>
-        <tr>
-          <th>DATE</th>
-        </tr>
-        <tr>
-          <td><?= $ticket_date ?> </td>
-        </tr>
-      <?php } ?>
-
-      <?php if ($ticket_time) { ?>
-        <tr>
-          <th>TIME</th>
-        </tr>
-        <tr>
-          <td><?= $ticket_time ?> </td>
-        </tr>
-      <?php } ?>
-      <?php do_action('woocommerce_product_additional_information', $product); ?>
-    </table>
-
-    <div class="button-box text-center button-black">
-      <?php
-      if ($_product_category == 'workshops') {
-        echo '<div class="button-box button-black">';
-        do_action('single_add_to_cart');
-        echo '</div>';
-      }
-      else if ($_product_category == 'classes') {
-        echo ' <span>AVAILABLE TO BOOK SOON</span>';
-      }
-      ?>
-    </div>
-  </div>
-
   <?php if ($_product_category != 'memberships') { ?>
+
+    <div class="details-box position-relative">
+      <h3 class="doro-heading">DETAILS</h3>
+      <table class="table">
+        <?php if ($product->get_price_html()) { ?>
+          <tr>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+            <td><?= $product->get_price_html(); ?></td>
+          </tr>
+        <?php } ?>
+
+        <?php if ($ticket_date) { ?>
+          <tr>
+            <th>DATE</th>
+          </tr>
+          <tr>
+            <td><?= $ticket_date ?> </td>
+          </tr>
+        <?php } ?>
+
+        <?php if ($ticket_time) { ?>
+          <tr>
+            <th>TIME</th>
+          </tr>
+          <tr>
+            <td><?= $ticket_time ?> </td>
+          </tr>
+        <?php } ?>
+        <?php do_action('woocommerce_product_additional_information', $product); ?>
+      </table>
+
+      <div class="button-box text-center button-black">
+        <?php
+        if ($_product_category == 'workshops') {
+          echo '<div class="button-box button-black">';
+          do_action('single_add_to_cart');
+          echo '</div>';
+        }
+        else if ($_product_category == 'classes') {
+          echo ' <span>AVAILABLE TO BOOK SOON</span>';
+        }
+        ?>
+      </div>
+    </div>
+
 
     <div class="membership-box">
       <div class="sec-title text-center">
@@ -221,9 +221,16 @@ add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_
 
 function action_woocommerce_before_single_product()
 {
+  $_product_category = _product_category(get_the_ID());
+  if ($_product_category != 'memberships') {
+    $class = 'col-xl-8';
+  }
+  else {
+    $class = 'col-12';
+  }
   echo '<div class="product-inner">';
   echo '<div class="row">';
-  echo '<div class="col-xl-8">';
+  echo '<div class="' . $class . '">';
 }
 
 add_action('woocommerce_before_single_product', 'action_woocommerce_before_single_product');

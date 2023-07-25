@@ -156,4 +156,4 @@ function action_woocommerce_sidebar()
     remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
   }
 }
-add_action('woocommerce_sidebar', 'action_woocommerce_sidebar');
+add_action('wp', 'action_woocommerce_sidebar');

@@ -143,7 +143,6 @@ function action_woocommerce_after_single_product()
   else {
     $ticket_date = $ticket_date_from;
     $ticket_time = $ticket_time_from;
-
   }
 
   $_product_category = _product_category(get_the_ID());

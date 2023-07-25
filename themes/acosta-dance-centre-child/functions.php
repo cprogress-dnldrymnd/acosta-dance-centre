@@ -383,7 +383,11 @@ function single_get_date($id, $type = 'date')
 		$ticket_date_to = date('d M', strtotime($ticket_date_val_end));
 		$ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
 		if ($type == 'date') {
-			return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+			if ($ticket_date_from != $ticket_date_to) {
+				return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+			} else {
+				return $ticket_date_from . ' ' . $ticket_date_Y;;
+			}
 		}
 		else {
 			return $ticket_time_from . ' - ' . $ticket_time_to;

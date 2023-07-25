@@ -679,16 +679,18 @@ section.featured-product {
   .woocommerce .product-inner > .row > [class*='col-'] {
     padding-left: 35px;
     padding-right: 35px; }
-.woocommerce .button-group-box .cart {
-  display: flex;
-  align-items: center; }
-  .woocommerce .button-group-box .cart .quantity input {
-    border-radius: 0;
-    margin-right: 1rem;
-    height: 84px;
-    border: 1px solid; }
-  .woocommerce .button-group-box .cart button {
-    margin: 0 !important; }
+.woocommerce .button-group-box {
+  margin-top: 3rem !important; }
+  .woocommerce .button-group-box .cart {
+    display: flex;
+    align-items: center; }
+    .woocommerce .button-group-box .cart .quantity input {
+      border-radius: 0;
+      margin-right: 1rem;
+      height: 84px;
+      border: 1px solid; }
+    .woocommerce .button-group-box .cart button {
+      margin: 0 !important; }
 .woocommerce .date-box {
   letter-spacing: 7.24px;
   font-size: 20px;

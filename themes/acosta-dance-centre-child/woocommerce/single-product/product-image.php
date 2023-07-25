@@ -38,7 +38,7 @@ $wrapper_classes = apply_filters(
 ?>
 <div class="col-lg-8">
 	<?php
-	do_action('woocommerce_template_single_title');
+	do_action('before_single_product_image');
 	?>
 	<div class="<?php echo esc_attr(implode(' ', array_map('sanitize_html_class', $wrapper_classes))); ?>"
 		data-columns="<?php echo esc_attr($columns); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">

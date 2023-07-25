@@ -154,6 +154,10 @@ function action_woocommerce_after_single_product()
       <?php } ?>
       <?php do_action('woocommerce_product_additional_information', $product); ?>
     </table>
+
+    <div class="button-box button-black">
+      <span>AVAILABLE TO BOOK SOON</span>
+    </div>
   </div>
   <?php
   echo '</div>';

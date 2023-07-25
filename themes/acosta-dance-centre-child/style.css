@@ -641,7 +641,8 @@ section.featured-product {
         color: #000;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
-        border: none !important; }
+        border: none !important;
+        font-weight: 400; }
       .details-box table tr td {
         border: none !important;
         font-size: 15px;

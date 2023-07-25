@@ -893,7 +893,17 @@ section.featured-product {
 }
 
 .woocommerce {
-  .product-inner {}
+  .product-inner {
+    .row {
+      margin-left: -35px;
+      margin-right: -35px;
+
+      [class*='col-'] {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
 
   div.product {
 
@@ -919,5 +929,5 @@ section.featured-product {
 }
 
 .details-box {
- border: 3px solid #000000;
+  border: 3px solid #000000;
 }

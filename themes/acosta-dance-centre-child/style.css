@@ -614,6 +614,12 @@ section.featured-product {
 #searchModal .btn {
   letter-spacing: 1px; }
 
+.woocommerce .product-inner .row {
+  margin-left: -35px;
+  margin-right: -35px; }
+  .woocommerce .product-inner .row [class*='col-'] {
+    padding-left: 35px;
+    padding-right: 35px; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1; }

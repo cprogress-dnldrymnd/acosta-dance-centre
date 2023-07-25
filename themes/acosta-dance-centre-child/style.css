@@ -421,6 +421,9 @@ section.featured-product {
     max-width: 195px;
     width: 100%;
     object-fit: cover; }
+  @media (max-width: 991px) {
+    .product-box-style-1 .product-box-item .image-box {
+      margin-top: 20px; } }
 @media (max-width: 991px) {
   .product-box-style-1 {
     text-align: center; } }

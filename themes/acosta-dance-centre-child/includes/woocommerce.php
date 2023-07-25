@@ -141,7 +141,7 @@ function action_woocommerce_after_single_product()
 {
   ?>
   <div class="col-lg-4">
-
+sdsdsds
   </div>
   <?php
 }

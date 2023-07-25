@@ -83,7 +83,7 @@ add_action('before_single_product_image', 'action_before_single_product_image');
 
 function action_woocommerce_before_single_product_summary()
 {
-  echo '<div class="product-summary">';
+  echo '<div class="product-summary d-flex">';
 }
 
 
@@ -121,3 +121,4 @@ function conditionaly_removing_product_tabs($tabs)
   }
   return $tabs;
 }
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);

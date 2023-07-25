@@ -28,7 +28,6 @@ if (!$product_attributes) {
 		<th><?php echo wp_kses_post($product_attribute['label']); ?></th>
 	</tr>
 	<tr>
-		<td><?php echo wp_kses_post($product_attribute['value']); ?>
-		</td>
+		<td><?php echo wp_kses_post($product_attribute['value']); ?></td>
 	</tr>
 <?php endforeach; ?>

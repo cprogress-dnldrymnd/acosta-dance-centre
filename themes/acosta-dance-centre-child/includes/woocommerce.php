@@ -233,7 +233,7 @@ function action_single_product_after_image()
     <div class="button-group-box text-center">
       <?php
       if ($_product_category == 'workshops') {
-        echo do_action('woocommerce_template_single_add_to_cart');
+        do_action('single_add_to_cart');
       }
       ?>
       <div class="button-box button-bordered">

@@ -32,6 +32,16 @@ Container::make('theme_options', __('Classes Settings'))
             )
           )
         ),
+
+      Field::make('association', 'featured_classes', __('FEATURED WORKSHOPS'))
+        ->set_types(
+          array(
+            array(
+              'type'      => 'post',
+              'post_type' => 'product',
+            )
+          )
+        ),
     )
   );
 

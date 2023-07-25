@@ -213,19 +213,21 @@ function action_single_product_after_image()
   $text_after_image = carbon_get_the_post_meta('text_after_image');
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
-  $ticket_time = date('g:i a', $dateformat);
   $ticket_date = date('l d F,  g:i a', $dateformat);
-  if ($text_after_image) {
-    echo '<h2 class="doro-heading"> ' . $text_after_image . '</h2>';
-  }
   ?>
+  <div class="content-margin">
+    <?php if ($text_after_image) { ?>
+      <h2 class="doro-heading">
+        <?= $text_after_image ?>
+      </h2>
+    <?php } ?>
+    <div class="date-box text-uppercase">
+      <?= $ticket_date ?>
+    </div>
 
-  <div class="date-box text-uppercase">
-    <?= $ticket_date ?>
-  </div>
-
-  <div class="content-box">
-    <?= wpautop(get_the_content()) ?>
+    <div class="content-box">
+      <?= wpautop(get_the_content()) ?>
+    </div>
   </div>
 
   <?php

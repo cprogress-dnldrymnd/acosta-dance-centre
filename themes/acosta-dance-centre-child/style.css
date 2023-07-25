@@ -718,4 +718,7 @@ section.featured-product {
     background-repeat: no-repeat;
     margin-right: 10px; }
 
+.content-margin > *:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */

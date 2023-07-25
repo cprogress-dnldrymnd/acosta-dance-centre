@@ -295,7 +295,7 @@ function action_single_product_after_image()
       $variations = $product->get_available_variations();
       $variations_id = wp_list_pluck($variations, 'variation_id');
       ?>
-      <div class="add-to-cart-box md-padding-bottom">
+      <div class="add-to-cart-box text-center md-padding-bottom" id="join-now">
         <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>
         <div class="button-group-box">
           <?php foreach ($variations_id as $key => $variation) { ?>

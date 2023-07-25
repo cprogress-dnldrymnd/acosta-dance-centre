@@ -182,6 +182,9 @@ function action_woocommerce_after_single_product()
       else if ($_product_category == 'classes') {
         echo ' <span>AVAILABLE TO BOOK SOON</span>';
       }
+      else if ($_product_category == 'memberships') {
+        echo ' <a href="#join-now">JOIN NOW</a>';
+      }
       ?>
     </div>
   </div>

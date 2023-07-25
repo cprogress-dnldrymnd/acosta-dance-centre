@@ -287,7 +287,9 @@ function action_single_product_after_image()
                   <span class="heading-meta">BECOME A MEMBER</span>
                   <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
                 </div>
-                
+                <div class="content-box">
+                  <?= wpautop(get_the_excerpt()) ?>
+                </div>
                 <div class="price-box">
                   <?= $product->get_price_html() ?>
                 </div>

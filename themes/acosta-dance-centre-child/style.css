@@ -888,6 +888,11 @@ section.featured-product {
 .single-product .wcpay-payment-request-wrapper,
 .single-product #wcpay-payment-request-button-separator {
   display: none !important; }
+.single-product .newsletter-box {
+  padding-left: 15px;
+  padding-right: 15px; }
+  .single-product .newsletter-box .container {
+    max-width: 100%; }
 
 .memberships-holder .membership-box {
   border: 3px solid;

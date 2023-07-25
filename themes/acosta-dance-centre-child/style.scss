@@ -118,18 +118,15 @@ h4 {
   letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--black-color) !important;
-  color: var(--white-color) !important;
-  border: 3px solid var(--black-color) !important;
 }
 
 @mixin button-black {
-  background-color: var(--black-color);
+  background-color: var(--black-color) !important;
   color: var(--white-color);
   border: 3px solid var(--black-color);
 
   &:hover {
-    background-color: var(--adc-color-1);
+    background-color: var(--adc-color-1) !important ;
     color: var(--black-color);
   }
 }

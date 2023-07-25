@@ -97,15 +97,12 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   background-color: var(--black-color) !important;
-  color: var(--white-color) !important;
-  border: 3px solid var(--black-color) !important;
-  background-color: var(--black-color);
   color: var(--white-color);
   border: 3px solid var(--black-color); }
   .wpcf7-submit:hover,
   .checkout-button:hover,
   #place_order:hover {
-    background-color: var(--adc-color-1);
+    background-color: var(--adc-color-1) !important;
     color: var(--black-color); }
 
 .button-box > a,
@@ -121,16 +118,13 @@ h4 {
   display: inline-block;
   letter-spacing: 7px;
   text-align: center;
-  text-transform: uppercase;
-  background-color: var(--black-color) !important;
-  color: var(--white-color) !important;
-  border: 3px solid var(--black-color) !important; }
+  text-transform: uppercase; }
 .button-box.button-black > a,
 .button-box.button-black > button,
 .button-box.button-black > input[type="submit"],
 .button-box.button-black > span,
 .button-box.button-black .single_add_to_cart_button {
-  background-color: var(--black-color);
+  background-color: var(--black-color) !important;
   color: var(--white-color);
   border: 3px solid var(--black-color); }
   .button-box.button-black > a:hover,
@@ -138,7 +132,7 @@ h4 {
   .button-box.button-black > input[type="submit"]:hover,
   .button-box.button-black > span:hover,
   .button-box.button-black .single_add_to_cart_button:hover {
-    background-color: var(--adc-color-1);
+    background-color: var(--adc-color-1) !important;
     color: var(--black-color); }
 .button-box.button-white > a,
 .button-box.button-white > button,

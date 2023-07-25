@@ -125,6 +125,8 @@ function conditionaly_removing_product_tabs($tabs)
 function action_woocommerce_after_single_product()
 {
   global $product;
+  do_action('single_product_after_image');
+
   echo '</div>';
   echo ' <div class="col-lg-4">';
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
@@ -180,7 +182,6 @@ function action_woocommerce_after_single_product()
     </div>
   </div>
   <?php
-  do_action('single_product_after_image');
   echo '</div>';
   echo '</div>';
 

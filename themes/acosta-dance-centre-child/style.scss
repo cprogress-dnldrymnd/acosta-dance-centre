@@ -1335,6 +1335,11 @@ form input[type=tel] {
   border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.shop_table {
+table.shop_table.shop_table {
   border-collapse: collapse;
+  th {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 }

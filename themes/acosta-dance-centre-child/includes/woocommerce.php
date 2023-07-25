@@ -239,9 +239,12 @@ function action_single_product_after_image()
         <?= $text_after_image ?>
       </h2>
     <?php } ?>
-    <div class="date-box text-uppercase">
-      <?= $ticket_date ?>
-    </div>
+    <?php if ($_product_category != 'other') { ?>
+      <div class="date-box text-uppercase">
+        <?= $ticket_date ?>
+      </div>
+    <?php } ?>
+
 
     <div class="content-box">
       <?= wpautop(get_the_content()) ?>

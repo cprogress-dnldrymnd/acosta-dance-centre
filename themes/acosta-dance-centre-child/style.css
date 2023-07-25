@@ -630,6 +630,7 @@ section.featured-product {
   display: none; }
 
 .details-box {
-  border: 3px solid #000000; }
+  border: 3px solid #000000;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */

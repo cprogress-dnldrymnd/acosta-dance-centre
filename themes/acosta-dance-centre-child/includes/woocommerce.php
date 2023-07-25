@@ -220,8 +220,12 @@ function action_single_product_after_image()
   }
   ?>
 
-  <div class="date-box">
+  <div class="date-box text-uppercase">
     <?= $ticket_date ?>
+  </div>
+
+  <div class="content-box">
+    <?= get_the_content() ?>
   </div>
 
   <?php

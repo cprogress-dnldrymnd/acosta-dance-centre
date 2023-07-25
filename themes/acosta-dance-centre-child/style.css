@@ -638,6 +638,11 @@ section.featured-product {
   .woocommerce .product-inner .row [class*='col-'] {
     padding-left: 35px;
     padding-right: 35px; }
+.woocommerce .date-box {
+  letter-spacing: 7.24px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #6D6D6D; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1; }

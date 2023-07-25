@@ -143,7 +143,7 @@ function action_woocommerce_after_single_product()
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
     <table class="table">
-      <?php if ($product->get_price_html()) { ?>
+      <?php if ($product->get_price_html() && $_product_category != 'memberships') { ?>
         <tr>
           <th>PRICE</th>
         </tr>

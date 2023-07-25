@@ -290,7 +290,7 @@ function action_single_product_after_image()
                 <?= get_post_field('post_content', $variation); ?>
               </div>
               <div class="button-box text-center button-bordered">
-                <a href="/?add-to-cart=<?= $variation ?>">
+                <a href="?add-to-cart=<?= $variation ?>">
                   FIND OUT MORE
                 </a>
               </div>

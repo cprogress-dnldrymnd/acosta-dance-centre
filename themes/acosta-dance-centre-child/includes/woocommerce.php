@@ -297,18 +297,11 @@ function action_single_product_after_image()
       foreach ($variations as $variation) {
         $product_variation[$variation['variation_id']] = $variation['attributes']['attribute_payment-plan'];
       }
-      $variations_id = wp_list_pluck($variations, 'variation_id');
-      echo '<pre>';
-      var_dump($product_variation);
-      echo '</pre>';
-      echo '<pre>';
-      var_dump($variations);
-      echo '</pre>';
       ?>
       <div class="add-to-cart-box text-center md-padding-bottom" id="join-now">
         <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>
         <div class="button-group-box justify-content-center">
-          <?php foreach ($variations_id as $key => $variation) { ?>
+          <?php foreach ($product_variation as $key => $variation) { ?>
             <?php
             $product = wc_get_product($variation);
             ?>

@@ -623,4 +623,7 @@ section.featured-product {
 .woocommerce div.product .summary {
   display: none; }
 
+.details-box {
+  border: 3px solid #000000; }
+
 /*# sourceMappingURL=style.css.map */

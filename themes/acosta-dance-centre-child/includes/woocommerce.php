@@ -128,7 +128,6 @@ function action_woocommerce_after_single_product()
   do_action('single_product_after_image');
   echo '</div>';
   echo ' <div class="col-xl-4">';
-  $start_time_only = carbon_get_post_meta($product->get_id(), 'start_time_only');
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
   $ticket_date_val_end = get_post_meta($product->get_id(), '_ticket_checkin_availability_to_date', true);
   $ticket_date_from = date('d M', strtotime($ticket_date_val));

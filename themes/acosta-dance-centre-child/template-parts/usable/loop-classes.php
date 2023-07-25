@@ -15,6 +15,7 @@ else if ($args['type'] == 'related') {
 
   $posts = array(
     'post_type' => 'product',
+    'posts_per_page' => 3,
     'tax_query' => array(
       array(
         'taxonomy' => 'product_cat',

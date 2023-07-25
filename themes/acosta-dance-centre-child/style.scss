@@ -104,7 +104,8 @@ p {
 
   a,
   button,
-  input[type="submit"] {
+  input[type="submit"],
+  span {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     padding: 30px 40px 30px 40px;
@@ -118,7 +119,8 @@ p {
 
     a,
     button,
-    input[type="submit"] {
+    input[type="submit"],
+    span {
       background-color: var(--black-color);
       color: var(--white-color);
 
@@ -133,7 +135,8 @@ p {
 
     a,
     button,
-    input[type="submit"] {
+    input[type="submit"],
+    span {
       background-color: var(--white-color);
       color: var(--black-color);
 

@@ -257,7 +257,7 @@ p {
       font-size: 50px; } }
 
 body:not(.page-template-default) #doro-main #doro-inner {
-  padding: 40px 60px; }
+  padding: 40px 15px; }
 
 .post-type-archive-product #doro-main #doro-inner,
 .tax-product_cat #doro-main #doro-inner {
@@ -591,7 +591,7 @@ section.featured-product {
     text-decoration: underline; }
 
 #doro-aside {
-  width: 250px; }
+  width: 300px; }
 
 #doro-main {
   width: calc(100% - 300px); }

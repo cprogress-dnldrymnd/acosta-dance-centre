@@ -893,23 +893,27 @@ section.featured-product {
 }
 
 .woocommerce {
+  .product-inner {}
+
   div.product {
+
+    section.product-summary.product-summary {
+      .product_title {
+        font-size: 80px;
+        line-height: 1;
+      }
+
+      .woocommerce-product-gallery {
+        width: 100%;
+        float: none;
+      }
+    }
+
+
 
 
     .summary {
       display: none;
     }
-  }
-}
-
-section.product-summary {
-  .product_title {
-    font-size: 80px;
-    line-height: 1;
-  }
-
-  .woocommerce-product-gallery {
-    width: 100%;
-    float: none;
   }
 }

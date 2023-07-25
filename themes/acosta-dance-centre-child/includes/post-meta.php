@@ -33,7 +33,7 @@ Container::make('theme_options', __('Classes Settings'))
           )
         ),
 
-      Field::make('association', 'featured_classes', __('FEATURED WORKSHOPS'))
+      Field::make('association', 'featured_workshops', __('FEATURED WORKSHOPS'))
         ->set_types(
           array(
             array(

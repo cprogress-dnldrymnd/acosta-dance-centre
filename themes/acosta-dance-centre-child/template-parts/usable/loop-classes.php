@@ -4,7 +4,6 @@ if ($args['type'] == 'featured_classes') {
 }
 else if ($args['type'] == 'related') {
 
-  $_product_category = _product_category(get_the_ID());
 
   $terms = get_the_terms(get_the_ID(), 'product_cat');
   $terms_val = array();
@@ -25,11 +24,8 @@ else if ($args['type'] == 'related') {
     )
   );
 
-  if ($_product_category == 'classes') {
-    $heading_val = 'CLASSES';
-  } else if($_product_category == 'workshops') {
-    $heading_val = 'WORKSHOPS';
-  }
+
+  $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');
 
 
   $post_list = get_posts($posts);
@@ -42,7 +38,7 @@ else if ($args['type'] == 'related') {
     );
   }
 
-  $heading = 'OTHER <br>'.$heading_val;
+  $heading = 'OTHER <br>' . $heading_val;
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');

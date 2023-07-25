@@ -256,7 +256,7 @@ remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_re
 
 
 
-function _product_category($id)
+function _product_category($id, $classes, $workshops)
 {
   $terms = get_the_terms($id, 'product_cat');
   $terms_val = array();
@@ -264,9 +264,9 @@ function _product_category($id)
     $terms_val[] = $term->term_id;
   }
   if (in_array(79, $terms_val)) {
-    return 'classes';
+    return $classes;
   }
   else if (in_array(78, $terms_val)) {
-    return 'workshops';
+    return $workshops;
   }
 }

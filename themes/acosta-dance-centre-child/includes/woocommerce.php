@@ -111,13 +111,13 @@ function conditionaly_removing_product_tabs($tabs)
 
   // If the current product have the same ID than one of the defined IDs in your array,… 
   // we remove the tab.
-  if (has_term($product_cats, 'product_cat', $product_id)) {
+  //if (has_term($product_cats, 'product_cat', $product_id)) {
 
-    // KEEP BELOW ONLY THE TABS YOU NEED TO REMOVE   <===  <===  <===  <===
-    unset($tabs['description']); // (Description tab)  
-    unset($tabs['reviews']); // (Reviews tab)
-    unset($tabs['additional_information']); // (Additional information tab)
-  }
+  // KEEP BELOW ONLY THE TABS YOU NEED TO REMOVE   <===  <===  <===  <===
+  unset($tabs['description']); // (Description tab)  
+  unset($tabs['reviews']); // (Reviews tab)
+  unset($tabs['additional_information']); // (Additional information tab)
+  //}
   return $tabs;
 }
 
@@ -238,7 +238,7 @@ function action_single_product_after_image()
     </div>
 
     <div class="classes md-padding">
-      <?= do_shortcode( '[adc_classes type="related" heading="OTHER <br>CLASSES"]' ) ?>
+      <?= do_shortcode('[adc_classes type="related" heading="OTHER <br>CLASSES"]') ?>
     </div>
   </div>
 

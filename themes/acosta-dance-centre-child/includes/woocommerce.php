@@ -165,8 +165,11 @@ function action_woocommerce_after_single_product()
         do_action('single_add_to_cart');
         echo '</div>';
       }
-      else {
+      else if ($_product_category == 'classes') {
         echo ' <span>AVAILABLE TO BOOK SOON</span>';
+      }
+      else {
+        echo ' <a href="#join-now">JOIN NOW</a>';
       }
       ?>
     </div>
@@ -260,7 +263,7 @@ function action_single_product_after_image()
       ?>
 
       <?php if ($_product_category != 'other') { ?>
-        <div class="button-box button-bordered">
+        <div class="button-box button-bordered" id="join-now">
           <a href="/memberships">
             MEMBERSHIPS
           </a>

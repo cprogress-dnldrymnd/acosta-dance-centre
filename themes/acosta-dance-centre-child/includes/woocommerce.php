@@ -133,6 +133,10 @@ function action_woocommerce_after_single_product()
   $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
   $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
   $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
+
+  $ticket_time_from = date('g:i a', strtotime($ticket_date_val));
+  $ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
+  $ticket_time = $ticket_time_from . ' - ' . $ticket_time_to;
   $_product_category = _product_category(get_the_ID());
   ?>
   <?php if ($_product_category != 'memberships') { ?>
@@ -149,12 +153,21 @@ function action_woocommerce_after_single_product()
           </tr>
         <?php } ?>
 
-        <?php if ($ticket_date_val) { ?>
+        <?php if ($ticket_date) { ?>
           <tr>
-            <th>DATE & TIME</th>
+            <th>DATE</th>
           </tr>
           <tr>
             <td><?= $ticket_date ?> </td>
+          </tr>
+        <?php } ?>
+
+        <?php if ($ticket_time) { ?>
+          <tr>
+            <th>TIME</th>
+          </tr>
+          <tr>
+            <td><?= $ticket_time ?> </td>
           </tr>
         <?php } ?>
         <?php do_action('woocommerce_product_additional_information', $product); ?>

@@ -1231,5 +1231,13 @@ section.featured-product {
     max-width: 100%;
     border: 3px solid #000;
     padding: 2rem;
+
+    .price-box {
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 30px;
+      color: #000;
+    }
   }
 }

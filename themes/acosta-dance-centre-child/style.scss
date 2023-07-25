@@ -942,7 +942,7 @@ section.featured-product {
 
 .woocommerce {
   .product-inner {
-    .row {
+    >.row {
       margin-left: -35px;
       margin-right: -35px;
 
@@ -971,6 +971,7 @@ section.featured-product {
         font-size: 80px;
         line-height: 1;
         text-transform: uppercase;
+
         @media(max-width: 1199px) {
           font-size: 70px;
         }

@@ -946,7 +946,7 @@ section.featured-product {
       margin-left: -35px;
       margin-right: -35px;
 
-      [class*='col-'] {
+      >[class*='col-'] {
         padding-left: 35px;
         padding-right: 35px;
       }

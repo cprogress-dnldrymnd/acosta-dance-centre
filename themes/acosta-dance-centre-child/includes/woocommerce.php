@@ -297,10 +297,15 @@ function action_single_product_after_image()
       foreach ($variations as $variation) {
         $product_variation = array(
           'plan' => $variation['attributes']['attribute_payment-plan'],
-          'id' => $variation['variation_id']
+          'id'   => $variation['variation_id']
         );
       }
       $variations_id = wp_list_pluck($variations, 'variation_id');
+
+
+      echo '<pre>';
+      var_dump($product->get_attribute('payment-plan'));
+      echo '</pre>';
       echo '<pre>';
       var_dump($product_variation);
       echo '</pre>';

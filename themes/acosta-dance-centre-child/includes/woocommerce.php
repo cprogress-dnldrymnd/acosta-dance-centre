@@ -283,7 +283,7 @@ function action_single_product_after_image()
           <div class="membership-box">
             <div class="sec-title text-center">
               <span class="heading-meta">BECOME A MEMBER</span>
-              <h2 class="doro-heading"></h2>
+              <h2 class="doro-heading"> <?php $product->name ?> </h2>
             </div>
 
             <div class="checklist">

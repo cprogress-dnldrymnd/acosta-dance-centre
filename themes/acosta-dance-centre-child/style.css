@@ -793,8 +793,11 @@ section.featured-product {
   margin-right: auto; }
   .membership-box .doro-heading {
     font-size: 30px; }
-  .membership-box .button-box {
-    margin-top: 30px; }
+  .membership-box .heading-meta {
+    margin-bottom: 30px; }
+  .membership-box .checklist {
+    margin-top: 40px;
+    margin-bottom: 40px; }
 
 .checklist ul li {
   display: flex;
@@ -824,7 +827,8 @@ section.featured-product {
 .content-box h4 {
   font-size: 22px; }
 
-.single-product .wcpay-payment-request-wrapper, .single-product #wcpay-payment-request-button-separator {
+.single-product .wcpay-payment-request-wrapper,
+.single-product #wcpay-payment-request-button-separator {
   display: none !important; }
 
 /*# sourceMappingURL=style.css.map */

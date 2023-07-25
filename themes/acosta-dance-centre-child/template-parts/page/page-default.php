@@ -1,8 +1,9 @@
 <?php $doro_options = get_option('doro'); ?>
 <?php while (have_posts()):
   the_post(); ?>
-  <div class="doro-about xxxx">
+  <div class="doro-about">
     <div class="container-fluid">
+      <?php woocommerce_breadcrumb() ?>
       <?php get_template_part('template-parts/header/title-section'); ?>
       <div class="page-content">
         <?php the_content();
@@ -14,7 +15,8 @@
             'link_after'  => '</span>',
             'pagelink'    => '%',
             'separator'   => '',
-          ));
+          )
+        );
         ?>
       </div>
       <?php if (comments_open() || get_comments_number()) { ?>

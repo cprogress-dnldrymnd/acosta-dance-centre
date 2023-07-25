@@ -1272,10 +1272,13 @@ section.featured-product {
 
     .form-row {
       flex-direction: column;
-      input, textarea {
+
+      input,
+      textarea {
         font-family: 'Hind', sans-serif;
         font-size: 22px;
       }
+
       label {
         font-family: 'Oswald', sans-serif;
         font-weight: 400;
@@ -1289,6 +1292,10 @@ section.featured-product {
 }
 
 .tickera_additional_info {
+  background-color: var(--adc-color-1);
+  padding: 2rem;
+  margin-bottom: 1rem;
+
   .owner-info-wrap {
     h5 {
       font-family: 'Oswald', sans-serif;

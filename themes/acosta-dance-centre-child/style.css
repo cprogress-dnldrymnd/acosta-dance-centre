@@ -879,7 +879,8 @@ section.featured-product {
   max-width: 48%; }
 .woocommerce .col2-set .form-row {
   flex-direction: column; }
-  .woocommerce .col2-set .form-row input, .woocommerce .col2-set .form-row textarea {
+  .woocommerce .col2-set .form-row input,
+  .woocommerce .col2-set .form-row textarea {
     font-family: 'Hind', sans-serif;
     font-size: 22px; }
   .woocommerce .col2-set .form-row label {
@@ -889,12 +890,16 @@ section.featured-product {
     text-transform: uppercase;
     font-size: 20px; }
 
-.tickera_additional_info .owner-info-wrap h5 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 20px; }
+.tickera_additional_info {
+  background-color: var(--adc-color-1);
+  padding: 2rem;
+  margin-bottom: 1rem; }
+  .tickera_additional_info .owner-info-wrap h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px; }
 
 form input[type=tel] {
   max-width: 100%;

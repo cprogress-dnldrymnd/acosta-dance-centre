@@ -246,11 +246,9 @@ function action_single_product_after_image()
       </div>
     <?php } ?>
 
-    <?php if ($_product_category != 'memberships') { ?>
-      <div class="content-box">
-        <?= wpautop(get_the_content()) ?>
-      </div>
-    <?php } ?>
+    <div class="content-box">
+      <?= wpautop(get_the_content()) ?>
+    </div>
 
     <?php if ($_product_category != 'memberships') { ?>
       <div class="button-group-box text-center justify-content-center ">
@@ -280,18 +278,16 @@ function action_single_product_after_image()
       <div class="memberships-holder md-padding-bottom">
         <div class="row">
           <?php foreach ($variations_id as $variation) { ?>
-            <?php 
+            <?php
             $product = wc_get_product($variation)
-            ?>
+              ?>
             <div class="col-lg-6">
               <div class="membership-box">
                 <div class="sec-title text-center">
                   <span class="heading-meta">BECOME A MEMBER</span>
                   <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
                 </div>
-                <div class="content-box">
-                  <?= wpautop(get_the_content()) ?>
-                </div>
+                
                 <div class="price-box">
                   <?= $product->get_price_html() ?>
                 </div>

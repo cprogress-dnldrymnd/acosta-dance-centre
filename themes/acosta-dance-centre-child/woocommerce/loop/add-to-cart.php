@@ -37,6 +37,9 @@ echo apply_filters(
 */
 $terms = get_the_terms(get_the_ID(), 'product_cat');
 $terms_val = array();
+foreach ($terms as $term) {
+	$terms_val[] = $term->term_id;
+}
 if (in_array(79, $terms_val)) {
 	$button_text = 'READ MORE';
 }

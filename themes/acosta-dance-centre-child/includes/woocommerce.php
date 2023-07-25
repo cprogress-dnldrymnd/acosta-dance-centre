@@ -256,7 +256,7 @@ remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_re
 
 
 
-function _product_category($id, $classes, $workshops)
+function _product_category($id, $classes = 'classes', $workshops = 'workshops')
 {
   $terms = get_the_terms($id, 'product_cat');
   $terms_val = array();

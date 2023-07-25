@@ -792,13 +792,17 @@ section.featured-product {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto; }
-  .details-box ul li {
-    font-size: 15px;
-    letter-spacing: 5.43px;
-    font-family: 'Oswald', sans-serif;
-    color: #6D6D6D;
-    border-bottom: 1px solid #eaeaea !important;
-    padding-top: 0; }
+  .details-box ul {
+    padding: 0; }
+    .details-box ul li {
+      font-size: 15px;
+      letter-spacing: 5.43px;
+      font-family: 'Oswald', sans-serif;
+      color: #6D6D6D;
+      border-bottom: 1px solid #eaeaea !important;
+      padding-top: 0; }
+      .details-box ul li:before {
+        content: '&#x2022;'; }
   .details-box del {
     text-decoration: none; }
     .details-box del:before {

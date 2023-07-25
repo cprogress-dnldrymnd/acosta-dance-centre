@@ -173,7 +173,7 @@ function action_woocommerce_after_single_product()
 
   <div class="membership-box">
     <div class="sec-title text-center">
-      <span class="heading-meta">BECOME A MEMBER</span>
+      <span class="heading-meta mb-3">BECOME A MEMBER</span>
       <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
     </div>
 

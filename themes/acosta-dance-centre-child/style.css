@@ -793,6 +793,8 @@ section.featured-product {
   margin-right: auto; }
   .membership-box .doro-heading {
     font-size: 30px; }
+  .membership-box .button-box {
+    margin-top: 30px; }
 
 .checklist ul li {
   display: flex;

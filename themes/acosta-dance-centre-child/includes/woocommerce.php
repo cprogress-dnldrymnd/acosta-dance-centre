@@ -214,7 +214,6 @@ function action_single_product_after_image()
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
   $ticket_date = date('l d F,  g:i a', $dateformat);
-  $term = get_queried_object()->name;
   ?>
   <div class="content-margin">
     <?php if ($text_after_image) { ?>
@@ -239,7 +238,7 @@ function action_single_product_after_image()
     </div>
 
     <div class="classes md-padding">
-      <?= do_shortcode('[adc_classes type="related" heading="OTHER <br>' . $term . '"]') ?>
+      <?= do_shortcode( '[adc_classes type="related" heading="OTHER <br>CLASSES"]' ) ?>
     </div>
   </div>
 

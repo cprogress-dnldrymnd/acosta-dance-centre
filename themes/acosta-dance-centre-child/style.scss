@@ -108,22 +108,43 @@ h4 {
   }
 }
 
+@mixin button-style {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  padding: 30px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 1.2;
+  display: inline-block;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin button-black {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 3px solid var(--black-color);
+
+  &:hover {
+    background-color: var(--adc-color-1);
+    color: var(--black-color);
+  }
+}
+
+.wpcf7-submit,
+.checkout-button,
+#place_order {
+  @include button-style;
+}
+
 .button-box {
 
   >a,
   >button,
   >input[type="submit"],
   >span,
-  .single_add_to_cart_button, .wpcf7-submit, .checkout-button, #place_order {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    padding: 30px 40px 30px 40px;
-    font-size: 20px;
-    line-height: 1.2;
-    display: inline-block;
-    letter-spacing: 7px;
-    text-align: center;
-    text-transform: uppercase;
+  .single_add_to_cart_button {
+    @include button-style;
   }
 
   &.button-black {
@@ -132,16 +153,8 @@ h4 {
     >button,
     >input[type="submit"],
     >span,
-    .single_add_to_cart_button, .wpcf7-submit, .checkout-button, #place_order {
-      background-color: var(--black-color);
-      color: var(--white-color);
-      border: 3px solid var(--black-color);
-
-      &:hover {
-        background-color: var(--adc-color-1);
-        color: var(--black-color);
-
-      }
+    .single_add_to_cart_button {
+      @mixin button-black;
     }
   }
 

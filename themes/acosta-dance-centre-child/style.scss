@@ -172,6 +172,7 @@ p {
   margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
+
   .button-box {
     &:not(:last-child) {
       margin-right: 1rem;
@@ -977,6 +978,26 @@ section.featured-product {
       >[class*='col-'] {
         padding-left: 35px;
         padding-right: 35px;
+      }
+    }
+  }
+
+  .button-group-box {
+    .cart {
+      display: flex;
+      align-items: center;
+
+      .quantity {
+        input {
+          border-radius: 0;
+          margin-right: 1rem;
+          height: 84px;
+          border: 1px solid;
+        }
+      }
+
+      button {
+        margin: 0 !important;
       }
     }
   }

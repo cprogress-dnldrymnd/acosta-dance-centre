@@ -290,6 +290,11 @@ function action_single_product_after_image()
     <?php } ?>
 
     <?php if ($_product_category == 'memberships') { ?>
+      <style>
+        .newsletter-box {
+          max-width: 66.666667%;
+        }
+      </style>
       <?php
       global $product;
       $variations = $product->get_available_variations();

@@ -280,6 +280,9 @@ function action_single_product_after_image()
       <div class="memberships-holder md-padding-bottom">
         <div class="row">
           <?php foreach ($variations_id as $variation) { ?>
+            <?php 
+            $product = wc_get_product($variation)
+            ?>
             <div class="col-lg-6">
               <div class="membership-box">
                 <div class="sec-title text-center">
@@ -288,6 +291,9 @@ function action_single_product_after_image()
                 </div>
                 <div class="content-box">
                   <?= wpautop(get_the_content()) ?>
+                </div>
+                <div class="price-box">
+                  <?= $product->get_price_html() ?>
                 </div>
                 <div class="button-box text-center button-bordered">
                   <a href="?add-to-cart=<?= $variation ?>">

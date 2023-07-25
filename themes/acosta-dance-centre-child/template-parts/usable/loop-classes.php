@@ -24,7 +24,6 @@ else if ($args['type'] == 'other_classes') {
       'id' => $post->ID
     );
   }
-  var_dump($postslist);
 }
 else {
   $classes = get__theme_option('featured_classes');

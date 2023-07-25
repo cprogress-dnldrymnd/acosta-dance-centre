@@ -131,7 +131,7 @@ function action_woocommerce_after_single_product()
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
   $ticket_time = date('g:i a', $dateformat);
-  $ticket_date = date('d . F . Y', $dateformat);
+  $ticket_date = date('d . M . Y', $dateformat);
   ?>
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>

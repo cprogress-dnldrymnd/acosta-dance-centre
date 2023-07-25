@@ -932,6 +932,9 @@ section.featured-product {
     color: #6D6D6D;
   }
 
+  .featured-product {
+    background-color: var(--adc-color-1) !important;
+  }
   div.product {
 
     section.product-summary.product-summary {

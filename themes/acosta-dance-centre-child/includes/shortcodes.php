@@ -67,6 +67,7 @@ function adc_classes($atts)
     shortcode_atts(
       array(
         'type' => 'featured_classes',
+        'heading' => '',
       ),
       $atts
     )
@@ -74,6 +75,7 @@ function adc_classes($atts)
   ob_start();
   $args = array(
     'type' => $type,
+    'heading' => $heading,
   );
   get_template_part('template-parts/usable/loop-classes', 'null', $args);
   return ob_get_clean();

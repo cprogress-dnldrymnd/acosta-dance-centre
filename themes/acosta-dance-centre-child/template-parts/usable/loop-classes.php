@@ -12,7 +12,7 @@ else {
     <?php if ($args['heading']) { ?>
       <div class="heading-box mb-5">
         <h2 class="big-title">
-          SUMMER 23<br> FEATURED CLASSES
+          <?= $args['heading'] ?>
         </h2>
       </div>
     <?php } ?>

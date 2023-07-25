@@ -230,7 +230,7 @@ function action_single_product_after_image()
     </div>
 
     <div class="classes">
-      <?= do_shortcode( '[adc_classes type="featured_classes"]' ) ?>
+      <?= do_shortcode( '[adc_classes type="featured_classes" heading="OTHER CLASSES"]' ) ?>
     </div>
   </div>
 

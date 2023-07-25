@@ -1234,6 +1234,11 @@ section.featured-product {
           margin: 0;
         }
       }
+      &:last-child {
+        td {
+          border-bottom: none ;
+        }
+      }
     }
   }
 

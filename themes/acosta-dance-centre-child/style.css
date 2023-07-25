@@ -103,7 +103,7 @@ h4 {
   .checkout-button:hover,
   #place_order:hover {
     background-color: var(--adc-color-1) !important;
-    color: var(--black-color); }
+    color: var(--black-color) !important; }
 
 .button-box > a,
 .button-box > button,
@@ -133,7 +133,7 @@ h4 {
   .button-box.button-black > span:hover,
   .button-box.button-black .single_add_to_cart_button:hover {
     background-color: var(--adc-color-1) !important;
-    color: var(--black-color); }
+    color: var(--black-color) !important; }
 .button-box.button-white > a,
 .button-box.button-white > button,
 .button-box.button-white > input[type="submit"],

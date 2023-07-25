@@ -956,4 +956,16 @@ table.shop_table.shop_table {
 .onsale {
   display: none !important; }
 
+.coupon .input-text {
+  min-height: 44.72px;
+  min-width: 150px; }
+.coupon button[name="apply_coupon"] {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */

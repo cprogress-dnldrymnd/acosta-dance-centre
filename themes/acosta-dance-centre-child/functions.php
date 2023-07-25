@@ -385,12 +385,19 @@ function single_get_date($id, $type = 'date')
 		if ($type == 'date') {
 			if ($ticket_date_from != $ticket_date_to) {
 				return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
-			} else {
-				return $ticket_date_from . ' ' . $ticket_date_Y;;
+			}
+			else {
+				return $ticket_date_from . ' ' . $ticket_date_Y;
+				;
 			}
 		}
 		else {
-			return $ticket_time_from . ' - ' . $ticket_time_to;
+			if ($ticket_time_from != $ticket_time_to) {
+				return $ticket_time_from . ' - ' . $ticket_time_to;
+			}
+			else {
+				return $ticket_time_from;
+			}
 		}
 	}
 	else {

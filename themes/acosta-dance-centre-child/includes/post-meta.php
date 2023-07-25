@@ -55,6 +55,6 @@ Container::make('post_meta', 'Product Options')
   ->add_fields(
     array(
       Field::make('text', 'text_after_image', 'Text After Image'),
-      Field::make('checkbox', 'Start Time Only', 'Start Time Only'),
+      Field::make('checkbox', 'start_time_only', 'Start Time Only'),
     )
   );

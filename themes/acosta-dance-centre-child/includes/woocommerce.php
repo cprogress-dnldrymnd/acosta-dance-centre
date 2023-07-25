@@ -278,10 +278,11 @@ function action_single_product_after_image()
     }
     ?>
 
-
-    <div class="classes md-padding">
-      <?= do_shortcode('[adc_classes type="related"]') ?>
-    </div>
+    <?php if ($_product_category != 'memberships') { ?>
+      <div class="classes md-padding">
+        <?= do_shortcode('[adc_classes type="related"]') ?>
+      </div>
+    <?php } ?>
   </div>
 
   <?php

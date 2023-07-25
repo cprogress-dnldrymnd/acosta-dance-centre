@@ -130,7 +130,9 @@ function action_woocommerce_after_single_product()
   ?>
   <div class="details-box">
     <h3 class="doro-heading">DETAILS</h3>
-    <?php do_action('woocommerce_product_additional_information', $product); ?>
+    <table class="woocommerce-product-attributes shop_attributes">
+      <?php do_action('woocommerce_product_additional_information', $product); ?>
+    </table>
   </div>
   <?php
   echo '</div>';

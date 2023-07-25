@@ -89,7 +89,8 @@ p {
   line-height: 1.2;
   display: inline-block;
   letter-spacing: 7px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 .button-box.button-black a,
 .button-box.button-black button,
 .button-box.button-black input[type="submit"],

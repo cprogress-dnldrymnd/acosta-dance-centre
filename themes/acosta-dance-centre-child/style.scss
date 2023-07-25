@@ -882,11 +882,17 @@ section.featured-product {
   @media(min-width: 769px) and (max-width: 1199px) {
     padding-left: 15px;
     padding-right: 15px;
+    width: 250px;
   }
 }
 
 #doro-main {
-  @media(min-width: 769px) {
+
+  @media(min-width: 769px) and (max-width: 1199px) {
+    width: calc(100% - 250px);
+  }
+
+  @media(min-width: 1200px) {
     width: calc(100% - 300px);
   }
 }

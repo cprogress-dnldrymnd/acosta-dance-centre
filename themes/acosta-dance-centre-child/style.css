@@ -118,7 +118,7 @@ p {
 .button-box .button-bordered input[type="submit"],
 .button-box .button-bordered span {
   color: var(--black-color);
-  border: 2px solid; }
+  border: 3px solid; }
   .button-box .button-bordered a:hover,
   .button-box .button-bordered button:hover,
   .button-box .button-bordered input[type="submit"]:hover,

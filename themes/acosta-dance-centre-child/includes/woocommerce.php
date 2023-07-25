@@ -286,16 +286,9 @@ function action_single_product_after_image()
                 <span class="heading-meta">BECOME A MEMBER</span>
                 <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
               </div>
-
-              <div class="checklist">
-                <ul>
-                  <li>Multiple Classes Per Month</li>
-                  <li>10% Off Events</li>
-                  <li>Access to our online academy</li>
-                </ul>
-              </div>
+        
               <div class="button-box text-center button-bordered">
-                <a href="/memberships/">
+                <a href="/?add-to-cart=<?= $variation ?>">
                   FIND OUT MORE
                 </a>
               </div>

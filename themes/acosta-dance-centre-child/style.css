@@ -618,7 +618,8 @@ section.featured-product {
   display: none; }
 
 section.product-summary .product_title {
-  font-size: 80px; }
+  font-size: 80px;
+  line-height: 1; }
 section.product-summary .woocommerce-product-gallery {
   width: 100%;
   float: none; }

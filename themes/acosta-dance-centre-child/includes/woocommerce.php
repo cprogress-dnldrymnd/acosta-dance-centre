@@ -83,7 +83,6 @@ add_action('single_product_custom_title', 'woocommerce_template_single_title');
 function action_woocommerce_before_single_product_summary()
 {
   echo '<section class="product-summary">';
-  echo '<div class="row">';
 }
 
 
@@ -91,7 +90,6 @@ add_action('woocommerce_before_single_product_summary', 'action_woocommerce_befo
 
 function action_woocommerce_after_single_product_summary()
 {
-  echo '</div>';
   echo '</section>';
 }
 
@@ -124,24 +122,15 @@ function conditionaly_removing_product_tabs($tabs)
 }
 
 
-function action_single_product_details_box()
+function action_woocommerce_after_single_product()
 {
+  echo '</div>';
+  echo ' <div class="col-lg-4">';
   ?>
   <div class="details-box">
     <h3>DETAILS</h3>
   </div>
   <?php
-}
-
-
-add_action('single_product_details_box', 'action_single_product_details_box');
-
-
-function action_woocommerce_after_single_product()
-{
-  echo '</div>';
-  echo ' <div class="col-lg-4">';
-  echo 'details';
   echo '</div>';
 
 }

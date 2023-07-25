@@ -228,6 +228,10 @@ function action_single_product_after_image()
     <div class="content-box">
       <?= wpautop(get_the_content()) ?>
     </div>
+
+    <div class="classes">
+      <?= do_shortcode( '[adc_classes type="featured_classes"]' ) ?>
+    </div>
   </div>
 
   <?php

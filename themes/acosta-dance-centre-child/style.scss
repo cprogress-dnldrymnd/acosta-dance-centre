@@ -935,25 +935,28 @@ section.featured-product {
   table {
     border-collapse: collapse;
     border: none !important;
-
-    th {
-      color: #000;
-      font-family: 'Oswald', sans-serif;
-      font-size: 20px;
+    tr {
       border: none !important;
-    }
 
-    td {
-      border: none !important;
-      font-size: 15px;
-      letter-spacing: 5.43px;
-      line-height: 1.5em;
-
-      p {
+      th {
+        color: #000;
         font-family: 'Oswald', sans-serif;
-        font-size: inherit;
-        letter-spacing: inherit;
-        margin: 0;
+        font-size: 20px;
+        border: none !important;
+      }
+
+      td {
+        border: none !important;
+        font-size: 15px;
+        letter-spacing: 5.43px;
+        line-height: 1.5em;
+
+        p {
+          font-family: 'Oswald', sans-serif;
+          font-size: inherit;
+          letter-spacing: inherit;
+          margin: 0;
+        }
       }
     }
   }

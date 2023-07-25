@@ -635,20 +635,22 @@ section.featured-product {
   .details-box table {
     border-collapse: collapse;
     border: none !important; }
-    .details-box table th {
-      color: #000;
-      font-family: 'Oswald', sans-serif;
-      font-size: 20px;
+    .details-box table tr {
       border: none !important; }
-    .details-box table td {
-      border: none !important;
-      font-size: 15px;
-      letter-spacing: 5.43px;
-      line-height: 1.5em; }
-      .details-box table td p {
+      .details-box table tr th {
+        color: #000;
         font-family: 'Oswald', sans-serif;
-        font-size: inherit;
-        letter-spacing: inherit;
-        margin: 0; }
+        font-size: 20px;
+        border: none !important; }
+      .details-box table tr td {
+        border: none !important;
+        font-size: 15px;
+        letter-spacing: 5.43px;
+        line-height: 1.5em; }
+        .details-box table tr td p {
+          font-family: 'Oswald', sans-serif;
+          font-size: inherit;
+          letter-spacing: inherit;
+          margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

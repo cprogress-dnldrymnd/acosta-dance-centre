@@ -291,7 +291,7 @@ function action_single_product_after_image()
               </div>
               <div class="button-box text-center button-bordered">
                 <a href="?add-to-cart=<?= $variation ?>">
-                  FIND OUT MORE
+                  JOIN NOW
                 </a>
               </div>
             </div>

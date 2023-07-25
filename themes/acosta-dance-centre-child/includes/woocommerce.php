@@ -248,10 +248,12 @@ function action_single_product_after_image()
       </div>
     <?php } ?>
 
+    <?php if ($_product_category != 'memberships') { ?>
+      <div class="content-box">
+        <?= wpautop(get_the_content()) ?>
+      </div>
+    <?php } ?>
 
-    <div class="content-box">
-      <?= wpautop(get_the_content()) ?>
-    </div>
     <?php if ($_product_category != 'memberships') { ?>
       <div class="button-group-box text-center justify-content-center ">
         <?php

@@ -214,6 +214,7 @@ function action_single_product_after_image()
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
   $dateformat = strtotime($ticket_date_val);
   $ticket_date = date('l d F,  g:i a', $dateformat);
+  $_product_category = _product_category(get_the_ID());
   ?>
   <div class="content-margin">
     <?php if ($text_after_image) { ?>
@@ -230,6 +231,11 @@ function action_single_product_after_image()
     </div>
 
     <div class="button-group-box text-center">
+      <?php
+      if ($_product_category == 'workshops') {
+        echo do_action('woocommerce_template_single_add_to_cart');
+      }
+      ?>
       <div class="button-box button-bordered">
         <a href="/memberships">
           MEMBERSHIPS

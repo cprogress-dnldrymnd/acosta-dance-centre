@@ -129,6 +129,7 @@ function action_woocommerce_after_single_product()
   echo '</div>';
   echo ' <div class="col-xl-4">';
   $ticket_date = single_get_date($product->get_id());
+  $ticket_time = single_get_date($product->get_id(), 'time');
 
   $_product_category = _product_category(get_the_ID());
   ?>

@@ -387,6 +387,7 @@ p {
   margin: 0 0 1em;
   padding: 0;
   color: #767676;
+
   a {
     color: inherit;
   }
@@ -594,6 +595,12 @@ section.featured-product {
       .type {
         color: #000;
       }
+
+      @media(max-width: 991px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     .book-box {
@@ -614,6 +621,7 @@ section.featured-product {
       }
     }
   }
+
   @media(max-width: 991px) {
     text-align: center;
   }

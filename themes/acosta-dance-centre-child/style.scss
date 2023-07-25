@@ -36,7 +36,8 @@ Text Domain: acosta-dance-centre-child
   }
 }
 
-p, li {
+p,
+li {
   color: var(--black-color);
   font-size: 22px;
 }
@@ -1229,6 +1230,10 @@ section.featured-product {
 .content-box {
   h4 {
     font-size: 22px;
+  }
+
+  li {
+    margin-bottom: 20px;
   }
 }
 

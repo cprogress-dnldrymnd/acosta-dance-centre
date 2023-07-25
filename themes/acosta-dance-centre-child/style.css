@@ -31,7 +31,8 @@ Text Domain: acosta-dance-centre-child
     .doro-heading.doro-heading {
       font-size: 35px; } }
 
-p, li {
+p,
+li {
   color: var(--black-color);
   font-size: 22px; }
 
@@ -854,6 +855,8 @@ section.featured-product {
 
 .content-box h4 {
   font-size: 22px; }
+.content-box li {
+  margin-bottom: 20px; }
 
 .single-product .wcpay-payment-request-wrapper,
 .single-product #wcpay-payment-request-button-separator {

@@ -1169,6 +1169,7 @@ section.featured-product {
         content: 'REGULAR: ';
       }
     }
+
     &.no-before-after {
       span {
         text-decoration: none;
@@ -1311,9 +1312,11 @@ section.featured-product {
   h4 {
     font-size: 22px;
   }
+
   ul {
     list-style-type: disc;
   }
+
   li {
     margin-bottom: 20px;
   }
@@ -1484,4 +1487,10 @@ table.shop_table.shop_table {
       color: #000
     }
   }
+}
+
+.add-to-cart-box {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
 }

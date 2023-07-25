@@ -1020,4 +1020,9 @@ table.shop_table.shop_table {
     background-color: var(--adc-color-2);
     color: #000; }
 
+.add-to-cart-box {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */

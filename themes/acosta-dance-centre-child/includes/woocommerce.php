@@ -129,9 +129,11 @@ function action_woocommerce_after_single_product()
   echo '</div>';
   echo ' <div class="col-xl-4">';
   $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
-  $dateformat = strtotime($ticket_date_val);
-  $ticket_time = date('g:i a', $dateformat);
-  $ticket_date = date('d . M . Y', $dateformat);
+  $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+  $ticket_date_val_end = get_post_meta(get_the_ID(), '_ticket_checkin_availability_to_date', true);
+  $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
+  $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
+  $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
   ?>
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
@@ -225,7 +227,6 @@ function action_single_product_after_image()
   $ticket_date_val_end = get_post_meta(get_the_ID(), '_ticket_checkin_availability_to_date', true);
   $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
   $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
-
   $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
   $_product_category = _product_category(get_the_ID());
   ?>

@@ -139,25 +139,24 @@ add_action('single_product_details_box', 'action_single_product_details_box');
 
 function action_woocommerce_after_single_product()
 {
-  ?>
-  <div class="col-lg-4">
-    
-  </div>
-  <?php
-
   echo '</div>';
+  echo ' <div class="col-lg-4">';
+  echo 'details';
+  echo '</div>';
+
 }
 
 
 add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_product');
 
 
-function action_woocommerce_before_single_product() {
- echo '<div class="row">';
- echo '<div class="col-lg-8">';
+function action_woocommerce_before_single_product()
+{
+  echo '<div class="row">';
+  echo '<div class="col-lg-8">';
 }
 
-add_action( 'woocommerce_before_single_product','action_woocommerce_before_single_product' );
+add_action('woocommerce_before_single_product', 'action_woocommerce_before_single_product');
 
 
 function action_woocommerce_sidebar()

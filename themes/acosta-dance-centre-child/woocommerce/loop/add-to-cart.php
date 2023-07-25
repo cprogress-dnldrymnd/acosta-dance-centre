@@ -35,7 +35,7 @@ echo apply_filters(
 	$args
 );
 */
-$_product_category = _product_category(get_the_ID());
-	?>
+$button_text = _product_category(get_the_ID(), 'BOOK', 'READ MORE');
+?>
 
 <a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>

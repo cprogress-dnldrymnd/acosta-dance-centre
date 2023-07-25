@@ -233,7 +233,9 @@ function action_single_product_after_image()
     <div class="button-group-box text-center">
       <?php
       if ($_product_category == 'workshops') {
+        echo '<div class="button-box button-black">';
         do_action('single_add_to_cart');
+        echo '</div>';
       }
       ?>
       <div class="button-box button-bordered">

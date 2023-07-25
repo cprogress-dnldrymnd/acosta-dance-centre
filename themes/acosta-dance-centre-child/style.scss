@@ -953,6 +953,7 @@ section.featured-product {
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
         font-weight: 400;
+            padding-bottom: 0;
       }
 
       td {
@@ -960,6 +961,7 @@ section.featured-product {
         letter-spacing: 5.43px;
         font-family: 'Oswald', sans-serif;
         color: #6D6D6D;
+        border-bottom: 1px solid #eaeaea !important;
         p {
           color: inherit;
           font-family: inherit;

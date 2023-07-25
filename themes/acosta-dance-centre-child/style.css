@@ -648,12 +648,14 @@ section.featured-product {
         color: #000;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
-        font-weight: 400; }
+        font-weight: 400;
+        padding-bottom: 0; }
       .details-box table tr td {
         font-size: 15px;
         letter-spacing: 5.43px;
         font-family: 'Oswald', sans-serif;
-        color: #6D6D6D; }
+        color: #6D6D6D;
+        border-bottom: 1px solid #eaeaea !important; }
         .details-box table tr td p {
           color: inherit;
           font-family: inherit;

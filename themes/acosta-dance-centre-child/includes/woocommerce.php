@@ -133,6 +133,7 @@ function action_woocommerce_after_single_product()
   $ticket_date_from = date('d M,  g:i a', strtotime($ticket_date_val));
   $ticket_date_to = date('d M,  g:i a Y', strtotime($ticket_date_val_end));
   $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to;
+  $_product_category = _product_category(get_the_ID());
   ?>
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
@@ -159,7 +160,6 @@ function action_woocommerce_after_single_product()
 
     <div class="button-box button-black">
       <?php
-      $_product_category = _product_category(get_the_ID());
       if ($_product_category == 'workshops') {
         echo '<div class="button-box button-black">';
         do_action('single_add_to_cart');
@@ -172,25 +172,29 @@ function action_woocommerce_after_single_product()
     </div>
   </div>
 
-  <div class="membership-box">
-    <div class="sec-title text-center">
-      <span class="heading-meta">BECOME A MEMBER</span>
-      <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+  <?php if ($_product_category != 'other') { ?>
+
+    <div class="membership-box">
+      <div class="sec-title text-center">
+        <span class="heading-meta">BECOME A MEMBER</span>
+        <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+      </div>
+
+      <div class="checklist">
+        <ul>
+          <li>Multiple Classes Per Month</li>
+          <li>10% Off Events</li>
+          <li>Access to our online academy</li>
+        </ul>
+      </div>
+      <div class="button-box text-center button-bordered">
+        <a href="/memberships/">
+          FIND OUT MORE
+        </a>
+      </div>
     </div>
 
-    <div class="checklist">
-      <ul>
-        <li>Multiple Classes Per Month</li>
-        <li>10% Off Events</li>
-        <li>Access to our online academy</li>
-      </ul>
-    </div>
-    <div class="button-box text-center button-bordered">
-      <a href="/memberships/">
-        FIND OUT MORE
-      </a>
-    </div>
-  </div>
+  <?php } ?>
   <?php
   echo '</div>';
   echo '</div>';
@@ -292,6 +296,9 @@ function _product_category($id, $classes = 'classes', $workshops = 'workshops')
   }
   else if (in_array(78, $terms_val)) {
     return $workshops;
+  }
+  else {
+    return 'other';
   }
 }
 

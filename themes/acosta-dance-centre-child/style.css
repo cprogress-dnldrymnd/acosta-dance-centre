@@ -266,19 +266,19 @@ p {
   .woocommerce-breadcrumb.woocommerce-breadcrumb a {
     color: inherit; }
 
-.big-title {
+.big-title.big-title {
   font-size: 80px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase; }
   @media (max-width: 1199px) {
-    .big-title {
+    .big-title.big-title {
       font-size: 70px; } }
   @media (max-width: 991px) {
-    .big-title {
+    .big-title.big-title {
       font-size: 60px; } }
   @media (max-width: 767px) {
-    .big-title {
+    .big-title.big-title {
       font-size: 50px; } }
 
 body:not(.page-template-default) #doro-main #doro-inner {

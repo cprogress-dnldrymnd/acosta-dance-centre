@@ -35,6 +35,14 @@ echo apply_filters(
 	$args
 );
 */
+$terms = get_the_terms(get_the_ID(), 'product_cat');
+$terms_val = array();
+if (in_array(79, $terms_val)) {
+	$button_text = 'READ MORE';
+}
+else if (in_array(78, $terms_val)) {
+	$button_text = 'BOOK';
+}
 ?>
 
-<a href="<?= get_permalink() ?>" class="button-book">READ MORE</a>
+<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>

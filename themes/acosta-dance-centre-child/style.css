@@ -617,5 +617,7 @@ section.featured-product {
 .woocommerce div.product {
   display: flex;
   flex-wrap: wrap; }
+  .woocommerce div.product .summary {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

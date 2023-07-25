@@ -895,5 +895,8 @@ section.featured-product {
   div.product {
     display: flex;
     flex-wrap: wrap;
+    .summary {
+      display: none;
+    }
   }
 }

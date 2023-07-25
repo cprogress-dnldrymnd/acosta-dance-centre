@@ -58,7 +58,7 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 <?php
 if ($is_classes) {
 	$args = array(
-		'featured_classes' => true,
+		'type' => 'featured_workshops',
 		'heading'          => 'FEATURED <br>WORKSHOPS'
 	);
 	get_template_part('template-parts/woocommerce/classes-category');

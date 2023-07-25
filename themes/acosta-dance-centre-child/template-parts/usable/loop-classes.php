@@ -24,6 +24,8 @@ else if ($args['type'] == 'other_classes') {
       'id' => $post->ID
     );
   }
+} else if($args['type'] == 'featured_workshops') {
+  $classes = get__theme_option('featured_workshops');
 }
 else {
   $classes = get__theme_option('featured_classes');

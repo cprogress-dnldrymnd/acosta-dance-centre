@@ -611,7 +611,7 @@ section.featured-product {
 #doro-aside {
   width: 300px; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #doro-main {
     width: calc(100% - 300px); } }
 

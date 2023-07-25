@@ -33,6 +33,8 @@ else if ($args['type'] == 'related') {
       'id' => $post->ID
     );
   }
+
+  $heading = 'OTHER <br>';
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');
@@ -44,10 +46,10 @@ else {
 
 <section class="featured-product background-light-red d-flex">
   <div class="inner">
-    <?php if ($args['heading']) { ?>
+    <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">
         <h2 class="big-title">
-          <?= $args['heading'] ?>
+          <?= $heading ? $heading : $args['heading'] ?>
         </h2>
       </div>
     <?php } ?>

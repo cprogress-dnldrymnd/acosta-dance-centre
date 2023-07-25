@@ -137,7 +137,7 @@ function action_woocommerce_after_single_product()
   $ticket_time_from = date('g:i a', strtotime($ticket_date_val));
   $ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
 
-  if ($ticket_date_from != $ticket_date_from) {
+  if ($ticket_date_val != $ticket_date_val_end) {
     $ticket_date = $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
     $ticket_time = $ticket_time_from . ' - ' . $ticket_time_to;
   }
@@ -145,6 +145,8 @@ function action_woocommerce_after_single_product()
     $ticket_date = $ticket_date_from;
     $ticket_time = $ticket_time_from;
   }
+
+  
 
   $_product_category = _product_category(get_the_ID());
   ?>

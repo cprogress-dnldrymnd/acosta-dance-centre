@@ -293,10 +293,19 @@ function action_single_product_after_image()
       <?php
       global $product;
       $variations = $product->get_available_variations();
+      $product_variation = array();
+      foreach($variations as $variation) {
+        $product_variation = array(
+          'plan' => $variation['attributes'][0],
+        );
+      }
       $variations_id = wp_list_pluck($variations, 'variation_id');
       echo '<pre>';
-      var_dump($variations);
+      var_dump($product_variation);
       echo '</pre>';
+        echo '<pre>';
+        var_dump($product_variation);
+        echo '</pre>';
       ?>
       <div class="add-to-cart-box text-center md-padding-bottom" id="join-now">
         <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>

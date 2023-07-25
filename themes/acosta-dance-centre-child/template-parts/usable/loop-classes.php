@@ -2,7 +2,7 @@
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 }
-else if ($args['type'] == 'other_classes') {
+else if ($args['type'] == 'related') {
   $posts = array(
     'post_type' => 'product',
     'tax_query' => array(

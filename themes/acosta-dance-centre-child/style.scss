@@ -833,6 +833,20 @@ section.featured-product {
 }
 */
 .woocommerce {
+  a.remove {
+    background-color: var(--adc-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000 !important;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    &:hover {
+      background-color: var(--adc-color-1);
+    color: #000 !important;
+    }
+  }
+
   ul.products {
     display: flex;
     flex-wrap: wrap;
@@ -1400,6 +1414,7 @@ table.shop_table.shop_table {
     font-size: 20px;
     font-weight: bold;
     border-radius: 0;
+
     &:hover {
       background-color: var(--adc-color-2);
       color: #000

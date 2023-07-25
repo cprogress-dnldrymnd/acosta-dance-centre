@@ -174,7 +174,7 @@ function action_woocommerce_after_single_product()
       </table>
     <?php }
     else { ?>
-      <?= $product->get_short_description() ?>
+      <?= get_the_excerpt() ?>
     <?php } ?>
 
     <div class="button-box text-center button-black">

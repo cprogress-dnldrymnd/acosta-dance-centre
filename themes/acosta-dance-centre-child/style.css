@@ -901,6 +901,8 @@ section.featured-product {
 .memberships-holder br {
   display: none !important; }
 .memberships-holder .membership-box {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   border: 3px solid;
   max-width: 500px;
   border: 3px solid #000;

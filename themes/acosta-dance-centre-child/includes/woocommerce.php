@@ -229,7 +229,7 @@ function action_single_product_after_image()
       <?= wpautop(get_the_content()) ?>
     </div>
 
-    <div class="classes">
+    <div class="classes md-padding">
       <?= do_shortcode( '[adc_classes type="featured_classes" heading="OTHER <br>CLASSES"]' ) ?>
     </div>
   </div>

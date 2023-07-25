@@ -1500,4 +1500,10 @@ table.shop_table.shop_table {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  
+  .button-box {
+    a {
+      padding: 30px 20px !important;
+    }
+  }
 }

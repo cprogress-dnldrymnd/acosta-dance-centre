@@ -294,7 +294,7 @@ function action_single_product_after_image()
       global $product;
       $variations = $product->get_available_variations();
       $product_variation = array();
-      foreach($variations as $variation) {
+      foreach ($variations as $variation) {
         $product_variation = array(
           'plan' => $variation['attributes'][0],
         );
@@ -303,9 +303,9 @@ function action_single_product_after_image()
       echo '<pre>';
       var_dump($product_variation);
       echo '</pre>';
-        echo '<pre>';
-        var_dump($product_variation);
-        echo '</pre>';
+      echo '<pre>';
+      var_dump($variations);
+      echo '</pre>';
       ?>
       <div class="add-to-cart-box text-center md-padding-bottom" id="join-now">
         <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>

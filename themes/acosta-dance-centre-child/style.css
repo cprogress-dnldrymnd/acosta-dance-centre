@@ -129,7 +129,9 @@ p {
 
 .button-group-box {
   margin-top: 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap; }
   .button-group-box .button-box:not(:last-child) {
     margin-right: 1rem; }
 

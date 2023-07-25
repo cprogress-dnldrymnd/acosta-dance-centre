@@ -665,7 +665,8 @@ section.featured-product {
   background-color: var(--adc-color-1) !important; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
-  line-height: 1; }
+  line-height: 1;
+  text-transform: uppercase; }
   @media (max-width: 1199px) {
     .woocommerce div.product section.product-summary.product-summary .product_title {
       font-size: 70px; } }

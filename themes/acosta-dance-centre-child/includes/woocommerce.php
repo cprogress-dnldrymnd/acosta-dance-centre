@@ -255,11 +255,14 @@ function action_single_product_after_image()
         echo '</div>';
       }
       ?>
-      <div class="button-box button-bordered">
-        <a href="/memberships">
-          MEMBERSHIPS
-        </a>
-      </div>
+
+      <?php if ($_product_category != 'other') { ?>
+        <div class="button-box button-bordered">
+          <a href="/memberships">
+            MEMBERSHIPS
+          </a>
+        </div>
+      <?php } ?>
     </div>
 
     <div class="classes md-padding">

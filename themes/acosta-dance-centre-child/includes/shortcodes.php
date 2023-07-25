@@ -80,4 +80,4 @@ function classes($atts)
   return ob_get_clean();
 }
 
-add_shortcode('upcoming_classes', 'upcoming_classes');
+add_shortcode('classes', 'classes');

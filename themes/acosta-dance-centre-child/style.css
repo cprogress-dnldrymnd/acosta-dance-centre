@@ -953,4 +953,7 @@ table.shop_table.shop_table {
   table.shop_table.shop_table td {
     font-size: 22px; }
 
+.onsale {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */

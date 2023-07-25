@@ -882,7 +882,7 @@ section.featured-product {
   .woocommerce .col2-set .form-row input,
   .woocommerce .col2-set .form-row textarea {
     font-family: 'Hind', sans-serif;
-    font-size: 22px; }
+    font-size: 20px; }
   .woocommerce .col2-set .form-row label {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -934,5 +934,7 @@ table.shop_table.shop_table {
     font-size: 20px;
     color: #000;
     text-transform: uppercase; }
+  table.shop_table.shop_table td {
+    font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */

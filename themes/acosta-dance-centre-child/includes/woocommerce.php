@@ -221,16 +221,9 @@ add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_
 
 function action_woocommerce_before_single_product()
 {
-  $_product_category = _product_category(get_the_ID());
-  if ($_product_category != 'memberships') {
-    $class = 'col-xl-8';
-  }
-  else {
-    $class = 'col-12';
-  }
   echo '<div class="product-inner">';
   echo '<div class="row">';
-  echo '<div class="' . $class . '">';
+  echo '<div class="col-xl-8">';
 }
 
 add_action('woocommerce_before_single_product', 'action_woocommerce_before_single_product');

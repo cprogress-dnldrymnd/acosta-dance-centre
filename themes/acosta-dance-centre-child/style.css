@@ -88,7 +88,7 @@ h4 {
 .button-box > button,
 .button-box > input[type="submit"],
 .button-box > span,
-.button-box .single_add_to_cart_button {
+.button-box .single_add_to_cart_button, .button-box .wpcf7-submit, .button-box .checkout-button, .button-box #place_order {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   padding: 30px 40px 30px 40px;
@@ -102,7 +102,7 @@ h4 {
 .button-box.button-black > button,
 .button-box.button-black > input[type="submit"],
 .button-box.button-black > span,
-.button-box.button-black .single_add_to_cart_button {
+.button-box.button-black .single_add_to_cart_button, .button-box.button-black .wpcf7-submit, .button-box.button-black .checkout-button, .button-box.button-black #place_order {
   background-color: var(--black-color);
   color: var(--white-color);
   border: 3px solid var(--black-color); }
@@ -110,7 +110,7 @@ h4 {
   .button-box.button-black > button:hover,
   .button-box.button-black > input[type="submit"]:hover,
   .button-box.button-black > span:hover,
-  .button-box.button-black .single_add_to_cart_button:hover {
+  .button-box.button-black .single_add_to_cart_button:hover, .button-box.button-black .wpcf7-submit:hover, .button-box.button-black .checkout-button:hover, .button-box.button-black #place_order:hover {
     background-color: var(--adc-color-1);
     color: var(--black-color); }
 .button-box.button-white > a,

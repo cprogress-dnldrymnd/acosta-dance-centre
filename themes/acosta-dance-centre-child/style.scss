@@ -114,7 +114,7 @@ h4 {
   >button,
   >input[type="submit"],
   >span,
-  .single_add_to_cart_button {
+  .single_add_to_cart_button, .wpcf7-submit, .checkout-button, #place_order {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     padding: 30px 40px 30px 40px;
@@ -132,7 +132,7 @@ h4 {
     >button,
     >input[type="submit"],
     >span,
-    .single_add_to_cart_button {
+    .single_add_to_cart_button, .wpcf7-submit, .checkout-button, #place_order {
       background-color: var(--black-color);
       color: var(--white-color);
       border: 3px solid var(--black-color);

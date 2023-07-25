@@ -222,8 +222,11 @@ function action_single_product_after_image()
 {
   $text_after_image = carbon_get_the_post_meta('text_after_image');
   $ticket_date_val = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+  $ticket_date_val_end = get_post_meta(get_the_ID(), '_ticket_checkin_availability_to_date', true);
   $dateformat = strtotime($ticket_date_val);
-  $ticket_date = date('l d F,  g:i a', $dateformat);
+  $ticket_date_from = date('d M,  g:i a', $dateformat);
+
+  $ticket_date = $ticket_date_from;
   $_product_category = _product_category(get_the_ID());
   ?>
   <div class="content-margin">

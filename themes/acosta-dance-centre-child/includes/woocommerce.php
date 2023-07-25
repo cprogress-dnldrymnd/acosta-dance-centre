@@ -294,6 +294,9 @@ function action_single_product_after_image()
         .newsletter-box {
           max-width: 66.666667%;
         }
+        .newsletter-box h3{
+          font-size: 50px;
+        }
       </style>
       <?php
       global $product;

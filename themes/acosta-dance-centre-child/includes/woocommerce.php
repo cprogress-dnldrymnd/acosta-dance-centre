@@ -150,4 +150,10 @@ function action_woocommerce_after_single_product()
 add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_product');
 
 
-remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+function action_woocommerce_sidebar()
+{
+  if (is_product()) {
+    remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+  }
+}
+add_action('woocommerce_sidebar', 'action_woocommerce_sidebar');

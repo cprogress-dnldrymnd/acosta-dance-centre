@@ -423,7 +423,9 @@ body {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
-
+      .woocommerce-products-header {
+        margin-bottom: 50px;
+      }
       #primary {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;

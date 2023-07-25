@@ -254,6 +254,9 @@ function action_single_product_after_image()
 
 add_action('single_product_after_image', 'action_single_product_after_image');
 
+add_action('single_add_to_cart', 'woocommerce_template_single_add_to_cart');
+
+
 
 /**
  * Remove related products output

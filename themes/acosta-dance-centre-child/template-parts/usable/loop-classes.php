@@ -68,7 +68,6 @@ else {
         $ticket_month = date('M', $dateformat);
         $product = wc_get_product($class['id']);
         $pa_studio = $product->get_attribute('pa_studio');
-        var_dump($pa_studio);
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">
@@ -85,7 +84,7 @@ else {
             </div>
             <div class="col-lg-5">
               <div class="title-box text-uppercase">
-                <a href="<?= the_permalink() ?>">
+                <a href="<?= get_permalink($class['id'])?>">
                   <h3><?= get_the_title($class['id']) ?></h3>
                 </a>
                 <div class="meta text-uppercase">

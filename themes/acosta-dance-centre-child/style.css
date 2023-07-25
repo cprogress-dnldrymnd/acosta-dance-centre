@@ -611,8 +611,9 @@ section.featured-product {
 #doro-aside {
   width: 300px; }
 
-#doro-main {
-  width: calc(100% - 300px); }
+@media (min-width: 992px) {
+  #doro-main {
+    width: calc(100% - 300px); } }
 
 .woo-icons {
   margin-top: 70px; }

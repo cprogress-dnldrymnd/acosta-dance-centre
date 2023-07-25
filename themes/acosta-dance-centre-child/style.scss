@@ -877,7 +877,9 @@ section.featured-product {
 }
 
 #doro-main {
-  width: calc(100% - 300px);
+  @media(min-width: 992px) {
+    width: calc(100% - 300px);
+  }
 }
 
 .woo-icons {
@@ -935,6 +937,7 @@ section.featured-product {
   .featured-product {
     background-color: var(--adc-color-1) !important;
   }
+
   div.product {
 
     section.product-summary.product-summary {

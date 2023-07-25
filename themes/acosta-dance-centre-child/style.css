@@ -634,7 +634,8 @@ section.featured-product {
   padding: 25px; }
   .details-box table {
     border-collapse: collapse;
-    border: none !important; }
+    border: none !important;
+    text-transform: uppercase; }
     .details-box table tr {
       border: none !important; }
       .details-box table tr th {

@@ -749,7 +749,7 @@ section.featured-product {
 .woocommerce .classes .featured-product {
   background-color: var(--adc-color-1) !important; }
 .woocommerce div.product .flex-control-nav li {
-  width: 100px; }
+  width: 100px !important; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1;

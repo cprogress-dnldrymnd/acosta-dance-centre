@@ -1068,7 +1068,7 @@ section.featured-product {
   div.product {
     .flex-control-nav {
       li {
-        width: 100px;
+        width: 100px !important;
       }
     }
     section.product-summary.product-summary {

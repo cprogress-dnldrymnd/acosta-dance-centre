@@ -135,6 +135,7 @@ h4 {
 .checkout-button,
 #place_order {
   @include button-style;
+  @include button-black;
 }
 
 .button-box {
@@ -154,7 +155,7 @@ h4 {
     >input[type="submit"],
     >span,
     .single_add_to_cart_button {
-      @mixin button-black;
+      @include button-black;
     }
   }
 

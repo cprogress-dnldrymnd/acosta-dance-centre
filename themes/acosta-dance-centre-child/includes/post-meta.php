@@ -20,7 +20,7 @@ Container::make('term_meta', __('Category Properties'))
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
 Container::make('theme_options', __('Classes Settings'))
-->set_page_parent('edit.php?post_type=product')
+  ->set_page_parent('edit.php?post_type=product')
   ->add_fields(
     array(
       Field::make('association', 'featured_classes', __('FEATURED CLASSES'))
@@ -32,5 +32,18 @@ Container::make('theme_options', __('Classes Settings'))
             )
           )
         ),
+    )
+  );
+
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/* Product Options
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', 'Product Options')
+  ->where('post_type', '=', 'product')
+  ->add_fields(
+    array(
+      Field::make('text', 'text_after_image', 'Text After Image')
     )
   );

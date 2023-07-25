@@ -1199,3 +1199,9 @@ section.featured-product {
     font-size: 24px;
   }
 }
+
+.single-product {
+  .wcpay-payment-request-wrapper, #wcpay-payment-request-button-separator {
+    display: none !important;
+  }
+}

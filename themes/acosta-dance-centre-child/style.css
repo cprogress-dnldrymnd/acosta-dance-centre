@@ -59,7 +59,10 @@ p {
   left: 0;
   right: 0; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: uppercase; }
 
 #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
@@ -705,7 +708,9 @@ section.featured-product {
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;
   line-height: 1;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1; }
   @media (max-width: 1199px) {
     .woocommerce div.product section.product-summary.product-summary .product_title {
       font-size: 70px; } }
@@ -717,7 +722,8 @@ section.featured-product {
       font-size: 50px; } }
 .woocommerce div.product section.product-summary.product-summary .woocommerce-product-gallery {
   width: 100%;
-  float: none; }
+  float: none;
+  margin-top: -60px; }
   .woocommerce div.product section.product-summary.product-summary .woocommerce-product-gallery .woocommerce-product-gallery__image a {
     padding: 30% 0px;
     display: block;

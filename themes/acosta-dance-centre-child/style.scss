@@ -76,7 +76,10 @@ p {
 }
 
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -1027,7 +1030,8 @@ section.featured-product {
         font-size: 80px;
         line-height: 1;
         text-transform: uppercase;
-
+        position: relative;
+        z-index: 1;
         @media(max-width: 1199px) {
           font-size: 70px;
         }
@@ -1044,6 +1048,7 @@ section.featured-product {
       .woocommerce-product-gallery {
         width: 100%;
         float: none;
+        margin-top: -60px;
 
         .woocommerce-product-gallery__image {
           a {

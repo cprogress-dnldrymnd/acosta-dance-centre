@@ -63,7 +63,6 @@ add_shortcode('events', 'events');
 
 function adc_classes($atts)
 {
-  ob_start();
   extract(
     shortcode_atts(
       array(
@@ -72,7 +71,7 @@ function adc_classes($atts)
       $atts
     )
   );
-
+  ob_start();
   $args = array(
     'type' => $type,
   );

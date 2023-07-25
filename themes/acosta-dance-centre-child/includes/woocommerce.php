@@ -230,7 +230,7 @@ function action_single_product_after_image()
       <?= wpautop(get_the_content()) ?>
     </div>
 
-    <div class="button-group-box text-center justify-content-center">
+    <div class="button-group-box text-center justify-content-center ">
       <?php
       if ($_product_category == 'workshops') {
         echo '<div class="button-box button-black">';

@@ -70,13 +70,13 @@ else {
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">
-            <div class="col-lg-2 text-center">
+            <div class="col-lg-2 col-sm-6 text-center">
               <div class="meta-date">
                 <span class="day d-block"><?= $ticket_day ?></span>
                 <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <div class="image-box position-relative">
                 <img src="<?= get_the_post_thumbnail_url($class['id']) ?>" alt="<?= get_the_title($class['id']) ?>">
               </div>

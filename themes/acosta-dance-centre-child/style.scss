@@ -614,6 +614,9 @@ section.featured-product {
       }
     }
   }
+  @media(max-width: 991px) {
+    text-align: center;
+  }
 }
 
 .events-holder {

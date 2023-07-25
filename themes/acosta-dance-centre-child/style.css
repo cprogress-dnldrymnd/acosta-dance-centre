@@ -113,16 +113,16 @@ p {
   .button-box.button-white span:hover {
     background-color: var(--adc-color-2);
     color: var(--black-color); }
-.button-box .button-bordered a,
-.button-box .button-bordered button,
-.button-box .button-bordered input[type="submit"],
-.button-box .button-bordered span {
+.button-box.button-bordered a,
+.button-box.button-bordered button,
+.button-box.button-bordered input[type="submit"],
+.button-box.button-bordered span {
   color: var(--black-color);
   border: 3px solid; }
-  .button-box .button-bordered a:hover,
-  .button-box .button-bordered button:hover,
-  .button-box .button-bordered input[type="submit"]:hover,
-  .button-box .button-bordered span:hover {
+  .button-box.button-bordered a:hover,
+  .button-box.button-bordered button:hover,
+  .button-box.button-bordered input[type="submit"]:hover,
+  .button-box.button-bordered span:hover {
     background-color: var(--adc-color-2);
     color: var(--black-color); }
 
@@ -692,8 +692,12 @@ section.featured-product {
       padding-left: 20px;
       padding-right: 20px; }
 
-.membership-box .doro-heading {
-  font-size: 30px; }
+.membership-box {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  .membership-box .doro-heading {
+    font-size: 30px; }
 
 .checklist ul li {
   display: flex;

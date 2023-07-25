@@ -173,7 +173,7 @@ function action_woocommerce_after_single_product()
         <li>Access to our online academy</li>
       </ul>
     </div>
-    <div class="button-box">
+    <div class="button-box text-center button-bordered">
       <a href="/memberships/">
         FIND OUT MORE
       </a>

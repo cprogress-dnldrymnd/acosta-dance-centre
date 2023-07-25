@@ -148,7 +148,7 @@ p {
     }
   }
 
-  .button-bordered {
+  &.button-bordered {
 
     a,
     button,
@@ -156,6 +156,7 @@ p {
     span {
       color: var(--black-color);
       border: 3px solid;
+
       &:hover {
         background-color: var(--adc-color-2);
         color: var(--black-color);
@@ -1010,6 +1011,10 @@ section.featured-product {
 }
 
 .membership-box {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
   .doro-heading {
     font-size: 30px;
   }

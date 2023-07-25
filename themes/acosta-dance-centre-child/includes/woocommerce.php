@@ -130,7 +130,7 @@ function action_woocommerce_after_single_product()
   ?>
   <div class="details-box">
     <h3 class="doro-heading">DETAILS</h3>
-    <table class="woocommerce-product-attributes shop_attributes">
+    <table class="table">
       <?php if ($product->get_price_html()) { ?>
         <tr>
           <th>PRICE</th>

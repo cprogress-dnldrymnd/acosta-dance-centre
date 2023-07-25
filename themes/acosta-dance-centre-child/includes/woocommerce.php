@@ -312,9 +312,9 @@ function action_single_product_after_image()
             <?php
             $product = wc_get_product($variation);
             ?>
-            <div class="button-box <?= $variation == 'Montly' ? 'button-black' : 'button-bordered' ?>">
+            <div class="button-box <?= $variation == 'Monthly' ? 'button-black' : 'button-bordered' ?>">
               <a href="?add-to-cart=<?= $key ?>">
-                JOIN NOW
+                PAY <?= $variation ?>
               </a>
             </div>
           <?php } ?>

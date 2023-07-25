@@ -279,27 +279,29 @@ function action_single_product_after_image()
       ?>
 
       <div class="row">
-        <div class="col-lg-6">
-          <div class="membership-box">
-            <div class="sec-title text-center">
-              <span class="heading-meta">BECOME A MEMBER</span>
-              <h2 class="doro-heading"> <?= $product->name ?> </h2>
-            </div>
+        <?php foreach ($variations_id as $variation) { ?>
+          <div class="col-lg-6">
+            <div class="membership-box">
+              <div class="sec-title text-center">
+                <span class="heading-meta">BECOME A MEMBER</span>
+                <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
+              </div>
 
-            <div class="checklist">
-              <ul>
-                <li>Multiple Classes Per Month</li>
-                <li>10% Off Events</li>
-                <li>Access to our online academy</li>
-              </ul>
-            </div>
-            <div class="button-box text-center button-bordered">
-              <a href="/memberships/">
-                FIND OUT MORE
-              </a>
+              <div class="checklist">
+                <ul>
+                  <li>Multiple Classes Per Month</li>
+                  <li>10% Off Events</li>
+                  <li>Access to our online academy</li>
+                </ul>
+              </div>
+              <div class="button-box text-center button-bordered">
+                <a href="/memberships/">
+                  FIND OUT MORE
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        <?php } ?>
       </div>
     <?php } ?>
 

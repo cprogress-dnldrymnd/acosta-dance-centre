@@ -59,7 +59,7 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 if ($is_classes) {
 	$args = array(
 		'featured_classes' => true,
-		'heading'          => 'Featured Workshops'
+		'heading'          => 'FEATURED WORKSHOPS'
 	);
 	get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);

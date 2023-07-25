@@ -1261,3 +1261,13 @@ section.featured-product {
     }
   }
 }
+
+.woocommerce {
+  .col2-set {
+
+    .col-1,
+    .col-2 {
+      max-width: 48%;
+    }
+  }
+}

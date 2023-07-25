@@ -874,4 +874,8 @@ section.featured-product {
     font-size: 30px;
     color: #000; }
 
+.woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-2 {
+  max-width: 48%; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 <?php $doro_options = get_option('doro'); ?> <!-- Default Page -->     
 	<?php if(get_post_meta($post->ID,'rnr_page_header_block',true)!='no'){ ?>
-	<div class="row">
+	<div class="row entry-title">
 		<div class="col-md-12"> 
 		    <?php if (( get_post_meta($post->ID,'rnr_page_right_block_header_subtitle',true))):?>
 			<span class="heading-meta"><?php echo esc_html(get_post_meta($post->ID,'rnr_page_right_block_header_subtitle',true)); ?></span>

@@ -1009,6 +1009,9 @@ section.featured-product {
         cursor: pointer;
         margin: 0 !important;
       }
+      &.variations_form {
+        flex-direction: column;
+      }
     }
   }
 

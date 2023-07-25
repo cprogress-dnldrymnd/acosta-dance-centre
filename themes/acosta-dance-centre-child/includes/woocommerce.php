@@ -252,24 +252,32 @@ function action_single_product_after_image()
     <div class="content-box">
       <?= wpautop(get_the_content()) ?>
     </div>
+    <?php if ($_product_category != 'other') { ?>
+      <div class="button-group-box text-center justify-content-center ">
+        <?php
+        if ($_product_category == 'workshops') {
+          echo '<div class="button-box button-black">';
+          do_action('single_add_to_cart');
+          echo '</div>';
+        }
+        ?>
 
-    <div class="button-group-box text-center justify-content-center ">
-      <?php
-      if ($_product_category == 'workshops' || $_product_category == 'other') {
-        echo '<div class="button-box button-black">';
-        do_action('single_add_to_cart');
-        echo '</div>';
-      }
-      ?>
-
-      <?php if ($_product_category != 'other') { ?>
         <div class="button-box  button-bordered" id="join-now">
           <a href="/memberships">
             MEMBERSHIPS
           </a>
         </div>
-      <?php } ?>
-    </div>
+      </div>
+    <?php } ?>
+
+    <?php
+    if ($_product_category == 'other') {
+      echo '<div class="button-box button-black">';
+      do_action('single_add_to_cart');
+      echo '</div>';
+    }
+    ?>
+
 
     <div class="classes md-padding">
       <?= do_shortcode('[adc_classes type="related"]') ?>

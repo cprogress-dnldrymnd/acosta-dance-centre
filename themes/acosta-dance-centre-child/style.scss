@@ -126,8 +126,9 @@ h4 {
   border: 3px solid var(--black-color);
 
   &:hover {
-    background-color: var(--adc-color-1) !important ;
+    background-color: var(--adc-color-1) !important;
     color: var(--black-color) !important;
+    border: 3px solid var(--black-color);
   }
 }
 

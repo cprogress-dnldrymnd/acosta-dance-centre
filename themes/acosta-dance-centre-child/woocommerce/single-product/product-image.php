@@ -36,7 +36,7 @@ $wrapper_classes = apply_filters(
 	)
 );
 ?>
-<div class="left">
+<div class="col-lg-8">
 	<?php
 	do_action('before_single_product_image');
 	?>

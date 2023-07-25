@@ -297,7 +297,7 @@ function action_single_product_after_image()
       ?>
       <div class="add-to-cart-box text-center md-padding-bottom" id="join-now">
         <h3>A PLACE OF PASSION, ARTISTIC BRILLIANCE, AND BOUNDLESS CREATIVITY. JOIN THE ACOSTA DANCE CENTRE TODAY</h3>
-        <div class="button-group-box">
+        <div class="button-group-box justify-content-center">
           <?php foreach ($variations_id as $key => $variation) { ?>
             <?php
             $product = wc_get_product($variation);

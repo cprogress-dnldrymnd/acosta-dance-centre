@@ -132,6 +132,7 @@ function action_woocommerce_after_single_product()
   </div>
   <?php
   echo '</div>';
+  echo '</div>';
 
 }
 
@@ -141,6 +142,7 @@ add_action('woocommerce_after_single_product', 'action_woocommerce_after_single_
 
 function action_woocommerce_before_single_product()
 {
+  echo '<div class="product-inner">';
   echo '<div class="row">';
   echo '<div class="col-lg-8">';
 }

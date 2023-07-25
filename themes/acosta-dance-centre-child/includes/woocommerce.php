@@ -78,7 +78,7 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 
 
-add_action('before_single_product_image', 'woocommerce_template_single_title');
+add_action('single_product_custom_title', 'woocommerce_template_single_title');
 
 function action_woocommerce_before_single_product_summary()
 {
@@ -122,3 +122,16 @@ function conditionaly_removing_product_tabs($tabs)
   }
   return $tabs;
 }
+
+
+function action_single_product_details_box()
+{
+  ?>
+  <div class="details-box">
+    <h3>DETAILS</h3>
+  </div>
+  <?php
+}
+
+
+add_action('single_product_details_box', 'action_single_product_details_box');

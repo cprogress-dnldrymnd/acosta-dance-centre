@@ -53,7 +53,7 @@ else {
   <div class="inner">
     <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">
-        <h2 class="big-title">
+        <h2 class="doro-heading">
           <?= $heading ? $heading : $args['heading'] ?>
         </h2>
       </div>

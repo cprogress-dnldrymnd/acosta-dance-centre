@@ -127,6 +127,10 @@ function action_woocommerce_after_single_product()
   global $product;
   echo '</div>';
   echo ' <div class="col-lg-4">';
+  $ticket_date_val = get_post_meta($product->get_id(), '_ticket_checkin_availability_from_date', true);
+  $dateformat = strtotime($ticket_date_val);
+  $ticket_time = date('g:i a', $dateformat);
+  $ticket_date = date('d . M . Y', $dateformat);
   ?>
   <div class="details-box">
     <h3 class="doro-heading">DETAILS</h3>
@@ -136,7 +140,16 @@ function action_woocommerce_after_single_product()
           <th>PRICE</th>
         </tr>
         <tr>
-          <td><?php echo $product->get_price_html(); ?></td>
+          <td><?= $product->get_price_html(); ?></td>
+        </tr>
+      <?php } ?>
+
+      <?php if ($ticket_date_val) { ?>
+        <tr>
+          <th>DATE & TIME</th>
+        </tr>
+        <tr>
+          <td><?= $ticket_date ?> | <?= $ticket_time ?></td>
         </tr>
       <?php } ?>
       <?php do_action('woocommerce_product_additional_information', $product); ?>

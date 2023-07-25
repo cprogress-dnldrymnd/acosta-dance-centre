@@ -142,6 +142,7 @@ p {
     span {
       background-color: var(--white-color);
       color: var(--black-color);
+
       &:hover {
         background-color: var(--adc-color-2);
         color: var(--black-color);
@@ -983,6 +984,7 @@ section.featured-product {
 
   .button-group-box {
     margin-top: 5rem !important;
+
     .cart {
       display: flex;
       align-items: center;
@@ -1153,6 +1155,11 @@ section.featured-product {
     }
   }
 }
+
+.cart {
+  text-align: center;
+}
+
 .single_add_to_cart_button {
   cursor: pointer;
 }

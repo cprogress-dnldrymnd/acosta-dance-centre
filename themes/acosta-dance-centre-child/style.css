@@ -790,6 +790,9 @@ section.featured-product {
 .content-margin > *:not(:last-child) {
   margin-bottom: 1.5rem; }
 
+.cart {
+  text-align: center; }
+
 .single_add_to_cart_button {
   cursor: pointer; }
 

@@ -277,28 +277,29 @@ function action_single_product_after_image()
       global $product;
       $variations = $product->get_available_variations();
       $variations_id = wp_list_pluck($variations, 'variation_id');
-      var_dump($variations_id);
       ?>
 
-      <div class="row">
-        <?php foreach ($variations_id as $variation) { ?>
-          <div class="col-lg-6">
-            <div class="membership-box">
-              <div class="sec-title text-center">
-                <span class="heading-meta">BECOME A MEMBER</span>
-                <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
-              </div>
-              <div class="content-box">
-                <?= wpautop(get_the_content()) ?>
-              </div>
-              <div class="button-box text-center button-bordered">
-                <a href="?add-to-cart=<?= $variation ?>">
-                  JOIN NOW
-                </a>
+      <div class="memberships-holder">
+        <div class="row">
+          <?php foreach ($variations_id as $variation) { ?>
+            <div class="col-lg-6">
+              <div class="membership-box">
+                <div class="sec-title text-center">
+                  <span class="heading-meta">BECOME A MEMBER</span>
+                  <h2 class="doro-heading"> <?= get_the_title($variation) ?> </h2>
+                </div>
+                <div class="content-box">
+                  <?= wpautop(get_the_content()) ?>
+                </div>
+                <div class="button-box text-center button-bordered">
+                  <a href="?add-to-cart=<?= $variation ?>">
+                    JOIN NOW
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        <?php } ?>
+          <?php } ?>
+        </div>
       </div>
     <?php } ?>
 

@@ -263,7 +263,7 @@ function action_single_product_after_image()
       ?>
 
       <?php if ($_product_category != 'other') { ?>
-        <div class="button-box button-bordered" id="join-now">
+        <div class="button-box text-center button-bordered" id="join-now">
           <a href="/memberships">
             MEMBERSHIPS
           </a>

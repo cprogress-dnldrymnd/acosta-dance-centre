@@ -271,13 +271,19 @@ function action_single_product_after_image()
     <?php } ?>
 
     <?php if ($_product_category == 'memberships') { ?>
+      <?php
+      global $product;
+      $variations = $product->get_available_variations();
+      $variations_id = wp_list_pluck($variations, 'variation_id');
+      var_dump($variations_id);
+      ?>
 
       <div class="row">
         <div class="col-lg-6">
           <div class="membership-box">
             <div class="sec-title text-center">
               <span class="heading-meta">BECOME A MEMBER</span>
-              <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+              <h2 class="doro-heading"></h2>
             </div>
 
             <div class="checklist">

@@ -1115,8 +1115,14 @@ section.featured-product {
   margin-right: auto;
 
   del {
+    text-decoration: none;
+
     &:before {
       content: 'REGULAR: ';
+    }
+
+    span {
+      text-decoration: line-through;
     }
   }
 

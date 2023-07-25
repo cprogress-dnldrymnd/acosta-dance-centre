@@ -777,8 +777,12 @@ section.featured-product {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto; }
-  .details-box del:before {
-    content: 'REGULAR: '; }
+  .details-box del {
+    text-decoration: none; }
+    .details-box del:before {
+      content: 'REGULAR: '; }
+    .details-box del span {
+      text-decoration: line-through; }
   .details-box ins {
     display: block;
     background-color: var(--adc-color-2);

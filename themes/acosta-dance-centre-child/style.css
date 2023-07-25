@@ -778,7 +778,7 @@ section.featured-product {
   margin-left: auto;
   margin-right: auto; }
   .details-box del:before {
-    content: 'REGULAR": '; }
+    content: 'REGULAR: '; }
   .details-box ins {
     display: block;
     background-color: var(--adc-color-2);

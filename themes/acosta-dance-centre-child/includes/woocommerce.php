@@ -151,7 +151,7 @@ function action_woocommerce_after_single_product()
           <th>DATE & TIME</th>
         </tr>
         <tr>
-          <td><?= $ticket_date ?> | <?= $ticket_time ?></td>
+          <td><?= $ticket_date ?> </td>
         </tr>
       <?php } ?>
       <?php do_action('woocommerce_product_additional_information', $product); ?>

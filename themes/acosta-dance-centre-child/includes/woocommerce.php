@@ -77,10 +77,6 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 
-function action_before_single_product_image()
-{
-  echo '<h1 class="product_title entry-title"> ' . get_the_title() . '</h1>';
-}
 
 add_action('before_single_product_image', 'woocommerce_template_single_title');
 

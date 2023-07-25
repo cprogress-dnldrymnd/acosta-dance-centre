@@ -4,6 +4,8 @@ if ($args['type'] == 'featured_classes') {
 }
 else if ($args['type'] == 'related') {
 
+  $_product_category = _product_category(get_the_ID());
+
   $terms = get_the_terms(get_the_ID(), 'product_cat');
   $terms_val = array();
 
@@ -23,9 +25,9 @@ else if ($args['type'] == 'related') {
     )
   );
 
-  if (in_array(79, $terms_val)) {
+  if ($_product_category == 'classes') {
     $heading_val = 'CLASSES';
-  } else if(in_array(78, $terms_val)) {
+  } else if($_product_category == 'workshops') {
     $heading_val = 'WORKSHOPS';
   }
 

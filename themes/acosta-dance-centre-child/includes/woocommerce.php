@@ -253,3 +253,20 @@ add_action('single_product_after_image', 'action_single_product_after_image');
  * Remove related products output
  */
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+
+
+function _product_category($id)
+{
+  $terms = get_the_terms($id, 'product_cat');
+  $terms_val = array();
+  foreach ($terms as $term) {
+    $terms_val[] = $term->term_id;
+  }
+  if (in_array(79, $terms_val)) {
+    return 'classes';
+  }
+  else if (in_array(78, $terms_val)) {
+    return 'workshops';
+  }
+}

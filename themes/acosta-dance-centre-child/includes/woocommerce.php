@@ -71,8 +71,12 @@ function mp_sync_on_product_save($product_id)
   update_post_meta($product_id, '_product_attributes', $product_attr);
 }*/
 
-function action_before_single_product_image() {
-  echo 'sdsds';
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+function action_before_single_product_image()
+{
+  echo '<h1 class="product_title entry-title"> ' . get_the_title() . '</h1>';
 }
 
 add_action('before_single_product_image', 'action_before_single_product_image');

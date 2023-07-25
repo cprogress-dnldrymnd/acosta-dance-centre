@@ -936,25 +936,33 @@ section.featured-product {
     border-collapse: collapse;
     border: none !important;
     text-transform: uppercase;
+
     tr {
       border: none !important;
+
+      th,
+      td {
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 1.5em;
+        border: none !important;
+      }
 
       th {
         color: #000;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
-        border: none !important;
         font-weight: 400;
       }
 
       td {
-        border: none !important;
         font-size: 15px;
         letter-spacing: 5.43px;
-        line-height: 1.5em;
-
+        font-family: 'Oswald', sans-serif;
+        color: #6D6D6D;
         p {
-          font-family: 'Oswald', sans-serif;
+          color: inherit;
+          font-family: inherit;
           font-size: inherit;
           letter-spacing: inherit;
           margin: 0;

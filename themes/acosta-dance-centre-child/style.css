@@ -638,19 +638,25 @@ section.featured-product {
     text-transform: uppercase; }
     .details-box table tr {
       border: none !important; }
+      .details-box table tr th,
+      .details-box table tr td {
+        padding-left: 0;
+        padding-right: 0;
+        line-height: 1.5em;
+        border: none !important; }
       .details-box table tr th {
         color: #000;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
-        border: none !important;
         font-weight: 400; }
       .details-box table tr td {
-        border: none !important;
         font-size: 15px;
         letter-spacing: 5.43px;
-        line-height: 1.5em; }
+        font-family: 'Oswald', sans-serif;
+        color: #6D6D6D; }
         .details-box table tr td p {
-          font-family: 'Oswald', sans-serif;
+          color: inherit;
+          font-family: inherit;
           font-size: inherit;
           letter-spacing: inherit;
           margin: 0; }

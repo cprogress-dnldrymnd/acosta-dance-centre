@@ -878,14 +878,17 @@ section.featured-product {
 
 #doro-aside {
   width: 300px;
+
   .logo-holder {
     img {
       max-width: 200px;
+
       @media(max-width: 1199px) {
         max-width: 150px;
       }
     }
   }
+
   @media(min-width: 769px) and (max-width: 1199px) {
     padding-left: 15px;
     padding-right: 15px;
@@ -956,7 +959,7 @@ section.featured-product {
     color: #6D6D6D;
   }
 
-  .featured-product {
+  .classes .featured-product {
     background-color: var(--adc-color-1) !important;
   }
 

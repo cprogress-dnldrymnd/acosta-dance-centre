@@ -660,7 +660,7 @@ section.featured-product {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
   color: #6D6D6D; }
-.woocommerce .featured-product {
+.woocommerce .classes .featured-product {
   background-color: var(--adc-color-1) !important; }
 .woocommerce div.product section.product-summary.product-summary .product_title {
   font-size: 80px;

@@ -297,6 +297,7 @@ function action_single_product_after_image()
       foreach ($variations as $variation) {
         $product_variation = array(
           'plan' => $variation['attributes'][0],
+          'id' => $variation['variation_id']
         );
       }
       $variations_id = wp_list_pluck($variations, 'variation_id');

@@ -168,11 +168,15 @@ function action_woocommerce_after_single_product()
 
     <div class="checklist">
       <ul>
-          
         <li>Multiple Classes Per Month</li>
         <li>10% Off Events</li>
         <li>Access to our online academy</li>
       </ul>
+    </div>
+    <div class="button-box">
+      <a href="/memberships/">
+        FIND OUT MORE
+      </a>
     </div>
   </div>
   <?php

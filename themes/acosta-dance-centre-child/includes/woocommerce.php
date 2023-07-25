@@ -82,7 +82,7 @@ function action_before_single_product_image()
   echo '<h1 class="product_title entry-title"> ' . get_the_title() . '</h1>';
 }
 
-add_action('before_single_product_image', 'action_before_single_product_image');
+add_action('before_single_product_image', 'woocommerce_template_single_title');
 
 function action_woocommerce_before_single_product_summary()
 {

@@ -690,6 +690,7 @@ section.featured-product {
       height: 84px;
       border: 1px solid; }
     .woocommerce .button-group-box .cart button {
+      cursor: pointer;
       margin: 0 !important; }
 .woocommerce .date-box {
   letter-spacing: 7.24px;

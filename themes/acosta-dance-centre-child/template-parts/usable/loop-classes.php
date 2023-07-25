@@ -3,13 +3,22 @@ if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 }
 else if ($args['type'] == 'related') {
+
+  $terms = get_the_terms(get_the_ID(), 'product_cat');
+  $terms_val = array();
+
+
+  foreach ($terms as $term) {
+    $terms_val[] = $term->term_id;
+  }
+
   $posts = array(
     'post_type' => 'product',
     'tax_query' => array(
       array(
         'taxonomy' => 'product_cat',
-        'field'    => 'slug',
-        'terms'    => 'classes'
+        'field'    => 'term_id',
+        'terms'    => $terms_val
       )
     )
   );
@@ -24,7 +33,8 @@ else if ($args['type'] == 'related') {
       'id' => $post->ID
     );
   }
-} else if($args['type'] == 'featured_workshops') {
+}
+else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');
 }
 else {

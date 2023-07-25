@@ -855,7 +855,7 @@ section.featured-product {
           letter-spacing: inherit;
           margin: 0; }
       .details-box table tr:last-child td {
-        border-bottom: none; }
+        border-bottom: none !important; }
   .details-box .button-box {
     position: absolute;
     left: 20px;

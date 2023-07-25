@@ -303,7 +303,7 @@ function action_single_product_after_image()
         <div class="button-group-box justify-content-center">
           <?php foreach ($product_variation as $key => $variation) { ?>
             <?php
-            $product = wc_get_product($variation);
+            $product = wc_get_product($key);
             ?>
             <div class="button-box <?= $variation == 'Monthly' ? 'button-black' : 'button-bordered' ?>">
               <a href="?add-to-cart=<?= $key ?>">

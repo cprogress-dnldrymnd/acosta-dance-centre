@@ -879,6 +879,8 @@ section.featured-product {
   max-width: 48%; }
 .woocommerce .col2-set .form-row {
   flex-direction: column; }
+  .woocommerce .col2-set .form-row input {
+    font-family: 'Hind', sans-serif; }
   .woocommerce .col2-set .form-row label {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;

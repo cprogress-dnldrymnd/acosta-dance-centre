@@ -1272,7 +1272,9 @@ section.featured-product {
 
     .form-row {
       flex-direction: column;
-
+      input {
+        font-family: 'Hind', sans-serif;
+      }
       label {
         font-family: 'Oswald', sans-serif;
         font-weight: 400;

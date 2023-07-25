@@ -790,4 +790,7 @@ section.featured-product {
 .content-margin > *:not(:last-child) {
   margin-bottom: 1.5rem; }
 
+.single_add_to_cart_button {
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

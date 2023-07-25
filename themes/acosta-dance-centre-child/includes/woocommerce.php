@@ -270,13 +270,32 @@ function action_single_product_after_image()
       </div>
     <?php } ?>
 
-    <?php
-    if ($_product_category == 'memberships') {
-      echo '<div class="button-box button-black">';
-      do_action('single_add_to_cart');
-      echo '</div>';
-    }
-    ?>
+    <?php if ($_product_category == 'memberships') { ?>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="membership-box">
+            <div class="sec-title text-center">
+              <span class="heading-meta">BECOME A MEMBER</span>
+              <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+            </div>
+
+            <div class="checklist">
+              <ul>
+                <li>Multiple Classes Per Month</li>
+                <li>10% Off Events</li>
+                <li>Access to our online academy</li>
+              </ul>
+            </div>
+            <div class="button-box text-center button-bordered">
+              <a href="/memberships/">
+                FIND OUT MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
 
     <?php if ($_product_category != 'memberships') { ?>
       <div class="classes md-padding">

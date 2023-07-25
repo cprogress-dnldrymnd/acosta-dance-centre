@@ -75,18 +75,7 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
-
-add_filter('woocommerce_variable_sale_price_html', 'businessbloomer_remove_prices', 9999, 2);
-
-add_filter('woocommerce_variable_price_html', 'businessbloomer_remove_prices', 9999, 2);
-
-add_filter('woocommerce_get_price_html', 'businessbloomer_remove_prices', 9999, 2);
-
-function businessbloomer_remove_prices($price, $product)
-{
-  $price = '';
-  return $price;
-}
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 30);
 
 function action_before_single_product_image()
 {

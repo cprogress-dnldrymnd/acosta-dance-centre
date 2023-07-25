@@ -655,7 +655,10 @@ section.featured-product {
 .details-box {
   border: 3px solid #000000;
   padding: 25px 25px 33px 25px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto; }
   .details-box table {
     border-collapse: collapse;
     border: none !important;

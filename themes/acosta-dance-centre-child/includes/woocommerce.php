@@ -157,7 +157,17 @@ function action_woocommerce_after_single_product()
     </table>
 
     <div class="button-box button-black">
-      <span>AVAILABLE TO BOOK SOON</span>
+      <?php
+      $_product_category = _product_category(get_the_ID());
+      if ($_product_category == 'workshops') {
+        echo '<div class="button-box button-black">';
+        do_action('single_add_to_cart');
+        echo '</div>';
+      }
+      else {
+        echo ' <span>AVAILABLE TO BOOK SOON</span>';
+      }
+      ?>
     </div>
   </div>
 

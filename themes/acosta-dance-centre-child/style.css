@@ -655,7 +655,8 @@ section.featured-product {
         letter-spacing: 5.43px;
         font-family: 'Oswald', sans-serif;
         color: #6D6D6D;
-        border-bottom: 1px solid #eaeaea !important; }
+        border-bottom: 1px solid #eaeaea !important;
+        padding-top: 0; }
         .details-box table tr td p {
           color: inherit;
           font-family: inherit;

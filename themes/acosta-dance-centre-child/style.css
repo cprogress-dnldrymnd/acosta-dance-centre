@@ -778,11 +778,17 @@ section.featured-product {
   margin-left: auto;
   margin-right: auto; }
   .details-box del:before {
-    content: 'REGULAR'; }
-  .details-box del:before {
-    content: 'REGULAR'; }
-  .details-box ins:before {
-    content: 'OFFER PRICE'; }
+    content: 'REGULAR": '; }
+  .details-box ins {
+    display: block;
+    background-color: var(--adc-color-2);
+    display: inline-block;
+    background-color: var(--adc-color-2);
+    text-decoration: none;
+    padding: 5px;
+    color: #000; }
+    .details-box ins:before {
+      content: 'OFFER PRICE: '; }
   .details-box table {
     border-collapse: collapse;
     border: none !important;

@@ -1116,19 +1116,22 @@ section.featured-product {
 
   del {
     &:before {
-      content: 'REGULAR';
-    }
-  }
-
-  del {
-    &:before {
-      content: 'REGULAR';
+      content: 'REGULAR": ';
     }
   }
 
   ins {
+    display: block;
+    background-color: var(--adc-color-2);
+    display: inline-block;
+    background-color: var(--adc-color-2);
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+
     &:before {
-      content: 'OFFER PRICE';
+      content: 'OFFER PRICE: ';
+
     }
   }
 

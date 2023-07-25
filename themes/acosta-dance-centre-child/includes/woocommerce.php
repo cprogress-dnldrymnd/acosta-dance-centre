@@ -175,7 +175,7 @@ function action_woocommerce_after_single_product()
     </div>
   </div>
 
-  <?php if ($_product_category != 'other') { ?>
+  <?php if ($_product_category != 'memberships') { ?>
 
     <div class="membership-box">
       <div class="sec-title text-center">
@@ -242,7 +242,7 @@ function action_single_product_after_image()
         <?= $text_after_image ?>
       </h2>
     <?php } ?>
-    <?php if ($_product_category != 'other') { ?>
+    <?php if ($_product_category != 'memberships') { ?>
       <div class="date-box text-uppercase">
         <?= $ticket_date ?>
       </div>
@@ -252,7 +252,7 @@ function action_single_product_after_image()
     <div class="content-box">
       <?= wpautop(get_the_content()) ?>
     </div>
-    <?php if ($_product_category != 'other') { ?>
+    <?php if ($_product_category != 'memberships') { ?>
       <div class="button-group-box text-center justify-content-center ">
         <?php
         if ($_product_category == 'workshops') {
@@ -271,7 +271,7 @@ function action_single_product_after_image()
     <?php } ?>
 
     <?php
-    if ($_product_category == 'other') {
+    if ($_product_category == 'memberships') {
       echo '<div class="button-box button-black">';
       do_action('single_add_to_cart');
       echo '</div>';
@@ -301,7 +301,7 @@ remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_re
 
 
 
-function _product_category($id, $classes = 'classes', $workshops = 'workshops')
+function _product_category($id, $classes = 'classes', $workshops = 'workshops', $memberships = 'memberships')
 {
   $terms = get_the_terms($id, 'product_cat');
   $terms_val = array();
@@ -314,8 +314,8 @@ function _product_category($id, $classes = 'classes', $workshops = 'workshops')
   else if (in_array(78, $terms_val)) {
     return $workshops;
   }
-  else {
-    return 'other';
+  else if (in_array(88, $terms_val)) {
+    return $memberships;
   }
 }
 

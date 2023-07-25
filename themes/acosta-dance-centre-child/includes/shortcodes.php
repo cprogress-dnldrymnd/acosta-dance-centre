@@ -61,7 +61,7 @@ function events()
 add_shortcode('events', 'events');
 
 
-function upcoming_classes()
+function upcoming_classes($args)
 {
   ob_start();
   $args = array(

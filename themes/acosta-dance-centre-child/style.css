@@ -805,13 +805,13 @@ section.featured-product {
       display: flex; }
       .details-box ul li:before {
         content: '•'; }
-  .details-box del:not(.no-before-after) {
+  .details-box del {
     text-decoration: none; }
+    .details-box del span {
+      text-decoration: line-through; }
     .details-box del:not(.no-before-after):before {
       content: 'REGULAR: '; }
-    .details-box del:not(.no-before-after) span {
-      text-decoration: line-through; }
-  .details-box ins:not(.no-before-after) {
+  .details-box ins {
     display: block;
     background-color: var(--adc-color-2);
     display: inline-block;

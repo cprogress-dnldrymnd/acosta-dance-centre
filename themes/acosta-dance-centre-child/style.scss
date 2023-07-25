@@ -1157,29 +1157,30 @@ section.featured-product {
   }
 
   del {
+    text-decoration: none;
+
+    span {
+      text-decoration: line-through;
+    }
+
     &:not(.no-before-after) {
-      text-decoration: none;
 
       &:before {
         content: 'REGULAR: ';
-      }
-
-      span {
-        text-decoration: line-through;
       }
     }
   }
 
   ins {
-    &:not(.no-before-after) {
-      display: block;
-      background-color: var(--adc-color-2);
-      display: inline-block;
-      background-color: var(--adc-color-2);
-      text-decoration: none;
-      padding: 5px;
-      color: #000;
+    display: block;
+    background-color: var(--adc-color-2);
+    display: inline-block;
+    background-color: var(--adc-color-2);
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
 
+    &:not(.no-before-after) {
       &:before {
         content: 'OFFER PRICE: ';
 

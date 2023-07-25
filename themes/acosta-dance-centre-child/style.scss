@@ -131,13 +131,16 @@ h4 {
     >a,
     >button,
     >input[type="submit"],
-    >span, .single_add_to_cart_button {
+    >span,
+    .single_add_to_cart_button {
       background-color: var(--black-color);
       color: var(--white-color);
+      border: 3px solid var(--black-color);
 
       &:hover {
         background-color: var(--adc-color-1);
         color: var(--black-color);
+
       }
     }
   }
@@ -150,6 +153,7 @@ h4 {
     >span {
       background-color: var(--white-color);
       color: var(--black-color);
+      border: 3px solid var(--white-color);
 
       &:hover {
         background-color: var(--adc-color-2);

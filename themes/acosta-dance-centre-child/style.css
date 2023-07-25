@@ -891,8 +891,6 @@ section.featured-product {
     font-size: 20px; }
 
 .tickera_additional_info {
-  background-color: var(--adc-color-1);
-  padding: 2rem;
   margin-bottom: 1rem;
   line-height: 1; }
   .tickera_additional_info .owner-info-wrap .fields-wrap {

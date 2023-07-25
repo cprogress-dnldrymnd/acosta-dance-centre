@@ -238,7 +238,7 @@ function action_single_product_after_image()
     </div>
 
     <div class="classes md-padding">
-      <?= do_shortcode('[adc_classes type="related"') ?>
+      <?= do_shortcode('[adc_classes type="related"]') ?>
     </div>
   </div>
 

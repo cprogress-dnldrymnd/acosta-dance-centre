@@ -898,6 +898,8 @@ section.featured-product {
   .single-product .newsletter-box .container {
     max-width: 100%; }
 
+.memberships-holder br {
+  display: none !important; }
 .memberships-holder .membership-box {
   border: 3px solid;
   max-width: 500px;

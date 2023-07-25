@@ -1305,6 +1305,9 @@ section.featured-product {
 }
 
 .memberships-holder {
+  br {
+    display: none !important;
+  }
   .membership-box {
     border: 3px solid;
     max-width: 500px;

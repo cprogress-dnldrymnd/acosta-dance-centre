@@ -229,6 +229,14 @@ function action_single_product_after_image()
       <?= wpautop(get_the_content()) ?>
     </div>
 
+    <div class="button-group-box">
+      <div class="button-box button-bordered">
+        <a href="/memberships">
+          MEMBERSHIPS
+        </a>
+      </div>
+    </div>
+
     <div class="classes md-padding">
       <?= do_shortcode( '[adc_classes type="featured_classes" heading="OTHER <br>CLASSES"]' ) ?>
     </div>

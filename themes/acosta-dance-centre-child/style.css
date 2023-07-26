@@ -1350,8 +1350,9 @@ table.shop_table.shop_table {
 
 .woocommerce-notices-wrapper.woocommerce-notices-wrapper {
   font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  background-color: var(--adc-color-1); }
+  text-transform: uppercase; }
+  .woocommerce-notices-wrapper.woocommerce-notices-wrapper ul {
+    background-color: var(--adc-color-1); }
   .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button {
     background-color: #000;
     font-family: 'Oswald', sans-serif;

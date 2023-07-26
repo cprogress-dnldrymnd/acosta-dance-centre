@@ -1146,5 +1146,8 @@ table.shop_table.shop_table {
 
 .inherit-elementor-button span {
   font-weight: 400 !important; }
+.inherit-elementor-button svg {
+  width: 50px !important;
+  height: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1802,6 +1802,7 @@ table.shop_table.shop_table {
     .wfpTitle {
       font-size: 20px;
       font-weight: 400;
+      color: #000;
     }
     .wpfFilterContent{
       .wpfFilterVerScroll {
@@ -1809,7 +1810,7 @@ table.shop_table.shop_table {
           .wpfLiLabel {
             display: flex;
             align-items: center;
-            label {
+            .wpfFilterTaxNameWrapper {
               font-size: 15px;
               color: #6D6D6D;
               font-weight: 400;

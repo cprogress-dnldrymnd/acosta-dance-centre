@@ -515,7 +515,9 @@ h4 {
     font-size: 50px;
   }
 }
-
+#doro-main {
+  overflow: hidden;
+}
 body {
   &:not(.page-template-default) {
     #doro-main {
@@ -1643,11 +1645,15 @@ table.shop_table.shop_table {
 .term-classes {
   .newsletter-box {
     max-width: 75%;
+
     .row {
       flex-wrap: wrap;
+
       .col-lg-3 {
-        flex: 0 0 100%;
-        max-width: 100%;
+        &:nth-child(1) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
     }
   }

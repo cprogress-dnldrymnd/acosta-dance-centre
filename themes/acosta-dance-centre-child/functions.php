@@ -415,7 +415,6 @@ function update_product_time_attribute($product_id)
 {
 	// Get product attributes
 	$ticket_time = single_get_date($product_id, 'time');
-	$terms = array('small', 'red', );
 	$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', true);
 
 }

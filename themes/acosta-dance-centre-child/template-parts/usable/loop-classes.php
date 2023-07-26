@@ -63,7 +63,7 @@ else {
 }
 ?>
 
-<?php if ($more_button_val) { ?>
+<?php if ($args['type'] == 'related') { ?>
   <div class="more-button text-right d-none d-lg-block">
     <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
       <span class="text mr-3"><?= $more_text ?></span>
@@ -137,7 +137,7 @@ else {
         </div>
       <?php } ?>
     </div>
-    <?php if ($more_button_val) { ?>
+    <?php if ($args['type'] == 'related') { ?>
       <div class="more-button  d-block d-lg-none text-center pb-5">
         <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
           <span class="text mr-3"><?= $more_text ?></span>

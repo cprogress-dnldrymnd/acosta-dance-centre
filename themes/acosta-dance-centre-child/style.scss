@@ -172,7 +172,8 @@ h4 {
 
 .wpcf7-submit,
 .checkout-button,
-#place_order {
+#place_order,
+.woocommerce-Button {
   @include button-style;
   @include button-black;
 }
@@ -183,7 +184,7 @@ h4 {
   >button,
   >input[type="submit"],
   >span,
-  .single_add_to_cart_button, .woocommerce-Button{
+  .single_add_to_cart_button {
     @include button-style;
   }
 
@@ -193,7 +194,7 @@ h4 {
     >button,
     >input[type="submit"],
     >span,
-    .single_add_to_cart_button, .woocommerce-Button {
+    .single_add_to_cart_button {
       @include button-black;
     }
   }

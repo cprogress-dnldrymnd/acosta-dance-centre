@@ -1185,4 +1185,7 @@ table.shop_table.shop_table {
   margin-left: auto;
   margin-right: auto; }
 
+.page-content {
+  float: none !important; }
+
 /*# sourceMappingURL=style.css.map */

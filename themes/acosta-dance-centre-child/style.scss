@@ -1879,11 +1879,11 @@ table.shop_table.shop_table {
 .woocommerce .button-group-box .cart.variations_form {
   flex-direction: row;
   position: relative;
-
+    margin-bottom: 1rem;
   .single_variation {
     position: absolute;
     left: 0;
-    top: -30px;
+    top: -40px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
@@ -1919,6 +1919,7 @@ table.shop_table.shop_table {
         border: 3px solid;
         padding: 20px;
         margin-right: 1rem;
+        min-height: 90px;
       }
 
       .reset_variations {
@@ -1927,5 +1928,11 @@ table.shop_table.shop_table {
         left: 0;
       }
     }
+  }
+}
+
+#book-now {
+  .button-box {
+    margin-bottom: 1rem;
   }
 }

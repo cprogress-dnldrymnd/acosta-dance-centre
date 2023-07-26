@@ -50,7 +50,7 @@ else {
   $classes = get__theme_option('featured_classes');
 }
 if ($args['category']) {
-  $term_name = get_queried_object()->name;
+  $term_name = get_term($term_id)->name;
   $more_text = 'MORE ' . $term_name;
   $categ_id = $args['category'];
 }

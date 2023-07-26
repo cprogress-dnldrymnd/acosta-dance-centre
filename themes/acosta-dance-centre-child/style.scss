@@ -964,9 +964,11 @@ section.featured-product {
     margin-right: -15px;
 
     &.columns-3 {
-      -ms-flex: 0 0 33.3333333%;
-      max-width: 33.3333333%;
-      flex: 0 0 33.3333333%;
+      li.product {
+        -ms-flex: 0 0 33.3333333%;
+        max-width: 33.3333333%;
+        flex: 0 0 33.3333333%;
+      }
 
     }
 
@@ -988,20 +990,22 @@ section.featured-product {
 
     &.columns-3,
     &.columns-4 {
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: 0;
+      li.product {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: 0;
 
-      @media(max-width: 991px) {
-        -ms-flex: 0 0 50%;
-        max-width: 50%;
-        flex: 0 0 50%;
-      }
+        @media(max-width: 991px) {
+          -ms-flex: 0 0 50%;
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
 
-      @media(max-width: 575px) {
-        -ms-flex: 0 0 100%;
-        max-width: 100%;
-        flex: 0 0 100%;
+        @media(max-width: 575px) {
+          -ms-flex: 0 0 100%;
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
       }
     }
 

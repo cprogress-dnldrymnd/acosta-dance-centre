@@ -974,7 +974,7 @@ section.featured-product {
         letter-spacing: 5.43px;
         font-family: 'Oswald', sans-serif;
         color: #6D6D6D;
-        border-bottom: 1px solid #eaeaea !important;
+        border-bottom: 1px solid #ECECEC !important;
         padding-top: 0; }
         .details-box table tr td p {
           color: inherit;
@@ -1237,7 +1237,9 @@ table.shop_table.shop_table {
   background-repeat: no-repeat !important; }
 
 .wpfMainWrapper .wpfFilterWrapper {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 20px !important; }
   .wpfMainWrapper .wpfFilterWrapper .wpfFilterTitle {
     display: flex;
     align-items: center;

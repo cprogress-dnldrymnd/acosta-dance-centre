@@ -141,7 +141,7 @@ h4 {
 .button-box > button,
 .button-box > input[type="submit"],
 .button-box > span,
-.button-box .single_add_to_cart_button {
+.button-box .single_add_to_cart_button, .button-box .woocommerce-Button {
   font-family: 'Oswald', sans-serif !important;
   font-weight: bold !important;
   padding: 30px 40px 30px 40px !important;
@@ -156,28 +156,28 @@ h4 {
     .button-box > button,
     .button-box > input[type="submit"],
     .button-box > span,
-    .button-box .single_add_to_cart_button {
+    .button-box .single_add_to_cart_button, .button-box .woocommerce-Button {
       letter-spacing: 5px; } }
   @media (max-width: 768px) {
     .button-box > a,
     .button-box > button,
     .button-box > input[type="submit"],
     .button-box > span,
-    .button-box .single_add_to_cart_button {
+    .button-box .single_add_to_cart_button, .button-box .woocommerce-Button {
       letter-spacing: 3px; } }
   @media (max-width: 480px) {
     .button-box > a,
     .button-box > button,
     .button-box > input[type="submit"],
     .button-box > span,
-    .button-box .single_add_to_cart_button {
+    .button-box .single_add_to_cart_button, .button-box .woocommerce-Button {
       padding: 20px !important;
       letter-spacing: 2px; } }
 .button-box.button-black > a,
 .button-box.button-black > button,
 .button-box.button-black > input[type="submit"],
 .button-box.button-black > span,
-.button-box.button-black .single_add_to_cart_button {
+.button-box.button-black .single_add_to_cart_button, .button-box.button-black .woocommerce-Button {
   background-color: var(--black-color) !important;
   color: var(--white-color);
   border: 3px solid var(--black-color) !important; }
@@ -185,7 +185,7 @@ h4 {
   .button-box.button-black > button:hover,
   .button-box.button-black > input[type="submit"]:hover,
   .button-box.button-black > span:hover,
-  .button-box.button-black .single_add_to_cart_button:hover {
+  .button-box.button-black .single_add_to_cart_button:hover, .button-box.button-black .woocommerce-Button:hover {
     background-color: var(--adc-color-1) !important;
     color: var(--black-color) !important;
     border: 3px solid var(--black-color) !important; }

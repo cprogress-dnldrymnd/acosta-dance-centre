@@ -1272,4 +1272,7 @@ table.shop_table.shop_table {
         text-transform: uppercase;
         letter-spacing: 5px; }
 
+.woocommerce-shop .product-loop {
+  padding-top: 0; }
+
 /*# sourceMappingURL=style.css.map */

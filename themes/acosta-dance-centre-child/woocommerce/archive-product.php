@@ -61,7 +61,7 @@ if ($is_classes) {
 		'type'    => 'featured_workshops',
 		'heading' => 'FEATURED <br>WORKSHOPS'
 	);
-	get_template_part('template-parts/woocommerce/classes-category');
+	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
 }
@@ -127,7 +127,7 @@ if (is_shop()) {
 		'type'    => 'featured_workshops',
 		'heading' => 'FEATURED <br>WORKSHOPS'
 	);
-	get_template_part('template-parts/woocommerce/classes-category');
+	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
 }

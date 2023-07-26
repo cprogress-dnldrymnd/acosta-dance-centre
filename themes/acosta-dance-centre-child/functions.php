@@ -445,6 +445,5 @@ add_action('woocommerce_new_product', 'mp_sync_on_product_save', 10, 1);
 add_action('woocommerce_update_product', 'mp_sync_on_product_save', 10, 1);
 function mp_sync_on_product_save($product_id)
 {
-	$product = wc_get_product($product_id);
 	update_product_time_attribute($product_id);
 }

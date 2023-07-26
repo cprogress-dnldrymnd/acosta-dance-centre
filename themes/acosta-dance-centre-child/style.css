@@ -1239,7 +1239,8 @@ table.shop_table.shop_table {
 .wpfMainWrapper .wpfFilterWrapper {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 20px;
-  padding-bottom: 20px !important; }
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid #ECECEC; }
   .wpfMainWrapper .wpfFilterWrapper .wpfFilterTitle {
     display: flex;
     align-items: center;

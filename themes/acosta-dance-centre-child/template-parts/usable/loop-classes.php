@@ -28,6 +28,7 @@ else if ($args['type'] == 'related') {
 
   $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');
 
+  $categ_id = _product_category_id(get_the_ID());
 
   $post_list = get_posts($posts);
 
@@ -49,25 +50,25 @@ else {
   $classes = get__theme_option('featured_classes');
 }
 ?>
-
+<?php if ($args['type'] == 'related') { ?>
+  <div class="more-button">
+    <a href="<?= get_term_link($categ_id) ?>">
+      <span class="text"><?= $more_text ?></span>
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54.446" height="25.242" viewBox="0 0 54.446 25.242">
+          <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1.5 2.121)">
+            <path id="Path_116" data-name="Path 116" d="M7.5,18H58.946" transform="translate(-7.5 -7.5)" fill="none"
+              stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+            <path id="Path_117" data-name="Path 117" d="M18,7.5,28.5,18,18,28.5" transform="translate(22.946 -7.5)"
+              fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+          </g>
+        </svg>
+      </span>
+    </a>
+  </div>
+<?php } ?>
 <section class="featured-product background-light-red d-flex">
-  <?php if ($args['type'] == 'related') { ?>
-    <div class="more-button">
-      <a href="">
-        <span class="text"><?= $more_text ?></span>
-        <span class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="54.446" height="25.242" viewBox="0 0 54.446 25.242">
-            <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1.5 2.121)">
-              <path id="Path_116" data-name="Path 116" d="M7.5,18H58.946" transform="translate(-7.5 -7.5)" fill="none"
-                stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-              <path id="Path_117" data-name="Path 117" d="M18,7.5,28.5,18,18,28.5" transform="translate(22.946 -7.5)"
-                fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-            </g>
-          </svg>
-        </span>
-      </a>
-    </div>
-  <?php } ?>
+
   <div class="inner">
     <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">

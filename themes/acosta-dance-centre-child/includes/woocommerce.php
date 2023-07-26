@@ -367,6 +367,24 @@ function _product_category($id, $classes = 'classes', $workshops = 'workshops', 
   }
 }
 
+function _product_category_id($id)
+{
+  $terms = get_the_terms($id, 'product_cat');
+  $terms_val = array();
+  foreach ($terms as $term) {
+    $terms_val[] = $term->term_id;
+  }
+  if (in_array(79, $terms_val)) {
+    return 79;
+  }
+  else if (in_array(78, $terms_val)) {
+    return 78;
+  }
+  else if (in_array(88, $terms_val)) {
+    return 88;
+  }
+}
+
 // Change add to cart text on single product page
 add_filter('woocommerce_product_single_add_to_cart_text', 'woocommerce_add_to_cart_button_text_single');
 function woocommerce_add_to_cart_button_text_single()

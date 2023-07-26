@@ -416,7 +416,7 @@ function update_product_time_attribute($product_id)
 	// Get product attributes
 	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
 
-	$term_taxonomy_ids = wp_set_object_terms($product_id, 'Test', 'pa_time', true);
+	//$term_taxonomy_ids = wp_set_object_terms($product_id, 'Test', 'pa_time', true);
 	$thedata = array(
 		'pa_time' => array(
 			'name'         => 'TIME',

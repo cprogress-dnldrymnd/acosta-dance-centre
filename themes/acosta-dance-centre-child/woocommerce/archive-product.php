@@ -68,7 +68,7 @@ if ($is_classes) {
 $name = get_queried_object()->name;
 ?>
 
-<section class="product-loop md-padding">
+<section class="product-loop md-padding-top">
 	<div class="sec-title text-left">
 		<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
 		<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>

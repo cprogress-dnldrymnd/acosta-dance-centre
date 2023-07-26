@@ -1351,8 +1351,10 @@ table.shop_table.shop_table {
 .woocommerce-notices-wrapper.woocommerce-notices-wrapper {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase; }
-  .woocommerce-notices-wrapper.woocommerce-notices-wrapper ul, .woocommerce-notices-wrapper.woocommerce-notices-wrapper .woocommerce-message {
+  .woocommerce-notices-wrapper.woocommerce-notices-wrapper .woocommerce-message {
     background-color: var(--adc-color-1); }
+  .woocommerce-notices-wrapper.woocommerce-notices-wrapper .woocommerce-error {
+    background-color: var(--adc-color-2); }
   .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button {
     background-color: #000;
     font-family: 'Oswald', sans-serif;

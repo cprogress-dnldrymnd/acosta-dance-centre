@@ -1877,8 +1877,8 @@ table.shop_table.shop_table {
 }
 
 .woocommerce .button-group-box .cart.variations_form {
-  flex-direction: row;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 
   .single_variation {
     position: absolute;
@@ -1903,6 +1903,16 @@ table.shop_table.shop_table {
       border: none !important;
     }
 
+    .single_variation_wrap {
+      @media(max-width: 768px) {
+        max-width: 350px;
+        width: 100%;
+
+        .single_add_to_cart_button {
+          width: 100%;
+        }
+      }
+    }
 
 
     .value {
@@ -1917,8 +1927,15 @@ table.shop_table.shop_table {
         border-radius: 0;
         border: 3px solid;
         padding: 20px;
-        margin-right: 1rem;
-        min-height: 90px;
+
+        @media (min-width: 769px) {
+          min-height: 90px;
+          margin-right: 1rem;
+        }
+
+        @media(max-width: 768px) {
+          margin-bottom: 1rem;
+        }
       }
 
       .reset_variations {
@@ -1928,12 +1945,20 @@ table.shop_table.shop_table {
       }
     }
   }
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+
+  @media(max-width: 768px) {}
 }
 
 #book-now {
   position: relative;
   display: inline-flex;
+
   .button-box {
     margin-bottom: 1rem;
   }
+
 }

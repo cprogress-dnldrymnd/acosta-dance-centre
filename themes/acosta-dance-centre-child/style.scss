@@ -463,6 +463,9 @@ body {
     #doro-main {
       #doro-inner {
         padding: 40px 35px;
+        @media(max-width: 991px) {
+          padding: 40px 15px;
+        }
       }
     }
   }

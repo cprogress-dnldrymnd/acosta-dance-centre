@@ -330,6 +330,9 @@ h4 {
 
 body:not(.page-template-default) #doro-main #doro-inner {
   padding: 40px 35px; }
+  @media (max-width: 991px) {
+    body:not(.page-template-default) #doro-main #doro-inner {
+      padding: 40px 15px; } }
 
 .post-type-archive-product #doro-main #doro-inner,
 .tax-product_cat #doro-main #doro-inner {

@@ -49,18 +49,7 @@ else if ($args['type'] == 'featured_workshops') {
 else {
   $classes = get__theme_option('featured_classes');
 }
-if ($args['categ']) {
-  $term_name = get_term($args['categ'])->name;
-  $more_text = 'MORE ' . $term_name;
-  $categ_id = $args['categ'];
-}
 
-if (($args['type'] == 'related') || $args['categ']) {
-  $more_button_val = 'true';
-}
-else {
-  $more_button_val = 'false';
-}
 ?>
 
 <?php if ($args['type'] == 'related') { ?>

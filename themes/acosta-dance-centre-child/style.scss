@@ -1165,6 +1165,7 @@ section.featured-product {
         float: none;
         margin-top: -60px;
 
+        /*
         .woocommerce-product-gallery__image {
           a {
             padding: 30% 0px;
@@ -1180,8 +1181,8 @@ section.featured-product {
               object-fit: cover;
             }
           }
-        }
-
+        }*/
+        
         &.woocommerce-product-gallery--without-images {
           display: none !important;
         }

@@ -753,8 +753,23 @@ section.featured-product {
     .woocommerce .button-group-box .cart button {
       cursor: pointer;
       margin: 0 !important; }
+      @media (max-width: 768px) {
+        .woocommerce .button-group-box .cart button {
+          max-width: 350px;
+          width: 100%; } }
     .woocommerce .button-group-box .cart.variations_form {
       flex-direction: column; }
+    @media (max-width: 768px) {
+      .woocommerce .button-group-box .cart {
+        margin-bottom: 1rem;
+        justify-content: center; } }
+  .woocommerce .button-group-box .button-box a {
+    max-width: 350px;
+    width: 100%; }
+  @media (max-width: 768px) {
+    .woocommerce .button-group-box {
+      margin-top: 3rem;
+      flex-direction: column; } }
 .woocommerce .date-box {
   letter-spacing: 7.24px;
   font-size: 20px;

@@ -433,6 +433,7 @@ h4 {
   a {
     color: inherit;
   }
+
   @media(max-width: 767px) {
     letter-spacing: 2px;
     font-size: 18px;
@@ -463,6 +464,7 @@ body {
     #doro-main {
       #doro-inner {
         padding: 40px 35px;
+
         @media(max-width: 991px) {
           padding: 40px 15px;
         }
@@ -1067,11 +1069,34 @@ section.featured-product {
       button {
         cursor: pointer;
         margin: 0 !important;
+
+        @media(max-width: 768px) {
+          max-width: 350px;
+          width: 100%;
+        }
       }
 
       &.variations_form {
         flex-direction: column;
       }
+
+      @media(max-width: 768px) {
+        margin-bottom: 1rem;
+        justify-content: center;
+
+      }
+    }
+
+    .button-box {
+      a {
+        max-width: 350px;
+        width: 100%;
+      }
+    }
+
+    @media(max-width: 768px) {
+      margin-top: 3rem;
+      flex-direction: column;
     }
   }
 

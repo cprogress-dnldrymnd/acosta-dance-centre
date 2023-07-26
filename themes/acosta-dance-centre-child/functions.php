@@ -420,14 +420,14 @@ function update_product_time_attribute($product_id)
 	$thedata = array(
 		'pa_time' => array(
 			'name'         => 'TIME',
-			'value'        => 'test',
+			'value'        => 'testx',
 			'is_visible'   => '0',
 			'is_variation' => '0',
 			'is_taxonomy'  => '1'
 		)
 	);
 
-	$product_attributes = array_merge($product_attributes, $product_attributes);
+	$product_attributes = array_merge($product_attributes, $thedata);
 	// Set updated attributes back in database
 	update_post_meta($product_id, '_product_attributes', $product_attributes);
 }

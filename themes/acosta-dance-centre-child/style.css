@@ -1144,4 +1144,7 @@ table.shop_table.shop_table {
     font-size: 15px;
     letter-spacing: 5.43px; }
 
+.inherit-elementor-button span {
+  font-weight: 400 !important; }
+
 /*# sourceMappingURL=style.css.map */

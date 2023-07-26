@@ -322,7 +322,7 @@ function adc_remove_default_sorting_storefront()
 }
 
 
-
+/*
 add_action('template_redirect', 'my_redirect_if_user_not_logged_in');
 
 function my_redirect_if_user_not_logged_in()
@@ -337,7 +337,7 @@ function my_redirect_if_user_not_logged_in()
 	}
 
 }
-
+*/
 
 add_filter('gettext', 'translate_text', 30);
 add_filter('ngettext', 'translate_text', 30);

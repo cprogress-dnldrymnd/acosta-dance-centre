@@ -14,7 +14,7 @@
 		?>
 		<style>
 			.featured-product {
-				display: none;
+				display: none !important;
 			}
 		</style>
 	<?php } ?>

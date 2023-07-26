@@ -102,7 +102,7 @@ function membership_box()
         <li>Access to our online academy</li>
       </ul>
     </div>
-    <div class="button-box text-center button-bordered">
+    <div class="button-box text-center <?= is_archive() ? 'membership-black' : 'button-bordered' ?>">
       <a href="/memberships/">
         FIND OUT MORE
       </a>

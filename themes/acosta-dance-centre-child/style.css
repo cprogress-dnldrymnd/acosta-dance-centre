@@ -1285,7 +1285,8 @@ table.shop_table.shop_table {
   margin-left: 15px !important; }
 
 .woocommerce .button-group-box .cart.variations_form {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 0 !important; }
   .woocommerce .button-group-box .cart.variations_form .single_variation {
     position: absolute;
     left: 0;

@@ -1758,3 +1758,7 @@ table.shop_table.shop_table {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.widget.widget-block ul li {
+  float: none !important;
+}

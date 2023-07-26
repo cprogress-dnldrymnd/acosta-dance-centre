@@ -1880,6 +1880,17 @@ table.shop_table.shop_table {
   flex-direction: row;
   position: relative;
 
+  .single_variation {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #000;
+  }
+
   .variations {
     width: auto;
     border: none !important;
@@ -1892,16 +1903,7 @@ table.shop_table.shop_table {
       border: none !important;
     }
 
-    .single_variation {
-      position: absolute;
-      left: 0;
-      top: -30px;
-      font-family: 'Oswald', sans-serif;
-      font-weight: bold;
-      letter-spacing: 5px;
-      font-size: 16px;
-      color: #000;
-    }
+
 
     .value {
       padding: 0;

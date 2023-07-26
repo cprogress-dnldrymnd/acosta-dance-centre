@@ -60,7 +60,7 @@ if (($args['type'] == 'related') || $args['category']) {
 else {
   $more_button = false;
 }
-echo $more_button;
+echo $categ_id;
 ?>
 
 <?php if ($args['type'] == 'related') { ?>

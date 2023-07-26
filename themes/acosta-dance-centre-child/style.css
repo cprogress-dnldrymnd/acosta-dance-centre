@@ -762,7 +762,8 @@ section.featured-product {
     @media (max-width: 768px) {
       .woocommerce .button-group-box .cart {
         margin-bottom: 1rem;
-        justify-content: center; } }
+        justify-content: center;
+        margin-right: 0; } }
   .woocommerce .button-group-box .button-box a {
     max-width: 350px;
     width: 100%; }

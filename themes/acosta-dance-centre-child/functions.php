@@ -415,25 +415,23 @@ function update_product_time_attribute($product_id)
 {
 	// Get product attributes
 	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
-	if ($product_id == 1890) {
-		// Get product attributes
-		$ticket_time = single_get_date($product_id, 'time');
-		$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);
+	// Get product attributes
+	$ticket_time = single_get_date($product_id, 'time');
+	$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);
 
-		$thedata = array(
-			'pa_time' => array(
-				'name'         => 'TIME',
-				'value'        => $ticket_time,
-				'is_visible'   => '0',
-				'is_variation' => '0',
-				'is_taxonomy'  => '1'
-			)
-		);
+	$thedata = array(
+		'pa_time' => array(
+			'name'         => 'TIME',
+			'value'        => $ticket_time,
+			'is_visible'   => '0',
+			'is_variation' => '0',
+			'is_taxonomy'  => '1'
+		)
+	);
 
-		$product_attributes = array_merge($product_attributes, $thedata);
-		// Set updated attributes back in database
-		update_post_meta($product_id, '_product_attributes', $product_attributes);
-	}
+	$product_attributes = array_merge($product_attributes, $thedata);
+	// Set updated attributes back in database
+	update_post_meta($product_id, '_product_attributes', $product_attributes);
 }
 
 

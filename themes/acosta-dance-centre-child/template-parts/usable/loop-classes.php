@@ -60,7 +60,9 @@ if (($args['type'] == 'related') || $args['category']) {
 else {
   $more_button = false;
 }
+echo $args['category']
 ?>
+
 <?php if ($args['type'] == 'related') { ?>
   <div class="more-button text-right d-none d-lg-block">
     <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">

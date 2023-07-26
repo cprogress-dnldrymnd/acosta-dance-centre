@@ -407,6 +407,12 @@ body:not(.page-template-default) #doro-main #doro-inner {
     body:not(.page-template-default) #doro-main #doro-inner {
       padding: 100px 15px 40px; } }
 
+.post-type-archive-product section.featured-product,
+.tax-product_cat section.featured-product {
+  margin-top: 0; }
+.post-type-archive-product .more-button,
+.tax-product_cat .more-button {
+  margin-top: 60px; }
 .post-type-archive-product #doro-main #doro-inner,
 .tax-product_cat #doro-main #doro-inner {
   display: -ms-flexbox;
@@ -1167,6 +1173,7 @@ table.shop_table.shop_table {
 .more-button {
   letter-spacing: 7px;
   font-size: 20px;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -52,7 +52,7 @@ else {
 ?>
 <?php if ($args['type'] == 'related') { ?>
   <div class="more-button text-right">
-    <a class="d-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
+    <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
       <span class="text mr-3"><?= $more_text ?></span>
       <span class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="54.446" height="25.242" viewBox="0 0 54.446 25.242">

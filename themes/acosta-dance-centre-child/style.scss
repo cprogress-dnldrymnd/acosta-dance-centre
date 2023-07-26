@@ -540,6 +540,15 @@ body {
 
 .post-type-archive-product,
 .tax-product_cat {
+  section.featured-product {
+    margin-top: 0;
+
+  }
+
+  .more-button {
+    margin-top: 60px;
+  }
+
   #doro-main {
     #doro-inner {
       display: -ms-flexbox;
@@ -1665,4 +1674,5 @@ table.shop_table.shop_table {
   letter-spacing: 7px;
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
+  padding-bottom: 10px;
 }

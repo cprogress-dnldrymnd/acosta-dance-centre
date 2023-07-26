@@ -267,6 +267,8 @@ h4 {
 
 .newsletter-box {
   padding-bottom: 80px; }
+  .newsletter-box h3 {
+    line-height: 1; }
   .newsletter-box p, .newsletter-box input {
     margin-bottom: 0 !important; }
   .newsletter-box .wpcf7-submit {

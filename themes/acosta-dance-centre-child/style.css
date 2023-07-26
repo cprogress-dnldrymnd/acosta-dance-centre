@@ -358,7 +358,13 @@ h4 {
   @media (max-width: 768px) {
     .woocommerce-breadcrumb.woocommerce-breadcrumb {
       letter-spacing: 2px;
-      font-size: 18px; } }
+      font-size: 18px;
+      font-size: 0; }
+      .woocommerce-breadcrumb.woocommerce-breadcrumb a {
+        font-size: 18px; }
+        .woocommerce-breadcrumb.woocommerce-breadcrumb a:after {
+          content: '/';
+          margin-left: 5px; } }
 
 .big-title.big-title {
   font-size: 80px;

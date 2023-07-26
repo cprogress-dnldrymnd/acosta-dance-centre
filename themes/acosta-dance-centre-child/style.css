@@ -430,6 +430,14 @@ body.page-template-default .newsletter-box {
   .post-type-archive-product #doro-main #doro-inner .woocommerce-products-header,
   .tax-product_cat #doro-main #doro-inner .woocommerce-products-header {
     margin-bottom: 130px; }
+    @media (max-width: 991px) {
+      .post-type-archive-product #doro-main #doro-inner .woocommerce-products-header,
+      .tax-product_cat #doro-main #doro-inner .woocommerce-products-header {
+        margin-bottom: 80px; } }
+    @media (max-width: 767px) {
+      .post-type-archive-product #doro-main #doro-inner .woocommerce-products-header,
+      .tax-product_cat #doro-main #doro-inner .woocommerce-products-header {
+        margin-bottom: 50px; } }
   .post-type-archive-product #doro-main #doro-inner #primary,
   .tax-product_cat #doro-main #doro-inner #primary {
     -ms-flex: 0 0 75%;

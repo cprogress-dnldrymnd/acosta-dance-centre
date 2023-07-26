@@ -584,6 +584,14 @@ body {
 
       .woocommerce-products-header {
         margin-bottom: 130px;
+
+        @media(max-width: 991px) {
+          margin-bottom: 80px;
+        }
+
+        @media(max-width: 767px) {
+          margin-bottom: 50px;
+        }
       }
 
       #primary {

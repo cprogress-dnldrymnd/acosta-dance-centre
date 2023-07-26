@@ -175,7 +175,7 @@ function action_woocommerce_after_single_product()
       <?php
       if ($_product_category == 'workshops') {
         echo '<div class="button-box button-black">';
-        echo ' <a href="#join-now">BOOK NOW</a>';
+        echo ' <a href="#book-now">BOOK NOW</a>';
         echo '</div>';
       }
       else if ($_product_category == 'classes') {
@@ -255,7 +255,7 @@ function action_single_product_after_image()
     </div>
 
     <?php if ($_product_category != 'memberships') { ?>
-      <div class="button-group-box text-center justify-content-center ">
+      <div class="button-group-box text-center justify-content-center " id="book-now">
         <?php
         if ($_product_category == 'workshops') {
           echo '<div class="button-box button-black">';

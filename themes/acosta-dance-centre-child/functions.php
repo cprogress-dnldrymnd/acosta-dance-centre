@@ -414,9 +414,12 @@ function single_get_date($id, $type = 'date')
 function update_product_time_attribute($product_id)
 {
 	// Get product attributes
-	$ticket_time = single_get_date($product_id, 'time');
+	$ticket_date_val = get_post_meta($product_id, '_ticket_checkin_availability_from_date', true);
 
-	if ($ticket_time) {
+
+	if ($ticket_date_val) {
+		$ticket_time = single_get_date($product_id, 'time');
+
 		$product_attributes = get_post_meta($product_id, '_product_attributes', true);
 
 		$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);

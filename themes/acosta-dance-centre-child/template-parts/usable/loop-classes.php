@@ -52,7 +52,7 @@ else {
 if ($args['category']) {
   $term_name = get_term($args['category'])->name;
   $more_text = 'MORE ' . $term_name;
-  $categ_id = $args['category'];
+  $categ_id = $args['categ'];
 }
 
 if (($args['type'] == 'related') || $args['category']) {

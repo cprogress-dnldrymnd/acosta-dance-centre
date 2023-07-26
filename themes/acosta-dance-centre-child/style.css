@@ -279,6 +279,13 @@ h4 {
   .newsletter .row {
     flex-wrap: nowrap; } }
 
+.wpcf7-form .wpcf7-submit {
+  font-family: "Oswald", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  background-color: var(--e-global-color-primary);
+  border-radius: 0px 0px 0px 0px; }
 .wpcf7-form .row {
   align-items: flex-end; }
 .wpcf7-form h3 {

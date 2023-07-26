@@ -1296,6 +1296,12 @@ table.shop_table.shop_table {
     letter-spacing: 5px;
     font-size: 16px;
     color: #000; }
+  @media (max-width: 768px) {
+    .woocommerce .button-group-box .cart.variations_form .single_variation_wrap {
+      max-width: 350px;
+      width: 100%; }
+      .woocommerce .button-group-box .cart.variations_form .single_variation_wrap .single_add_to_cart_button {
+        width: 100%; } }
   .woocommerce .button-group-box .cart.variations_form .variations {
     width: auto;
     border: none !important; }
@@ -1303,12 +1309,6 @@ table.shop_table.shop_table {
       display: none; }
     .woocommerce .button-group-box .cart.variations_form .variations tr {
       border: none !important; }
-    @media (max-width: 768px) {
-      .woocommerce .button-group-box .cart.variations_form .variations .single_variation_wrap {
-        max-width: 350px;
-        width: 100%; }
-        .woocommerce .button-group-box .cart.variations_form .variations .single_variation_wrap .single_add_to_cart_button {
-          width: 100%; } }
     .woocommerce .button-group-box .cart.variations_form .variations .value {
       padding: 0;
       border: none !important; }

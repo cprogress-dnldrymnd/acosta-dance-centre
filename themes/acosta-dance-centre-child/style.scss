@@ -1891,6 +1891,17 @@ table.shop_table.shop_table {
     color: #000;
   }
 
+  .single_variation_wrap {
+    @media(max-width: 768px) {
+      max-width: 350px;
+      width: 100%;
+
+      .single_add_to_cart_button {
+        width: 100%;
+      }
+    }
+  }
+
   .variations {
     width: auto;
     border: none !important;
@@ -1902,18 +1913,6 @@ table.shop_table.shop_table {
     tr {
       border: none !important;
     }
-
-    .single_variation_wrap {
-      @media(max-width: 768px) {
-        max-width: 350px;
-        width: 100%;
-
-        .single_add_to_cart_button {
-          width: 100%;
-        }
-      }
-    }
-
 
     .value {
       padding: 0;

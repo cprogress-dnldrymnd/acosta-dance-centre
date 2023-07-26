@@ -66,8 +66,12 @@ if ($is_classes) {
 
 }
 
+if(is_shop()) {
+	$name = 'CLASS';
+} else {
+	$name = get_queried_object()->name;
+}
 
-$name = get_queried_object()->name;
 ?>
 
 <section class="product-loop md-padding-top">

@@ -170,7 +170,6 @@ h4 {
   }
 }
 
-.wpcf7-submit,
 .checkout-button,
 #place_order {
   @include button-style;
@@ -315,7 +314,14 @@ h4 {
 }
 
 .newsletter-box {
+  p, input {
+    margin-bottom: 0 !important;
+  }
   padding-bottom: 80px;
+  .wpcf7-submit {
+    margin-bottom: 0;
+  }
+
 }
 
 .newsletter {

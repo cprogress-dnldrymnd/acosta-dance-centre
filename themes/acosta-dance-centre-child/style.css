@@ -99,7 +99,6 @@ h4 {
     #doro-hero .button-group-box {
       flex-direction: column; } }
 
-.wpcf7-submit,
 .checkout-button,
 #place_order {
   font-family: 'Oswald', sans-serif !important;
@@ -115,22 +114,18 @@ h4 {
   color: var(--white-color);
   border: 3px solid var(--black-color) !important; }
   @media (max-width: 991px) {
-    .wpcf7-submit,
     .checkout-button,
     #place_order {
       letter-spacing: 5px; } }
   @media (max-width: 768px) {
-    .wpcf7-submit,
     .checkout-button,
     #place_order {
       letter-spacing: 3px; } }
   @media (max-width: 480px) {
-    .wpcf7-submit,
     .checkout-button,
     #place_order {
       padding: 20px !important;
       letter-spacing: 2px; } }
-  .wpcf7-submit:hover,
   .checkout-button:hover,
   #place_order:hover {
     background-color: var(--adc-color-1) !important;
@@ -272,6 +267,10 @@ h4 {
 
 .newsletter-box {
   padding-bottom: 80px; }
+  .newsletter-box p, .newsletter-box input {
+    margin-bottom: 0 !important; }
+  .newsletter-box .wpcf7-submit {
+    margin-bottom: 0; }
 
 @media (min-width: 992px) {
   .newsletter .row {

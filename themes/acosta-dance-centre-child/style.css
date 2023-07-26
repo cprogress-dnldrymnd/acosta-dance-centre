@@ -389,6 +389,9 @@ body:not(.page-template-default) #doro-main #doro-inner {
   @media (max-width: 991px) {
     body:not(.page-template-default) #doro-main #doro-inner {
       padding: 40px 15px; } }
+  @media (max-width: 768px) {
+    body:not(.page-template-default) #doro-main #doro-inner {
+      padding: 100px 15px 40px; } }
 
 .post-type-archive-product #doro-main #doro-inner,
 .tax-product_cat #doro-main #doro-inner {

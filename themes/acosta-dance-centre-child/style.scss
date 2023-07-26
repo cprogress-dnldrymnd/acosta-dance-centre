@@ -1974,7 +1974,7 @@ table.shop_table.shop_table {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 
-  ul {
+  ul, .woocommerce-message {
     background-color: var(--adc-color-1);
   }
 

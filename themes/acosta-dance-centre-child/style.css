@@ -1326,7 +1326,7 @@ table.shop_table.shop_table {
             margin-right: 1rem; } }
         @media (max-width: 768px) {
           .woocommerce .button-group-box .cart.variations_form .variations .value select {
-            margin-bottom: 1rem; } }
+            margin-bottom: 10px; } }
       .woocommerce .button-group-box .cart.variations_form .variations .value .reset_variations {
         position: absolute;
         bottom: 0;
@@ -1340,5 +1340,8 @@ table.shop_table.shop_table {
   display: inline-flex; }
   #book-now .button-box {
     margin-bottom: 1rem; }
+    @media (max-width: 768px) {
+      #book-now .button-box {
+        margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

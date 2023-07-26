@@ -1431,7 +1431,8 @@ section.featured-product {
   margin-right: auto;
 
   .doro-heading {
-    font-size: 30px;
+    font-size: 30px !important;
+    font-family: 'Oswald', sans-serif !important;
   }
 
   .heading-meta {
@@ -1441,6 +1442,9 @@ section.featured-product {
   .checklist {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  &.membership-box-v2 {
+
   }
 }
 

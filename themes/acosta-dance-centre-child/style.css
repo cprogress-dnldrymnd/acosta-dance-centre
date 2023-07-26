@@ -1000,7 +1000,8 @@ section.featured-product {
   margin-left: auto;
   margin-right: auto; }
   .membership-box .doro-heading {
-    font-size: 30px; }
+    font-size: 30px !important;
+    font-family: 'Oswald', sans-serif !important; }
   .membership-box .heading-meta {
     margin-bottom: 30px; }
   .membership-box .checklist {

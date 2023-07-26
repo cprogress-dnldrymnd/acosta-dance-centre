@@ -65,6 +65,8 @@ if ($is_classes) {
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
 }
+
+
 $name = get_queried_object()->name;
 ?>
 
@@ -120,7 +122,15 @@ $name = get_queried_object()->name;
 	?>
 </section>
 <?php
+if (is_shop()) {
+	$args = array(
+		'type'    => 'featured_workshops',
+		'heading' => 'FEATURED <br>WORKSHOPS'
+	);
+	get_template_part('template-parts/woocommerce/classes-category');
+	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
+}
 
 /**
  * Hook: woocommerce_after_main_content.

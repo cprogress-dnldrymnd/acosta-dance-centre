@@ -50,14 +50,7 @@ else {
 ?>
 
 <section class="featured-product background-light-red d-flex">
-  <?php if ($args['type'] == 'related') { ?>
-    <div class="more-button">
-      <a href="">
-        <span class="text">MORE <?= $heading ? $heading : $args['heading'] ?></span>
-        <span class="icon"></span>
-      </a>
-    </div>
-  <?php } ?>
+ 
   <div class="inner">
     <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">

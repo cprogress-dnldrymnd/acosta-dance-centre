@@ -423,7 +423,7 @@ function update_product_time_attribute($product_id)
 			'value'        => 'test',
 			'is_visible'   => '0',
 			'is_variation' => '0',
-			'is_taxonomy'  => '0'
+			'is_taxonomy'  => '1'
 		)
 	);
 

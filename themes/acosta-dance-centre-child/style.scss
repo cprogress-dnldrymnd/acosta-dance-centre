@@ -1815,6 +1815,7 @@ table.shop_table.shop_table {
         width: 20px;
         background-size: contain;
         background-position: center right;
+        transition: 300ms;
         &:before {
           content: none;
         }

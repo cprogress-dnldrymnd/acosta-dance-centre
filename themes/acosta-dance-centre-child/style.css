@@ -308,6 +308,10 @@ h4 {
   color: #767676; }
   .woocommerce-breadcrumb.woocommerce-breadcrumb a {
     color: inherit; }
+  @media (max-width: 767px) {
+    .woocommerce-breadcrumb.woocommerce-breadcrumb {
+      letter-spacing: 2px;
+      font-size: 18px; } }
 
 .big-title.big-title {
   font-size: 80px;
@@ -725,12 +729,13 @@ section.featured-product {
 #searchModal .btn {
   letter-spacing: 1px; }
 
-.woocommerce .product-inner > .row {
-  margin-left: -35px;
-  margin-right: -35px; }
-  .woocommerce .product-inner > .row > [class*='col-'] {
-    padding-left: 35px;
-    padding-right: 35px; }
+@media (min-width: 992px) {
+  .woocommerce .product-inner > .row {
+    margin-left: -35px;
+    margin-right: -35px; }
+    .woocommerce .product-inner > .row > [class*='col-'] {
+      padding-left: 35px;
+      padding-right: 35px; } }
 .woocommerce .button-group-box {
   margin-top: 5rem !important; }
   .woocommerce .button-group-box .cart {

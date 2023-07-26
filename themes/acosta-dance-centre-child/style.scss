@@ -109,8 +109,10 @@ h4 {
       font-size: 40px;
     }
   }
+
   .button-group-box {
-      margin-bottom: 0;
+    margin-bottom: 0;
+
     .button-box {
       margin-bottom: 1rem;
     }
@@ -430,6 +432,10 @@ h4 {
 
   a {
     color: inherit;
+  }
+  @media(max-width: 767px) {
+    letter-spacing: 2px;
+    font-size: 18px;
   }
 }
 
@@ -1025,13 +1031,15 @@ section.featured-product {
 
 .woocommerce {
   .product-inner {
-    >.row {
-      margin-left: -35px;
-      margin-right: -35px;
+    @media(min-width: 992px) {
+      >.row {
+        margin-left: -35px;
+        margin-right: -35px;
 
-      >[class*='col-'] {
-        padding-left: 35px;
-        padding-right: 35px;
+        >[class*='col-'] {
+          padding-left: 35px;
+          padding-right: 35px;
+        }
       }
     }
   }

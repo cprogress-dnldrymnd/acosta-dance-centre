@@ -8,7 +8,16 @@
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="robots" content="index, follow" />
 	<?php wp_head(); ?>
-
+	<?php if (is_product_category()) { ?>
+		<?php
+		$filter = isset($_GE['wpf_fbv']) ? true : false;
+		?>
+		<style>
+			.featured-product {
+				display: none;
+			}
+		</style>
+	<?php } ?>
 </head>
 
 <body <?php body_class(); ?>>

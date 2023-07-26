@@ -53,7 +53,7 @@ else {
   <?php if ($args['type'] == 'related') { ?>
     <div class="more-button">
       <a href="">
-        <span class="text"></span>
+        <span class="text">MORE <?= $heading ? $heading : $args['heading'] ?></span>
         <span class="icon"></span>
       </a>
     </div>

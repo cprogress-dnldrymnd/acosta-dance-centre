@@ -1176,4 +1176,12 @@ table.shop_table.shop_table {
   z-index: 1;
   position: relative; }
 
+@media (min-width: 1200px) {
+  .access-facilities .heading-box {
+    font-size: 120px; } }
+.access-facilities .product-box-style-1 {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */

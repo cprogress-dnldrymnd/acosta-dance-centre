@@ -1453,9 +1453,11 @@ section.featured-product {
     margin-top: 0;
 
   }
-    .more-button {
-      margin-top: 60px;
-    }
+
+  .more-button {
+    margin-top: 60px;
+  }
+
   .wcpay-payment-request-wrapper,
   #wcpay-payment-request-button-separator {
     display: none !important;
@@ -1678,4 +1680,18 @@ table.shop_table.shop_table {
   padding-bottom: 20px;
   z-index: 1;
   position: relative;
+}
+
+.access-facilities {
+  .heading-box {
+    @media(min-width: 1200px) {
+      font-size: 120px;
+    }
+  }
+
+  .product-box-style-1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

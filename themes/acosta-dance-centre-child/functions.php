@@ -413,13 +413,11 @@ function single_get_date($id, $type = 'date')
 
 function update_product_time_attribute($product_id)
 {
-	if ($product_id == 1892) {
-		// Get product attributes
-		$ticket_time = single_get_date($product_id, 'time');
-		$terms = array('small', 'red', );
-		$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);
+	// Get product attributes
+	$ticket_time = single_get_date($product_id, 'time');
+	$terms = array('small', 'red', );
+	$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);
 
-	}
 }
 
 

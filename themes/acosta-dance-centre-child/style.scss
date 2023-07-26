@@ -464,16 +464,25 @@ h4 {
   @media(max-width: 768px) {
     letter-spacing: 2px;
     font-size: 18px;
-    font-size: 0;
 
-    a {
-      font-size: 18px;
+  }
+}
 
-      &:after {
-        content: '/';
-        margin-left: 5px;
+.woocommerce {
+  .woocommerce-breadcrumb.woocommerce-breadcrumb {
+    @media(max-width: 768px) {
+      font-size: 0;
+
+      a {
+        font-size: 18px;
+
+        &:after {
+          content: '/';
+          margin-left: 5px;
+        }
       }
     }
+
   }
 }
 

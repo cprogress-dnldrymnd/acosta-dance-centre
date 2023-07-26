@@ -1974,8 +1974,12 @@ table.shop_table.shop_table {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 
-  ul, .woocommerce-message {
+  .woocommerce-message {
     background-color: var(--adc-color-1);
+  }
+
+  .woocommerce-error {
+    background-color: var(--adc-color-2);
   }
 
   .button {

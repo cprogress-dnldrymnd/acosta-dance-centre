@@ -11,7 +11,6 @@ function doro_add_stylesheet()
 function action_after_setup_theme()
 {
 	add_theme_support('woocommerce');
-	add_theme_support('wc-product-gallery-zoom');
 	add_theme_support('wc-product-gallery-lightbox');
 	add_theme_support('wc-product-gallery-slider');
 }
@@ -368,3 +367,46 @@ function action_admin_head()
 }
 
 add_action('admin_head', 'action_admin_head');
+
+
+
+function single_get_date($id, $type = 'date')
+{
+	$ticket_date_val = get_post_meta($id, '_ticket_checkin_availability_from_date', true);
+	$ticket_date_val_end = get_post_meta($id, '_ticket_checkin_availability_to_date', true);
+
+	$ticket_date_from = date('d M', strtotime($ticket_date_val));
+	$ticket_date_Y = date('Y', strtotime($ticket_date_val_end));
+	$ticket_time_from = date('g:i a', strtotime($ticket_date_val));
+
+	if ($ticket_date_val_end) {
+		$ticket_date_to = date('d M', strtotime($ticket_date_val_end));
+		$ticket_time_to = date('g:i a', strtotime($ticket_date_val_end));
+		if ($type == 'date') {
+			if ($ticket_date_from != $ticket_date_to) {
+				return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+			}
+			else {
+				return $ticket_date_from . ' ' . $ticket_date_Y;
+				;
+			}
+		}
+		else {
+			if ($ticket_time_from != $ticket_time_to) {
+				return $ticket_time_from . ' - ' . $ticket_time_to;
+			}
+			else {
+				return $ticket_time_from;
+			}
+		}
+	}
+	else {
+		if ($type == 'date') {
+			return $ticket_date_from;
+		}
+		else {
+			return $ticket_time_from;
+		}
+	}
+
+}

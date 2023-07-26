@@ -58,18 +58,20 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 <?php
 if ($is_classes) {
 	$args = array(
-		'featured_classes' => true,
-		'heading'          => 'SUMMER 23<br> FEATURED CLASSES'
+		'type'    => 'featured_workshops',
+		'heading' => 'FEATURED <br>WORKSHOPS'
 	);
 	get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
+
 }
+$name = get_queried_object()->name;
 ?>
 
 <section class="product-loop md-padding">
 	<div class="sec-title text-left">
-		<span class="heading-meta">FIND A CLASS</span>
-		<h2 class="doro-heading">BOOK A CLASS TODAY</h2>
+		<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
+		<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>
 	</div>
 	<?php
 	if (woocommerce_product_loop()) {

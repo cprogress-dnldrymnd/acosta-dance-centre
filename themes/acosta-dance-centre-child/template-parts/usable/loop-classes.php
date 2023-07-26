@@ -2,6 +2,48 @@
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 }
+else if ($args['type'] == 'related') {
+
+
+  $terms = get_the_terms(get_the_ID(), 'product_cat');
+  $terms_val = array();
+
+
+  foreach ($terms as $term) {
+    $terms_val[] = $term->term_id;
+  }
+
+  $posts = array(
+    'post_type'      => 'product',
+    'posts_per_page' => 3,
+    'tax_query'      => array(
+      array(
+        'taxonomy' => 'product_cat',
+        'field'    => 'term_id',
+        'terms'    => $terms_val
+      )
+    )
+  );
+
+
+  $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');
+
+
+  $post_list = get_posts($posts);
+
+  $classes = array();
+
+  foreach ($post_list as $post) {
+    $classes[] = array(
+      'id' => $post->ID
+    );
+  }
+
+  $heading = 'OTHER <br>' . $heading_val;
+}
+else if ($args['type'] == 'featured_workshops') {
+  $classes = get__theme_option('featured_workshops');
+}
 else {
   $classes = get__theme_option('featured_classes');
 }
@@ -9,10 +51,10 @@ else {
 
 <section class="featured-product background-light-red d-flex">
   <div class="inner">
-    <?php if ($args['heading']) { ?>
+    <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">
-        <h2 class="big-title">
-          SUMMER 23<br> FEATURED CLASSES
+        <h2 class="doro-heading">
+          <?= $heading ? $heading : $args['heading'] ?>
         </h2>
       </div>
     <?php } ?>
@@ -24,27 +66,31 @@ else {
         $ticket_time = date('g:i a', $dateformat);
         $ticket_day = date('d', $dateformat);
         $ticket_month = date('M', $dateformat);
+        $product = wc_get_product($class['id']);
+        $pa_studio = $product->get_attribute('pa_studio');
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">
-            <div class="col-lg-2 text-center">
+            <div class="col-lg-2 col-sm-6 text-center">
               <div class="meta-date">
                 <span class="day d-block"><?= $ticket_day ?></span>
                 <span class="month d-block text-uppercase"><?= $ticket_month ?></span>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <div class="image-box position-relative">
                 <img src="<?= get_the_post_thumbnail_url($class['id']) ?>" alt="<?= get_the_title($class['id']) ?>">
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="title-box">
-                <a href="<?= the_permalink() ?>">
+              <div class="title-box text-uppercase">
+                <a href="<?= get_permalink($class['id']) ?>">
                   <h3><?= get_the_title($class['id']) ?></h3>
                 </a>
                 <div class="meta text-uppercase">
-                  <span class="type meta-style-1 mr-4 d-inline-block">STUDIO</span>
+                  <?php if ($pa_studio) { ?>
+                    <span class="type meta-style-1 mr-4 d-inline-block"><?= $pa_studio ?></span>
+                  <?php } ?>
                   <span class="time meta-style-1 d-inline-block">TIME: <?= $ticket_time ?></span>
                 </div>
               </div>

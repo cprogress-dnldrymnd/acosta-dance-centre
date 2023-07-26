@@ -61,15 +61,24 @@ function events()
 add_shortcode('events', 'events');
 
 
-function upcoming_classes()
+function adc_classes($atts)
 {
+  extract(
+    shortcode_atts(
+      array(
+        'type' => 'featured_classes',
+        'heading' => '',
+      ),
+      $atts
+    )
+  );
   ob_start();
   $args = array(
-    'type' => 'featured_classes',
+    'type' => $type,
+    'heading' => $heading,
   );
-
-   get_template_part('template-parts/usable/loop-classes', 'null', $args);
-   return ob_get_clean();
+  get_template_part('template-parts/usable/loop-classes', 'null', $args);
+  return ob_get_clean();
 }
 
-add_shortcode('upcoming_classes', 'upcoming_classes');
+add_shortcode('adc_classes', 'adc_classes');

@@ -111,3 +111,5 @@ function membership_box()
   <?php
   return ob_get_clean();
 }
+
+add_shortcode('membership_box', 'membership_box');

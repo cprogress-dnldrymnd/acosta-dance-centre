@@ -255,7 +255,7 @@ function action_single_product_after_image()
     </div>
 
     <?php if ($_product_category != 'memberships') { ?>
-      <div class="book-now-wrapper">
+      <div class="book-now-wrapper text-center">
         <div class="button-group-box text-center justify-content-center " id="book-now">
           <?php
           if ($_product_category == 'workshops') {

@@ -12,14 +12,18 @@
 		<?php
 		$filter = isset($_GE['wpf_fbv']) ? true : false;
 		?>
-		<style>
-			.featured-product {
-				display: none !important;
-			}
-			.product-loop {
-				padding-top: 0;
-			}
-		</style>
+		<?php if ($filter) { ?>
+
+			<style>
+				.featured-product {
+					display: none !important;
+				}
+
+				.product-loop {
+					padding-top: 0;
+				}
+			</style>
+		<?php } ?>
 	<?php } ?>
 </head>
 

@@ -188,29 +188,11 @@ function action_woocommerce_after_single_product()
     </div>
   </div>
 
-  <?php if ($_product_category != 'memberships') { ?>
+  <?php
+  if ($_product_category != 'memberships') {
+    echo do_shortcode('[membership_box]');
 
-    <div class="membership-box">
-      <div class="sec-title text-center">
-        <span class="heading-meta">BECOME A MEMBER</span>
-        <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
-      </div>
-
-      <div class="checklist">
-        <ul>
-          <li>Multiple Classes Per Month</li>
-          <li>10% Off Events</li>
-          <li>Access to our online academy</li>
-        </ul>
-      </div>
-      <div class="button-box text-center button-bordered">
-        <a href="/memberships/">
-          FIND OUT MORE
-        </a>
-      </div>
-    </div>
-
-  <?php }
+  }
   else { ?>
     <div class="membership-side-buttons">
       <div class="button-box button-black mb-3">

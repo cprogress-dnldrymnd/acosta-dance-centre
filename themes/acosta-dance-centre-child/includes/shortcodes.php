@@ -68,7 +68,7 @@ function adc_classes($atts)
       array(
         'type'     => 'featured_classes',
         'heading'  => '',
-        'category' => '',
+        'categ' => '',
       ),
       $atts
     )
@@ -77,7 +77,7 @@ function adc_classes($atts)
   $args = array(
     'type'     => $type,
     'heading'  => $heading,
-    'category' => $category
+    'categ' => $categ
   );
   get_template_part('template-parts/usable/loop-classes', 'null', $args);
   return ob_get_clean();

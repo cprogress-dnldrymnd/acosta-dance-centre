@@ -418,7 +418,7 @@ function update_product_time_attribute($product_id)
 
 	$term_taxonomy_ids = wp_set_object_terms($product_id, 'Test', 'pa_time', true);
 	$thedata = array(
-		'pa_ATTRIBUTE' => array(
+		'pa_time' => array(
 			'name'         => 'pa_time',
 			'value'        => 'test',
 			'is_visible'   => '0',

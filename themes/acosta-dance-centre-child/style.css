@@ -85,6 +85,8 @@ h4 {
   @media (max-width: 575px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
       font-size: 40px; } }
+#doro-hero .button-group-box .button-box {
+  margin-bottom: 1rem; }
 
 .wpcf7-submit,
 .checkout-button,

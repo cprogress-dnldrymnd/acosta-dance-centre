@@ -132,8 +132,9 @@ if (is_shop()) {
 		'heading' => 'FEATURED <br>WORKSHOPS'
 	);
 	//get_template_part('template-parts/woocommerce/classes-category');
+	'<div class="md-padding-top"></div>';
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
-
+	'<div class="md-padding-top"></div>';
 }
 
 /**

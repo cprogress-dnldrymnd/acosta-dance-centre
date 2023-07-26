@@ -536,6 +536,13 @@ body {
       }
     }
   }
+
+  &.page-template-default {
+    .newsletter-box {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }
 
 .post-type-archive-product,

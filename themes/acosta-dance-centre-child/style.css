@@ -406,6 +406,9 @@ body:not(.page-template-default) #doro-main #doro-inner {
   @media (max-width: 768px) {
     body:not(.page-template-default) #doro-main #doro-inner {
       padding: 100px 15px 40px; } }
+body.page-template-default .newsletter-box {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .post-type-archive-product #doro-main #doro-inner,
 .tax-product_cat #doro-main #doro-inner {

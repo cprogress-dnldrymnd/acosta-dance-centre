@@ -143,8 +143,17 @@ h4 {
   text-align: center;
   text-transform: uppercase;
 
+  @media(max-width: 991px) {
+    letter-spacing: 5px;
+  }
+
+  @media(max-width: 768px) {
+    letter-spacing: 3px;
+  }
+
   @media(max-width: 480px) {
     padding: 20px !important;
+    letter-spacing: 2px;
   }
 
 }
@@ -1182,7 +1191,7 @@ section.featured-product {
             }
           }
         }*/
-        
+
         &.woocommerce-product-gallery--without-images {
           display: none !important;
         }

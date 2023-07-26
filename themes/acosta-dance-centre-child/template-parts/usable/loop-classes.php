@@ -61,7 +61,7 @@ if (($args['type'] == 'related') || $args['category']) {
 else {
   $more_button_val = 'false';
 }
-echo $term_name;
+echo get_term_link($categ_id);
 ?>
 
 <?php if ($more_button == 'true') { ?>

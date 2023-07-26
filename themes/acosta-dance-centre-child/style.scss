@@ -1083,15 +1083,18 @@ section.featured-product {
       @media(max-width: 768px) {
         margin-bottom: 1rem;
         justify-content: center;
-        margin-right: 0;
 
       }
     }
 
-    .button-box {
-      a {
-        max-width: 350px;
-        width: 100%;
+    @media(max-width: 768px) {
+      .button-box {
+        margin-right: 0;
+
+        a {
+          max-width: 350px;
+          width: 100%;
+        }
       }
     }
 

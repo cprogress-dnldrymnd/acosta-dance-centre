@@ -25,7 +25,7 @@ Text Domain: acosta-dance-centre-child
   @media (max-width: 991px) {
     .doro-heading.doro-heading {
       font-size: 55px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .doro-heading.doro-heading {
       font-size: 50px; } }
   @media (max-width: 575px) {
@@ -79,7 +79,7 @@ h4 {
   @media (max-width: 991px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
       font-size: 60px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     #doro-hero .flexslider .slider-text > .slider-text-inner h1 {
       font-size: 50px; } }
   @media (max-width: 575px) {
@@ -355,7 +355,7 @@ h4 {
   color: #767676; }
   .woocommerce-breadcrumb.woocommerce-breadcrumb a {
     color: inherit; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .woocommerce-breadcrumb.woocommerce-breadcrumb {
       letter-spacing: 2px;
       font-size: 18px; } }
@@ -371,7 +371,7 @@ h4 {
   @media (max-width: 991px) {
     .big-title.big-title {
       font-size: 60px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .big-title.big-title {
       font-size: 50px; } }
 
@@ -841,7 +841,7 @@ section.featured-product {
   @media (max-width: 991px) {
     .woocommerce div.product section.product-summary.product-summary .product_title {
       font-size: 60px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .woocommerce div.product section.product-summary.product-summary .product_title {
       font-size: 50px; } }
 .woocommerce div.product section.product-summary.product-summary .woocommerce-product-gallery {

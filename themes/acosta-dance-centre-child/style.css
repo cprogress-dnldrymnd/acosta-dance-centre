@@ -89,6 +89,15 @@ h4 {
   margin-bottom: 0; }
   #doro-hero .button-group-box .button-box {
     margin-bottom: 1rem; }
+    @media (max-width: 768px) {
+      #doro-hero .button-group-box .button-box {
+        margin-right: 0; }
+        #doro-hero .button-group-box .button-box a {
+          max-width: 350px;
+          width: 100%; } }
+  @media (max-width: 768px) {
+    #doro-hero .button-group-box {
+      flex-direction: column; } }
 
 .wpcf7-submit,
 .checkout-button,

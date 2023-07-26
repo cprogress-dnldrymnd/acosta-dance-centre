@@ -416,8 +416,8 @@ function update_product_time_attribute($product_id)
 	if ($product_id == 1892) {
 		// Get product attributes
 		$product_attributes = get_post_meta($product_id, '_product_attributes', true);
-
-		$term_taxonomy_ids = wp_set_object_terms($product_id, 'Testxx', 'pa_time', true);
+		$terms = array('small', 'red', );
+		$term_taxonomy_ids = wp_set_object_terms($product_id, $terms, 'pa_time', true);
 
 	}
 }

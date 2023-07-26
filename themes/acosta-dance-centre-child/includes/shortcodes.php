@@ -66,16 +66,18 @@ function adc_classes($atts)
   extract(
     shortcode_atts(
       array(
-        'type' => 'featured_classes',
-        'heading' => '',
+        'type'     => 'featured_classes',
+        'heading'  => '',
+        'category' => '',
       ),
       $atts
     )
   );
   ob_start();
   $args = array(
-    'type' => $type,
-    'heading' => $heading,
+    'type'     => $type,
+    'heading'  => $heading,
+    'category' => $category
   );
   get_template_part('template-parts/usable/loop-classes', 'null', $args);
   return ob_get_clean();

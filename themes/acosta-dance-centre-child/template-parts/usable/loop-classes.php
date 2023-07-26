@@ -49,8 +49,21 @@ else if ($args['type'] == 'featured_workshops') {
 else {
   $classes = get__theme_option('featured_classes');
 }
+
+if ($args['category']) {
+  $term_name = get_term($args['category'])->name;
+  $more_text = 'MORE ' . $term_name;
+  $categ_id = $args['category'];
+}
+
+if ($args['type'] == 'related' || $args['category']) {
+  $more_button = true;
+}
+else {
+  $more_button = false;
+}
 ?>
-<?php if ($args['type'] == 'related') { ?>
+<?php if ($more_button) { ?>
   <div class="more-button text-right d-none d-lg-block">
     <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
       <span class="text mr-3"><?= $more_text ?></span>
@@ -124,7 +137,7 @@ else {
         </div>
       <?php } ?>
     </div>
-    <?php if ($args['type'] == 'related') { ?>
+    <?php if ($more_button) { ?>
       <div class="more-button  d-block d-lg-none text-center pb-5">
         <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
           <span class="text mr-3"><?= $more_text ?></span>

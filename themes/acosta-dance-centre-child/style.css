@@ -101,8 +101,7 @@ h4 {
 
 .wpcf7-submit,
 .checkout-button,
-#place_order,
-.woocommerce-Button {
+#place_order {
   font-family: 'Oswald', sans-serif !important;
   font-weight: bold !important;
   padding: 30px 40px 30px 40px !important;
@@ -118,29 +117,36 @@ h4 {
   @media (max-width: 991px) {
     .wpcf7-submit,
     .checkout-button,
-    #place_order,
-    .woocommerce-Button {
+    #place_order {
       letter-spacing: 5px; } }
   @media (max-width: 768px) {
     .wpcf7-submit,
     .checkout-button,
-    #place_order,
-    .woocommerce-Button {
+    #place_order {
       letter-spacing: 3px; } }
   @media (max-width: 480px) {
     .wpcf7-submit,
     .checkout-button,
-    #place_order,
-    .woocommerce-Button {
+    #place_order {
       padding: 20px !important;
       letter-spacing: 2px; } }
   .wpcf7-submit:hover,
   .checkout-button:hover,
-  #place_order:hover,
-  .woocommerce-Button:hover {
+  #place_order:hover {
     background-color: var(--adc-color-1) !important;
     color: var(--black-color) !important;
     border: 3px solid var(--black-color) !important; }
+
+.woocommerce-Button {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
+  border: 3px solid var(--black-color) !important; }
 
 .button-box > a,
 .button-box > button,

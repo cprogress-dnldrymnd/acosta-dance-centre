@@ -410,3 +410,22 @@ function single_get_date($id, $type = 'date')
 	}
 
 }
+
+// Define the function
+function update_internalSKU($product_id)
+{
+	// Get product attributes
+	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
+
+	// Loop through product attributes
+	foreach ($product_attributes as $attribute => $attribute_data) {
+		// Target specif attribute  by its name
+		if ('internalSKU' === $attribute_data['name']) {
+			// Set the new value in the array
+			$product_attributes[$attribute]['value'] = 'b8de7569042';
+			break; // stop the loop
+		}
+	}
+	// Set updated attributes back in database
+	update_post_meta($product_id, '_product_attributes', $product_attributes);
+}

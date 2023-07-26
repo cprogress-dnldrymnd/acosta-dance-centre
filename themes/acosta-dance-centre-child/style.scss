@@ -515,9 +515,11 @@ h4 {
     font-size: 50px;
   }
 }
+
 #doro-main {
   overflow: hidden;
 }
+
 body {
   &:not(.page-template-default) {
     #doro-main {
@@ -1657,4 +1659,10 @@ table.shop_table.shop_table {
       }
     }
   }
+}
+
+.more-button {
+  letter-spacing: 7px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }

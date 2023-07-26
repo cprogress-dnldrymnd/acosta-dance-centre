@@ -51,7 +51,7 @@ else {
 }
 ?>
 <?php if ($args['type'] == 'related') { ?>
-  <div class="more-button">
+  <div class="more-button text-right">
     <a href="<?= get_term_link($categ_id) ?>">
       <span class="text"><?= $more_text ?></span>
       <span class="icon">

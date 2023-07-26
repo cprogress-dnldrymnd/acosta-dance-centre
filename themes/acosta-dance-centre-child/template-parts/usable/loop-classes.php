@@ -40,6 +40,7 @@ else if ($args['type'] == 'related') {
   }
 
   $heading = 'OTHER <br>' . $heading_val;
+  $more_text = 'MORE ' . $heading_val;
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');
@@ -50,7 +51,14 @@ else {
 ?>
 
 <section class="featured-product background-light-red d-flex">
- 
+  <?php if ($args['type'] == 'related') { ?>
+    <div class="more-button">
+      <a href="">
+        <span class="text">MORE <?= $more_text ?></span>
+        <span class="icon"></span>
+      </a>
+    </div>
+  <?php } ?>
   <div class="inner">
     <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">

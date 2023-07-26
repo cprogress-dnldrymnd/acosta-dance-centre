@@ -1198,4 +1198,11 @@ table.shop_table.shop_table {
 .page-content {
   float: none !important; }
 
+.lmp_button {
+  width: 66px;
+  height: 66px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="68" height="66" viewBox="0 0 68 66"><g id="Group_206" data-name="Group 206" transform="translate(0 0.229)"><g id="Ellipse_4" data-name="Ellipse 4" transform="translate(0 -0.229)" fill="none" stroke="%230f0f0f" stroke-width="2"><ellipse cx="34" cy="33" rx="34" ry="33" stroke="none"/><ellipse cx="34" cy="33" rx="33" ry="32" fill="none"/></g><g id="Group_104" data-name="Group 104" transform="translate(24.226 24.004)"><path id="Path_107" data-name="Path 107" d="M3172,2146.729v21.019" transform="translate(-3162.483 -2146.729)" fill="none" stroke="%23111" stroke-linecap="round" stroke-width="2"/><path id="Path_108" data-name="Path 108" d="M3177.549,2157.947h-19.113" transform="translate(-3158.436 -2147.697)" fill="none" stroke="%23111" stroke-linecap="round" stroke-width="2"/></g></g></svg>');
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 /*# sourceMappingURL=style.css.map */

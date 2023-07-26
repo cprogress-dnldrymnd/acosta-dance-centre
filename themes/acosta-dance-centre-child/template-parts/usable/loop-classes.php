@@ -50,6 +50,14 @@ else {
 ?>
 
 <section class="featured-product background-light-red d-flex">
+  <?php if ($args['type'] == 'related') { ?>
+    <div class="more-button">
+      <a href="">
+        <span class="text"></span>
+        <span class="icon"></span>
+      </a>
+    </div>
+  <?php } ?>
   <div class="inner">
     <?php if ($args['heading'] || $heading) { ?>
       <div class="heading-box mb-5">
@@ -79,7 +87,8 @@ else {
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="image-box position-relative">
-                <img src="<?= get_the_post_thumbnail_url($class['id'], 'large') ?>" alt="<?= get_the_title($class['id']) ?>">
+                <img src="<?= get_the_post_thumbnail_url($class['id'], 'large') ?>"
+                  alt="<?= get_the_title($class['id']) ?>">
               </div>
             </div>
             <div class="col-lg-5">

@@ -540,14 +540,9 @@ body {
 
 .post-type-archive-product,
 .tax-product_cat {
-  section.featured-product {
-    margin-top: 0;
 
-  }
 
-  .more-button {
-    margin-top: 60px;
-  }
+
 
   #doro-main {
     #doro-inner {
@@ -1454,7 +1449,13 @@ section.featured-product {
 }
 
 .single-product {
+  section.featured-product {
+    margin-top: 0;
 
+  }
+    .more-button {
+      margin-top: 60px;
+    }
   .wcpay-payment-request-wrapper,
   #wcpay-payment-request-button-separator {
     display: none !important;

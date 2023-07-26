@@ -255,19 +255,21 @@ function action_single_product_after_image()
     </div>
 
     <?php if ($_product_category != 'memberships') { ?>
-      <div class="button-group-box text-center justify-content-center " id="book-now">
-        <?php
-        if ($_product_category == 'workshops') {
-          echo '<div class="button-box button-black">';
-          do_action('single_add_to_cart');
-          echo '</div>';
-        }
-        ?>
+      <div class="book-now-wrapper">
+        <div class="button-group-box text-center justify-content-center " id="book-now">
+          <?php
+          if ($_product_category == 'workshops') {
+            echo '<div class="button-box button-black">';
+            do_action('single_add_to_cart');
+            echo '</div>';
+          }
+          ?>
 
-        <div class="button-box  button-bordered" id="join-now">
-          <a href="/memberships">
-            MEMBERSHIPS
-          </a>
+          <div class="button-box  button-bordered" id="join-now">
+            <a href="/memberships">
+              MEMBERSHIPS
+            </a>
+          </div>
         </div>
       </div>
     <?php } ?>

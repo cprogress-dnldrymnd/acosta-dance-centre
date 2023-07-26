@@ -429,7 +429,7 @@ function update_product_time_attribute($product_id)
 
 	$product_attributes = array_merge($product_attributes, $thedata);
 	// Set updated attributes back in database
-	update_post_meta($product_id, '_product_attributes', $product_attributes);
+	update_post_meta($product_id, '_product_attributes', $thedata);
 }
 
 

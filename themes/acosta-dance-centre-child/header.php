@@ -16,6 +16,9 @@
 			.featured-product {
 				display: none !important;
 			}
+			.product-loop {
+				padding-top: 0;
+			}
 		</style>
 	<?php } ?>
 </head>

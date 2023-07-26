@@ -951,8 +951,6 @@ section.featured-product {
 }
 
 #doro-aside {
-  width: 300px;
-
   .logo-holder {
     img {
       max-width: 200px;
@@ -961,6 +959,10 @@ section.featured-product {
         max-width: 150px;
       }
     }
+  }
+
+  @media(min-width: 1200px) {
+    width: 300px;
   }
 
   @media(min-width: 769px) and (max-width: 1199px) {
@@ -1234,6 +1236,7 @@ section.featured-product {
           margin: 0;
         }
       }
+
       &:last-child {
         td {
           border-bottom: none !important;
@@ -1505,7 +1508,7 @@ table.shop_table.shop_table {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  
+
   .button-box {
     a {
       padding: 30px 20px !important;

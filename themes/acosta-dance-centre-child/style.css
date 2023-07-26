@@ -1348,10 +1348,10 @@ table.shop_table.shop_table {
       #book-now .button-box {
         margin-bottom: 10px; } }
 
-.woocommerce-message.woocommerce-message, .woocommerce-error, .woocommerce-error {
+.woocommerce-notices-wrapper.woocommerce-notices-wrapper {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px; }
-  .woocommerce-message.woocommerce-message .button, .woocommerce-error .button, .woocommerce-error .button {
+  .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button {
     background-color: #000;
     font-family: 'Oswald', sans-serif;
     color: #fff;
@@ -1359,7 +1359,7 @@ table.shop_table.shop_table {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 20px; }
-    .woocommerce-message.woocommerce-message .button:hover, .woocommerce-error .button:hover, .woocommerce-error .button:hover {
+    .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button:hover {
       background-color: var(--adc-color-1);
       color: #000; }
 

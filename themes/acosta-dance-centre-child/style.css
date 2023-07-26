@@ -1337,7 +1337,8 @@ table.shop_table.shop_table {
 
 #book-now {
   position: relative;
-  display: inline-flex; }
+  display: inline-flex;
+  margin-top: 0; }
   #book-now .button-box {
     margin-bottom: 1rem; }
     @media (max-width: 768px) {

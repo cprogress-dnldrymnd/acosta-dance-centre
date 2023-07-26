@@ -317,10 +317,14 @@ h4 {
   h3 {
     line-height: 1;
   }
-  p, input {
+
+  p,
+  input {
     margin-bottom: 0 !important;
   }
+
   padding-bottom: 80px;
+
   .wpcf7-submit {
     margin-bottom: 0;
   }
@@ -959,14 +963,18 @@ section.featured-product {
     margin-left: -15px;
     margin-right: -15px;
 
+    &.columns-3 {
+      -ms-flex: 0 0 33.3333333%;
+      max-width: 33.3333333%;
+      flex: 0 0 33.3333333%;
+
+    }
+
     &.columns-4 {
       li.product {
         -ms-flex: 0 0 25%;
-        margin-right: 0;
         max-width: 25%;
         flex: 0 0 25%;
-        padding-right: 15px;
-        padding-left: 15px;
 
         @media(max-width: 1400px) {
           -ms-flex: 0 0 33.3333333%;
@@ -974,17 +982,26 @@ section.featured-product {
           flex: 0 0 33.3333333%;
         }
 
-        @media(max-width: 991px) {
-          -ms-flex: 0 0 50%;
-          max-width: 50%;
-          flex: 0 0 50%;
-        }
 
-        @media(max-width: 575px) {
-          -ms-flex: 0 0 100%;
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
+      }
+    }
+
+    &.columns-3,
+    &.columns-4 {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 0;
+
+      @media(max-width: 991px) {
+        -ms-flex: 0 0 50%;
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+
+      @media(max-width: 575px) {
+        -ms-flex: 0 0 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
       }
     }
 

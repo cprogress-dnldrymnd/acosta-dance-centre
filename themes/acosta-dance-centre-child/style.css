@@ -269,7 +269,8 @@ h4 {
   padding-bottom: 80px; }
   .newsletter-box h3 {
     line-height: 1; }
-  .newsletter-box p, .newsletter-box input {
+  .newsletter-box p,
+  .newsletter-box input {
     margin-bottom: 0 !important; }
   .newsletter-box .wpcf7-submit {
     margin-bottom: 0; }
@@ -704,25 +705,30 @@ section.featured-product {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px; }
+  .woocommerce ul.products.columns-3 {
+    -ms-flex: 0 0 33.3333333%;
+    max-width: 33.3333333%;
+    flex: 0 0 33.3333333%; }
   .woocommerce ul.products.columns-4 li.product {
     -ms-flex: 0 0 25%;
-    margin-right: 0;
     max-width: 25%;
-    flex: 0 0 25%;
-    padding-right: 15px;
-    padding-left: 15px; }
+    flex: 0 0 25%; }
     @media (max-width: 1400px) {
       .woocommerce ul.products.columns-4 li.product {
         -ms-flex: 0 0 33.3333333%;
         max-width: 33.3333333%;
         flex: 0 0 33.3333333%; } }
+  .woocommerce ul.products.columns-3, .woocommerce ul.products.columns-4 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0; }
     @media (max-width: 991px) {
-      .woocommerce ul.products.columns-4 li.product {
+      .woocommerce ul.products.columns-3, .woocommerce ul.products.columns-4 {
         -ms-flex: 0 0 50%;
         max-width: 50%;
         flex: 0 0 50%; } }
     @media (max-width: 575px) {
-      .woocommerce ul.products.columns-4 li.product {
+      .woocommerce ul.products.columns-3, .woocommerce ul.products.columns-4 {
         -ms-flex: 0 0 100%;
         max-width: 100%;
         flex: 0 0 100%; } }

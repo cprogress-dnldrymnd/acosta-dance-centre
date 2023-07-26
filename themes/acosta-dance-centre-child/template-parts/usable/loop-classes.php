@@ -55,15 +55,15 @@ if ($args['category']) {
 }
 
 if (($args['type'] == 'related') || $args['category']) {
-  $more_button_val = true;
+  $more_button_val = 'true';
 }
 else {
-  $more_button_val = false;
+  $more_button_val = 'false';
 }
 echo $categ_id;
 ?>
 
-<?php if ($more_button == true) { ?>
+<?php if ($more_button == 'true') { ?>
   <div class="more-button text-right d-none d-lg-block">
     <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
       <span class="text mr-3"><?= $more_text ?></span>
@@ -137,7 +137,7 @@ echo $categ_id;
         </div>
       <?php } ?>
     </div>
-    <?php if ($more_button_val == true) { ?>
+    <?php if ($more_button_val == 'true') { ?>
       <div class="more-button  d-block d-lg-none text-center pb-5">
         <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
           <span class="text mr-3"><?= $more_text ?></span>

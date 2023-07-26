@@ -63,7 +63,7 @@ else {
 echo $categ_id;
 ?>
 
-<?php if ($args['type'] == 'related') { ?>
+<?php if ($more_button == true) { ?>
   <div class="more-button text-right d-none d-lg-block">
     <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
       <span class="text mr-3"><?= $more_text ?></span>
@@ -137,7 +137,7 @@ echo $categ_id;
         </div>
       <?php } ?>
     </div>
-    <?php if ($args['type'] == 'related') { ?>
+    <?php if ($more_button == true) { ?>
       <div class="more-button  d-block d-lg-none text-center pb-5">
         <a class="d-inline-flex align-items-center" href="<?= get_term_link($categ_id) ?>">
           <span class="text mr-3"><?= $more_text ?></span>

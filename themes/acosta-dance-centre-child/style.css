@@ -361,11 +361,11 @@ h4 {
       font-size: 18px; } }
 
 @media (max-width: 768px) {
-  .woocommerce .woocommerce-breadcrumb.woocommerce-breadcrumb {
+  .single-product .woocommerce-breadcrumb.woocommerce-breadcrumb {
     font-size: 0; }
-    .woocommerce .woocommerce-breadcrumb.woocommerce-breadcrumb a {
+    .single-product .woocommerce-breadcrumb.woocommerce-breadcrumb a {
       font-size: 18px; }
-      .woocommerce .woocommerce-breadcrumb.woocommerce-breadcrumb a:after {
+      .single-product .woocommerce-breadcrumb.woocommerce-breadcrumb a:after {
         content: '/';
         margin-left: 5px; } }
 

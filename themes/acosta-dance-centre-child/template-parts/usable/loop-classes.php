@@ -79,7 +79,7 @@ else {
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="image-box position-relative">
-                <img src="<?= get_the_post_thumbnail_url($class['id']), 'full'?>" alt="<?= get_the_title($class['id']) ?>">
+                <img src="<?= get_the_post_thumbnail_url($class['id'], 'large') ?>" alt="<?= get_the_title($class['id']) ?>">
               </div>
             </div>
             <div class="col-lg-5">

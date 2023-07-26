@@ -1333,7 +1333,7 @@ table.shop_table.shop_table {
         left: 0; }
         @media (max-width: 768px) {
           .woocommerce .button-group-box .cart.variations_form .variations .value .reset_variations {
-            display: none; } }
+            display: none !important; } }
   @media (min-width: 769px) {
     .woocommerce .button-group-box .cart.variations_form {
       flex-direction: row; } }

@@ -1943,7 +1943,7 @@ table.shop_table.shop_table {
         left: 0;
 
         @media(max-width: 768px) {
-          display: none;
+          display: none !important;
         }
       }
     }

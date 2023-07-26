@@ -1150,4 +1150,15 @@ table.shop_table.shop_table {
   width: 50px !important;
   height: 20px !important; }
 
+.term-workshops .newsletter-box,
+.term-classes .newsletter-box {
+  max-width: 75%; }
+  .term-workshops .newsletter-box .row,
+  .term-classes .newsletter-box .row {
+    flex-wrap: wrap; }
+    .term-workshops .newsletter-box .row .col-lg-3,
+    .term-classes .newsletter-box .row .col-lg-3 {
+      flex: 0 0 100%;
+      max-width: 100%; }
+
 /*# sourceMappingURL=style.css.map */

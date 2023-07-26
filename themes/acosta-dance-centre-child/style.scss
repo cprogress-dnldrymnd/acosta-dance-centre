@@ -1939,7 +1939,7 @@ table.shop_table.shop_table {
 
       .reset_variations {
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         left: 0;
 
         @media(max-width: 768px) {

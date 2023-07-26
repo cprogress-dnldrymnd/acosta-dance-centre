@@ -585,13 +585,7 @@ body {
       .woocommerce-products-header {
         margin-bottom: 130px;
 
-        @media(max-width: 991px) {
-          margin-bottom: 80px;
-        }
 
-        @media(max-width: 767px) {
-          margin-bottom: 50px;
-        }
       }
 
       #primary {
@@ -1865,5 +1859,15 @@ table.shop_table.shop_table {
 .woocommerce-shop {
   .product-loop {
     padding-top: 0;
+  }
+
+  .woocommerce-products-header {
+    @media(max-width: 991px) {
+      margin-bottom: 80px !important;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 50px !important;
+    }
   }
 }

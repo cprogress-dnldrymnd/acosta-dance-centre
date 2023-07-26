@@ -411,21 +411,30 @@ function single_get_date($id, $type = 'date')
 
 }
 
-// Define the function
-function update_internalSKU($product_id)
+function update_product_time_attribute($product_id)
 {
 	// Get product attributes
 	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
 
-	// Loop through product attributes
-	foreach ($product_attributes as $attribute => $attribute_data) {
-		// Target specif attribute  by its name
-		if ('internalSKU' === $attribute_data['name']) {
-			// Set the new value in the array
-			$product_attributes[$attribute]['value'] = 'b8de7569042';
-			break; // stop the loop
-		}
-	}
+	$term_taxonomy_ids = wp_set_object_terms($product_id, 'Test', 'pa_time', true);
+	$thedata = array(
+		'pa_ATTRIBUTE' => array(
+			'name'         => 'pa_time',
+			'value'        => 'test',
+			'is_visible'   => '0',
+			'is_variation' => '0',
+			'is_taxonomy'  => '0'
+		)
+	);
 	// Set updated attributes back in database
-	update_post_meta($product_id, '_product_attributes', $product_attributes);
+	update_post_meta($product_id, '_product_attributes', $thedata);
+}
+
+
+add_action('woocommerce_new_product', 'mp_sync_on_product_save', 10, 1);
+add_action('woocommerce_update_product', 'mp_sync_on_product_save', 10, 1);
+function mp_sync_on_product_save($product_id)
+{
+	$product = wc_get_product($product_id);
+	update_product_time_attribute($product_id);
 }

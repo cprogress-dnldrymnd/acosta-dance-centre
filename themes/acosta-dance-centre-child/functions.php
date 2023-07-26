@@ -414,9 +414,26 @@ function single_get_date($id, $type = 'date')
 function update_product_time_attribute($product_id)
 {
 	// Get product attributes
-	$ticket_time = single_get_date($product_id, 'time');
-	wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);
+	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
+	if ($product_id == 1892) {
+		// Get product attributes
+		$ticket_time = single_get_date(get_the_ID(), 'time');
+		$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', true);
 
+		$thedata = array(
+			'pa_time' => array(
+				'name'         => 'TIME',
+				'value'        => 'test',
+				'is_visible'   => '0',
+				'is_variation' => '0',
+				'is_taxonomy'  => '1'
+			)
+		);
+
+		$product_attributes = array_merge($product_attributes, $product_attributes);
+		// Set updated attributes back in database
+		update_post_meta($product_id, '_product_attributes', $product_attributes);
+	}
 }
 
 

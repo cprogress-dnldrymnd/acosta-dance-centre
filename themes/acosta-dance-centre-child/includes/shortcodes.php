@@ -89,7 +89,7 @@ function membership_box()
 {
   ob_start();
   ?>
-  <div class="membership-box">
+  <div class="membership-box <?= is_archive() ? 'membership-box-v2' : '' ?>">
     <div class="sec-title text-center">
       <span class="heading-meta">BECOME A MEMBER</span>
       <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>

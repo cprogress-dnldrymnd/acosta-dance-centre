@@ -415,7 +415,7 @@ function update_product_time_attribute($product_id)
 {
 	// Get product attributes
 	$product_attributes = get_post_meta($product_id, '_product_attributes', true);
-	if ($product_id == 1892) {
+	if ($product_id == 1890) {
 		// Get product attributes
 		$ticket_time = single_get_date(get_the_ID(), 'time');
 		$term_taxonomy_ids = wp_set_object_terms($product_id, $ticket_time, 'pa_time', false);

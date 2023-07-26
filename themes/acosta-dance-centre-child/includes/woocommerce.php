@@ -175,7 +175,7 @@ function action_woocommerce_after_single_product()
       <?php
       if ($_product_category == 'workshops') {
         echo '<div class="button-box button-black">';
-        do_action('single_add_to_cart');
+        echo ' <a href="#join-now">BOOK NOW</a>';
         echo '</div>';
       }
       else if ($_product_category == 'classes') {

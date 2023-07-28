@@ -383,56 +383,42 @@ function default_no_quantities($individually, $product)
 }
 add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);
 
-add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_totals_before_shipping', 10, 0);
 
-function action_woocommerce_cart_totals_before_shipping()
+function get_discount()
 {
-
   $memberships = wc_memberships_get_user_active_memberships();
-  if (!empty($memberships)) {
-    // do something for this active member
-    ?>
-    <tr class='cart-subtotal'>
-      <th>Membership Discount</th>
-      <td>
-        <?php foreach ($memberships as $membership) { ?>
-          <span class="membership"><?= $membership->plan->name ?></span>
-
-          <?php
-          foreach (WC()->cart->get_cart() as $cart_item) {
-            // gets the product object
-            $product = $cart_item['data'];
-            // gets the product prices
-            $regular_price = $product->get_regular_price();
-            $with_discount = $product->get_price();
-            $title = $product->get_title();
-            $discount_amount = wc_memberships_get_member_product_discount($membership, $product->get_id());
-            if ($discount_amount) {
-              ?>
-              <div class="discounts">
-                <table>
-                  <tr>
-                    <td>
-                      <?= $title ?>
-                    </td>
-                    <td>
-                      <?= $discount_amount ?>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <?php
-            }
-          }
-          ?>
-        <?php } ?>
-
-
-      </td>
-    </tr>
-
-
+  // do something for this active member
+  ?>
+  <?php foreach ($memberships as $membership) { ?>
+    <span class="membership"><?= $membership->plan->name ?></span>
     <?php
-  }
+    foreach (WC()->cart->get_cart() as $cart_item) {
+      // gets the product object
+      $product = $cart_item['data'];
+      // gets the product prices
+      $regular_price = $product->get_regular_price();
+      $with_discount = $product->get_price();
+      $title = $product->get_title();
+      $discount_amount = wc_memberships_get_member_product_discount($membership, $product->get_id());
+      if ($discount_amount) {
+        ?>
+        <div class="discounts">
+          <table>
+            <tr>
+              <td>
+                <?= $title ?>
+              </td>
+              <td>
+                <?= $discount_amount ?>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <?php
+      }
+    }
+  ?>
+  <?php } ?>
+<?php
 
 }

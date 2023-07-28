@@ -387,10 +387,16 @@ add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_total
 
 function action_woocommerce_cart_totals_before_shipping()
 {
-  ?>
-  <tr class='cart-subtotal'>
-    <th>Membership Discount</th>
-    <td><?php var_dump(wc_memberships_get_user_active_memberships())?></td>
-  </tr>
-  <?php
+
+  $memberships = wc_memberships_get_user_active_memberships();
+  if (!empty($memberships)) {
+    // do something for this active member
+    ?>
+    <tr class='cart-subtotal'>
+      <th>Membership Discount</th>
+      <td><?php var_dump() ?></td>
+    </tr>
+    <?php
+  }
+
 }

@@ -400,14 +400,13 @@ function action_woocommerce_cart_totals_before_shipping()
         <?php } ?>
 
         <?php
-        global $woocommerce;
-        $items = $woocommerce->cart->get_cart();
-
-        foreach ($items as $item => $values) {
-          $_product = wc_get_product($values['data']->get_id());
-          echo "<b>" . $_product->get_title() . '</b>  <br> Quantity: ' . $values['quantity'] . '<br>';
-          $price = get_post_meta($values['product_id'], '_price', true);
-          echo "  Price: " . $price . "<br>";
+        foreach (WC()->cart->get_cart() as $cart_item) {
+          // gets the product object
+          $product = $cart_item['data'];
+          // gets the product prices
+          $regular_price = $product->get_regular_price();
+          $sale_price = $product->get_sale_price();
+          $price = $product->get_price();
         }
         ?>
 

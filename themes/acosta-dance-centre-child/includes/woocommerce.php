@@ -406,7 +406,7 @@ function action_woocommerce_cart_totals_before_shipping()
           // gets the product prices
           $regular_price = $product->get_regular_price();
           $sale_price = $product->get_sale_price();
-          $price = $product->get_price();
+          echo $price = $product->get_price();
         }
         ?>
 

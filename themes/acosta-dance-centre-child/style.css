@@ -1146,7 +1146,9 @@ table.shop_table.shop_table {
     color: #000;
     text-transform: uppercase; }
   table.shop_table.shop_table td {
-    font-size: 22px; }
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300; }
 
 .onsale {
   display: none !important; }

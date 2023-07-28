@@ -397,18 +397,21 @@ function action_woocommerce_cart_totals_before_shipping()
       <td>
         <?php foreach ($memberships as $membership) { ?>
           <span class="membership"><?= $membership->plan->name ?></span>
+
+          <?php
+          foreach (WC()->cart->get_cart() as $cart_item) {
+            // gets the product object
+            $product = $cart_item['data'];
+            // gets the product prices
+            echo $product->get_regular_price();
+
+            echo wc_memberships_user_has_member_discount($product->get_id());
+
+            echo wc_memberships_get_member_product_discount($membership, $product->get_id());
+          }
+          ?>
         <?php } ?>
 
-        <?php
-        foreach (WC()->cart->get_cart() as $cart_item) {
-          // gets the product object
-          $product = $cart_item['data'];
-          // gets the product prices
-          echo $product->get_regular_price();
-
-          echo wc_memberships_user_has_member_discount($product->get_id());
-        }
-        ?>
 
       </td>
     </tr>

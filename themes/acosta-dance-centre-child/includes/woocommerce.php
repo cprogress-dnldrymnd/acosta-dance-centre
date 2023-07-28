@@ -423,7 +423,6 @@ function action_woocommerce_cart_totals_before_shipping()
             </div>
             <?php
 
-            echo 
           }
           ?>
         <?php } ?>

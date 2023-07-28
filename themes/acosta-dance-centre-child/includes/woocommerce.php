@@ -388,6 +388,7 @@ function get_member_discount($memberships, $id)
 {
   $discount_amount = wc_memberships_get_member_product_discount($memberships, $id);
   if ($discount_amount) {
+    return $discount_amount;
   }
 
 }

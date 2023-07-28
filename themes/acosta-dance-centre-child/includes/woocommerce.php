@@ -392,7 +392,7 @@ function get_member_discount($memberships, $id)
     $regular_price = '<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . sprintf("%.2f", $product->get_regular_price()) . '</bdi></span></del>';
     $discounted_price = '<ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . sprintf("%.2f", $product->get_price()) . '</bdi></span></ins>';
     $discount_amount_val = '<span> ' . $discount_amount . ' </span>';
-    return $discount_amount_val . ' - ' . $regular_price . ' ' . $discounted_price;
+    return $regular_price . ' ' . $discounted_price . '(' . $discount_amount_val . ')';
   }
 
 }

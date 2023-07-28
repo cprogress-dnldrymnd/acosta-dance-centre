@@ -386,9 +386,7 @@ add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);
 
 function get_member_discount($memberships, $id)
 {
-  $discount_amount = wc_memberships_get_member_product_discount($memberships, $id);
-  if ($discount_amount) {
-    return $discount_amount;
-  }
+
+  return $id;
 
 }

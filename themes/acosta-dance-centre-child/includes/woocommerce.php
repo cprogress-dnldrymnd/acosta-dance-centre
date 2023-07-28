@@ -404,7 +404,7 @@ function action_woocommerce_cart_totals_before_shipping()
       <td>
 
         <?php foreach ($memberships as $membership) { ?>
-          <span class="membership"><?= $membership->name ?></span>
+          <span class="membership"><?= $membership->plan()->name ?></span>
         <?php } ?>
       </td>
     </tr>

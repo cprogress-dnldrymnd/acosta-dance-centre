@@ -66,19 +66,50 @@ function adc_classes($atts)
   extract(
     shortcode_atts(
       array(
-        'type' => 'featured_classes',
+        'type'    => 'featured_classes',
         'heading' => '',
+        'categ'   => '',
       ),
       $atts
     )
   );
   ob_start();
   $args = array(
-    'type' => $type,
+    'type'    => $type,
     'heading' => $heading,
+    'categ'   => $categ
   );
   get_template_part('template-parts/usable/loop-classes', 'null', $args);
   return ob_get_clean();
 }
 
 add_shortcode('adc_classes', 'adc_classes');
+
+function membership_box()
+{
+  ob_start();
+  ?>
+  <div class="membership-box position-relative <?= is_archive() ? 'membership-box-v2' : '' ?>">
+    <div class="sec-title text-center">
+      <span class="heading-meta">BECOME A MEMBER</span>
+      <h2 class="doro-heading">OUR MEMBERSHIP PACKAGES</h2>
+    </div>
+
+    <div class="checklist">
+      <ul>
+        <li>Multiple Classes Per Month</li>
+        <li>10% Off Events</li>
+        <li>Access to our online academy</li>
+      </ul>
+    </div>
+    <div class="button-box text-center <?= is_archive() ? 'button-black' : 'button-bordered' ?>">
+      <a href="/memberships/">
+        FIND OUT MORE
+      </a>
+    </div>
+  </div>
+  <?php
+  return ob_get_clean();
+}
+
+add_shortcode('membership_box', 'membership_box');

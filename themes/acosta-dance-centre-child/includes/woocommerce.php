@@ -394,7 +394,7 @@ function action_woocommerce_cart_totals_before_shipping()
     ?>
     <tr class='cart-subtotal'>
       <th>Membership Discount</th>
-      <td><?php var_dump() ?></td>
+      <td><?php var_dump($memberships) ?></td>
     </tr>
     <?php
   }

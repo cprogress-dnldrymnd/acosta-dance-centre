@@ -405,9 +405,25 @@ function action_woocommerce_cart_totals_before_shipping()
             // gets the product prices
             $regular_price = $product->get_regular_price();
             $with_discount = $product->get_price();
+            $title = $product->get_title();
+            $discount_amount = wc_memberships_get_member_product_discount($membership, $product->get_id());
             echo wc_memberships_user_has_member_discount($product->get_id());
+            ?>
+            <div class="discounts">
+              <table>
+                <tr>
+                  <td>
+                    <?= $title ?>
+                  </td>
+                  <td>
+                    <?= $discount_amount ?>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <?php
 
-            echo wc_memberships_get_member_product_discount($membership, $product->get_id());
+            echo 
           }
           ?>
         <?php } ?>

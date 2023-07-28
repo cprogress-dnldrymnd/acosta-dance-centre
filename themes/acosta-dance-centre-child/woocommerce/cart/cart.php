@@ -18,7 +18,7 @@
 defined('ABSPATH') || exit;
 
 do_action('woocommerce_before_cart'); ?>
-<?php $memberships = wc_memberships_get_user_active_memberships(); ?>
+<?php $memberships = wc_memberships_get_user_active_memberships(get_current_user_id()); ?>
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
 	<?php do_action('woocommerce_before_cart_table'); ?>
@@ -26,8 +26,10 @@ do_action('woocommerce_before_cart'); ?>
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 		<thead>
 			<tr>
-				<th class="product-remove"><span class="screen-reader-text"><?php esc_html_e('Remove item', 'woocommerce'); ?></span></th>
-				<th class="product-thumbnail"><span class="screen-reader-text"><?php esc_html_e('Thumbnail image', 'woocommerce'); ?></span></th>
+				<th class="product-remove"><span
+						class="screen-reader-text"><?php esc_html_e('Remove item', 'woocommerce'); ?></span></th>
+				<th class="product-thumbnail"><span
+						class="screen-reader-text"><?php esc_html_e('Thumbnail image', 'woocommerce'); ?></span></th>
 				<th class="product-name"><?php esc_html_e('Product', 'woocommerce'); ?></th>
 				<th class="product-price"><?php esc_html_e('Price', 'woocommerce'); ?></th>
 				<th class="product-quantity d-none"><?php esc_html_e('Quantity', 'woocommerce'); ?></th>

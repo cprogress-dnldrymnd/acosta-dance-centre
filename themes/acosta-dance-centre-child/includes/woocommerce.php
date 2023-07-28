@@ -395,21 +395,37 @@ function action_woocommerce_cart_totals_before_shipping()
     <tr class='cart-subtotal'>
       <th>Membership Discount</th>
       <td>
-
         <?php foreach ($memberships as $membership) { ?>
           <span class="membership"><?= $membership->plan->name ?></span>
         <?php } ?>
       </td>
     </tr>
-    <tr>
-      <td colspan=2>
-        <pre>
-                  <?php var_dump($memberships) ?>
-                </pre>
-      </td>
-    </tr>
+ 
 
     <?php
   }
 
 }
+
+function cw_discount() {
+   global $woocommerce;
+   $cw_discount = 0;
+   foreach ( $woocommerce->cart->get_cart() as $cw_cart_key => $values) {
+       $_product = $values['data'];
+       if ( $_product->is_on_sale() ) {
+            $regular_price = $_product->get_regular_price();
+            $sale_price = $_product->get_sale_price();
+            $discount = ($regular_price - $sale_price) * $values['quantity'];
+            $cw_discount += $discount;
+        }
+   }
+   if ( $cw_discount > 0 ) {
+        echo '<tr class="cart-discount">
+    <th>'. __( 'Secure', 'woocommerce' ) .'</th>
+    <td data-title=" '. __( 'Secure', 'woocommerce' ) .' ">'
+            . wc_price( $cw_discount + $woocommerce->cart->discount_cart ) .'</td>
+    </tr>';
+    }
+}
+add_action( 'woocommerce_cart_totals_after_order_total', 'cw_discount');
+add_action( 'woocommerce_review_order_after_order_total', 'cw_discount');

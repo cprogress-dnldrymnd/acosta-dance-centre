@@ -18,6 +18,7 @@
 defined('ABSPATH') || exit;
 
 do_action('woocommerce_before_cart'); ?>
+<?php $memberships = wc_memberships_get_user_active_memberships(); ?>
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
 	<?php do_action('woocommerce_before_cart_table'); ?>
@@ -150,7 +151,7 @@ do_action('woocommerce_before_cart'); ?>
 						</td>
 						<?php if (!empty($memberships)) { ?>
 							<td class="product-discount">
-								<?= get_member_discount($membership, $product_id) ?>
+								<?= get_member_discount($memberships, $product_id) ?>
 							</td>
 						<?php } ?>
 						<td class="product-subtotal" data-title="<?php esc_attr_e('Subtotal', 'woocommerce'); ?>">

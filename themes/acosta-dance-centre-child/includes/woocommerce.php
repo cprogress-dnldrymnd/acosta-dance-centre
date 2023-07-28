@@ -398,7 +398,7 @@ function get_member_discount($memberships, $id)
 }
 
 
-
+/*
 add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_totals_custom_text');
 
 function action_woocommerce_cart_totals_custom_text()
@@ -417,4 +417,4 @@ function action_woocommerce_cart_totals_custom_text()
     </tr>
     <?php
   }
-}
+}*/

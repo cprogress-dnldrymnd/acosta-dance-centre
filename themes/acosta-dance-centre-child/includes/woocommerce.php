@@ -387,5 +387,10 @@ add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_total
 
 function action_woocommerce_cart_totals_before_shipping()
 {
-  echo "<tr class='cart-subtotal'><th>Title</th><td>Text</td></tr>";
+  ?>
+  <tr class='cart-subtotal'>
+    <th>Membership Discount</th>
+    <td></td>
+  </tr>
+  <?php
 }

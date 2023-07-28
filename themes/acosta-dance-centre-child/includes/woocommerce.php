@@ -389,10 +389,10 @@ function get_member_discount($memberships, $id)
   $product = wc_get_product($id);
   $discount_amount = wc_memberships_get_member_product_discount($memberships, $id);
   if ($discount_amount) {
-    $regular_price = '<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>' . $product->get_regular_price() . '</bdi></span></del>';
-    $discounted_price = '<ins><span class="woocommerce-Price-amount amount"><bdi>'.$product->get_price().'</bdi></span></ins>';
-    $discount_amount_val = '<span> '.$discount_amount.' </span>';
-    return $discount_amount_val . $regular_price .$discounted_price;
+    $regular_price = '<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . $product->get_regular_price() . '</bdi></span></del>';
+    $discounted_price = '<ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . $product->get_price() . '</bdi></span></ins>';
+    $discount_amount_val = '<span> ' . $discount_amount . ' </span>';
+    return $discount_amount_val . $regular_price . ' ' . $discounted_price;
   }
 
 }

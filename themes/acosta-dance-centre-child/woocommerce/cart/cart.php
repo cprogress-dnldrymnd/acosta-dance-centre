@@ -33,9 +33,7 @@ do_action('woocommerce_before_cart'); ?>
 				<th class="product-name"><?php esc_html_e('Product', 'woocommerce'); ?></th>
 				<th class="product-price"><?php esc_html_e('Price', 'woocommerce'); ?></th>
 				<th class="product-quantity d-none"><?php esc_html_e('Quantity', 'woocommerce'); ?></th>
-				<?php if (!empty($memberships)) { ?>
 					<th class="product-discount"><?php esc_html_e('Member Discount', 'woocommerce'); ?></th>
-				<?php } ?>
 				<th class="product-subtotal"><?php esc_html_e('Subtotal', 'woocommerce'); ?></th>
 			</tr>
 		</thead>
@@ -151,11 +149,9 @@ do_action('woocommerce_before_cart'); ?>
 							echo apply_filters('woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item); // PHPCS: XSS ok.
 							?>
 						</td>
-						<?php if (!empty($memberships)) { ?>
 							<td class="product-discount">
 								<?= get_member_discount($memberships, $product_id) ?>
 							</td>
-						<?php } ?>
 						<td class="product-subtotal" data-title="<?php esc_attr_e('Subtotal', 'woocommerce'); ?>">
 							<?php
 							echo apply_filters('woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal($_product, $cart_item['quantity']), $cart_item, $cart_item_key); // PHPCS: XSS ok.

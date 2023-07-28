@@ -382,3 +382,10 @@ function default_no_quantities($individually, $product)
   return $individually;
 }
 add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);
+
+add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_totals_before_shipping', 10, 0);
+
+function action_woocommerce_cart_totals_before_shipping()
+{
+  echo "<tr class='cart-subtotal'><th>Title</th><td>Text</td></tr>";
+}

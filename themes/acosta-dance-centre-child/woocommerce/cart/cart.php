@@ -153,7 +153,9 @@ do_action('woocommerce_before_cart'); ?>
 						</td>
 						<?php if (!empty($memberships)) { ?>
 							<td class="product-discount">
-								<?= get_member_discount($memberships, $cart_item['data']->get_id()) ?>
+								<?php foreach ($memberships as $membership) { ?>
+									<?= get_member_discount($membership, $cart_item['data']->get_id()) ?>
+								<?php } ?>
 							</td>
 						<?php } ?>
 						<td class="product-subtotal" data-title="<?php esc_attr_e('Subtotal', 'woocommerce'); ?>">

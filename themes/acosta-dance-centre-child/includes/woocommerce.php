@@ -392,22 +392,23 @@ function action_woocommerce_cart_totals_before_shipping()
   if (!empty($memberships)) {
     // do something for this active member
     ?>
-    <tr>
-      <td colspan=2>
-        <pre>
-              <?php var_dump($memberships) ?>
-            </pre>
-      </td>
-    </tr>
     <tr class='cart-subtotal'>
       <th>Membership Discount</th>
       <td>
 
         <?php foreach ($memberships as $membership) { ?>
-          <span class="membership"><?= $membership->plan()->name ?></span>
+          <span class="membership"><?= $membership->plan->name ?></span>
         <?php } ?>
       </td>
     </tr>
+    <tr>
+      <td colspan=2>
+        <pre>
+                  <?php var_dump($memberships) ?>
+                </pre>
+      </td>
+    </tr>
+
     <?php
   }
 

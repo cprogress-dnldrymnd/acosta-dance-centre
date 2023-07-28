@@ -405,6 +405,8 @@ function action_woocommerce_cart_totals_before_shipping()
           $product = $cart_item['data'];
           // gets the product prices
           echo $product->get_regular_price();
+
+          echo wc_memberships_user_has_member_discount($product->get_id());
         }
         ?>
 

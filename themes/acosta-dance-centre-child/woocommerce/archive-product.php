@@ -56,10 +56,16 @@ $is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
 	?>
 </header>
 <?php
-$name = get_queried_object()->name;
+if (is_shop()) {
+	$name = 'CLASS';
+}
+else {
+	$name = get_queried_object()->name;
+}
+
 ?>
 
-<section class="product-loop md-padding">
+<section class="product-loop md-padding-top">
 	<div class="sec-title text-left">
 		<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
 		<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>
@@ -111,16 +117,25 @@ $name = get_queried_object()->name;
 	?>
 </section>
 <?php
+if (is_shop()) {
+	$args = array(
+		'type'    => 'featured_workshops',
+		'heading' => 'FEATURED <br>WORKSHOPS'
+	);
+	//get_template_part('template-parts/woocommerce/classes-category');
+	echo '<div class="md-padding">';
+	get_template_part('template-parts/usable/loop-classes', 'null', $args);
+	echo '</div>';
+}
 if ($is_classes) {
 	$args = array(
 		'type'    => 'featured_workshops',
 		'heading' => 'FEATURED <br>WORKSHOPS'
 	);
-	get_template_part('template-parts/woocommerce/classes-category');
+	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
 }
-
 /**
  * Hook: woocommerce_after_main_content.
  *

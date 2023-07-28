@@ -388,7 +388,28 @@ function get_member_discount($memberships, $id)
 {
   $discount_amount = wc_memberships_get_member_product_discount($memberships, $id);
   if ($discount_amount) {
-    return $discount_amount;
   }
 
+}
+
+
+
+add_action('woocommerce_cart_totals_custom_text', 'action_woocommerce_cart_totals_custom_text');
+
+function action_woocommerce_cart_totals_custom_text()
+{
+  $memberships = wc_memberships_get_user_active_memberships();
+  // do something for this active member
+  if (!empty($memberships)) {
+    ?>
+    <tr>
+      <th>Membership Plan</th>
+      <td>
+        <?php foreach ($memberships as $membership) { ?>
+          <span class="membership"><?= $membership->plan->name ?></span>
+        <?php } ?>
+      </td>
+    </tr>
+    <?php
+  }
 }

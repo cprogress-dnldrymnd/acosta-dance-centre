@@ -97,9 +97,9 @@ function membership_box()
 
     <div class="checklist">
       <ul>
-        <li>Multiple Classes Per Month</li>
-        <li>10% Off Events</li>
-        <li>Access to our online academy</li>
+        <li>5% OFF ALL Workshops</li>
+        <li>20% OFF Classes</li>
+        <li>and much more</li>
       </ul>
     </div>
     <div class="button-box text-center <?= is_archive() ? 'button-black' : 'button-bordered' ?>">

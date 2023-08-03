@@ -56,9 +56,11 @@ else if ($args['type'] == 'related') {
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');
+  sort($arr);
 }
 else {
   $classes = get__theme_option('featured_classes');
+  sort($arr);
 }
 /*
 if ($args['categ']) {

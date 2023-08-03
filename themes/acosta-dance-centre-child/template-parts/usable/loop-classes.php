@@ -153,7 +153,7 @@ else {
                   <!--<?php if ($pa_studio) { ?>
                     <span class="type meta-style-1 mr-4 d-inline-block"><?= $pa_studio ?></span>
                   <?php } ?>-->
-                  <span class="time meta-style-1 d-inline-block">DATE: <?= $ticket_day. ' ' . $ticket_month ?>, TIME: <?= $ticket_time ?></span>
+                  <span class="time meta-style-1 d-inline-block">DATE: <?= $ticket_day. ' ' . $ticket_month ?> | TIME: <?= $ticket_time ?></span>
                 </div>
               </div>
             </div>

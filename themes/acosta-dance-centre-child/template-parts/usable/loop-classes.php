@@ -33,6 +33,14 @@ else if ($args['type'] == 'related') {
     $terms_val[] = $term->term_id;
   }
 
+  $posts['tax_query'] = array(
+    array(
+      'taxonomy' => 'product_cat',
+      'field'    => 'term_id',
+      'terms'    => $terms_val
+    )
+  );
+
 
   $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');
 

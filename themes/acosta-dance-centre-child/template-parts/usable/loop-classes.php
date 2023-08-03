@@ -1,6 +1,6 @@
 <?php
 if ($args['type'] == 'featured_classes') {
-  $classes = get__theme_option('featured_classes');
+  $featured_classes = get__theme_option('featured_classes');
 
   $classes = array();
   foreach ($featured_classes as $featured_classs) {

@@ -31,7 +31,6 @@ else if ($args['type'] == 'featured_workshops') {
     $featured_workshops_arr[] = $featured_workshop['id'];
   }
   $posts['include'] = $featured_workshops_arr;
-
 }
 else if ($args['type'] == 'related') {
 

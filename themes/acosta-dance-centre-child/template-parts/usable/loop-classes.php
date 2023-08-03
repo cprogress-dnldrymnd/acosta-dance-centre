@@ -58,7 +58,6 @@ else if ($args['type'] == 'related') {
 
   $categ_id = _product_category_id(get_the_ID());
 
-  $post_list = get_posts($posts);
 
 
   $heading = 'OTHER <br>' . $heading_val;
@@ -70,7 +69,7 @@ else {
 
 
 $classes = array();
-
+$post_list = get_posts($posts);
 foreach ($post_list as $post) {
   $classes[] = array(
     'id' => $post->ID

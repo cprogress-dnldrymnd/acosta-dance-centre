@@ -28,7 +28,7 @@ get_header('shop');
  */
 do_action('woocommerce_before_main_content');
 $alt_title = get__term_meta(get_queried_object()->term_id, 'alt_title');
-$is_classes = get__term_meta(get_queried_object()->term_id, 'is_classes');
+$slug = get_queried_object()->slug;
 ?>
 
 <header class="woocommerce-products-header">
@@ -127,10 +127,10 @@ if (is_shop()) {
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 	echo '</div>';
 }
-if ($is_classes) {
+if ($slug == 'workshops' || $slug == 'classes') {
 	$args = array(
-		'type'    => 'featured_workshops',
-		'heading' => 'FEATURED <br>WORKSHOPS'
+		'type'    => 'featured_' . $slug,
+		'heading' => 'FEATURED <br>'.$slug
 	);
 	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);

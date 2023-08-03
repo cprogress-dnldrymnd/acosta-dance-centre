@@ -22,6 +22,9 @@ if ($args['type'] == 'featured_classes') {
   foreach ($featured_classes as $featured_class) {
     $featured_classes_arr[] = $featured_class['id'];
   }
+
+  var_dump($featured_classes_arr);
+  
   $posts['include'] = $featured_classes_arr;
 }
 else if ($args['type'] == 'featured_workshops') {

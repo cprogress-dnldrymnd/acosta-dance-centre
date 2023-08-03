@@ -76,7 +76,7 @@ else {
   sort($classes);
 
   if(current_user_can( 'administrator' )) {
-    var_dump($classes)
+    var_dump($classes);
   }
 }
 /*

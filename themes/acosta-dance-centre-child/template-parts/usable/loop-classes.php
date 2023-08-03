@@ -23,7 +23,6 @@ if ($args['type'] == 'featured_classes') {
     $featured_classes_arr[] = $featured_class['id'];
   }
 
-  var_dump($posts);
 
   $posts['include'] = $featured_classes_arr;
 }

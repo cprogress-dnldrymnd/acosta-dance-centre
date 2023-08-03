@@ -429,7 +429,7 @@ function action_order_by_date($query)
     $meta_query = [];
 
     $meta_query[] = [
-      'key'     => 'event_date_time',
+      'key'     => '_event_date_time',
       'value'   => date('Y/m/d'),
       'compare' => '>=',
       'type'    => 'DATE'

@@ -32,7 +32,7 @@ else if ($args['type'] == 'related') {
     $terms_val[] = $term->term_id;
   }
 
-  $posts['tax_query'] = array(
+  $posts[]['tax_query'] = array(
     array(
       'taxonomy' => 'product_cat',
       'field'    => 'term_id',

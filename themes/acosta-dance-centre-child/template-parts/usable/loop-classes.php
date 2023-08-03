@@ -34,6 +34,16 @@ else if ($args['type'] == 'featured_workshops') {
   }
   $posts['include'] = $featured_workshops_arr;
 }
+else if ($args['type'] == 'upcoming_classes') {
+  $posts['tax_query'] = array(
+    array(
+      'taxonomy' => 'product_cat',
+      'field'    => 'slug',
+      'terms'    => 'classes'
+    )
+  );
+
+}
 else if ($args['type'] == 'related') {
 
   $terms = get_the_terms(get_the_ID(), 'product_cat');
@@ -153,7 +163,8 @@ else {
                   <!--<?php if ($pa_studio) { ?>
                     <span class="type meta-style-1 mr-4 d-inline-block"><?= $pa_studio ?></span>
                   <?php } ?>-->
-                  <span class="time meta-style-1 d-inline-block">DATE: <?= $ticket_day. ' ' . $ticket_month ?> | TIME: <?= $ticket_time ?></span>
+                  <span class="time meta-style-1 d-inline-block">DATE: <?= $ticket_day . ' ' . $ticket_month ?> | TIME:
+                    <?= $ticket_time ?></span>
                 </div>
               </div>
             </div>

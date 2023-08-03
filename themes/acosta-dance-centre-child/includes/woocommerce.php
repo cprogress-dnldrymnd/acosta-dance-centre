@@ -425,7 +425,7 @@ function action_woocommerce_cart_totals_custom_text()
 add_action('pre_get_posts', 'action_order_by_date');
 function action_order_by_date($query)
 {
-  if (is_product_category('workshops') && $query->is_main_query()) {
+  if (is_product_category('workshops') && is_product_category('classes') && $query->is_main_query()) {
     $meta_query = [];
 
     $meta_query[] = [

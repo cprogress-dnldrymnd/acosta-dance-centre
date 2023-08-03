@@ -285,7 +285,7 @@ h4 {
   @media (max-width: 1439px) {
     .newsletter-box.newsletter-box .col-heading {
       flex: 0 0 100%; } }
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     .newsletter-box.newsletter-box {
       padding-top: 50px;
       padding-bottom: 50px; } }

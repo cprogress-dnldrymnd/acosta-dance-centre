@@ -128,7 +128,7 @@ else {
         $ticket_day = date('d', $dateformat);
         $ticket_month = date('M', $dateformat);
         $product = wc_get_product($class['id']);
-        $pa_studio = $product->get_attribute('pa_studio');
+        //$pa_studio = $product->get_attribute('pa_studio');
         ?>
         <div class="product-box-item">
           <div class="row align-items-center">
@@ -150,9 +150,9 @@ else {
                   <h3><?= get_the_title($class['id']) ?></h3>
                 </a>
                 <div class="meta text-uppercase">
-                  <?php if ($pa_studio) { ?>
+                  <!--<?php if ($pa_studio) { ?>
                     <span class="type meta-style-1 mr-4 d-inline-block"><?= $pa_studio ?></span>
-                  <?php } ?>
+                  <?php } ?>-->
                   <span class="time meta-style-1 d-inline-block">TIME: <?= $ticket_time ?></span>
                 </div>
               </div>

@@ -1190,14 +1190,6 @@ table.shop_table.shop_table {
   width: 50px !important;
   height: 20px !important; }
 
-.term-workshops .newsletter-box .row,
-.term-classes .newsletter-box .row {
-  flex-wrap: wrap; }
-  .term-workshops .newsletter-box .row .col-lg-3:nth-child(1),
-  .term-classes .newsletter-box .row .col-lg-3:nth-child(1) {
-    flex: 0 0 100%;
-    max-width: 100%; }
-
 .more-button {
   letter-spacing: 7px;
   font-size: 20px;

@@ -1,19 +1,20 @@
 <?php
+$meta_query = [];
+
+$meta_query[] = [
+  'key'     => '_ticket_checkin_availability_from_date',
+  'value'   => date('Y/m/d'),
+  'compare' => '>=',
+  'type'    => 'DATE'
+];
+
 $posts = array(
   'post_type'      => 'product',
   'posts_per_page' => 3,
-  'tax_query'      => array(
-    array(
-      'taxonomy' => 'product_cat',
-      'field'    => 'term_id',
-      'terms'    => $terms_val
-    )
-  ),
   'meta_query'     => $meta_query,
   'orderby'        => 'meta_value',
   'order'          => 'ASC'
 );
-
 
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
@@ -31,15 +32,6 @@ else if ($args['type'] == 'related') {
   foreach ($terms as $term) {
     $terms_val[] = $term->term_id;
   }
-  $meta_query = [];
-
-  $meta_query[] = [
-    'key'     => '_ticket_checkin_availability_from_date',
-    'value'   => date('Y/m/d'),
-    'compare' => '>=',
-    'type'    => 'DATE'
-  ];
-
 
 
   $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');

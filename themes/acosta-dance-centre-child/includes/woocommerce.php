@@ -428,7 +428,7 @@ function action_order_by_date($query)
     $meta_query = [];
 
     $meta_query[] = [
-      'key'     => '_event_date_time',
+      'key'     => '_ticket_checkin_availability_from_date',
       'value'   => date('Y/m/d'),
       'compare' => '>=',
       'type'    => 'DATE'

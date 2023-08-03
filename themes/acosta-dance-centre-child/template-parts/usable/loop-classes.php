@@ -12,6 +12,14 @@ else if ($args['type'] == 'related') {
   foreach ($terms as $term) {
     $terms_val[] = $term->term_id;
   }
+  $meta_query = [];
+
+  $meta_query[] = [
+    'key'     => '_ticket_checkin_availability_from_date',
+    'value'   => date('Y/m/d'),
+    'compare' => '>=',
+    'type'    => 'DATE'
+  ];
 
   $posts = array(
     'post_type'      => 'product',
@@ -22,7 +30,10 @@ else if ($args['type'] == 'related') {
         'field'    => 'term_id',
         'terms'    => $terms_val
       )
-    )
+    ),
+    'meta_query' => $meta_query,
+    'orderby' => 'meta_value', 
+    'order' => 'ASC'
   );
 
 

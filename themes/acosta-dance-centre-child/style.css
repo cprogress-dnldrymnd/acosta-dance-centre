@@ -265,15 +265,15 @@ h4 {
     font-weight: 400;
     font-family: 'Oswald', sans-serif; }
 
-.newsletter-box {
+.newsletter-box.newsletter-box {
   padding-bottom: 80px; }
-  .newsletter-box h3 {
+  .newsletter-box.newsletter-box h3 {
     line-height: 1;
     font-size: 44px; }
-  .newsletter-box p,
-  .newsletter-box input {
+  .newsletter-box.newsletter-box p,
+  .newsletter-box.newsletter-box input {
     margin-bottom: 0 !important; }
-  .newsletter-box .wpcf7-submit {
+  .newsletter-box.newsletter-box .wpcf7-submit {
     margin-bottom: 0;
     letter-spacing: 0.2vw;
     padding-left: 1vw;

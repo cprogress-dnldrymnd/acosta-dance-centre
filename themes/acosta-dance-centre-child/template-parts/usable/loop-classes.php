@@ -1,6 +1,6 @@
 <?php
 if ($args['type'] == 'featured_classes') {
-  $classes = get__theme_option('featured_classes');
+  $products = get__theme_option('featured_classes');
 }
 else if ($args['type'] == 'related') {
 
@@ -43,10 +43,10 @@ else if ($args['type'] == 'related') {
 
   $post_list = get_posts($posts);
 
-  $classes = array();
+  $products = array();
 
   foreach ($post_list as $post) {
-    $classes[] = array(
+    $products[] = array(
       'id' => $post->ID
     );
   }
@@ -55,12 +55,10 @@ else if ($args['type'] == 'related') {
   $more_text = 'MORE ' . $heading_val;
 }
 else if ($args['type'] == 'featured_workshops') {
-  $classes = get__theme_option('featured_workshops');
-  sort($arr);
+  $products = get__theme_option('featured_workshops');
 }
 else {
-  $classes = get__theme_option('featured_classes');
-  sort($arr);
+  $products = get__theme_option('featured_classes');
 }
 /*
 if ($args['categ']) {
@@ -106,14 +104,14 @@ else {
       </div>
     <?php } ?>
     <div class="product-box-style-1">
-      <?php foreach ($classes as $class) { ?>
+      <?php foreach ($products as $product) { ?>
         <?php
-        $ticket_date_val = get_post_meta($class['id'], '_ticket_checkin_availability_from_date', true);
+        $ticket_date_val = get_post_meta($product['id'], '_ticket_checkin_availability_from_date', true);
         $dateformat = strtotime($ticket_date_val);
         $ticket_time = date('g:i a', $dateformat);
         $ticket_day = date('d', $dateformat);
         $ticket_month = date('M', $dateformat);
-        $product = wc_get_product($class['id']);
+        $product = wc_get_product($product['id']);
         $pa_studio = $product->get_attribute('pa_studio');
         ?>
         <div class="product-box-item">
@@ -126,14 +124,14 @@ else {
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="image-box position-relative">
-                <img src="<?= get_the_post_thumbnail_url($class['id'], 'large') ?>"
-                  alt="<?= get_the_title($class['id']) ?>">
+                <img src="<?= get_the_post_thumbnail_url($product['id'], 'large') ?>"
+                  alt="<?= get_the_title($product['id']) ?>">
               </div>
             </div>
             <div class="col-lg-5">
               <div class="title-box text-uppercase">
-                <a href="<?= get_permalink($class['id']) ?>">
-                  <h3><?= get_the_title($class['id']) ?></h3>
+                <a href="<?= get_permalink($product['id']) ?>">
+                  <h3><?= get_the_title($product['id']) ?></h3>
                 </a>
                 <div class="meta text-uppercase">
                   <?php if ($pa_studio) { ?>
@@ -145,7 +143,7 @@ else {
             </div>
             <div class="col-lg-2">
               <div class="book-box text-center">
-                <a href="<?= get_permalink($class['id']) ?>">BOOK</a>
+                <a href="<?= get_permalink($product['id']) ?>">BOOK</a>
               </div>
             </div>
           </div>

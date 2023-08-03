@@ -2,16 +2,15 @@
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 
-  $classes = array();
-  foreach ($featured_classes as $featured_classs) {
+  $classesx = array();
+  foreach ($classes as $featured_classs) {
     $ticket_date_val = get_post_meta($featured_classs['id'], '_ticket_checkin_availability_from_date', true);
-    $classes[$ticket_date_val] = $featured_classs['id'];
+    $classesx[$ticket_date_val] = $featured_classs['id'];
   }
-  sort($classes);
+  sort($classesx);
 
   if (current_user_can('administrator')) {
-    echo 'sdsdsds';
-    var_dump($classes);
+    var_dump($classesx);
   }
 }
 else if ($args['type'] == 'featured_workshops') {

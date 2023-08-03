@@ -316,6 +316,7 @@ h4 {
 .newsletter-box {
   h3 {
     line-height: 1;
+    font-size: 44px;
   }
 
   p,
@@ -327,7 +328,11 @@ h4 {
 
   .wpcf7-submit {
     margin-bottom: 0;
+    letter-spacing: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
+
 
 }
 
@@ -1978,7 +1983,8 @@ table.shop_table.shop_table {
   }
 }
 
-.tax-product_cat, .post-type-archive-product {
+.tax-product_cat,
+.post-type-archive-product {
   .newsletter-box {
     padding-top: 100px;
   }

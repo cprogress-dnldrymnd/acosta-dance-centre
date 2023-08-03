@@ -268,12 +268,16 @@ h4 {
 .newsletter-box {
   padding-bottom: 80px; }
   .newsletter-box h3 {
-    line-height: 1; }
+    line-height: 1;
+    font-size: 44px; }
   .newsletter-box p,
   .newsletter-box input {
     margin-bottom: 0 !important; }
   .newsletter-box .wpcf7-submit {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    letter-spacing: 0.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw; }
 
 @media (min-width: 992px) {
   .newsletter .row {
@@ -1356,7 +1360,8 @@ table.shop_table.shop_table {
       background-color: var(--adc-color-1);
       color: #000; }
 
-.tax-product_cat .newsletter-box, .post-type-archive-product .newsletter-box {
+.tax-product_cat .newsletter-box,
+.post-type-archive-product .newsletter-box {
   padding-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */

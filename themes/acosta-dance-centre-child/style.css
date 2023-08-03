@@ -266,7 +266,8 @@ h4 {
     font-family: 'Oswald', sans-serif; }
 
 .newsletter-box.newsletter-box {
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  padding-top: 80px; }
   .newsletter-box.newsletter-box h3 {
     line-height: 1;
     font-size: 50px; }
@@ -284,6 +285,10 @@ h4 {
   @media (max-width: 1439px) {
     .newsletter-box.newsletter-box .col-heading {
       flex: 0 0 100%; } }
+  @media (max-width: 991px) {
+    .newsletter-box.newsletter-box {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
 
 .wpcf7-form .wpcf7-submit {
   font-family: "Oswald", Sans-serif;
@@ -1361,9 +1366,5 @@ table.shop_table.shop_table {
     .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button:hover {
       background-color: var(--adc-color-1);
       color: #000; }
-
-.tax-product_cat .newsletter-box,
-.post-type-archive-product .newsletter-box {
-  padding-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,21 @@
 <?php
+$meta_query = [];
+
+$meta_query[] = [
+  'key'     => '_ticket_checkin_availability_from_date',
+  'value'   => date('Y/m/d'),
+  'compare' => '>=',
+  'type'    => 'DATE'
+];
+
+$posts = array(
+  'post_type'      => 'product',
+  'posts_per_page' => 3,
+  'meta_query'     => $meta_query,
+  'orderby'        => 'meta_value',
+  'order'          => 'ASC'
+);
+
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 
@@ -11,32 +28,16 @@ else if ($args['type'] == 'related') {
   $terms = get_the_terms(get_the_ID(), 'product_cat');
   $terms_val = array();
 
-
   foreach ($terms as $term) {
     $terms_val[] = $term->term_id;
   }
-  $meta_query = [];
 
-  $meta_query[] = [
-    'key'     => '_ticket_checkin_availability_from_date',
-    'value'   => date('Y/m/d'),
-    'compare' => '>=',
-    'type'    => 'DATE'
-  ];
-
-  $posts = array(
-    'post_type'      => 'product',
-    'posts_per_page' => 3,
-    'tax_query'      => array(
-      array(
-        'taxonomy' => 'product_cat',
-        'field'    => 'term_id',
-        'terms'    => $terms_val
-      )
-    ),
-    'meta_query'     => $meta_query,
-    'orderby'        => 'meta_value',
-    'order'          => 'ASC'
+  $posts['tax_query'] = array(
+    array(
+      'taxonomy' => 'product_cat',
+      'field'    => 'term_id',
+      'terms'    => $terms_val
+    )
   );
 
 
@@ -60,6 +61,15 @@ else if ($args['type'] == 'related') {
 else {
   $featured_classes = get__theme_option('featured_classes');
 }
+
+foreach ($post_list as $post) {
+  $classes[] = array(
+    'id' => $post->ID
+  );
+}
+
+
+
 /*
 if ($args['categ']) {
   $term_name = get_term($args['categ'])->name;

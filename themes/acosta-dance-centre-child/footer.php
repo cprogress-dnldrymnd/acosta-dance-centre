@@ -29,7 +29,9 @@
 </div>
 <?php if (!is_product_category() && !is_shop()) { ?>
   <div class="newsletter-box">
-    <?= do_shortcode('[contact-form-7 id="832" title="Newsletter Form"]') ?>
+    <div class="container">
+      <?= do_shortcode('[contact-form-7 id="832" title="Newsletter Form"]') ?>
+    </div>
   </div>
 <?php } ?>
 <?php if (Doro_AfterSetupTheme::return_thme_option('footer-section') != 'no') { ?>

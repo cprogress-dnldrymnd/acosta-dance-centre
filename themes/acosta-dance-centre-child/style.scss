@@ -316,7 +316,8 @@ h4 {
 .newsletter-box.newsletter-box {
   h3 {
     line-height: 1;
-    font-size: 44px;
+    font-size: 50px;
+
   }
 
   p,
@@ -333,16 +334,23 @@ h4 {
     padding-right: 1vw;
   }
 
-
-}
-
-.newsletter {
-  @media(min-width: 992px) {
-    .row {
+  .row {
+    @media(min-width: 1439px) {
       flex-wrap: nowrap;
     }
+    
   }
+
+  .col-heading {
+    @media (max-width: 1439px) {
+      flex: 0 0 100%;
+    }
+  }
+
+
 }
+
+
 
 .wpcf7-form {
   .wpcf7-submit {

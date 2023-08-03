@@ -269,7 +269,7 @@ h4 {
   padding-bottom: 80px; }
   .newsletter-box.newsletter-box h3 {
     line-height: 1;
-    font-size: 44px; }
+    font-size: 50px; }
   .newsletter-box.newsletter-box p,
   .newsletter-box.newsletter-box input {
     margin-bottom: 0 !important; }
@@ -278,10 +278,12 @@ h4 {
     letter-spacing: 0.2vw;
     padding-left: 1vw;
     padding-right: 1vw; }
-
-@media (min-width: 992px) {
-  .newsletter .row {
-    flex-wrap: nowrap; } }
+  @media (min-width: 1439px) {
+    .newsletter-box.newsletter-box .row {
+      flex-wrap: nowrap; } }
+  @media (max-width: 1439px) {
+    .newsletter-box.newsletter-box .col-heading {
+      flex: 0 0 100%; } }
 
 .wpcf7-form .wpcf7-submit {
   font-family: "Oswald", Sans-serif;

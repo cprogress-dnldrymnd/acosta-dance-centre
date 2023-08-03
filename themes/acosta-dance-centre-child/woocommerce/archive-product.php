@@ -147,6 +147,11 @@ if ($slug == 'workshops' || $slug == 'classes') {
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 
 }
+?>
+<div class="newsletter-box">
+	<?= do_shortcode('[contact-form-7 id="832" title="Newsletter Form"]') ?>
+</div>
+<?php
 /**
  * Hook: woocommerce_after_main_content.
  *

@@ -1994,3 +1994,14 @@ table.shop_table.shop_table {
     }
   }
 }
+
+.tax-product_cat,
+.post-type-archive-product {
+  .newsletter-box {
+    padding-bottom: 40px;
+  @media(max-width: 1439px) {
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+  }
+}

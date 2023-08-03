@@ -1367,4 +1367,13 @@ table.shop_table.shop_table {
       background-color: var(--adc-color-1);
       color: #000; }
 
+.tax-product_cat .newsletter-box,
+.post-type-archive-product .newsletter-box {
+  padding-bottom: 40px; }
+  @media (max-width: 1439px) {
+    .tax-product_cat .newsletter-box,
+    .post-type-archive-product .newsletter-box {
+      padding-top: 50px;
+      padding-bottom: 10px; } }
+
 /*# sourceMappingURL=style.css.map */

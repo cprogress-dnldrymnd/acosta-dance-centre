@@ -7,7 +7,6 @@ if ($args['type'] == 'featured_classes') {
     $ticket_date_val = get_post_meta($featured_classs['id'], '_ticket_checkin_availability_from_date', true);
     $classesx[$ticket_date_val] = $featured_classs['id'];
   }
-  sort($classesx);
 
   if (current_user_can('administrator')) {
     var_dump($classesx);

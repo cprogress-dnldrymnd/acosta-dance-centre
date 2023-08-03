@@ -31,9 +31,9 @@ else if ($args['type'] == 'related') {
         'terms'    => $terms_val
       )
     ),
-    'meta_query' => $meta_query,
-    'orderby' => 'meta_value', 
-    'order' => 'ASC'
+    'meta_query'     => $meta_query,
+    'orderby'        => 'meta_value',
+    'order'          => 'ASC'
   );
 
 

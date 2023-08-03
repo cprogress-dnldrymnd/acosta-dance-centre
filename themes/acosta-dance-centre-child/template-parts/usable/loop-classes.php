@@ -55,7 +55,15 @@ else if ($args['type'] == 'related') {
   $more_text = 'MORE ' . $heading_val;
 }
 else if ($args['type'] == 'featured_workshops') {
-  $classes = get__theme_option('featured_workshops');
+  $featured_workshops = get__theme_option('featured_workshops');
+
+  $classes = array();
+  foreach ($classes as $class) {
+    $ticket_date_val = get_post_meta($class['id'], '_ticket_checkin_availability_from_date', true);
+    $classes[$ticket_date_val] = $class['id'];
+  }
+  sort($arr);
+
 }
 else {
   $classes = get__theme_option('featured_classes');

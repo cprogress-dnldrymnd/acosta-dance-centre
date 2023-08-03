@@ -393,7 +393,8 @@ function get_member_discount($memberships, $id)
     $discounted_price = '<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . sprintf("%.2f", $product->get_price()) . '</bdi></span>';
     $discount_amount_val = ' <span>(' . $discount_amount . ')</span>';
     return $regular_price . ' ' . $discounted_price . $discount_amount_val;
-  } else {
+  }
+  else {
     return 'NONE';
   }
 
@@ -420,3 +421,22 @@ function action_woocommerce_cart_totals_custom_text()
     <?php
   }
 }*/
+
+add_action('pre_get_posts', 'action_order_by_date');
+function action_order_by_date($query)
+{
+  if (is_product_category('workshops') && $query->is_main_query()) {
+    $meta_query = [];
+
+    $meta_query[] = [
+      'key'     => 'event_date_time',
+      'value'   => date('Y/m/d'),
+      'compare' => '>=',
+      'type'    => 'DATE'
+    ];
+
+    $query->set('meta_query', $meta_query);
+    $query->set('orderby', 'meta_value');
+    $query->set('order', 'ASC');
+  }
+}

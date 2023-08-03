@@ -1,4 +1,20 @@
 <?php
+$posts = array(
+  'post_type'      => 'product',
+  'posts_per_page' => 3,
+  'tax_query'      => array(
+    array(
+      'taxonomy' => 'product_cat',
+      'field'    => 'term_id',
+      'terms'    => $terms_val
+    )
+  ),
+  'meta_query'     => $meta_query,
+  'orderby'        => 'meta_value',
+  'order'          => 'ASC'
+);
+
+
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 
@@ -24,20 +40,6 @@ else if ($args['type'] == 'related') {
     'type'    => 'DATE'
   ];
 
-  $posts = array(
-    'post_type'      => 'product',
-    'posts_per_page' => 3,
-    'tax_query'      => array(
-      array(
-        'taxonomy' => 'product_cat',
-        'field'    => 'term_id',
-        'terms'    => $terms_val
-      )
-    ),
-    'meta_query'     => $meta_query,
-    'orderby'        => 'meta_value',
-    'order'          => 'ASC'
-  );
 
 
   $heading_val = _product_category(get_the_ID(), 'CLASSES', 'WORKSHOPS');

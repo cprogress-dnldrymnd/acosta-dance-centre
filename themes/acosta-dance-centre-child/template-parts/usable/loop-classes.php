@@ -19,6 +19,8 @@ $posts = array(
 if ($args['type'] == 'featured_classes') {
   $classes = get__theme_option('featured_classes');
 
+  
+
 }
 else if ($args['type'] == 'featured_workshops') {
   $classes = get__theme_option('featured_workshops');
@@ -48,19 +50,21 @@ else if ($args['type'] == 'related') {
 
   $post_list = get_posts($posts);
 
-  $classes = array();
-
-  foreach ($post_list as $post) {
-    $classes[] = array(
-      'id' => $post->ID
-    );
-  }
 
   $heading = 'OTHER <br>' . $heading_val;
   $more_text = 'MORE ' . $heading_val;
 }
 else {
   $featured_classes = get__theme_option('featured_classes');
+}
+
+
+$classes = array();
+
+foreach ($post_list as $post) {
+  $classes[] = array(
+    'id' => $post->ID
+  );
 }
 /*
 if ($args['categ']) {

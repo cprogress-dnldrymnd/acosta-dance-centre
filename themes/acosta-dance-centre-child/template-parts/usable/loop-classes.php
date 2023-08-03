@@ -58,15 +58,22 @@ else if ($args['type'] == 'featured_workshops') {
   $featured_workshops = get__theme_option('featured_workshops');
 
   $classes = array();
-  foreach ($classes as $class) {
-    $ticket_date_val = get_post_meta($class['id'], '_ticket_checkin_availability_from_date', true);
-    $classes[$ticket_date_val] = $class['id'];
+  foreach ($featured_workshops as $featured_workshop) {
+    $ticket_date_val = get_post_meta($featured_workshop['id'], '_ticket_checkin_availability_from_date', true);
+    $classes[$ticket_date_val] = $featured_workshop['id'];
   }
   sort($arr);
 
 }
 else {
-  $classes = get__theme_option('featured_classes');
+  $featured_classes = get__theme_option('featured_classes');
+
+  $classes = array();
+  foreach ($featured_classes as $featured_classs) {
+    $ticket_date_val = get_post_meta($featured_classs['id'], '_ticket_checkin_availability_from_date', true);
+    $classes[$ticket_date_val] = $featured_classs['id'];
+  }
+  sort($arr);
 }
 /*
 if ($args['categ']) {

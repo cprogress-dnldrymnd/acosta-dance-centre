@@ -128,10 +128,21 @@ if (is_shop()) {
 	echo '</div>';
 }
 if ($slug == 'workshops' || $slug == 'classes') {
-	$args = array(
-		'type'    => 'featured_' . $slug,
-		'heading' => 'FEATURED <br>'.$slug
-	);
+
+	if ($slug == 'workshops') {
+		$args = array(
+			'type'    => 'featured_classes',
+			'heading' => 'FEATURED <br> CLASSES'
+		);
+	}
+	else if ($slug == 'classes') {
+		$args = array(
+			'type'    => 'featured_workshops',
+			'heading' => 'FEATURED <br> WORKSHOPS'
+		);
+	}
+
+
 	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
 

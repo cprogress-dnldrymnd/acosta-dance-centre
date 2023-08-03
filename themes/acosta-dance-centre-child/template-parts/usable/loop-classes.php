@@ -17,13 +17,21 @@ $posts = array(
 );
 
 if ($args['type'] == 'featured_classes') {
-  $classes = get__theme_option('featured_classes');
-
-  
-
+  $featured_classes = get__theme_option('featured_classes');
+  $featured_classes_arr = array();
+  foreach ($featured_classes as $featured_class) {
+    $featured_classes_arr[] = $featured_class['id'];
+  }
+  $posts['include'] = $featured_classes_arr;
 }
 else if ($args['type'] == 'featured_workshops') {
-  $classes = get__theme_option('featured_workshops');
+  $featured_workshops = get__theme_option('featured_workshops');
+  $featured_workshops_arr = array();
+  foreach ($featured_workshops as $featured_workshop) {
+    $featured_workshops_arr[] = $featured_workshop['id'];
+  }
+  $posts['include'] = $featured_workshops_arr;
+
 }
 else if ($args['type'] == 'related') {
 

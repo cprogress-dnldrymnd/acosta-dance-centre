@@ -1190,16 +1190,13 @@ table.shop_table.shop_table {
   width: 50px !important;
   height: 20px !important; }
 
-.term-workshops .newsletter-box,
-.term-classes .newsletter-box {
-  max-width: 75%; }
-  .term-workshops .newsletter-box .row,
-  .term-classes .newsletter-box .row {
-    flex-wrap: wrap; }
-    .term-workshops .newsletter-box .row .col-lg-3:nth-child(1),
-    .term-classes .newsletter-box .row .col-lg-3:nth-child(1) {
-      flex: 0 0 100%;
-      max-width: 100%; }
+.term-workshops .newsletter-box .row,
+.term-classes .newsletter-box .row {
+  flex-wrap: wrap; }
+  .term-workshops .newsletter-box .row .col-lg-3:nth-child(1),
+  .term-classes .newsletter-box .row .col-lg-3:nth-child(1) {
+    flex: 0 0 100%;
+    max-width: 100%; }
 
 .more-button {
   letter-spacing: 7px;
@@ -1366,5 +1363,8 @@ table.shop_table.shop_table {
     .woocommerce-notices-wrapper.woocommerce-notices-wrapper .button:hover {
       background-color: var(--adc-color-1);
       color: #000; }
+
+.tax-product_cat .newsletter-box, .post-type-archive-product .newsletter-box {
+  padding-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */

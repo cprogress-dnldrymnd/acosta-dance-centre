@@ -489,3 +489,13 @@ function bbloomer_apply_matched_coupons()
 	WC()->cart->remove_coupon('adf_student');
 	WC()->cart->remove_coupon('adf_universal_credit_recipient');
 }
+
+add_action('woocommerce_before_order_notes', 'action_woocommerce_before_order_notes');
+function action_woocommerce_before_order_notes()
+{
+
+	WC()->cart->remove_coupon('adf_disabled');
+	WC()->cart->remove_coupon('adf_student');
+	WC()->cart->remove_coupon('adf_universal_credit_recipient');
+
+}

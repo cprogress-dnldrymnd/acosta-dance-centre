@@ -463,7 +463,7 @@ function action_wp_footer()
 					} else {
 						jQuery('a[data-coupon="' + $name + '"]').click();
 					}
-          jQuery('input[name="coupon_code"]').val();
+          jQuery('input[name="coupon_code"]').val('');
 				}, 500);
 
 			});

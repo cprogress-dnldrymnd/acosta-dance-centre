@@ -460,10 +460,10 @@ function action_wp_footer()
 					if (jQuery($id).is(':checked')) {
 						jQuery('input[name="coupon_code"]').val($name);
 						jQuery('button[name="apply_coupon"]').click();
-						console.log('yes');
 					} else {
 						jQuery('a[data-coupon="' + $name + '"]').click();
 					}
+          jQuery('input[name="coupon_code"]').val();
 				}, 500);
 
 			});

@@ -478,3 +478,14 @@ function action_wp_footer()
 }
 
 add_action('wp_footer', 'action_wp_footer');
+
+
+add_action('woocommerce_before_cart', 'bbloomer_apply_matched_coupons');
+add_action('woocommerce_update_cart_action_cart_updated', 'bbloomer_apply_matched_coupons');
+
+function bbloomer_apply_matched_coupons()
+{
+	WC()->cart->remove_coupon('adf_disabled');
+	WC()->cart->remove_coupon('adf_student');
+	WC()->cart->remove_coupon('adf_universal_credit_recipient');
+}

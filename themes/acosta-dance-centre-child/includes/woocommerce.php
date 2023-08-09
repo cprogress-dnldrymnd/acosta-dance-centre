@@ -476,3 +476,5 @@ function action_wp_footer()
 	</script>
 	<?php
 }
+
+add_action('wp_footer', 'action_wp_footer');

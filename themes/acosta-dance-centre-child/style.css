@@ -1382,17 +1382,17 @@ table.shop_table.shop_table {
 .cart-discount.coupon-adc_disabled th {
   font-size: 0; }
   .cart-discount.coupon-adc_disabled th:before {
-    content: 'Disability Discount (-Â£1.00 per class)';
+    content: 'Disability Discount (-£1.00 per class)';
     font-size: 14px; }
 .cart-discount.coupon-adc_student th {
   font-size: 0; }
   .cart-discount.coupon-adc_student th:before {
-    content: 'Student Discount (-Â£1.00 per class)';
+    content: 'Student Discount (-£1.00 per class)';
     font-size: 14px; }
 .cart-discount.coupon-adc_universal_credit_recipient th {
   font-size: 0; }
   .cart-discount.coupon-adc_universal_credit_recipient th:before {
-    content: 'Universal Credit Recipient Discount (-Â£1.00 per class)';
+    content: 'Universal Credit Recipient Discount (-£1.00 per class)';
     font-size: 14px; }
 
 .thwcfd-field-checkbox label {

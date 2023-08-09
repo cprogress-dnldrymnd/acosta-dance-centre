@@ -435,3 +435,44 @@ function action_order_by_date($query)
     $query->set('order', 'ASC');
   }
 }
+
+function action_wp_footer()
+{
+	?>
+	<script>
+
+		jQuery(document).ready(function () {
+			jQuery('.thwcfd-field-checkbox').each(function (index, element) {
+				jQuery('<span class="bg"> <span class="wpcf7-spinner"></span> </span>').insertAfter(jQuery(this).find('input'));
+			});
+		});
+
+		auto_coupon('#discount_disabled', 'adc_disabled');
+		auto_coupon('#discount_student', 'adc_student');
+		auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
+
+		function auto_coupon($id, $name) {
+			jQuery($id).change(function (e) {
+				var $this = jQuery(this);
+				jQuery('.thwcfd-field-checkbox').addClass('disabled');
+				jQuery(this).next().addClass('adding-discounts');
+				setTimeout(function () {
+					if (jQuery($id).is(':checked')) {
+						jQuery('input[name="coupon_code"]').val($name);
+						jQuery('button[name="apply_coupon"]').click();
+						console.log('yes');
+					} else {
+						jQuery('a[data-coupon="' + $name + '"]').click();
+					}
+				}, 500);
+
+			});
+		}
+		jQuery('body').on('updated_checkout', function () {
+			jQuery('.thwcfd-field-checkbox').removeClass('disabled');
+			jQuery('.thwcfd-field-checkbox span.bg').removeClass('adding-discounts');
+
+		});
+	</script>
+	<?php
+}

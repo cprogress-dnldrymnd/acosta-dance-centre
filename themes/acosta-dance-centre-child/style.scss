@@ -2013,7 +2013,7 @@ table.shop_table.shop_table {
 .cart-discount {
   &.coupon-adc_disabled {
       th {
-          font-size: 0;
+          font-size: 0 !important;
 
           &:before {
               content: 'Disability Discount (-£1.00 per class)';
@@ -2024,7 +2024,7 @@ table.shop_table.shop_table {
 
   &.coupon-adc_student {
       th {
-          font-size: 0;
+          font-size: 0 !important;
 
           &:before {
               content: 'Student Discount (-£1.00 per class)';
@@ -2035,7 +2035,7 @@ table.shop_table.shop_table {
 
   &.coupon-adc_universal_credit_recipient {
       th {
-          font-size: 0;
+          font-size: 0 !important;
 
           &:before {
               content: 'Universal Credit Recipient Discount (-£1.00 per class)';

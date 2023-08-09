@@ -1380,17 +1380,17 @@ table.shop_table.shop_table {
   width: 100% !important; }
 
 .cart-discount.coupon-adc_disabled th {
-  font-size: 0; }
+  font-size: 0 !important; }
   .cart-discount.coupon-adc_disabled th:before {
     content: 'Disability Discount (-£1.00 per class)';
     font-size: 14px; }
 .cart-discount.coupon-adc_student th {
-  font-size: 0; }
+  font-size: 0 !important; }
   .cart-discount.coupon-adc_student th:before {
     content: 'Student Discount (-£1.00 per class)';
     font-size: 14px; }
 .cart-discount.coupon-adc_universal_credit_recipient th {
-  font-size: 0; }
+  font-size: 0 !important; }
   .cart-discount.coupon-adc_universal_credit_recipient th:before {
     content: 'Universal Credit Recipient Discount (-£1.00 per class)';
     font-size: 14px; }

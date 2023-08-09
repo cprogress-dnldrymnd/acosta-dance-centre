@@ -26,7 +26,7 @@ function action_woocommerce_before_shop_loop_item()
   $ticket_day_week = date('D', $dateformat);
   $ticket_month = date('M', $dateformat);
   echo ' <div class="image-holder">';
-?>
+  ?>
   <div class="meta-date">
     <div class="m-d text-uppercase text-center">
       <span class="month d-block"><?= $ticket_day_week ?></span>
@@ -37,7 +37,7 @@ function action_woocommerce_before_shop_loop_item()
       <span class="time d-block text-uppercase month"><?= $ticket_time ?></span>
     </div>
   </div>
-<?php
+  <?php
 }
 
 add_action('woocommerce_before_shop_loop_item', 'action_woocommerce_before_shop_loop_item');
@@ -45,11 +45,11 @@ add_action('woocommerce_before_shop_loop_item', 'action_woocommerce_before_shop_
 function action_woocommerce_after_shop_loop_item_title()
 {
   echo '</div>';
-?>
+  ?>
   <h3>
     <?= get_the_title() ?>
   </h3>
-<?php
+  <?php
 }
 
 add_action('woocommerce_after_shop_loop_item_title', 'action_woocommerce_after_shop_loop_item_title');
@@ -132,7 +132,7 @@ function action_woocommerce_after_single_product()
   $ticket_time = single_get_date($product->get_id(), 'time');
 
   $_product_category = _product_category(get_the_ID());
-?>
+  ?>
 
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
@@ -166,7 +166,8 @@ function action_woocommerce_after_single_product()
         <?php } ?>
         <?php do_action('woocommerce_product_additional_information', $product); ?>
       </table>
-    <?php } else { ?>
+    <?php }
+    else { ?>
       <?= get_the_excerpt() ?>
     <?php } ?>
 
@@ -176,9 +177,11 @@ function action_woocommerce_after_single_product()
         echo '<div class="button-box button-black">';
         echo ' <a href="#book-now">BOOK NOW</a>';
         echo '</div>';
-      } else if ($_product_category == 'classes') {
+      }
+      else if ($_product_category == 'classes') {
         echo ' <span>AVAILABLE TO BOOK SOON</span>';
-      } else if ($_product_category == 'memberships') {
+      }
+      else if ($_product_category == 'memberships') {
         echo ' <a href="#join-now">JOIN NOW</a>';
       }
       ?>
@@ -188,7 +191,9 @@ function action_woocommerce_after_single_product()
   <?php
   if ($_product_category != 'memberships') {
     echo do_shortcode('[membership_box]');
-  } else { ?>
+
+  }
+  else { ?>
     <div class="membership-side-buttons">
       <div class="button-box button-black mb-3">
         <a href="/category/tickets/classes/" class="w-100">FIND A DANCE CLASS</a>
@@ -198,9 +203,10 @@ function action_woocommerce_after_single_product()
       </div>
     </div>
   <?php } ?>
-<?php
+  <?php
   echo '</div>';
   echo '</div>';
+
 }
 
 
@@ -231,7 +237,7 @@ function action_single_product_after_image()
   $ticket_date = single_get_date(get_the_ID());
   $ticket_time = single_get_date(get_the_ID(), 'time');
   $_product_category = _product_category(get_the_ID());
-?>
+  ?>
   <div class="content-margin">
     <?php if ($text_after_image) { ?>
       <h2 class="doro-heading">
@@ -252,18 +258,10 @@ function action_single_product_after_image()
       <div class="book-now-wrapper text-center">
         <div class="button-group-box text-center justify-content-center " id="book-now">
           <?php
-
-          if (current_user_can('administrator')) {
-            if ($_product_category == 'workshops') {
-              echo '<div class="button-box button-black">';
-              do_action('single_add_to_cart');
-              echo '</div>';
-          } else {
-            if ($_product_category == 'workshops') {
-              echo '<div class="button-box button-black">';
-              do_action('single_add_to_cart');
-              echo '</div>';
-            }
+          if ($_product_category == 'workshops') {
+            echo '<div class="button-box button-black">';
+            do_action('single_add_to_cart');
+            echo '</div>';
           }
           ?>
 
@@ -318,7 +316,7 @@ function action_single_product_after_image()
     <?php } ?>
   </div>
 
-<?php
+  <?php
 }
 
 
@@ -344,9 +342,11 @@ function _product_category($id, $classes = 'classes', $workshops = 'workshops', 
   }
   if (in_array(79, $terms_val)) {
     return $classes;
-  } else if (in_array(78, $terms_val)) {
+  }
+  else if (in_array(78, $terms_val)) {
     return $workshops;
-  } else if (in_array(88, $terms_val)) {
+  }
+  else if (in_array(88, $terms_val)) {
     return $memberships;
   }
 }
@@ -360,9 +360,11 @@ function _product_category_id($id)
   }
   if (in_array(79, $terms_val)) {
     return 79;
-  } else if (in_array(78, $terms_val)) {
+  }
+  else if (in_array(78, $terms_val)) {
     return 78;
-  } else if (in_array(88, $terms_val)) {
+  }
+  else if (in_array(88, $terms_val)) {
     return 88;
   }
 }
@@ -391,9 +393,11 @@ function get_member_discount($memberships, $id)
     $discounted_price = '<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>' . sprintf("%.2f", $product->get_price()) . '</bdi></span>';
     $discount_amount_val = ' <span>(' . $discount_amount . ')</span>';
     return $regular_price . ' ' . $discounted_price . $discount_amount_val;
-  } else {
+  }
+  else {
     return 'NONE';
   }
+
 }
 
 

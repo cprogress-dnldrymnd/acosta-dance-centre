@@ -494,8 +494,8 @@ add_action('woocommerce_before_order_notes', 'action_woocommerce_before_order_no
 function action_woocommerce_before_order_notes()
 {
 
-	WC()->cart->remove_coupon('adf_disabled');
-	WC()->cart->remove_coupon('adf_student');
-	WC()->cart->remove_coupon('adf_universal_credit_recipient');
+	WC()->cart->remove_coupon('adc_disabled');
+	WC()->cart->remove_coupon('adc_student');
+	WC()->cart->remove_coupon('adc_universal_credit_recipient');
 
 }

@@ -1442,4 +1442,7 @@ table.shop_table.shop_table {
 .thwcfd-field-checkbox.disabled label {
   pointer-events: none; }
 
+.woocommerce img, .woocommerce-page img {
+  width: auto !important; }
+
 /*# sourceMappingURL=style.css.map */

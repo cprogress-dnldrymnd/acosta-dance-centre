@@ -1396,11 +1396,12 @@ table.shop_table.shop_table {
   width: 100%;
   padding: 10px 40px;
   border-radius: 5px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   margin-bottom: 1rem;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  text-transform: initial !important; }
   .thwcfd-field-checkbox label span.bg {
     position: absolute;
     left: 0;
@@ -1429,7 +1430,8 @@ table.shop_table.shop_table {
       background-size: 15px;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: var(--white-color); }
+      background-color: var(--white-color);
+      margin-top: 9px; }
   .thwcfd-field-checkbox label input {
     display: none !important; }
     .thwcfd-field-checkbox label input:checked + span.bg {

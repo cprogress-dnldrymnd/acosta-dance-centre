@@ -2086,3 +2086,10 @@ table.shop_table.shop_table {
 .woocommerce img, .woocommerce-page img {
   width: auto !important;
 }
+
+@media (max-width: 1199px) {
+  .woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2 {
+    max-width: 100%;
+    float: none;
+  }
+}

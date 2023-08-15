@@ -254,18 +254,9 @@ function action_single_product_after_image()
       <div class="book-now-wrapper text-center">
         <div class="button-group-box text-center justify-content-center " id="book-now">
           <?php
-          if (current_user_can('administrator')) {
-            echo '<div class="button-box button-black">';
-            do_action('single_add_to_cart');
-            echo '</div>';
-          } else {
-            if ($_product_category == 'workshops') {
-              echo '<div class="button-box button-black">';
-              do_action('single_add_to_cart');
-              echo '</div>';
-            }
-          }
-
+          echo '<div class="button-box button-black">';
+          do_action('single_add_to_cart');
+          echo '</div>';
           ?>
 
           <div class="button-box  button-bordered" id="join-now">
@@ -440,43 +431,42 @@ function action_order_by_date($query)
 
 function action_wp_footer()
 {
-	?>
-	<script>
+?>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('.thwcfd-field-checkbox').each(function(index, element) {
+        jQuery('<span class="bg"> <span class="wpcf7-spinner"></span> </span>').insertAfter(jQuery(this).find('input'));
+      });
+    });
 
-		jQuery(document).ready(function () {
-			jQuery('.thwcfd-field-checkbox').each(function (index, element) {
-				jQuery('<span class="bg"> <span class="wpcf7-spinner"></span> </span>').insertAfter(jQuery(this).find('input'));
-			});
-		});
+    auto_coupon('#discount_disabled', 'adc_disabled');
+    auto_coupon('#discount_student', 'adc_student');
+    auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
 
-		auto_coupon('#discount_disabled', 'adc_disabled');
-		auto_coupon('#discount_student', 'adc_student');
-		auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
-
-		function auto_coupon($id, $name) {
-			jQuery($id).change(function (e) {
-				var $this = jQuery(this);
-				jQuery('.thwcfd-field-checkbox').addClass('disabled');
-				jQuery(this).next().addClass('adding-discounts');
-				setTimeout(function () {
-					if (jQuery($id).is(':checked')) {
-						jQuery('input[name="coupon_code"]').val($name);
-						jQuery('button[name="apply_coupon"]').click();
-					} else {
-						jQuery('a[data-coupon="' + $name + '"]').click();
-					}
+    function auto_coupon($id, $name) {
+      jQuery($id).change(function(e) {
+        var $this = jQuery(this);
+        jQuery('.thwcfd-field-checkbox').addClass('disabled');
+        jQuery(this).next().addClass('adding-discounts');
+        setTimeout(function() {
+          if (jQuery($id).is(':checked')) {
+            jQuery('input[name="coupon_code"]').val($name);
+            jQuery('button[name="apply_coupon"]').click();
+          } else {
+            jQuery('a[data-coupon="' + $name + '"]').click();
+          }
           jQuery('input[name="coupon_code"]').val('');
-				}, 500);
+        }, 500);
 
-			});
-		}
-		jQuery('body').on('updated_checkout', function () {
-			jQuery('.thwcfd-field-checkbox').removeClass('disabled');
-			jQuery('.thwcfd-field-checkbox span.bg').removeClass('adding-discounts');
+      });
+    }
+    jQuery('body').on('updated_checkout', function() {
+      jQuery('.thwcfd-field-checkbox').removeClass('disabled');
+      jQuery('.thwcfd-field-checkbox span.bg').removeClass('adding-discounts');
 
-		});
-	</script>
-	<?php
+    });
+  </script>
+<?php
 }
 
 add_action('wp_footer', 'action_wp_footer');
@@ -487,17 +477,16 @@ add_action('woocommerce_update_cart_action_cart_updated', 'bbloomer_apply_matche
 
 function bbloomer_apply_matched_coupons()
 {
-	WC()->cart->remove_coupon('adf_disabled');
-	WC()->cart->remove_coupon('adf_student');
-	WC()->cart->remove_coupon('adf_universal_credit_recipient');
+  WC()->cart->remove_coupon('adf_disabled');
+  WC()->cart->remove_coupon('adf_student');
+  WC()->cart->remove_coupon('adf_universal_credit_recipient');
 }
 
 add_action('woocommerce_before_order_notes', 'action_woocommerce_before_order_notes');
 function action_woocommerce_before_order_notes()
 {
 
-	WC()->cart->remove_coupon('adc_disabled');
-	WC()->cart->remove_coupon('adc_student');
-	WC()->cart->remove_coupon('adc_universal_credit_recipient');
-
+  WC()->cart->remove_coupon('adc_disabled');
+  WC()->cart->remove_coupon('adc_student');
+  WC()->cart->remove_coupon('adc_universal_credit_recipient');
 }

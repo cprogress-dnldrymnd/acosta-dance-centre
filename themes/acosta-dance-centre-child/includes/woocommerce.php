@@ -177,7 +177,9 @@ function action_woocommerce_after_single_product()
         echo ' <a href="#book-now">BOOK NOW</a>';
         echo '</div>';
       } else if ($_product_category == 'classes') {
-        echo ' <span>AVAILABLE TO BOOK SOON</span>';
+        echo '<div class="button-box button-black">';
+        echo ' <a href="#book-now">BOOK NOW</a>';
+        echo '</div>';
       } else if ($_product_category == 'memberships') {
         echo ' <a href="#join-now">JOIN NOW</a>';
       }

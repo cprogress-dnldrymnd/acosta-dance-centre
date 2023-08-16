@@ -548,11 +548,11 @@ section.featured-product {
   margin-bottom: 35px;
   border-bottom: 3px solid #000; }
   .product-box-style-1 .product-box-item .title-box h3 {
-    font-size: 44px;
+    font-size: 35px;
     line-height: 1; }
     @media (max-width: 575px) {
       .product-box-style-1 .product-box-item .title-box h3 {
-        font-size: 35px; } }
+        font-size: 30px; } }
   .product-box-style-1 .product-box-item .title-box .time {
     color: #6d6d6d; }
   .product-box-style-1 .product-box-item .title-box .type {

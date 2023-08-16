@@ -1454,5 +1454,7 @@ table.shop_table.shop_table {
     max-width: 100%;
     width: 100%;
     float: none; } }
+#doro-aside #doro-main-menu > ul > li.open > a {
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

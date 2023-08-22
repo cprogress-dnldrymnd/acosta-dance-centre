@@ -1508,10 +1508,10 @@ table.shop_table.shop_table {
   margin-top: 120px;
   padding-left: 15px;
   padding-right: 15px; }
-  .cta-v2 h2.doro-heading {
+  .cta-v2 h2.main-heading {
     margin-top: -30px; }
     @media (min-width: 992px) {
-      .cta-v2 h2.doro-heading {
+      .cta-v2 h2.main-heading {
         font-size: 60px; } }
   @media (max-width: 991px) {
     .cta-v2 {

@@ -83,7 +83,7 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
 
                     <div class="inner">
                         <div class="heading-box mb-5">
-                            <h2 class="doro-heading">
+                            <h2 class="doro-heading main-heading">
                                 ACCESS </h2>
                         </div>
 

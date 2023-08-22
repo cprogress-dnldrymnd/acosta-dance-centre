@@ -162,7 +162,7 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                     </tbody>
                 </table>
                 <div class="button-box text-center button-black">
-                    <div class="button-box button-black"> <a href="#book-now">BOOK NOW</a></div>
+                    <div class="button-box button-black"> <a href="/category/tickets/classes">FIND A CLASS</a></div>
                 </div>
             </div>
             <?= do_shortcode('[membership_box]') ?>

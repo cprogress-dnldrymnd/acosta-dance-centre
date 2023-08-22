@@ -2125,4 +2125,13 @@ table.shop_table.shop_table {
       width: 40px;
     }
   }
+
+  .swiper-pagination {
+    position: static;
+    .swiper-pagination-bullet {
+      height: 4px;
+      width: 10px;
+      margin: 0;
+    }
+  }
 }

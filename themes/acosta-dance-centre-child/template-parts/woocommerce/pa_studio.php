@@ -46,31 +46,21 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
 
             </div>
             <div class="content-margin content-studio">
-            
+
                 <div class="content-box">
                     <?= wpautop($content) ?>
                 </div>
 
                 <div class="book-now-wrapper text-center">
                     <div class="button-group-box text-center justify-content-center " id="book-now">
-                        <div class="button-box button-black">
-
-                            <form class="cart" action="https://acostadancecentre.com/product/ballet-class-with-sue-trevor-3/" method="post" enctype="multipart/form-data">
-
-                                <div class="quantity">
-                                    <label class="screen-reader-text" for="quantity_64e483aee24f7">Ballet Class Roland Price quantity</label>
-                                    <input type="hidden" id="quantity_64e483aee24f7" class="input-text qty text" name="quantity" value="1" aria-label="Product quantity" size="4" min="1" max="1" step="1" placeholder="" inputmode="numeric" autocomplete="off">
-                                </div>
-
-                                <button type="submit" name="add-to-cart" value="913" class="single_add_to_cart_button alt">BOOK NOW</button>
-
-                            </form>
-
-
+                        <div class="button-box  button-black " id="join-now">
+                            <a href="/category/tickets/classes">
+                                FIND A CLASSS
+                            </a>
                         </div>
                         <div class="button-box  button-bordered" id="join-now">
-                            <a href="/memberships">
-                                MEMBERSHIPS
+                            <a href="/category/tickets/workshops">
+                                FIND A WORKSHOP
                             </a>
                         </div>
                     </div>

@@ -68,6 +68,7 @@ Container::make('term_meta', __('Studio Properties'))
   ->add_fields(
     array(
       Field::make('text', 'alt_title', __('Alt Title')),
-      Field::make('media_gallery', 'gallery', __('Gallery'))
+      Field::make('media_gallery', 'gallery', __('Gallery')),
+      Field::make('rich_text', 'content', __('Content')),
     )
   );

@@ -7,6 +7,7 @@ use Carbon_Fields\Field;
 /*-----------------------------------------------------------------------------------*/
 /* Product Category Options
 /*-----------------------------------------------------------------------------------*/
+
 Container::make('term_meta', __('Category Properties'))
   ->where('term_taxonomy', '=', 'product_cat')
   ->add_fields(
@@ -55,5 +56,18 @@ Container::make('post_meta', 'Product Options')
   ->add_fields(
     array(
       Field::make('text', 'text_after_image', 'Text After Image'),
+    )
+  );
+
+
+/*-----------------------------------------------------------------------------------*/
+/* pa_studio Options
+/*-----------------------------------------------------------------------------------*/
+Container::make('term_meta', __('Studio Properties'))
+  ->where('term_taxonomy', '=', 'pa_studio')
+  ->add_fields(
+    array(
+      Field::make('text', 'alt_title', __('Alt Title')),
+      Field::make('media_gallery', 'gallery', __('Gallery'))
     )
   );

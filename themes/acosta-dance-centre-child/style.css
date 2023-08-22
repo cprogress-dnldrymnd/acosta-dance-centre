@@ -1513,5 +1513,8 @@ table.shop_table.shop_table {
     @media (min-width: 992px) {
       .cta-v2 h2.doro-heading {
         font-size: 60px; } }
+  @media (max-width: 991px) {
+    .cta-v2 {
+      margin-top: 60px; } }
 
 /*# sourceMappingURL=style.css.map */

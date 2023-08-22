@@ -4,6 +4,10 @@ $name = get_queried_object()->name;
 $alt_title = get__term_meta(get_queried_object()->term_id, 'alt_title');
 $content = get__term_meta(get_queried_object()->term_id, 'content');
 $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
+$studio = get__term_meta(get_queried_object()->term_id, 'studio');
+$size = get__term_meta(get_queried_object()->term_id, 'size');
+$capacity = get__term_meta(get_queried_object()->term_id, 'capacity');
+$location = get__term_meta(get_queried_object()->term_id, 'location');
 ?>
 
 <nav class="woocommerce-breadcrumb">
@@ -89,33 +93,39 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
                 <h3 class="doro-heading">DETAILS</h3>
                 <table class="table">
                     <tbody>
-                        <tr>
-                            <th>STUDIO</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
+                        <?php if ($studio) { ?>
+                            <tr>
+                                <th>STUDIO</th>
+                            </tr>
+                            <tr>
+                                <td><?= $studio ?></td>
+                            </tr>
+                        <?php } ?>
 
-                        <tr>
-                            <th>SIZE</th>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                        </tr>
-
-                        <tr>
-                            <th>CAPACITY</th>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                        </tr>
-
-                        <tr>
-                            <th>LOCATION</th>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                        </tr>
+                        <?php if ($size) { ?>
+                            <tr>
+                                <th>SIZE</th>
+                            </tr>
+                            <tr>
+                                <td><?= $size ?></td>
+                            </tr>
+                        <?php } ?>
+                        <?php if ($capacity) { ?>
+                            <tr>
+                                <th>CAPACITY</th>
+                            </tr>
+                            <tr>
+                                <td><?= $capacity ?></td>
+                            </tr>
+                        <?php } ?>
+                        <?php if ($location) { ?>
+                            <tr>
+                                <th>LOCATION</th>
+                            </tr>
+                            <tr>
+                                <td><?= $location ?></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
                 <div class="button-box text-center button-black">

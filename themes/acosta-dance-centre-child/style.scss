@@ -2103,6 +2103,8 @@ table.shop_table.shop_table {
 }
 .studio-gallery {
   h1 {
+    position: relative;
+    z-index: 2;
     @media (min-width: 992px) {
       font-size: 80px;
     }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying products in a product attribute. Simply includes the archive template
  *
@@ -15,11 +16,13 @@
  * @version     7.3.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 $taxonomy = get_queried_object()->taxonomy;
 echo $taxonomy;
-//wc_get_template( 'archive-product.php' );
-
-
+if ($pa_studio == 'pa_studio') {
+	get_template_part('pa_studio');
+} else {
+	wc_get_template('archive-product.php');
+}

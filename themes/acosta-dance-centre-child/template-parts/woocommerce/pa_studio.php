@@ -89,7 +89,7 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
 
                         <div class="row align-items-center">
                             <div class="col-lg-5">
-                                <div class="image-box mb-3">
+                                <div class="image-box mb-3 mb-lg-0">
                                     <img src="https://acostadancecentre.com/wp-content/uploads/2023/08/acosta-img.png" alt="">
                                 </div>
                             </div>

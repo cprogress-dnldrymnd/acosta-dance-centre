@@ -125,3 +125,13 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
 <?php
 get_footer();
 ?>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiperGallery", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>

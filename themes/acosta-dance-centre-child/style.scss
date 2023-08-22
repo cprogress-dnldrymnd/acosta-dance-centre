@@ -2101,41 +2101,43 @@ table.shop_table.shop_table {
   font-size: 20px;
   color: #b98c43;
 }
+.studio-gallery {
+  .mySwiperGallery {
+    margin-top: -60px;
+    .swiper-slide {
+      padding: 28%;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      &::after {
+        content: none;
+      }
+      width: auto !important;
+      height: auto !important;
+      svg {
+        color: var(--black-color);
+        width: 40px;
+      }
+    }
 
-.mySwiperGallery {
-  .swiper-slide {
-    padding: 28%;
-    img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100% !important;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    &::after {
-      content: none;
-    }
-    width: auto !important;
-    height: auto !important;
-    svg {
-      color: var(--black-color);
-      width: 40px;
-    }
-  }
-
-  .swiper-pagination {
-    position: static;
-    .swiper-pagination-bullet {
-      height: 4px;
-      width: 30px;
-      margin: 0;
-      border-radius: 0;
-      &.swiper-pagination-bullet-active {
-        background-color: var(--black-color);
+    .swiper-pagination {
+      position: static;
+      .swiper-pagination-bullet {
+        height: 4px;
+        width: 30px;
+        margin: 0;
+        border-radius: 0;
+        &.swiper-pagination-bullet-active {
+          background-color: var(--black-color);
+        }
       }
     }
   }

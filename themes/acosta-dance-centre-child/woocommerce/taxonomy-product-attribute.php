@@ -20,4 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $slug = get_queried_object()->slug;
 echo $slug;
-wc_get_template( 'archive-product.php' );
+//wc_get_template( 'archive-product.php' );

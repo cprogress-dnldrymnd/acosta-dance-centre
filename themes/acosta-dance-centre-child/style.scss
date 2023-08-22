@@ -2139,3 +2139,11 @@ table.shop_table.shop_table {
     }
   }
 }
+
+.content-margin {
+  @media(min-width: 992px) {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}

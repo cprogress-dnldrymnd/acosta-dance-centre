@@ -1485,4 +1485,8 @@ table.shop_table.shop_table {
     .mySwiperGallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background-color: var(--black-color); }
 
+@media (min-width: 992px) {
+  .content-margin h2 {
+    font-size: 60px; } }
+
 /*# sourceMappingURL=style.css.map */

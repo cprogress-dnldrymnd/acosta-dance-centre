@@ -1508,5 +1508,10 @@ table.shop_table.shop_table {
   margin-top: 60px;
   padding-left: 15px;
   padding-right: 15px; }
+  .cta-v2 h2.doro-heading {
+    margin-top: -30px; }
+    @media (min-width: 992px) {
+      .cta-v2 h2.doro-heading {
+        font-size: 60px; } }
 
 /*# sourceMappingURL=style.css.map */

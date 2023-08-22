@@ -2164,4 +2164,10 @@ table.shop_table.shop_table {
   margin-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  h2.doro-heading {
+    margin-top: -30px;
+    @media (min-width: 992px) {
+      font-size: 60px;
+    }
+  }
 }

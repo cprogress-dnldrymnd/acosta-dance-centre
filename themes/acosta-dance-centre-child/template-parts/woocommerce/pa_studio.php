@@ -79,22 +79,49 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                     </div>
                 </div>
 
+                <section class="featured-product background-light-red d-flex">
 
-                <div class="classes md-padding">
-                    <div class="more-button text-right d-none d-lg-block">
-                        <a class="d-inline-flex align-items-center" href="https://acostadancecentre.com/category/tickets/classes/">
-                            <span class="text mr-3">MORE CLASSES</span>
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="54.446" height="25.242" viewBox="0 0 54.446 25.242">
-                                    <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1.5 2.121)">
-                                        <path id="Path_116" data-name="Path 116" d="M7.5,18H58.946" transform="translate(-7.5 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-                                        <path id="Path_117" data-name="Path 117" d="M18,7.5,28.5,18,18,28.5" transform="translate(22.946 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
+                    <div class="inner">
+                        <div class="heading-box mb-5">
+                            <h2 class="doro-heading">
+                                ACCESS </h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="image-box">
+                                    <img src="https://acostadancecentre.com/wp-content/uploads/2023/08/acosta-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="sec-title text-left">
+                                    <span class="heading-meta">ACCESS REQUESTS</span>
+                                    <h2 class="doro-heading">GET IN TOUCH</h2>
+                                </div>
+                                <div class="description-box">
+                                    <p>
+                                        If you have any access requests or specific needs for your visit to the Acosta Dance Centre, please don’t hesitate to reach out to us. We would love to hear from you and ensure your visit is as enjoyable and accommodating as possible.
+                                    </p>
+                                </div>
+
+                                <div class="book-now-wrapper text-center">
+                                    <div class="button-group-box text-center justify-content-center " id="book-now">
+                                        <div class="button-box  button-black " id="join-now">
+                                            <a href="/contact">
+                                                GET IN TOUCH
+                                            </a>
+                                        </div>
+                                        <div class="button-box  button-bordered" id="join-now">
+                                            <a href="#">
+                                                ACCESSIBLE PARKING
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
         <div class="col-xl-4">

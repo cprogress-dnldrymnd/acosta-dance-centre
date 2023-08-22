@@ -20,7 +20,6 @@ if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 $taxonomy = get_queried_object()->taxonomy;
-echo $taxonomy;
 if ($taxonomy == 'pa_studio') {
 	get_template_part('template-parts/woocommerce/pa_studio');
 } else {

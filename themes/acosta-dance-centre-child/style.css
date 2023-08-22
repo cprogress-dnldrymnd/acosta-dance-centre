@@ -1473,6 +1473,7 @@ table.shop_table.shop_table {
   .mySwiperGallery .swiper-button-next::after, .mySwiperGallery .swiper-button-prev::after {
     content: none; }
   .mySwiperGallery .swiper-button-next svg, .mySwiperGallery .swiper-button-prev svg {
-    width: 26px; }
+    color: var(--black-color);
+    width: 40px; }
 
 /*# sourceMappingURL=style.css.map */

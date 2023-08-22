@@ -107,7 +107,7 @@ h4 {
   font-size: 16px !important;
   line-height: 1.2 !important;
   display: inline-block;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--black-color) !important;
@@ -154,7 +154,7 @@ h4 {
   font-size: 16px !important;
   line-height: 1.2 !important;
   display: inline-block;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase; }
   @media (max-width: 991px) {

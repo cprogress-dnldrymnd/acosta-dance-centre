@@ -137,6 +137,7 @@ get_footer();
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiperGallery", {
+        loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

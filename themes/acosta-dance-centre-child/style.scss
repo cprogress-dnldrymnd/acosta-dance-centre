@@ -2130,9 +2130,12 @@ table.shop_table.shop_table {
     position: static;
     .swiper-pagination-bullet {
       height: 4px;
-      width: 10px;
+      width: 30px;
       margin: 0;
       border-radius: 0;
+      &.swiper-pagination-bullet-active {
+        background-color: var(--black-color);
+      }
     }
   }
 }

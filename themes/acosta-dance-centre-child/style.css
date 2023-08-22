@@ -1479,8 +1479,10 @@ table.shop_table.shop_table {
   position: static; }
   .mySwiperGallery .swiper-pagination .swiper-pagination-bullet {
     height: 4px;
-    width: 10px;
+    width: 30px;
     margin: 0;
     border-radius: 0; }
+    .mySwiperGallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: var(--black-color); }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,6 +26,15 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
         <div class="col-xl-8">
             <div class="studio-gallery">
                 <!-- Swiper -->
+                <h1>
+                    <?php
+                    if ($alt_title) {
+                        echo $alt_title;
+                    } else {
+                        woocommerce_page_title();
+                    }
+                    ?>
+                </h1>
                 <div class="swiper mySwiperGallery">
                     <div class="swiper-wrapper">
                         <?php foreach ($gallery as $g) { ?>

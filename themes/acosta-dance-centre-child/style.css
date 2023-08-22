@@ -1458,9 +1458,12 @@ table.shop_table.shop_table {
   font-size: 20px;
   color: #b98c43; }
 
-@media (min-width: 992px) {
-  .studio-gallery h1 {
-    font-size: 80px; } }
+.studio-gallery h1 {
+  position: relative;
+  z-index: 2; }
+  @media (min-width: 992px) {
+    .studio-gallery h1 {
+      font-size: 80px; } }
 .studio-gallery .mySwiperGallery {
   margin-top: -60px; }
   .studio-gallery .mySwiperGallery .swiper-slide {

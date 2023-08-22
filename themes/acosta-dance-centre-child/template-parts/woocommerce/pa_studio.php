@@ -46,9 +46,7 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
 
             </div>
             <div class="content-margin content-studio">
-                <?php
-                var_dump($gallery);
-                ?>
+            
                 <div class="content-box">
                     <?= wpautop($content) ?>
                 </div>

@@ -3,6 +3,7 @@ get_header();
 $name = get_queried_object()->name;
 $alt_title = get__term_meta(get_queried_object()->term_id, 'alt_title');
 $content = get__term_meta(get_queried_object()->term_id, 'content');
+$gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
 ?>
 
 <nav class="woocommerce-breadcrumb">
@@ -23,7 +24,9 @@ $content = get__term_meta(get_queried_object()->term_id, 'content');
 
             </div>
             <div class="content-margin">
-
+                <?php
+                var_dump($gallery);
+                ?>
                 <div class="content-box">
                     <?= wpautop($content) ?>
                 </div>

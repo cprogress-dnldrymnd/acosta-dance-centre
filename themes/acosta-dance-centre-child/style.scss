@@ -2104,17 +2104,17 @@ table.shop_table.shop_table {
 
 .mySwiperGallery {
   .swiper-slide {
-    padding: 40%;
+    padding: 30%;
     img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
+      width: 100% !important;
       height: 100%;
       object-fit: cover;
     }
   }
   .swiper-button-next, .swiper-button-prev {
-    
+
   }
 }

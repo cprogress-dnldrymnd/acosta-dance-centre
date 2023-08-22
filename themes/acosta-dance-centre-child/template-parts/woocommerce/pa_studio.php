@@ -21,8 +21,6 @@ $content = get__term_meta(get_queried_object()->term_id, 'content');
         <div class="col-xl-8">
             <div class="studio-gallery">
                 <div class="content-margin">
-                    <div class="date-box text-uppercase">
-                        04 Sep 2023, 12:00 pm </div>
 
                     <div class="content-box">
                         <?= wpautop($content) ?>

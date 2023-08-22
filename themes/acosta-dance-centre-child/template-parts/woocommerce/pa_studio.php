@@ -104,12 +104,12 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                                     </p>
                                 </div>
                                 <div class="d-flex text-center justify-content-center" >
-                                    <div class="button-box  button-black ">
+                                    <div class="button-box  button-black mb-1">
                                         <a href="/contact">
                                             GET IN TOUCH
                                         </a>
                                     </div>
-                                    <div class="button-box  button-bordered"">
+                                    <div class="button-box  button-bordered mb-1">
                                         <a href="#">
                                             ACCESSIBLE PARKING
                                         </a>

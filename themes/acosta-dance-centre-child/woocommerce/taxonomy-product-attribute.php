@@ -18,8 +18,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-$slug = get_queried_object()->slug;
-echo $slug;
+$taxonomy = get_queried_object()->taxonomy;
+echo $taxonomy;
 //wc_get_template( 'archive-product.php' );
 
 

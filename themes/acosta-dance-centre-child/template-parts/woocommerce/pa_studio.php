@@ -21,6 +21,18 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
     <div class="row">
         <div class="col-xl-8">
             <div class="studio-gallery">
+                <!-- Swiper -->
+                <div class="swiper mySwiperGallery">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($gallery as $g) { ?>
+                            <div class="swiper-slide">
+                                <img src="<?= wp_get_attachment_image_url($g, 'large') ?>">
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
 
             </div>
             <div class="content-margin">

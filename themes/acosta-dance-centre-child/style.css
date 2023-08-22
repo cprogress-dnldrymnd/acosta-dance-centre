@@ -1512,7 +1512,7 @@ table.shop_table.shop_table {
     margin-top: -30px; }
     @media (min-width: 992px) {
       .cta-v2 h2.main-heading {
-        font-size: 60px; } }
+        font-size: 80px; } }
   @media (max-width: 991px) {
     .cta-v2 {
       margin-top: 60px; } }

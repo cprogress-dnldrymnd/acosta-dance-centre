@@ -103,8 +103,8 @@ h4 {
 #place_order {
   font-family: "Oswald", sans-serif !important;
   font-weight: bold !important;
-  padding: 30px 40px 30px 40px !important;
-  font-size: 20px !important;
+  padding: 20px 30px 20px 30px !important;
+  font-size: 16px !important;
   line-height: 1.2 !important;
   display: inline-block;
   letter-spacing: 7px;
@@ -150,8 +150,8 @@ h4 {
 .button-box .single_add_to_cart_button {
   font-family: "Oswald", sans-serif !important;
   font-weight: bold !important;
-  padding: 30px 40px 30px 40px !important;
-  font-size: 20px !important;
+  padding: 20px 30px 20px 30px !important;
+  font-size: 16px !important;
   line-height: 1.2 !important;
   display: inline-block;
   letter-spacing: 7px;

@@ -1458,4 +1458,14 @@ table.shop_table.shop_table {
   font-size: 20px;
   color: #b98c43; }
 
+.mySwiperGallery .swiper-slide {
+  padding: 40%; }
+  .mySwiperGallery .swiper-slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 /*# sourceMappingURL=style.css.map */

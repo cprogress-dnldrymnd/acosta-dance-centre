@@ -103,13 +103,13 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                                         If you have any access requests or specific needs for your visit to the Acosta Dance Centre, please don’t hesitate to reach out to us. We would love to hear from you and ensure your visit is as enjoyable and accommodating as possible.
                                     </p>
                                 </div>
-                                <div class="button-group-box text-center justify-content-center" >
-                                    <div class="button-box  button-black " id="join-now">
+                                <div class="d-flex text-center justify-content-center" >
+                                    <div class="button-box  button-black ">
                                         <a href="/contact">
                                             GET IN TOUCH
                                         </a>
                                     </div>
-                                    <div class="button-box  button-bordered" id="join-now">
+                                    <div class="button-box  button-bordered"">
                                         <a href="#">
                                             ACCESSIBLE PARKING
                                         </a>

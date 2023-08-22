@@ -88,12 +88,12 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="image-box">
                                     <img src="https://acostadancecentre.com/wp-content/uploads/2023/08/acosta-img.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-7">
                                 <div class="sec-title text-left">
                                     <span class="heading-meta">ACCESS REQUESTS</span>
                                     <h2 class="doro-heading">GET IN TOUCH</h2>

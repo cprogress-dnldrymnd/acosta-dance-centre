@@ -21,8 +21,8 @@ if (!defined('ABSPATH')) {
 }
 $taxonomy = get_queried_object()->taxonomy;
 echo $taxonomy;
-if ($pa_studio == 'pa_studio') {
-	get_template_part('pa_studio');
+if ($taxonomy == 'pa_studio') {
+	get_template_part('template-parts/woocommerce/pa_studio');
 } else {
 	wc_get_template('archive-product.php');
 }

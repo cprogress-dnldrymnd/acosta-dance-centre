@@ -90,24 +90,31 @@ $gallery = get__term_meta(get_queried_object()->term_id, 'gallery');
                 <table class="table">
                     <tbody>
                         <tr>
-                            <th>PRICE</th>
+                            <th>STUDIO</th>
                         </tr>
                         <tr>
-                            <td><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>10.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>8.00</bdi></span></ins></td>
-                        </tr>
-
-                        <tr>
-                            <th>DATE</th>
-                        </tr>
-                        <tr>
-                            <td>04 Sep 2023 </td>
+                            <td></td>
                         </tr>
 
                         <tr>
-                            <th>TIME</th>
+                            <th>SIZE</th>
                         </tr>
                         <tr>
-                            <td>12:00 pm </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <th>CAPACITY</th>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <th>LOCATION</th>
+                        </tr>
+                        <tr>
+                            <td> </td>
                         </tr>
                     </tbody>
                 </table>

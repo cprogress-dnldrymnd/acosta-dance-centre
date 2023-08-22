@@ -79,7 +79,7 @@ $location = get__term_meta(get_queried_object()->term_id, 'location');
                     </div>
                 </div>
 
-                <section class="featured-product background-light-red d-flex">
+                <section class="cta-v2 background-light-red d-flex">
 
                     <div class="inner">
                         <div class="heading-box mb-5">

@@ -136,7 +136,7 @@ function action_woocommerce_after_single_product()
 
   <div class="details-box position-relative">
     <h3 class="doro-heading">DETAILS</h3>
-    <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>
+    <?php if ($_product_category != 'memberships') { ?>
       <table class="table">
         <?php if ($product->get_price_html()) { ?>
           <tr>
@@ -147,7 +147,7 @@ function action_woocommerce_after_single_product()
           </tr>
         <?php } ?>
 
-        <?php if ($ticket_date) { ?>
+        <?php if ($ticket_date && $_product_category != 'others') { ?>
           <tr>
             <th>DATE</th>
           </tr>
@@ -156,7 +156,7 @@ function action_woocommerce_after_single_product()
           </tr>
         <?php } ?>
 
-        <?php if ($ticket_time) { ?>
+        <?php if ($ticket_time && $_product_category != 'others') { ?>
           <tr>
             <th>TIME</th>
           </tr>

@@ -2244,6 +2244,7 @@ table.shop_table.shop_table {
 #product-sidebar-inner {
   @media(max-width: 1199px) {
     display: flex;
+    flex-wrap: wrap;
     .details-box, .membership-box {
       max-width: 100%;
     }

@@ -2198,6 +2198,7 @@ table.shop_table.shop_table {
           &:before {
             content: "ADD TO CART";
             font-size: 1rem ;
+            display: block;
           }
         }
         .variations {

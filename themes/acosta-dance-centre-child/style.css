@@ -1525,6 +1525,8 @@ table.shop_table.shop_table {
   width: 100%; }
   .product-type-pw-gift-card + div #book-now .variations_form {
     flex-direction: column !important; }
+    .product-type-pw-gift-card + div #book-now .variations_form #pwgc-purchase-container .pwgc-label {
+      text-align: left; }
     .product-type-pw-gift-card + div #book-now .variations_form .single_add_to_cart_button {
       font-size: 0 !important;
       text-align: center !important; }

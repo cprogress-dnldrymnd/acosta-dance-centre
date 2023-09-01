@@ -76,6 +76,17 @@ function action_widgets_init()
 			'after_title'   => '</h5>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => 'Footer After Columns',
+			'id'            => 'footer_after_columns',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
 }
 add_action('widgets_init', 'action_widgets_init');
 

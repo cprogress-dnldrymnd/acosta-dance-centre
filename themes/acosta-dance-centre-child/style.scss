@@ -2245,6 +2245,7 @@ table.shop_table.shop_table {
   @media(max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
     .details-box, .membership-box {
       max-width: 100%;
     }

@@ -2189,6 +2189,7 @@ table.shop_table.shop_table {
         flex-direction: column !important;
         .single_add_to_cart_button {
           font-size: 0 !important;
+          text-align: center !important;
           &:before {
             content: "ADD TO CART";
             font-size: 1rem ;

@@ -79,11 +79,11 @@
               </div>
             <?php } ?>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items">
           <div class="col-md-6">
             <?php dynamic_sidebar('footer_after_columns_left') ?>
           </div>
-          <div class="col-md-6 d-flex align-items-center row-after-column">
+          <div class="col-md-6 d-flex align-items-center row-after-column justify-content-end">
             <?php dynamic_sidebar('footer_after_columns_right') ?>
           </div>
         </div>

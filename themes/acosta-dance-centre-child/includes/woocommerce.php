@@ -215,7 +215,7 @@ function action_woocommerce_before_single_product()
 {
   echo '<div class="product-inner">';
   echo '<div class="row">';
-  echo '<div class="col-xl-8">';
+  echo '<div class="col-xl-8" id="product-details">';
 }
 
 add_action('woocommerce_before_single_product', 'action_woocommerce_before_single_product');

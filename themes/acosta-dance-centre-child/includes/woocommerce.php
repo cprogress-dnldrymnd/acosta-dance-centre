@@ -258,12 +258,14 @@ function action_single_product_after_image()
           do_action('single_add_to_cart');
           echo '</div>';
           ?>
+          <?php if ($_product_category != 'others') { ?>
 
-          <div class="button-box  button-bordered" id="join-now">
-            <a href="/memberships">
-              MEMBERSHIPS
-            </a>
-          </div>
+            <div class="button-box  button-bordered" id="join-now">
+              <a href="/memberships">
+                MEMBERSHIPS
+              </a>
+            </div>
+          <?php } ?>
         </div>
       </div>
     <?php } ?>

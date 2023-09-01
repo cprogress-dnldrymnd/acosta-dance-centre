@@ -2240,3 +2240,12 @@ table.shop_table.shop_table {
     max-height: 50px;
   }
 }
+
+#product-sidebar-inner {
+  @media(max-width: 1199px) {
+    display: flex;
+    .details-box, .membership-box {
+      max-width: 100%;
+    }
+  }
+}

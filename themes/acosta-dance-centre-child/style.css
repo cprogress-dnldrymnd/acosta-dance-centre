@@ -1557,4 +1557,10 @@ table.shop_table.shop_table {
 .row-after-columns img {
   max-height: 50px; }
 
+@media (max-width: 1199px) {
+  #product-sidebar-inner {
+    display: flex; }
+    #product-sidebar-inner .details-box, #product-sidebar-inner .membership-box {
+      max-width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -125,7 +125,7 @@
 
   function single_product_layout() {
     if(window.innerWidth > 1199) {
-      
+      jQuery('#product-sidebar-inner').appendTo('#product-sidebar-holder');
     } else {
       jQuery('#product-sidebar-inner').insertAfter('#product-details .product-summary');
     }

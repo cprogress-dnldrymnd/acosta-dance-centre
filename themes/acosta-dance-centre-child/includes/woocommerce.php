@@ -240,7 +240,7 @@ function action_single_product_after_image()
         <?= $text_after_image ?>
       </h2>
     <?php } ?>
-    <?php if ($_product_category != 'memberships') { ?>
+    <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>
       <div class="date-box text-uppercase">
         <?= $ticket_date . ',  ' . $ticket_time ?>
       </div>

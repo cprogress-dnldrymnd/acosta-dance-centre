@@ -2182,10 +2182,12 @@ table.shop_table.shop_table {
 }
 
 .product-type-pw-gift-card {
-  #book-now {
-    width: 100%;
-    .variations_form {
-      flex-direction: column !important;
+  & + div {
+    #book-now {
+      width: 100%;
+      .variations_form {
+        flex-direction: column !important;
+      }
     }
   }
 }

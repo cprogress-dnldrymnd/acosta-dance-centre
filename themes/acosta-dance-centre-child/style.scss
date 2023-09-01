@@ -2232,7 +2232,7 @@ table.shop_table.shop_table {
         margin-right: 1rem;
       }
     }
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
       justify-content: center !important;
     }
   }
@@ -2242,12 +2242,19 @@ table.shop_table.shop_table {
 }
 
 #product-sidebar-inner {
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    .details-box, .membership-box {
+  }
+
+  .details-box,
+  .membership-box {
+    @media (max-width: 1199px) {
       max-width: 100%;
+    }
+    @media (max-width: 991px) {
+      width: 100%;
     }
   }
 }

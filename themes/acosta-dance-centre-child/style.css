@@ -1561,8 +1561,14 @@ table.shop_table.shop_table {
   #product-sidebar-inner {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px; }
-    #product-sidebar-inner .details-box, #product-sidebar-inner .membership-box {
-      max-width: 100%; } }
+    margin-bottom: 40px; } }
+@media (max-width: 1199px) {
+  #product-sidebar-inner .details-box,
+  #product-sidebar-inner .membership-box {
+    max-width: 100%; } }
+@media (max-width: 991px) {
+  #product-sidebar-inner .details-box,
+  #product-sidebar-inner .membership-box {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

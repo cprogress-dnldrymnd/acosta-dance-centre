@@ -125,7 +125,7 @@
 
   function single_product_layout() {
     if(window.innerWidth > 1199) {
-      console.log('sssss');
+      
     } else {
       console.log('xxx');
     }

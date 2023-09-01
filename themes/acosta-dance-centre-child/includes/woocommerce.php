@@ -127,7 +127,8 @@ function action_woocommerce_after_single_product()
   global $product;
   do_action('single_product_after_image');
   echo '</div>';
-  echo ' <div class="col-xl-4">';
+  echo ' <div class="col-xl-4" id="product-sidebar-holder">';
+  echo ' <div id="product-sidebar-inner">';
   $ticket_date = single_get_date($product->get_id());
   $ticket_time = single_get_date($product->get_id(), 'time');
 
@@ -201,6 +202,7 @@ function action_woocommerce_after_single_product()
     </div>
   <?php } ?>
 <?php
+  echo '</div>';
   echo '</div>';
   echo '</div>';
 }

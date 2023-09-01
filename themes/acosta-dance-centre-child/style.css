@@ -1545,4 +1545,7 @@ table.shop_table.shop_table {
     .product-type-pw-gift-card + div #book-now .variations_form .variations {
       margin-bottom: 1rem; }
 
+.row-after-column > div:not(:last-child) {
+  margin-right: 1rem; }
+
 /*# sourceMappingURL=style.css.map */

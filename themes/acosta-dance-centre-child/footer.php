@@ -79,7 +79,7 @@
               </div>
             <?php } ?>
         </div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
             <?php dynamic_sidebar('footer_after_columns_left') ?>
           </div>

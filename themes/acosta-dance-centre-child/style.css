@@ -1523,7 +1523,7 @@ table.shop_table.shop_table {
 
 .product-type-pw-gift-card #book-now {
   width: 100%; }
-.product-type-pw-gift-card .variations_form {
-  flex-direction: column !important; }
+  .product-type-pw-gift-card #book-now .variations_form {
+    flex-direction: column !important; }
 
 /*# sourceMappingURL=style.css.map */

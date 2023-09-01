@@ -83,7 +83,7 @@
           <div class="col-md-6">
             <?php dynamic_sidebar('footer_after_columns_left') ?>
           </div>
-          <div class="col-md-6 d-flex align-items-center row-after-column justify-content-end">
+          <div class="col-md-6 d-flex align-items-center row-after-column-right justify-content-end">
             <?php dynamic_sidebar('footer_after_columns_right') ?>
           </div>
         </div>

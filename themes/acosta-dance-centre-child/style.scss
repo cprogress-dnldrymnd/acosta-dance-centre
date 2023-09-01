@@ -2189,6 +2189,12 @@ table.shop_table.shop_table {
         flex-direction: column !important;
         .variations {
           margin-bottom: 1rem;
+          .single_add_to_cart_button {
+            font-size: 0;
+            &:before {
+              content: 'ADD TO CART';
+            }
+          }
         }
       }
     }

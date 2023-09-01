@@ -80,8 +80,11 @@
             <?php } ?>
         </div>
         <div class="row">
-          <div class="col-12">
-            <?php dynamic_sidebar('footer_after_columns') ?>
+          <div class="col-md-6">
+            <?php dynamic_sidebar('footer_after_columns_left') ?>
+          </div>
+          <div class="col-md-6">
+            <?php dynamic_sidebar('footer_after_columns_right') ?>
           </div>
         </div>
         <?php if (Doro_AfterSetupTheme::return_thme_option('footer-copyright') != 'no') { ?>

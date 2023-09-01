@@ -303,8 +303,8 @@ function action_single_product_after_image()
       </div>
     <?php } ?>
 
-    <?php if ($_product_category != 'memberships' && $_product_category != 'gift-card') { ?>
-      <div class="classes md-padding <?= $_product_category ?>">
+    <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>
+      <div class="classes md-padding ">
         <?= do_shortcode('[adc_classes type="related"]') ?>
       </div>
     <?php } ?>
@@ -340,6 +340,8 @@ function _product_category($id, $classes = 'classes', $workshops = 'workshops', 
     return $workshops;
   } else if (in_array(88, $terms_val)) {
     return $memberships;
+  } else {
+    return 'others';
   }
 }
 

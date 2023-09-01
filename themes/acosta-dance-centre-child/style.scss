@@ -2187,20 +2187,28 @@ table.shop_table.shop_table {
       width: 100%;
       .button-box {
         width: 100%;
+        .single_variation_wrap {
+          width: 100%;
+          max-width: 500px;
+          .woocommerce-variation-add-to-cart {
+            text-align: left;
+          }
+        }
       }
       .variations_form {
+        flex-direction: column !important;
+        align-items: flex-start;
         #pwgc-purchase-container {
           .pwgc-label {
             text-align: left;
           }
         }
-        flex-direction: column !important;
         .single_add_to_cart_button {
           font-size: 0 !important;
           text-align: center !important;
           &:before {
             content: "ADD TO CART";
-            font-size: 1rem ;
+            font-size: 1rem;
             display: block;
           }
         }

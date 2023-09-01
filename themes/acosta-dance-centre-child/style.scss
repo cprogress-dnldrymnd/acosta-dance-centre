@@ -2219,3 +2219,11 @@ table.shop_table.shop_table {
     }
   }
 }
+
+.row-after-column {
+  > div {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

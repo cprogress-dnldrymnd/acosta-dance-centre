@@ -47,45 +47,50 @@
                 <?php dynamic_sidebar('footer_column_1') ?>
               </div>
             <?php } ?>
+            </div>
+            <?php if (is_active_sidebar('footer_column_2')) { ?>
+
+              <div class="col footer-column-2">
+                <div class="column-holder">
+                  <?php dynamic_sidebar('footer_column_2') ?>
+                </div>
+              </div>
+            <?php } ?>
+
+            <?php if (is_active_sidebar('footer_column_3')) { ?>
+              <div class="col footer-column-3">
+                <div class="column-holder">
+                  <?php dynamic_sidebar('footer_column_3') ?>
+                </div>
+              </div>
+            <?php } ?>
+            <?php if (is_active_sidebar('footer_column_4')) { ?>
+              <div class="col footer-column-4">
+                <div class="column-holder">
+                  <?php dynamic_sidebar('footer_column_4') ?>
+                </div>
+              </div>
+            <?php } ?>
+            <?php if (is_active_sidebar('footer_column_5')) { ?>
+              <div class="col footer-column-5">
+                <div class="column-holder ">
+                  <?php dynamic_sidebar('footer_column_5') ?>
+                </div>
+              </div>
+            <?php } ?>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <?php dynamic_sidebar('footer_after_columns') ?>
           </div>
-          <?php if (is_active_sidebar('footer_column_2')) { ?>
-
-            <div class="col footer-column-2">
-              <div class="column-holder">
-                <?php dynamic_sidebar('footer_column_2') ?>
-              </div>
-            </div>
-          <?php } ?>
-
-          <?php if (is_active_sidebar('footer_column_3')) { ?>
-            <div class="col footer-column-3">
-              <div class="column-holder">
-                <?php dynamic_sidebar('footer_column_3') ?>
-              </div>
-            </div>
-          <?php } ?>
-          <?php if (is_active_sidebar('footer_column_4')) { ?>
-            <div class="col footer-column-4">
-              <div class="column-holder">
-                <?php dynamic_sidebar('footer_column_4') ?>
-              </div>
-            </div>
-          <?php } ?>
-          <?php if (is_active_sidebar('footer_column_5')) { ?>
-            <div class="col footer-column-5">
-              <div class="column-holder ">
-                <?php dynamic_sidebar('footer_column_5') ?>
-              </div>
-            </div>
-          <?php } ?>
         </div>
         <?php if (Doro_AfterSetupTheme::return_thme_option('footer-copyright') != 'no') { ?>
           <div class="row">
             <div class="copyright col-12">
               <div class="doro-lead">
-                <?php if (!empty($doro_options['copyright'])): ?>
+                <?php if (!empty($doro_options['copyright'])) : ?>
                   <span><?php echo do_shortcode(($doro_options['copyright'])); ?></span>
-                <?php else: ?>
+                <?php else : ?>
                   <span><?php esc_html_e('&#169; Doro 2023 | All rights reserved.', 'doro'); ?></span>
                 <?php endif; ?>
               </div>
@@ -97,8 +102,7 @@
       <?php } ?>
     </div>
   </div>
-<?php }
-; ?>
+<?php }; ?>
 </div>
 </div>
 <!-- Main end -->

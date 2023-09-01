@@ -304,7 +304,7 @@ function action_single_product_after_image()
     <?php } ?>
 
     <?php if ($_product_category != 'memberships' && $_product_category != 'gift-card') { ?>
-      <div class="classes md-padding">
+      <div class="classes md-padding <?= $_product_category ?>">
         <?= do_shortcode('[adc_classes type="related"]') ?>
       </div>
     <?php } ?>

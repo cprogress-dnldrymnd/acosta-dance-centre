@@ -114,6 +114,23 @@
 <!-- Main end -->
 
 <?php wp_footer(); ?>
+<script>
+  jQuery(document).ready(function() {
+    single_product_layout();
+  });
+
+  jQuery(window).resize(function() {
+    single_product_layout();
+  });
+
+  function single_product_layout() {
+    if(window.innerWidth > 1199) {
+      console.log('sssss');
+    } else {
+      console.log('xxx');
+    }
+  }
+</script>
 </body>
 
 </html>

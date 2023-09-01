@@ -127,7 +127,7 @@
     if(window.innerWidth > 1199) {
       
     } else {
-      console.log('xxx');
+      jQuery('#product-sidebar-inner').insertAfter('#product-details .product-summary');
     }
   }
 </script>

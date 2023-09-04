@@ -2303,6 +2303,7 @@ table.shop_table.shop_table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   a {
     font-size: 15px !important;
     font-weight: 500 !important;
@@ -2322,6 +2323,7 @@ table.shop_table.shop_table {
     max-width: 46%;
     text-align: center;
     justify-content: center;
+
     br {
       display: none;
     }
@@ -2333,10 +2335,11 @@ table.shop_table.shop_table {
     &.add_to_cart_button {
       background-color: var(--black-color);
       color: var(--white-color) !important;
-      &:hover {
-        background-color: var(--adc-color-1);
-        color: var(--black-color) !important;
-      }
+    }
+
+    &:hover {
+      background-color: var(--adc-color-1);
+      color: var(--black-color) !important;
     }
   }
 }

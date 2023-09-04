@@ -44,7 +44,7 @@ if (_product_category_id(get_the_ID()) != 79) {
 
 <?php }
 else { ?>
-	<div class="button-group-box">
+	<div class="button-group-box-loop">
 		<?php
 		global $product;
 

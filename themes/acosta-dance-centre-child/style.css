@@ -1571,4 +1571,18 @@ table.shop_table.shop_table {
   #product-sidebar-inner .membership-box {
     width: 100%; } }
 
+.button-group-box-loop {
+  display: flex;
+  flex-wrap: wrap; }
+  .button-group-box-loop a {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    letter-spacing: 3px !important;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    text-transform: uppercase;
+    text-decoration: none !important; }
+
 /*# sourceMappingURL=style.css.map */

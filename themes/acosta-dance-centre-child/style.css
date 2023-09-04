@@ -1577,7 +1577,7 @@ table.shop_table.shop_table {
   .button-group-box-loop a {
     font-size: 15px !important;
     font-weight: 500 !important;
-    letter-spacing: 0 !important;
+    letter-spacing: 1px !important;
     font-family: 'Oswald', sans-serif;
     border: 2px solid !important;
     border-radius: 5px !important;
@@ -1589,6 +1589,8 @@ table.shop_table.shop_table {
     margin-bottom: 10px !important;
     display: flex !important;
     align-items: center; }
+    .button-group-box-loop a br {
+      display: none; }
     .button-group-box-loop a:not(:last-child) {
       margin-right: 10px !important; }
     .button-group-box-loop a.add_to_cart_button {

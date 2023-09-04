@@ -36,6 +36,10 @@ echo apply_filters(
 );
 */
 $button_text = _product_category(get_the_ID(), 'BOOK', 'BOOK');
-?>
 
-<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>
+if (_product_category_id(get_the_ID()) != 79) {
+	?>
+
+	<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>
+
+<?php } ?>

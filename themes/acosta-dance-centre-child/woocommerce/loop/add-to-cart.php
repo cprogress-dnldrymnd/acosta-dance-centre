@@ -42,4 +42,9 @@ if (_product_category_id(get_the_ID()) != 79) {
 
 	<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>
 
+<?php }
+else { ?>
+	<div class="button-group-box">
+		<a href="<?= get_permalink() ?>" class="button-book">READ MORE</a>
+		</div>
 <?php } ?>

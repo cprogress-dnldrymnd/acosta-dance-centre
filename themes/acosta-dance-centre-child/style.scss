@@ -2313,5 +2313,8 @@ table.shop_table.shop_table {
     padding: 10px !important;
     text-transform: uppercase;
     text-decoration: none !important;
+    &:not(:last-child) {
+      margin-right: 10px !important;
+    }
   }
 }

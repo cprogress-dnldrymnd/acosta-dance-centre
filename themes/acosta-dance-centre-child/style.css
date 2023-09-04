@@ -1588,7 +1588,10 @@ table.shop_table.shop_table {
     margin-top: 0 !important;
     margin-bottom: 10px !important;
     display: flex !important;
-    align-items: center; }
+    align-items: center;
+    flex: 0 0 48%;
+    max-width: 48%;
+    text-align: center; }
     .button-group-box-loop a br {
       display: none; }
     .button-group-box-loop a:not(:last-child) {

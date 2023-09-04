@@ -1583,7 +1583,10 @@ table.shop_table.shop_table {
     border-radius: 5px !important;
     padding: 10px !important;
     text-transform: uppercase;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    color: #000 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; }
     .button-group-box-loop a:not(:last-child) {
       margin-right: 10px !important; }
 

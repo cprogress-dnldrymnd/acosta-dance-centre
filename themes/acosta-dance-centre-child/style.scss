@@ -2308,7 +2308,7 @@ table.shop_table.shop_table {
     font-weight: 500 !important;
     letter-spacing: 1px !important;
     font-family: 'Oswald', sans-serif;
-    border: 2px solid !important;
+    border: 2px solid #000 !important;
     border-radius: 0 !important;
     padding: 10px !important;
     text-transform: uppercase;
@@ -2333,6 +2333,10 @@ table.shop_table.shop_table {
     &.add_to_cart_button {
       background-color: var(--black-color);
       color: var(--white-color) !important;
+      &:hover {
+        background-color: var(--adc-color-1);
+        color: var(--black-color) !important;
+      }
     }
   }
 }

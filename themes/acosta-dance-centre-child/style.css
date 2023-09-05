@@ -1608,6 +1608,7 @@ table.shop_table.shop_table {
 .cart-icon {
   position: relative; }
   .cart-icon .cart-items {
+    position: absolute;
     top: -15px;
     right: -15px;
     background-color: var(--adc-color-2);

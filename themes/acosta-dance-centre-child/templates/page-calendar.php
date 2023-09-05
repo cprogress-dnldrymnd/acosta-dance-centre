@@ -20,7 +20,7 @@ $query = new WP_Query($args);
 while ($query->have_posts()) {
   $query->the_post();
   echo '<pre>';
-  var_dump(get_post_meta(get_the_ID()));
+  //var_dump(get_post_meta(get_the_ID()));
   echo '</pre>';
 }
 wp_reset_postdata();

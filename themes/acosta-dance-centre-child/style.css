@@ -373,7 +373,7 @@ h4 {
   color: var(--black-color); }
 #doro-aside .minimal-logo {
   display: none; }
-#doro-aside.collapse-sidebar .minimal-logo {
+#doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
   display: block; }
 
 .inherit-elementor p {

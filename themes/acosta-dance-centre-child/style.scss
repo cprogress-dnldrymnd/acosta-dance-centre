@@ -483,12 +483,16 @@ h4 {
       }
     }
   }
+
   .minimal-logo {
     display: none;
   }
+
   &.collapse-sidebar {
-    .minimal-logo {
-      display: block;
+    #doro-logo a {
+      .minimal-logo {
+        display: block;
+      }
     }
   }
 }
@@ -2406,11 +2410,13 @@ table.shop_table.shop_table {
         &:hover {
           background: transparent !important;
         }
-  
-        &.prev-month, &.next-month {
+
+        &.prev-month,
+        &.next-month {
           .day-number {
             display: none;
           }
+
           .my-class {
             display: none !important;
           }

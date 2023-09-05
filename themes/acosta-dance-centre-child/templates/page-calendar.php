@@ -46,7 +46,7 @@ wp_reset_postdata();
             ?>
             {
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
-            eventName: <?= get_the_title() ?>,
+            eventName: "<?= get_the_title() ?>",
             className: "my-class",
             onclick(e, data) {
               console.log(data);

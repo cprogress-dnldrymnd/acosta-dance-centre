@@ -2421,6 +2421,10 @@ table.shop_table.shop_table {
       max-width: 178px;
       margin-top: 10px;
       margin-bottom: 10px;
+      &:hover {
+        background-color: var(--black-color);
+        color: var(--white-color);
+      }
     }
   }
 }

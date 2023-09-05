@@ -2424,6 +2424,7 @@ table.shop_table.shop_table {
         letter-spacing: 2px;
         color: var(--black-color);
         padding: 10px;
+
         @media (max-width: 767px) {
           font-size: 16px;
         }
@@ -2434,33 +2435,16 @@ table.shop_table.shop_table {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      background-color: var(--adc-color-1);
-      padding: 5px;
-      color: var(--black-color);
-      border-radius: 5px;
-      font-family: 'Hind', sans-serif;
+      background-color: transparent;
       cursor: pointer;
       max-width: 10vw;
       margin-top: 10px;
       margin-bottom: 10px;
-
-      &:hover {
-        background-color: var(--black-color);
-        color: var(--white-color);
-      }
-
-      @media(max-width: 1199px) {
-        max-width: 9vw;
-      }
-
-      @media(max-width: 991px) {
-        max-width: 8vw;
-      }
-
-      @media(max-width: 767px) {
-        max-width: 11vw;
-        font-size: 12px;
-      }
     }
+  }
+
+  .class-html {
+    display: flex;
+    font-family: 'Hind', sans-serif;
   }
 }

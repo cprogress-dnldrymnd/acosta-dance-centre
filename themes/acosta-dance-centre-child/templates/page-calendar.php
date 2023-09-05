@@ -49,7 +49,7 @@ wp_reset_postdata();
                         $query->the_post();
                         $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
                         global $product;
-                        $image = get_the_post_thumbnail_url();
+                        $image = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
                         $html = '<div class="class-html">';
                         $html .= '<div class="image" style="background-image: url('.$image.')">';
                         $html .= '</div>';

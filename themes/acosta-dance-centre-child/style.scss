@@ -2447,7 +2447,7 @@ table.shop_table.shop_table {
 
         &:nth-child(odd) {
           td {
-            &:nth-child(even) {
+            &:nth-child(odd) {
               background-color: #F5F5F5;
             }
           }

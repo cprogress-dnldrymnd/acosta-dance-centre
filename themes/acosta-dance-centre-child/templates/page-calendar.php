@@ -58,16 +58,14 @@ wp_reset_postdata();
                         $html .= '<div class="title">';
                         $html .= '<span class="the-title">'. get_the_title().'</span>';
                         $html .= '<span class="the-price">£ '. number_format((float) $product->get_regular_price(), 2, '.', '').'</span>';
-                        $html .= '<span class="the-time">';
+                        $html .= '<span class="the-time">'. $ticket_time ;
                         $html .= $ticket_time ;
-                        $html .= '<a href="?add-to-cart=2375" data-quantity="1"
-					class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2375" rel="nofollow">ss</a>';
                         $html .= '</span>';
                         $html .= '</div>';
                         $html .= '</div>';
                         ?>{
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
-            eventName: "<?= $html ?>",
+            eventName: '<?= $html ?>',
             className: "my-class",
             onclick(e, data) {
               window.location.href = "<?= get_permalink() ?>"

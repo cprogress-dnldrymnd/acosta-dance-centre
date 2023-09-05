@@ -2451,9 +2451,9 @@ table.shop_table.shop_table {
     padding: 5px;
 
     .image {
-      flex: 0 0 80px;
-      max-width: 80px;
-      height: 80px;
+      flex: 0 0 3vw;
+      max-width: 3vw;
+      min-height: 4vw;
       background-size: cover;
       background-position: center;
     }
@@ -2470,6 +2470,11 @@ table.shop_table.shop_table {
       span {
 
         &.the-title {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           white-space: break-spaces;
           font-size: 13px;
           font-weight: 600;

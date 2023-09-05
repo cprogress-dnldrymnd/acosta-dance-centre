@@ -1761,9 +1761,15 @@ table.shop_table.shop_table {
         position: relative; }
         #calendar .class-html .title span.atc a {
           background-color: var(--black-color) !important;
-          padding: 10px !important;
+          padding: 7px 10px !important;
           color: var(--white-color) !important;
-          display: block; }
+          display: block;
+          font-size: 14px;
+          line-height: 1;
+          text-align: center;
+          width: 100% !important;
+          border-radius: 0;
+          letter-spacing: 1px; }
           #calendar .class-html .title span.atc a.loading {
             background-size: contain;
             background-position: center;

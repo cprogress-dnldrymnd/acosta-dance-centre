@@ -1752,5 +1752,7 @@ table.shop_table.shop_table {
   @media (max-width: 1600px) {
     #calendar .class-html {
       flex-direction: column; } }
+  #calendar .class-html:hover {
+    background-color: var(--adc-color-1); }
 
 /*# sourceMappingURL=style.css.map */

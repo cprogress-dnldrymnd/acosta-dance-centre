@@ -2547,5 +2547,8 @@ table.shop_table.shop_table {
     @media(max-width: 1600px) {
       flex-direction: column;
     }
+    &:hover {
+      background-color: var(--adc-color-1);
+    }
   }
 }

@@ -1652,7 +1652,8 @@ table.shop_table.shop_table {
         #calendar .gc-calendar table td .btn-gc-cell {
           margin-left: -5px;
           margin-right: -5px;
-          margin-top: -5px; } }
+          margin-top: -5px;
+          width: calc(100% + 10px); } }
     #calendar .gc-calendar table .dayname {
       font-family: 'Oswald', sans-serif;
       font-size: 20px;

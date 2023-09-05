@@ -27,6 +27,9 @@ wp_reset_postdata();
 
 ?>
 <?php woocommerce_breadcrumb() ?>
+<div class="heading-box">
+  <h1><?php the_title() ?></h1>
+</div>
 <section class="calendar">
   <div id="calendar"></div>
 </section>
@@ -39,14 +42,14 @@ wp_reset_postdata();
   <script>
     var $ = jQuery;
     var calendar = jQuery("#calendar").calendarGC({
-      dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+      dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       events: [
         <?php while ($query->have_posts()) { ?>
-                    <?php
-                    $query->the_post();
-                    $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-                    ?>
-                    {
+                        <?php
+                        $query->the_post();
+                        $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+                        ?>
+                        {
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
             eventName: "<?= limit_string(get_the_title(), 40) ?>",
             className: "my-class",

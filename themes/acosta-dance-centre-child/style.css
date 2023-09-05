@@ -381,7 +381,8 @@ h4 {
     display: none; }
     #doro-aside #menu-sidebar .menu-opener {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      cursor: pointer; }
       #doro-aside #menu-sidebar .menu-opener span {
         height: 30px;
         width: 4px;

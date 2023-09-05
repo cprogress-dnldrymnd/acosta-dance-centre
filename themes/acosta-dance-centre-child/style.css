@@ -380,14 +380,15 @@ h4 {
   #doro-aside #menu-sidebar {
     display: none; }
     #doro-aside #menu-sidebar .menu-opener {
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       #doro-aside #menu-sidebar .menu-opener span {
-        height: 30px;
-        width: 5px;
+        height: 40px;
+        width: 3px;
         display: block;
         background-color: var(--black-color); }
         #doro-aside #menu-sidebar .menu-opener span:not(:last-child) {
-          margin-right: 5px; }
+          margin-right: 3px; }
   #doro-aside.collapse-sidebar {
     width: 145px;
     padding: 30px; }

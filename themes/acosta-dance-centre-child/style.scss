@@ -499,13 +499,14 @@ h4 {
     display: none;
     .menu-opener {
       display: flex;
+      justify-content: center;
       span {
-        height: 30px;
-        width: 5px;
+        height: 40px;
+        width: 3px;
         display: block;
         background-color: var(--black-color);
         &:not(:last-child) {
-          margin-right: 5px;
+          margin-right: 3px;
         }
       }
     }

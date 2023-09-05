@@ -2363,6 +2363,7 @@ table.shop_table.shop_table {
 #calendar {
   .gc-calendar {
     table {
+      overflow: auto;
       border-collapse: collapse;
       border-radius: 0;
 
@@ -2419,7 +2420,7 @@ table.shop_table.shop_table {
       border-radius: 5px;
       font-family: 'Hind', sans-serif;
       cursor: pointer;
-      max-width: 178px;
+      max-width: 10vw;
       margin-top: 10px;
       margin-bottom: 10px;
 

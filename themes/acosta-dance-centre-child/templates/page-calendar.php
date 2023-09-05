@@ -54,6 +54,9 @@ wp_reset_postdata();
                         $html .= '<div class="image">';
                         $html .= '<img src="' + $image + '">';
                         $html .= '</div>';
+                        $html .= '<div class="title">';
+                        $html .= get_the_title();
+                        $html .= '</div>';
                         $html .= '</div>';
                         ?>{
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),

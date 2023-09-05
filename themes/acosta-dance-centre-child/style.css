@@ -1643,7 +1643,7 @@ table.shop_table.shop_table {
         #calendar .gc-calendar table th {
           padding: 5px; } }
     #calendar .gc-calendar table td:hover {
-      background: #eee; }
+      background: transparent !important; }
     #calendar .gc-calendar table td .btn-gc-cell {
       border-radius: 0;
       color: var(--adc-color-1);
@@ -1671,8 +1671,12 @@ table.shop_table.shop_table {
           width: calc(100% + 10px); } }
     #calendar .gc-calendar table tr:nth-child(even) td:nth-child(even) {
       background-color: #F5F5F5; }
+      #calendar .gc-calendar table tr:nth-child(even) td:nth-child(even):hover {
+        background: #F5F5F5 !important; }
     #calendar .gc-calendar table tr:nth-child(odd) td:nth-child(odd) {
       background-color: #F5F5F5; }
+      #calendar .gc-calendar table tr:nth-child(odd) td:nth-child(odd):hover {
+        background: #F5F5F5 !important; }
     #calendar .gc-calendar table .dayname {
       font-family: 'Oswald', sans-serif;
       font-size: 15px;

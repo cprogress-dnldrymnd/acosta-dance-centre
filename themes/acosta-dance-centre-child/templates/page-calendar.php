@@ -42,7 +42,7 @@ wp_reset_postdata();
   <script>
     var $ = jQuery;
     var calendar = jQuery("#calendar").calendarGC({
-      dayNames: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+      dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
       events: [
         <?php while ($query->have_posts()) { ?>
                     <?php

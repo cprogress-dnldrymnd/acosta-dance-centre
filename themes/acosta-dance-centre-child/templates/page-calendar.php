@@ -4,6 +4,20 @@
 /*-----------------------------------------------------------------------------------*/
 ?>
 <?php get_header(); ?>
+<?php
+$args = array(
+  'post_type' => 'product',
+  'posts_per_page' => -1,
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'product_cat',
+      'field'    => 'slug',
+      'terms'    => 'classes',
+    ),
+  ),
+);
+$query = new WP_Query($args);
+?>
 <section class="calendar">
   <div id="calendar"></div>
 </section>

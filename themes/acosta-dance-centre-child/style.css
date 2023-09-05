@@ -1771,11 +1771,12 @@ table.shop_table.shop_table {
           letter-spacing: 1px; }
           #calendar .class-html .title span.atc a.loading:after {
             right: 0;
+            top: 2px;
             position: absolute;
             content: '';
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 10px;
+            height: 10px;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;

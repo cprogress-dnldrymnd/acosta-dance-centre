@@ -1621,6 +1621,13 @@ table.shop_table.shop_table {
 #calendar .gc-calendar {
   overflow: auto;
   padding: 0; }
+  #calendar .gc-calendar .gc-calendar-header {
+    padding: 0;
+    margin-bottom: 26px; }
+    #calendar .gc-calendar .gc-calendar-header .gc-calendar-month-year {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      color: var(--black-color); }
   #calendar .gc-calendar table {
     border-collapse: collapse;
     border-radius: 0; }
@@ -1666,9 +1673,11 @@ table.shop_table.shop_table {
       font-family: 'Oswald', sans-serif;
       font-size: 15px;
       letter-spacing: 0;
-      color: var(--black-color);
-      padding: 10px;
-      text-align: center; }
+      color: var(--white-color);
+      text-align: center;
+      padding: 5px;
+      line-height: 1;
+      background: var(--black-color); }
   #calendar .gc-calendar .my-class {
     white-space: nowrap;
     overflow: hidden;

@@ -2393,12 +2393,25 @@ table.shop_table.shop_table {
           color: var(--adc-color-1);
           font-family: 'Oswald', sans-serif;
           background-color: transparent !important;
+
           .day-number {
             padding: 0;
             color: var(--black-color) !important;
             font-size: 30px;
-                padding: 5px;
-                  line-height: 1;
+            padding: 5px;
+            line-height: 1;
+
+            @media(max-width: 1199px) {
+              font-size: 25px;
+            }
+
+            @media(max-width: 991px) {
+              font-size: 20px;
+            }
+
+            @media(max-width: 767px) {
+              font-size: 16px;
+            }
           }
 
           @media(max-width: 1500px) {

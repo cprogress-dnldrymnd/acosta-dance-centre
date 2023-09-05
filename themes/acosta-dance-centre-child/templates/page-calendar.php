@@ -42,16 +42,22 @@ wp_reset_postdata();
   <script>
     var $ = jQuery;
     var calendar = jQuery("#calendar").calendarGC({
-      dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+      dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       events: [
         <?php while ($query->have_posts()) { ?>
                     <?php
                     $query->the_post();
                     $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-                    ?>
-                    {
+                    global $product;
+                    $image = $product->get_image();
+                    $html = '<div class="class-html">';
+                    $html .= '<div class="image">';
+                    $html .= '<img src="' + $image + '">';
+                    $html .= '</div>';
+                    $html .= '</div>';
+                    ?>{
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
-            eventName: "<span><?= limit_string(get_the_title(), 40) ?></span>",
+            eventName: "<?= $html ?>",
             className: "my-class",
             onclick(e, data) {
               window.location.href = "<?= get_permalink() ?>"

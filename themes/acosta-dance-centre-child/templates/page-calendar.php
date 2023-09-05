@@ -26,6 +26,7 @@ while ($query->have_posts()) {
 wp_reset_postdata();
 
 ?>
+<?php woocommerce_breadcrumb() ?>
 <section class="calendar">
   <div id="calendar"></div>
 </section>
@@ -40,11 +41,11 @@ wp_reset_postdata();
     var calendar = jQuery("#calendar").calendarGC({
       events: [
         <?php while ($query->have_posts()) { ?>
-                <?php
-                $query->the_post();
-                $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-                ?>
-                {
+                    <?php
+                    $query->the_post();
+                    $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+                    ?>
+                    {
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
             eventName: "<?= limit_string(get_the_title(), 40) ?>",
             className: "my-class",

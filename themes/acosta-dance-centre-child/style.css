@@ -1682,5 +1682,8 @@ table.shop_table.shop_table {
     @media (max-width: 991px) {
       #calendar .gc-calendar .my-class {
         max-width: 8vw; } }
+    @media (max-width: 767px) {
+      #calendar .gc-calendar .my-class {
+        max-width: 11vw; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1669,7 +1669,9 @@ table.shop_table.shop_table {
           margin-right: -5px;
           margin-top: -5px;
           width: calc(100% + 10px); } }
-    #calendar .gc-calendar table td:nth-child(even) {
+    #calendar .gc-calendar table tr:nth-child(even) td {
+      background-color: #F5F5F5; }
+    #calendar .gc-calendar table tr:nth-child(odd) td {
       background-color: #F5F5F5; }
     #calendar .gc-calendar table .dayname {
       font-family: 'Oswald', sans-serif;

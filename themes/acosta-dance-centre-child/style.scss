@@ -2437,7 +2437,6 @@ table.shop_table.shop_table {
       text-overflow: ellipsis;
       background-color: transparent;
       cursor: pointer;
-      max-width: 10vw;
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -2446,5 +2445,7 @@ table.shop_table.shop_table {
   .class-html {
     display: flex;
     font-family: 'Hind', sans-serif;
+    background-color: var(--adc-color-2);
+    color: var(--black-color);
   }
 }

@@ -57,7 +57,7 @@ wp_reset_postdata();
                         $html .= '</div>';
                         $html .= '<div class="title">';
                         $html .= '<span class="the-title">'. get_the_title().'</span>';
-                        $html .= '<span class="the-price">£ '. $product->get_regular_price() .'</span>';
+                        $html .= '<span class="the-price">£ '. number_format((float) $product->get_regular_price(), 2, '.', '').'</span>';
                         $html .= '<span class="the-time">'. $ticket_time .'</span>';
                         $html .= '</div>';
                         $html .= '</div>';

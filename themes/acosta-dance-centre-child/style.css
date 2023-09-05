@@ -1739,7 +1739,8 @@ table.shop_table.shop_table {
         align-items: center; }
         #calendar .class-html .title span.the-time a {
           background-color: transparent !important;
-          padding: 0 !important; }
+          padding: 0 !important;
+          width: auto !important; }
           #calendar .class-html .title span.the-time a svg {
             width: 20px;
             height: 20px; }

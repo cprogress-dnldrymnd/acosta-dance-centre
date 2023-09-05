@@ -2460,6 +2460,10 @@ table.shop_table.shop_table {
         max-width: 3vw;
         min-height: 4vw;
       }
+
+      @media(max-width: 1600px) {
+        margin-bottom: 5px;
+      }
     }
 
     .title {

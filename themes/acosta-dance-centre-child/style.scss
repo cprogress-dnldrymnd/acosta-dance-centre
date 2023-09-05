@@ -2463,17 +2463,17 @@ table.shop_table.shop_table {
       flex: 1 0 0%;
       padding: 5px;
 
-      .the-title {
-        white-space: break-spaces;
-        font-size: 13px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        font-family: 'Oswald', sans-serif;
-      }
 
       span {
 
+        &.the-title {
+          white-space: break-spaces;
+          font-size: 13px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          font-family: 'Oswald', sans-serif;
+        }
 
         display: block;
 

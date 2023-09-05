@@ -1641,7 +1641,7 @@ table.shop_table.shop_table {
       font-family: 'Oswald', sans-serif; }
       #calendar .gc-calendar table td .btn-gc-cell .day-number {
         padding: 0;
-        color: var(--black-color);
+        color: var(--black-color) !important;
         font-size: 30px; }
       @media (max-width: 1500px) {
         #calendar .gc-calendar table td .btn-gc-cell {

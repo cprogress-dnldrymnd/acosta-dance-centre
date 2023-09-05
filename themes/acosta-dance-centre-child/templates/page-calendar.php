@@ -9,10 +9,10 @@
 </section>
 <?php get_footer(); ?>
 <script>
-  var calendar = $("#calendar").calendarGC({
+  var calendar = jQuery("#calendar").calendarGC({
     events: [
       {
-        < a href = "https://www.jqueryscript.net/time-clock/" > date</a >: new Date("2022-02-07"),
+        < a href = "https://www.jqueryscript.net/time-clock/" > date</a >: new Date("2023-09-09"),
       eventName: "Holiday",
       className: "my-class",
       onclick(e, data) {

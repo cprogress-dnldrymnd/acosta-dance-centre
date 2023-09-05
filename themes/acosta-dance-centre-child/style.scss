@@ -2449,7 +2449,6 @@ table.shop_table.shop_table {
     background-color: var(--adc-color-2);
     color: var(--black-color);
     padding: 5px;
-    align-items: center;
 
     .image {
       flex: 0 0 80px;
@@ -2462,8 +2461,11 @@ table.shop_table.shop_table {
     .title {
       flex: 1 0 0%;
       padding: 5px;
-
+      line-height: 1;
       font-family: 'Oswald', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       span {
 

@@ -1681,8 +1681,7 @@ table.shop_table.shop_table {
   font-family: 'Hind', sans-serif;
   background-color: var(--adc-color-2);
   color: var(--black-color);
-  padding: 5px;
-  align-items: center; }
+  padding: 5px; }
   #calendar .class-html .image {
     flex: 0 0 80px;
     max-width: 80px;
@@ -1692,7 +1691,11 @@ table.shop_table.shop_table {
   #calendar .class-html .title {
     flex: 1 0 0%;
     padding: 5px;
-    font-family: 'Oswald', sans-serif; }
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     #calendar .class-html .title span {
       display: block; }
       #calendar .class-html .title span.the-title {

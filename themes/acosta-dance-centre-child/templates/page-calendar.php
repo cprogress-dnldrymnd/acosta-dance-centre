@@ -58,7 +58,9 @@ wp_reset_postdata();
                         $html .= '<div class="title">';
                         $html .= '<span class="the-title">'. get_the_title().'</span>';
                         $html .= '<span class="the-price">£ '. number_format((float) $product->get_regular_price(), 2, '.', '').'</span>';
-                        $html .= '<span class="the-time">'. $ticket_time . do_shortcode( '[add_to_cart id='.get_the_ID().' show_price="false" style=""]').'</span>';
+                        $html .= '<span class="the-time">'. $ticket_time .'<a href="?add-to-cart='.get_the_ID().'" data-quantity="1"
+					class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id=""
+					 rel="nofollow"> </a></span>';
                         $html .= '</div>';
                         $html .= '</div>';
                         ?>{

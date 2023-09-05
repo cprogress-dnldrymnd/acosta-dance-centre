@@ -2503,7 +2503,7 @@ table.shop_table.shop_table {
       flex: 0 0 80px;
       max-width: 80px;
       min-height: 80px;
-
+      margin-bottom: 0 !important;
       @media(max-width: 1600px) {
         margin-bottom: 5px;
       }

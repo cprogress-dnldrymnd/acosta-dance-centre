@@ -2401,7 +2401,7 @@ table.shop_table.shop_table {
   
         &.prev-month, &.next-month {
           .day-number {
-            opacity: 0.5;
+            display: none;
           }
           .my-class {
             display: none !important;

@@ -497,15 +497,18 @@ h4 {
 
   #menu-sidebar {
     display: none;
+
     .menu-opener {
       display: flex;
       justify-content: center;
       cursor: pointer;
+
       span {
         height: 30px;
         width: 4px;
         display: block;
         background-color: var(--black-color);
+
         &:not(:last-child) {
           margin-right: 4px;
         }
@@ -552,6 +555,14 @@ h4 {
       .minimal-logo {
         display: block;
       }
+    }
+  }
+}
+
+body {
+  &.collapse-sidebar-body {
+    #doro-main {
+      width: calc(100% - 145px);
     }
   }
 }

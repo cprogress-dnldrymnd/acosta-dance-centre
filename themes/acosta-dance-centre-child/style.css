@@ -411,6 +411,9 @@ h4 {
     #doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
       display: block; }
 
+body.collapse-sidebar-body #doro-main {
+  width: calc(100% - 145px); }
+
 .inherit-elementor p {
   font-size: inherit;
   font-family: inherit; }

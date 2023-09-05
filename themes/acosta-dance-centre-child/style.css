@@ -1618,4 +1618,15 @@ table.shop_table.shop_table {
     text-align: center;
     border-radius: 50%; }
 
+.gc-calendar .my-class {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  background-color: var(--adc-color-1);
+  padding: 5px;
+  color: var(--black-color);
+  border-radius: 5px;
+  font-family: 'Hind', sans-serif; }
+
 /*# sourceMappingURL=style.css.map */

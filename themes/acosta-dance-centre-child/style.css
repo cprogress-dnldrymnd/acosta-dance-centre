@@ -1674,11 +1674,18 @@ table.shop_table.shop_table {
     background-color: transparent;
     cursor: pointer;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 100%; }
 #calendar .class-html {
   display: flex;
   font-family: 'Hind', sans-serif;
   background-color: var(--adc-color-2);
   color: var(--black-color); }
+  #calendar .class-html .image {
+    flex: 0 0 80px;
+    max-width: 80px;
+    height: 80px; }
+  #calendar .class-html .title {
+    flex: 1 0 0%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2439,6 +2439,7 @@ table.shop_table.shop_table {
       cursor: pointer;
       margin-top: 10px;
       margin-bottom: 10px;
+      width: 100%;
     }
   }
 
@@ -2447,5 +2448,14 @@ table.shop_table.shop_table {
     font-family: 'Hind', sans-serif;
     background-color: var(--adc-color-2);
     color: var(--black-color);
+
+    .image {
+      flex: 0 0 80px;
+      max-width: 80px;
+      height: 80px;
+    }
+    .title {
+      flex: 1 0 0%;
+    }
   }
 }

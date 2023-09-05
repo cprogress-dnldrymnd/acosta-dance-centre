@@ -2398,8 +2398,12 @@ table.shop_table.shop_table {
         &:hover {
           background: transparent !important;
         }
-
-
+  
+        &.prev-month {
+          .day-number {
+            opacity: 0.5;
+          }
+        }
 
         .btn-gc-cell {
           border-radius: 0;
@@ -2504,6 +2508,7 @@ table.shop_table.shop_table {
       min-height: 80px;
       margin-bottom: 0 !important;
       border-radius: 0 !important;
+
       @media(max-width: 1600px) {
         margin-bottom: 5px;
       }
@@ -2539,7 +2544,7 @@ table.shop_table.shop_table {
         padding: 0 !important;
         width: auto !important;
         color: inherit !important;
-      border-radius: 0 !important;
+        border-radius: 0 !important;
       }
 
       span {

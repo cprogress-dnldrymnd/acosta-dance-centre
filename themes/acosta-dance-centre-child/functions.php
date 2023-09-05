@@ -537,12 +537,12 @@ function action_wp_footer()
 					jQuery('body').addClass('collapse-sidebar-body');
 				} else {
 					jQuery('#doro-aside').removeClass('collapse-sidebar');
-					jQuery('body').addClass('collapse-sidebar-body');
+					jQuery('body').removeClass('collapse-sidebar-body');
 				}
 			});
 			jQuery('.menu-opener').click(function (e) {
 				jQuery('#doro-aside').removeClass('collapse-sidebar');
-				jQuery('body').addClass('collapse-sidebar-body');
+				jQuery('body').removeClass('collapse-sidebar-body');
 			});
 		}
 	</script>

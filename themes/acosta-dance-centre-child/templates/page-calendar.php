@@ -46,7 +46,7 @@ wp_reset_postdata();
                 ?>
                 {
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
-            eventName: "<?= get_the_title() ?>",
+            eventName: "<?= limit_string(get_the_title(), '15') ?>",
             className: "my-class",
             onclick(e, data) {
               window.location.href = "<?= get_permalink() ?>"

@@ -532,7 +532,7 @@ function action_wp_footer()
 				var $scroll = jQuery(window).scrollTop();
 				console.log($scroll);
 
-				if ($scroll > 1400) {
+				if ($scroll > 1000) {
 					jQuery('#doro-aside').addClass('collapse-sidebar');
 					jQuery('body').addClass('collapse-sidebar-body');
 				} else {

@@ -1622,11 +1622,11 @@ table.shop_table.shop_table {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100px;
   background-color: var(--adc-color-1);
   padding: 5px;
   color: var(--black-color);
   border-radius: 5px;
-  font-family: 'Hind', sans-serif; }
+  font-family: 'Hind', sans-serif;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

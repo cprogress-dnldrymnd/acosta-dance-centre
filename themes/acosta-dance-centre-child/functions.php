@@ -470,3 +470,20 @@ function mp_sync_on_product_save($product_id)
 {
 	update_product_time_attribute($product_id);
 }
+
+
+function limit_string($string, $limit = 500)
+{
+	$string = strip_tags($string);
+	if (strlen($string) > 500) {
+
+		// truncate string
+		$stringCut = substr($string, 0, 500);
+		$endPoint = strrpos($stringCut, ' ');
+
+		//if the string doesn't contain any space then it will cut without word basis.
+		$string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+		$string .= '...';
+	}
+	return $string;
+}

@@ -493,7 +493,13 @@ h4 {
   }
 
   &.collapse-sidebar {
+    #doro-main-menu {
+      display: none;
+    }
     #doro-logo a {
+      > img {
+        display: none;
+      }
       .minimal-logo {
         display: block;
       }

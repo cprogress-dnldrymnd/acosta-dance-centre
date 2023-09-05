@@ -368,27 +368,46 @@ h4 {
   .container {
     max-width: 1410px; } }
 
-#doro-aside #doro-main-menu > ul > li > a {
-  font-size: 20px;
-  color: var(--black-color); }
-#doro-aside #doro-logo a .minimal-logo {
-  display: none; }
-#doro-aside.collapse-sidebar {
-  width: 145px; }
-  #doro-aside.collapse-sidebar .woo-icons {
-    margin-top: 0; }
-    #doro-aside.collapse-sidebar .woo-icons ul {
-      flex-direction: column; }
-      #doro-aside.collapse-sidebar .woo-icons ul li {
-        margin-right: 0; }
-        #doro-aside.collapse-sidebar .woo-icons ul li:not(:last-child) {
-          margin-bottom: 10px; }
-  #doro-aside.collapse-sidebar #doro-main-menu {
+#doro-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #doro-aside #doro-main-menu > ul > li > a {
+    font-size: 20px;
+    color: var(--black-color); }
+  #doro-aside #doro-logo a .minimal-logo {
     display: none; }
-  #doro-aside.collapse-sidebar #doro-logo a > img {
+  #doro-aside #menu-sidebar {
     display: none; }
-  #doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
-    display: block; }
+    #doro-aside #menu-sidebar .menu-opener {
+      display: flex; }
+      #doro-aside #menu-sidebar .menu-opener span {
+        height: 30px;
+        width: 5px;
+        display: block;
+        background-color: var(--black-color); }
+        #doro-aside #menu-sidebar .menu-opener span:not(:last-child) {
+          margin-right: 5px; }
+  #doro-aside.collapse-sidebar {
+    width: 145px;
+    padding: 30px; }
+    #doro-aside.collapse-sidebar #menu-sidebar {
+      display: block; }
+    #doro-aside.collapse-sidebar .woo-icons {
+      margin-top: 0; }
+      #doro-aside.collapse-sidebar .woo-icons ul {
+        flex-direction: column;
+        margin-bottom: 0; }
+        #doro-aside.collapse-sidebar .woo-icons ul li {
+          margin-right: 0; }
+          #doro-aside.collapse-sidebar .woo-icons ul li:not(:last-child) {
+            margin-bottom: 15px; }
+    #doro-aside.collapse-sidebar #doro-main-menu {
+      display: none; }
+    #doro-aside.collapse-sidebar #doro-logo a > img {
+      display: none; }
+    #doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
+      display: block; }
 
 .inherit-elementor p {
   font-size: inherit;

@@ -47,6 +47,14 @@
 
   <?php get_template_part('template-parts/header/menu-section'); ?>
 
+  <div id="menu-sidebar">
+    <div class="menu-opener">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
   <!-- Woocommerce -->
 
   <div class="woo-icons">

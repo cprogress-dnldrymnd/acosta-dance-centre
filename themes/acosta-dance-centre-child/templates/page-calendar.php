@@ -60,7 +60,7 @@ wp_reset_postdata();
                         $html .= '<span class="the-price">£ '. number_format((float) $product->get_regular_price(), 2, '.', '').'</span>';
                         $html .= '<span class="the-time">';
                         $html .= $ticket_time ;
-                        $html .= '<a href="#">s</a>';
+                        $html .= '<a href="?add-to-cart=2375">s</a>';
                         $html .= '</span>';
                         $html .= '</div>';
                         $html .= '</div>';

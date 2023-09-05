@@ -2498,7 +2498,8 @@ table.shop_table.shop_table {
       padding: 5px;
 
       .the-title {
-          margin-bottom: 5px;
+        margin-bottom: 5px;
+        transition: none;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         line-clamp: 2;

@@ -1745,6 +1745,13 @@ table.shop_table.shop_table {
           #calendar .class-html .title span.the-time span svg {
             width: 20px;
             height: 20px; }
+          @media (max-width: 1199px) {
+            #calendar .class-html .title span.the-time span {
+              margin-top: 5px; } }
+        @media (max-width: 1199px) {
+          #calendar .class-html .title span.the-time {
+            flex-direction: column;
+            align-items: flex-start; } }
       #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
     @media (min-width: 1601px) {

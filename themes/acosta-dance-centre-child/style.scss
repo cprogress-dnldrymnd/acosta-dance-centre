@@ -2497,20 +2497,22 @@ table.shop_table.shop_table {
       justify-content: center;
       padding: 5px;
 
+      .the-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: break-spaces;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
       span {
 
-        &.the-title {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          white-space: break-spaces;
-          font-size: 13px;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0;
-        }
+
 
         &.the-price {
           font-size: 12px;

@@ -1718,19 +1718,19 @@ table.shop_table.shop_table {
     flex-direction: column;
     justify-content: center;
     padding: 5px; }
+    #calendar .class-html .title .the-title {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      white-space: break-spaces;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0; }
     #calendar .class-html .title span {
       display: block; }
-      #calendar .class-html .title span.the-title {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        white-space: break-spaces;
-        font-size: 13px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0; }
       #calendar .class-html .title span.the-price {
         font-size: 12px;
         font-weight: 600;

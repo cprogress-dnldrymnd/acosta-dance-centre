@@ -2531,7 +2531,7 @@ table.shop_table.shop_table {
           display: flex;
           justify-content: space-between;
           align-items: center;
-
+    position: relative;
           a {
             background-color: transparent !important;
             padding: 0 !important;

@@ -2433,8 +2433,20 @@ table.shop_table.shop_table {
             width: calc(100% + 10px);
           }
         }
+
+      }
+
+      tr {
         &:nth-child(even) {
-          background-color: #F5F5F5;
+          td {
+            background-color: #F5F5F5;
+          }
+        }
+
+        &:nth-child(odd) {
+          td {
+            background-color: #F5F5F5;
+          }
         }
       }
 
@@ -2561,6 +2573,7 @@ table.shop_table.shop_table {
               right: 0;
               bottom: 0;
               width: 20.08px !important;
+
               &:before {
                 content: '';
                 width: 20.08px;

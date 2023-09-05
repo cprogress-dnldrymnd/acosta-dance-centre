@@ -1618,9 +1618,22 @@ table.shop_table.shop_table {
     text-align: center;
     border-radius: 50%; }
 
-.gc-calendar table td:hover {
-  background-color: #eee; }
-.gc-calendar .my-class {
+#calendar .gc-calendar table {
+  border-collapse: collapse;
+  border-radius: 0; }
+  #calendar .gc-calendar table td:hover {
+    background: #eee; }
+  #calendar .gc-calendar table td::before {
+    content: none; }
+  #calendar .gc-calendar table td .btn-gc-cell .day-number {
+    color: var(--black-color); }
+  #calendar .gc-calendar table .dayname {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--black-color);
+    padding: 10px; }
+#calendar .gc-calendar .my-class {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1629,6 +1642,7 @@ table.shop_table.shop_table {
   color: var(--black-color);
   border-radius: 5px;
   font-family: 'Hind', sans-serif;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 178px; }
 
 /*# sourceMappingURL=style.css.map */

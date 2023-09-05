@@ -61,7 +61,10 @@
       <li>
         <a href="<?= wc_get_cart_url() ?>" class="cart-icon">
           <div class="cart-items">
-            <?php WC()->cart->get_cart_contents_count() ?>
+            <span class="counter" id="cart-count"><?php
+            $cart_count = WC()->cart->get_cart_contents_count();
+            echo sprintf(_n('%d', '%d', $cart_count), $cart_count);
+            ?></span>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="32.119" height="29.472" viewBox="0 0 32.119 29.472">
             <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(1 1)">

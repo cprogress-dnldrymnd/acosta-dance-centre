@@ -496,3 +496,19 @@ function action_woocommerce_before_order_notes()
   WC()->cart->remove_coupon('adc_student');
   WC()->cart->remove_coupon('adc_universal_credit_recipient');
 }
+
+
+add_filter('woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1);
+function refresh_cart_count($fragments)
+{
+  ob_start();
+  ?>
+      <span class="counter" id="cart-count"><?php
+      $cart_count = WC()->cart->get_cart_contents_count();
+      echo sprintf(_n('%d', '%d', $cart_count), $cart_count);
+      ?></span>
+      <?php
+      $fragments['#cart-count'] = ob_get_clean();
+
+      return $fragments;
+}

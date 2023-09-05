@@ -527,18 +527,20 @@ function action_wp_footer()
 	</script>
 
 	<script>
-		jQuery(window).scroll(function () {
-			var $scroll = jQuery(window).scrollTop();
-			console.log($scroll);
+		if (window.innerWidth > 767) {
+			jQuery(window).scroll(function () {
+				var $scroll = jQuery(window).scrollTop();
+				console.log($scroll);
 
-			if($scroll > 1400) {
-				jQuery('#doro-aside').addClass('collapse-sidebar');
-				jQuery('body').addClass('collapse-sidebar-body');
-			} else {
-				jQuery('#doro-aside').removeClass('collapse-sidebar');
-				jQuery('body').addClass('collapse-sidebar-body');
-			}
-		});
+				if ($scroll > 1400) {
+					jQuery('#doro-aside').addClass('collapse-sidebar');
+					jQuery('body').addClass('collapse-sidebar-body');
+				} else {
+					jQuery('#doro-aside').removeClass('collapse-sidebar');
+					jQuery('body').addClass('collapse-sidebar-body');
+				}
+			});
+		}
 	</script>
 	<?php
 }

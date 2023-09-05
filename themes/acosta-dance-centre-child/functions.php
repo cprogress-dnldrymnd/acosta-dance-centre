@@ -540,6 +540,10 @@ function action_wp_footer()
 					jQuery('body').addClass('collapse-sidebar-body');
 				}
 			});
+			jQuery('.menu-opener').click(function (e) {
+				jQuery('#doro-aside').removeClass('collapse-sidebar');
+				jQuery('body').addClass('collapse-sidebar-body');
+			});
 		}
 	</script>
 	<?php

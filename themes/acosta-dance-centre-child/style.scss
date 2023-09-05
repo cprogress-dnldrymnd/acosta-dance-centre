@@ -2390,8 +2390,10 @@ table.shop_table.shop_table {
           margin-top: -5px;
           background-color: var(--black-color);
           color: var(--adc-color-1);
+          padding: 0 15px;
 
           .day-number {
+            padding: 0 15px;
             color: var(--adc-color-1) !important;
           }
         }

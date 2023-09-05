@@ -493,6 +493,21 @@ h4 {
 
   &.collapse-sidebar {
     width: 145px;
+
+    .woo-icons {
+      margin-top: 0;
+
+      ul {
+        flex-direction: column;
+        li {
+          margin-right: 0;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
     #doro-main-menu {
       display: none;
     }

@@ -375,6 +375,14 @@ h4 {
   display: none; }
 #doro-aside.collapse-sidebar {
   width: 145px; }
+  #doro-aside.collapse-sidebar .woo-icons {
+    margin-top: 0; }
+    #doro-aside.collapse-sidebar .woo-icons ul {
+      flex-direction: column; }
+      #doro-aside.collapse-sidebar .woo-icons ul li {
+        margin-right: 0; }
+        #doro-aside.collapse-sidebar .woo-icons ul li:not(:last-child) {
+          margin-bottom: 10px; }
   #doro-aside.collapse-sidebar #doro-main-menu {
     display: none; }
   #doro-aside.collapse-sidebar #doro-logo a > img {

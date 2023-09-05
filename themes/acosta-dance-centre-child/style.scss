@@ -2578,6 +2578,8 @@ table.shop_table.shop_table {
             }
 
             &.loading {
+              width: 15px !important;
+              height: 15px;
               animation-name: spin;
               animation-duration: 5000ms;
               animation-iteration-count: infinite;

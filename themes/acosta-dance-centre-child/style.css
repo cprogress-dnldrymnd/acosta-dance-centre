@@ -373,12 +373,14 @@ h4 {
   color: var(--black-color); }
 #doro-aside #doro-logo a .minimal-logo {
   display: none; }
-#doro-aside.collapse-sidebar #doro-main-menu {
-  display: none; }
-#doro-aside.collapse-sidebar #doro-logo a > img {
-  display: none; }
-#doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
-  display: block; }
+#doro-aside.collapse-sidebar {
+  width: 145px; }
+  #doro-aside.collapse-sidebar #doro-main-menu {
+    display: none; }
+  #doro-aside.collapse-sidebar #doro-logo a > img {
+    display: none; }
+  #doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
+    display: block; }
 
 .inherit-elementor p {
   font-size: inherit;

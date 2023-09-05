@@ -2389,24 +2389,14 @@ table.shop_table.shop_table {
 
 
         .btn-gc-cell {
-          margin-left: -10px;
-          margin-right: -10px;
-          margin-top: -10px;
-          width: calc(100% + 20px);
           border-radius: 0;
-          background-color: var(--black-color);
           color: var(--adc-color-1);
-          padding: 0 15px;
           font-family: 'Oswald', sans-serif;
 
           .day-number {
-            padding: 0 15px;
-            color: var(--adc-color-1) !important;
-
-            @media(max-width: 767px) {
-              font-size: 15px;
-              padding: 0;
-            }
+            padding: 0;
+            color: var(--black-color);
+            font-size: 30px;
           }
 
           @media(max-width: 1500px) {
@@ -2420,14 +2410,12 @@ table.shop_table.shop_table {
 
       .dayname {
         font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 15px;
+        letter-spacing: 0;
         color: var(--black-color);
         padding: 10px;
+        text-align: center;
 
-        @media (max-width: 767px) {
-          font-size: 16px;
-        }
       }
     }
 

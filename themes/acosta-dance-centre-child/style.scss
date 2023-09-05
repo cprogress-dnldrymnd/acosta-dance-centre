@@ -484,7 +484,6 @@ h4 {
     }
   }
 
-
   #doro-logo a {
     .minimal-logo {
       display: none;
@@ -496,10 +495,12 @@ h4 {
     #doro-main-menu {
       display: none;
     }
+
     #doro-logo a {
-      > img {
+      >img {
         display: none;
       }
+
       .minimal-logo {
         display: block;
       }

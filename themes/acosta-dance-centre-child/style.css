@@ -1683,14 +1683,16 @@ table.shop_table.shop_table {
   color: var(--black-color);
   padding: 5px; }
   #calendar .class-html .image {
-    flex: 0 0 3vw;
-    max-width: 3vw;
-    min-height: 4vw;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    min-height: 6vw; }
+    @media (min-width: 1601px) {
+      #calendar .class-html .image {
+        flex: 0 0 3vw;
+        max-width: 3vw;
+        min-height: 4vw; } }
   #calendar .class-html .title {
     flex: 1 0 0%;
-    padding: 5px;
     line-height: 1;
     font-family: 'Oswald', sans-serif;
     display: flex;
@@ -1719,5 +1721,11 @@ table.shop_table.shop_table {
         text-transform: uppercase; }
       #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
+    @media (min-width: 1601px) {
+      #calendar .class-html .title {
+        padding: 5px; } }
+  @media (max-width: 1600px) {
+    #calendar .class-html {
+      flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

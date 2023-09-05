@@ -1718,11 +1718,9 @@ table.shop_table.shop_table {
     flex-direction: column;
     justify-content: center;
     padding: 5px; }
-    #calendar .class-html .title a {
-      color: inherit !important;
-      padding: 0 !important;
+    #calendar .class-html .title span {
       display: block; }
-      #calendar .class-html .title a.the-title {
+      #calendar .class-html .title span.the-title {
         display: -webkit-box;
         -webkit-line-clamp: 2;
         line-clamp: 2;
@@ -1733,32 +1731,33 @@ table.shop_table.shop_table {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0; }
-      #calendar .class-html .title a.the-price {
+      #calendar .class-html .title span.the-price {
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 4px; }
-      #calendar .class-html .title a.the-time {
+      #calendar .class-html .title span.the-time {
         font-size: 12px;
         letter-spacing: 4px;
         text-transform: uppercase;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        #calendar .class-html .title a.the-time span {
+        #calendar .class-html .title span.the-time a {
           background-color: transparent !important;
           padding: 0 !important;
-          width: auto !important; }
-          #calendar .class-html .title a.the-time span svg {
+          width: auto !important;
+          color: inherit !important; }
+          #calendar .class-html .title span.the-time a svg {
             width: 20px;
             height: 20px; }
           @media (max-width: 1199px) {
-            #calendar .class-html .title a.the-time span {
+            #calendar .class-html .title span.the-time a {
               margin-top: 5px; } }
         @media (max-width: 1199px) {
-          #calendar .class-html .title a.the-time {
+          #calendar .class-html .title span.the-time {
             flex-direction: column;
             align-items: flex-start; } }
-      #calendar .class-html .title a:not(:last-child) {
+      #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
   #calendar .class-html:hover {
     background-color: var(--black-color);

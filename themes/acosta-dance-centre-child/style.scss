@@ -2495,6 +2495,7 @@ table.shop_table.shop_table {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 5px;
 
       span {
 
@@ -2553,13 +2554,6 @@ table.shop_table.shop_table {
         }
       }
 
-      @media(min-width: 1601px) {
-        padding: 5px;
-      }
-    }
-
-    @media(max-width: 1600px) {
-      flex-direction: column;
     }
 
     &:hover {

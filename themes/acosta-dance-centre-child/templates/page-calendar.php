@@ -42,14 +42,14 @@ wp_reset_postdata();
   <script>
     var $ = jQuery;
     var calendar = jQuery("#calendar").calendarGC({
-      dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      dayNames: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
       events: [
         <?php while ($query->have_posts()) { ?>
-                        <?php
-                        $query->the_post();
-                        $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-                        ?>
-                        {
+                    <?php
+                    $query->the_post();
+                    $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+                    ?>
+                    {
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
             eventName: "<?= limit_string(get_the_title(), 40) ?>",
             className: "my-class",

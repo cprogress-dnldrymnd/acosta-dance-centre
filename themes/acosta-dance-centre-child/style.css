@@ -1728,7 +1728,11 @@ table.shop_table.shop_table {
       font-size: 13px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0; }
+      letter-spacing: 0;
+      background-color: transparent !important;
+      padding: 0 !important;
+      width: auto !important;
+      color: inherit !important; }
     #calendar .class-html .title span {
       display: block; }
       #calendar .class-html .title span.the-price {

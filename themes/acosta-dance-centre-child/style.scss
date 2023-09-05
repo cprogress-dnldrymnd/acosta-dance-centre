@@ -2466,7 +2466,7 @@ table.shop_table.shop_table {
     background-color: var(--adc-color-2);
     color: var(--black-color);
     padding: 5px;
-
+    transition: 300ms;
     .image {
       background-size: cover;
       background-position: center;

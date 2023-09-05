@@ -1693,7 +1693,8 @@ table.shop_table.shop_table {
   font-family: 'Hind', sans-serif;
   background-color: var(--adc-color-2);
   color: var(--black-color);
-  padding: 5px; }
+  padding: 5px;
+  transition: 300ms; }
   #calendar .class-html .image {
     background-size: cover;
     background-position: center;

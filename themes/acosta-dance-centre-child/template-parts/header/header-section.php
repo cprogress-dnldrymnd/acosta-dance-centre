@@ -10,6 +10,21 @@
         <?php if (!empty($doro_options['logotext2'])): ?>
           <span><?php echo esc_html(($doro_options['logotext2'])); ?></span>
         <?php endif; ?>
+
+      </a>
+    </div>
+  <?php }
+  else { ?>
+    <div id="doro-logo">
+      <a class="logo-holder text-logo" href="<?php echo esc_url(home_url('/')); ?>">
+        <?php if (!empty($doro_options['logotext'])): ?>
+          <?php echo esc_html(($doro_options['logotext'])); ?>
+        <?php else: ?>
+          <?php bloginfo('name'); ?>
+        <?php endif; ?>
+        <?php if (!empty($doro_options['logotext2'])): ?>
+          <span><?php echo esc_html(($doro_options['logotext2'])); ?></span>
+        <?php endif; ?>
         <span class="minimal-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="82.207" height="82.766" viewBox="0 0 82.207 82.766">
             <path id="logo-minimal"
@@ -20,20 +35,6 @@
         </span>
       </a>
     </div>
-  <?php }
-  else { ?>
-    <h1 id="doro-logo">
-      <a class="logo-holder text-logo" href="<?php echo esc_url(home_url('/')); ?>">
-        <?php if (!empty($doro_options['logotext'])): ?>
-          <?php echo esc_html(($doro_options['logotext'])); ?>
-        <?php else: ?>
-          <?php bloginfo('name'); ?>
-        <?php endif; ?>
-        <?php if (!empty($doro_options['logotext2'])): ?>
-          <span><?php echo esc_html(($doro_options['logotext2'])); ?></span>
-        <?php endif; ?>
-      </a>
-    </h1>
   <?php }
   ; ?>
 

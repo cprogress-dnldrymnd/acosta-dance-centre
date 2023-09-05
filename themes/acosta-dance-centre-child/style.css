@@ -1727,7 +1727,8 @@ table.shop_table.shop_table {
     flex: 0 0 80px;
     max-width: 80px;
     min-height: 80px;
-    margin-bottom: 0 !important; }
+    margin-bottom: 0 !important;
+    border-radius: 0 !important; }
     @media (max-width: 1600px) {
       #calendar .class-html .image {
         margin-bottom: 5px; } }
@@ -1758,7 +1759,8 @@ table.shop_table.shop_table {
       background-color: transparent !important;
       padding: 0 !important;
       width: auto !important;
-      color: inherit !important; }
+      color: inherit !important;
+      border-radius: 0 !important; }
     #calendar .class-html .title span {
       display: block; }
       #calendar .class-html .title span.the-price {

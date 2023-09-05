@@ -487,10 +487,8 @@ h4 {
 
   #doro-logo a {
     .minimal-logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      opacity: 0;
+      display: none;
+
     }
   }
 
@@ -498,12 +496,6 @@ h4 {
     #doro-logo a {
       .minimal-logo {
         display: block;
-      }
-
-        {
-        visibility: hidden;
-        display: none;
-        opacity: 0;
       }
     }
   }

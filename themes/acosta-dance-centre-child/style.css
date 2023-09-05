@@ -1762,7 +1762,10 @@ table.shop_table.shop_table {
         #calendar .class-html .title span.the-time .atc {
           position: relative; }
           #calendar .class-html .title span.the-time .atc .added_to_cart {
-            font-size: 0; }
+            font-size: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0; }
             #calendar .class-html .title span.the-time .atc .added_to_cart:before {
               content: '';
               width: 20.08px;

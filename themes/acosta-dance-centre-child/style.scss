@@ -2554,6 +2554,10 @@ table.shop_table.shop_table {
 
             .added_to_cart {
               font-size: 0;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+
               &:before {
                 content: '';
                 width: 20.08px;

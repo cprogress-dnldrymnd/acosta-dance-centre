@@ -371,7 +371,7 @@ h4 {
 #doro-aside #doro-main-menu > ul > li > a {
   font-size: 20px;
   color: var(--black-color); }
-#doro-aside .minimal-logo {
+#doro-aside #doro-logo a .minimal-logo {
   display: none; }
 #doro-aside.collapse-sidebar #doro-logo a .minimal-logo {
   display: block; }

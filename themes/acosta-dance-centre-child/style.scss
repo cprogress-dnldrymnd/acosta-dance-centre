@@ -484,8 +484,12 @@ h4 {
     }
   }
 
-  .minimal-logo {
-    display: none;
+
+  #doro-logo a {
+    .minimal-logo {
+      display: none;
+
+    }
   }
 
   &.collapse-sidebar {

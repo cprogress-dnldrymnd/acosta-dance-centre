@@ -60,6 +60,9 @@
       </li>
       <li>
         <a href="<?= wc_get_cart_url() ?>">
+          <div class="cart-items">
+            <?= WC()->cart->get_cart_contents_count() ?>
+          </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="32.119" height="29.472" viewBox="0 0 32.119 29.472">
             <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(1 1)">
               <path id="Path_90" data-name="Path 90"

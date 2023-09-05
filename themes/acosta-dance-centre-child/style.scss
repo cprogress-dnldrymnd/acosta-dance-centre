@@ -2497,9 +2497,8 @@ table.shop_table.shop_table {
       justify-content: center;
       padding: 5px;
 
-      a {
-        color: inherit !important;
-        padding: 0 !important;
+      span {
+
         &.the-title {
           display: -webkit-box;
           -webkit-line-clamp: 2;
@@ -2527,10 +2526,11 @@ table.shop_table.shop_table {
           justify-content: space-between;
           align-items: center;
 
-          span {
+          a {
             background-color: transparent !important;
             padding: 0 !important;
             width: auto !important;
+            color: inherit !important;
 
             svg {
               width: 20px;

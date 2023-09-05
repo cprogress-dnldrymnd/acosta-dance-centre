@@ -2391,6 +2391,7 @@ table.shop_table.shop_table {
           background-color: var(--black-color);
           color: var(--adc-color-1);
           padding: 0 15px;
+          font-family: 'Oswald', sans-serif;
 
           .day-number {
             padding: 0 15px;
@@ -2421,6 +2422,7 @@ table.shop_table.shop_table {
       max-width: 178px;
       margin-top: 10px;
       margin-bottom: 10px;
+
       &:hover {
         background-color: var(--black-color);
         color: var(--white-color);

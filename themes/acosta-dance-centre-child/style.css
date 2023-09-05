@@ -1618,52 +1618,53 @@ table.shop_table.shop_table {
     text-align: center;
     border-radius: 50%; }
 
-#calendar .gc-calendar table {
-  overflow: auto;
-  border-collapse: collapse;
-  border-radius: 0; }
-  #calendar .gc-calendar table td,
-  #calendar .gc-calendar table th {
-    padding: 10px; }
-    #calendar .gc-calendar table td::before,
-    #calendar .gc-calendar table th::before {
-      content: none; }
-  #calendar .gc-calendar table td:hover {
-    background: #eee; }
-  #calendar .gc-calendar table td .btn-gc-cell {
-    margin-left: -10px;
-    margin-right: -10px;
-    width: calc(100% + 20px);
-    border-radius: 0;
-    margin-top: -10px;
-    background-color: var(--black-color);
-    color: var(--adc-color-1);
-    padding: 0 15px;
-    font-family: 'Oswald', sans-serif; }
-    #calendar .gc-calendar table td .btn-gc-cell .day-number {
+#calendar .gc-calendar {
+  overflow: auto; }
+  #calendar .gc-calendar table {
+    border-collapse: collapse;
+    border-radius: 0; }
+    #calendar .gc-calendar table td,
+    #calendar .gc-calendar table th {
+      padding: 10px; }
+      #calendar .gc-calendar table td::before,
+      #calendar .gc-calendar table th::before {
+        content: none; }
+    #calendar .gc-calendar table td:hover {
+      background: #eee; }
+    #calendar .gc-calendar table td .btn-gc-cell {
+      margin-left: -10px;
+      margin-right: -10px;
+      width: calc(100% + 20px);
+      border-radius: 0;
+      margin-top: -10px;
+      background-color: var(--black-color);
+      color: var(--adc-color-1);
       padding: 0 15px;
-      color: var(--adc-color-1) !important; }
-  #calendar .gc-calendar table .dayname {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
+      font-family: 'Oswald', sans-serif; }
+      #calendar .gc-calendar table td .btn-gc-cell .day-number {
+        padding: 0 15px;
+        color: var(--adc-color-1) !important; }
+    #calendar .gc-calendar table .dayname {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: var(--black-color);
+      padding: 10px; }
+  #calendar .gc-calendar .my-class {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: var(--adc-color-1);
+    padding: 5px;
     color: var(--black-color);
-    padding: 10px; }
-#calendar .gc-calendar .my-class {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: var(--adc-color-1);
-  padding: 5px;
-  color: var(--black-color);
-  border-radius: 5px;
-  font-family: 'Hind', sans-serif;
-  cursor: pointer;
-  max-width: 10vw;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  #calendar .gc-calendar .my-class:hover {
-    background-color: var(--black-color);
-    color: var(--white-color); }
+    border-radius: 5px;
+    font-family: 'Hind', sans-serif;
+    cursor: pointer;
+    max-width: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #calendar .gc-calendar .my-class:hover {
+      background-color: var(--black-color);
+      color: var(--white-color); }
 
 /*# sourceMappingURL=style.css.map */

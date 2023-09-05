@@ -1770,7 +1770,11 @@ table.shop_table.shop_table {
           width: 100% !important;
           border-radius: 0;
           letter-spacing: 1px; }
-          #calendar .class-html .title span.atc a.loading {
+          #calendar .class-html .title span.atc a.loading:before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;

@@ -1671,6 +1671,8 @@ table.shop_table.shop_table {
       background: transparent !important; }
     #calendar .gc-calendar table td.prev-month .day-number {
       opacity: 0.5; }
+    #calendar .gc-calendar table td.prev-month .my-class {
+      display: none !important; }
     #calendar .gc-calendar table td .btn-gc-cell {
       border-radius: 0;
       color: var(--adc-color-1);

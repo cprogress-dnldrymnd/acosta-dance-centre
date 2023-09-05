@@ -1699,7 +1699,6 @@ table.shop_table.shop_table {
 #calendar .class-html {
   display: flex;
   font-family: 'Hind', sans-serif;
-  background-color: var(--adc-color-2);
   color: var(--black-color);
   padding: 5px;
   transition: 300ms;
@@ -1787,6 +1786,8 @@ table.shop_table.shop_table {
           display: none !important; }
       #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
+  #calendar .class-html:hover {
+    background-color: var(--adc-color-2); }
 
 @keyframes spin {
   from {

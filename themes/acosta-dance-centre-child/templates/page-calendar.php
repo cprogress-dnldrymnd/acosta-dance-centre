@@ -9,6 +9,7 @@
 </section>
 <?php get_footer(); ?>
 <script>
+  var $ = jQuery;
   var calendar = jQuery("#calendar").calendarGC({
     events: [
       {

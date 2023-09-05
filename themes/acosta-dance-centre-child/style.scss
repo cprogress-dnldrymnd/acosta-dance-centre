@@ -2440,6 +2440,14 @@ table.shop_table.shop_table {
         background-color: var(--black-color);
         color: var(--white-color);
       }
+
+      @media(max-width: 1199px) {
+        max-width: 9vw;
+      }
+
+      @media(max-width: 991px) {
+        max-width: 8vw;
+      }
     }
   }
 }

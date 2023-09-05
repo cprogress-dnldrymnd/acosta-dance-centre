@@ -1676,5 +1676,11 @@ table.shop_table.shop_table {
     #calendar .gc-calendar .my-class:hover {
       background-color: var(--black-color);
       color: var(--white-color); }
+    @media (max-width: 1199px) {
+      #calendar .gc-calendar .my-class {
+        max-width: 9vw; } }
+    @media (max-width: 991px) {
+      #calendar .gc-calendar .my-class {
+        max-width: 8vw; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -2399,7 +2399,7 @@ table.shop_table.shop_table {
           background: transparent !important;
         }
   
-        &.prev-month {
+        &.prev-month, &.next-month {
           .day-number {
             opacity: 0.5;
           }

@@ -1638,7 +1638,8 @@ table.shop_table.shop_table {
     #calendar .gc-calendar table td .btn-gc-cell {
       border-radius: 0;
       color: var(--adc-color-1);
-      font-family: 'Oswald', sans-serif; }
+      font-family: 'Oswald', sans-serif;
+      background-color: transparent !important; }
       #calendar .gc-calendar table td .btn-gc-cell .day-number {
         padding: 0;
         color: var(--black-color) !important;

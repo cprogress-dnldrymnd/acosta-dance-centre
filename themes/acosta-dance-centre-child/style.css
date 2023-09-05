@@ -1776,16 +1776,17 @@ table.shop_table.shop_table {
       #calendar .class-html .title span.atc {
         position: relative; }
         #calendar .class-html .title span.atc a {
-          background-color: var(--black-color) !important;
           padding: 7px 10px !important;
-          color: var(--white-color) !important;
           display: block;
           font-size: 14px;
           line-height: 1;
           text-align: center;
           width: 100% !important;
           border-radius: 0;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          background-color: var(--white-color) !important;
+          color: var(--black-color) !important;
+          border: 2px solid var(--black-color); }
           #calendar .class-html .title span.atc a.loading:after, #calendar .class-html .title span.atc a.added:after {
             top: 9px;
             right: 2px;
@@ -1805,6 +1806,9 @@ table.shop_table.shop_table {
             background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="%23fff" d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>'); }
           #calendar .class-html .title span.atc a.added:after {
             background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path fill="%23fff" d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>'); }
+          #calendar .class-html .title span.atc a:hover {
+            background-color: var(--black-color) !important;
+            color: var(--white-color) !important; }
         #calendar .class-html .title span.atc .added_to_cart {
           display: none !important; }
       #calendar .class-html .title span:not(:last-child) {

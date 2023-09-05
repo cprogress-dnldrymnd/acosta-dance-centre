@@ -2346,6 +2346,7 @@ table.shop_table.shop_table {
 
 .cart-icon {
   position: relative;
+
   .cart-items {
     position: absolute;
     top: -15px;
@@ -2515,6 +2516,17 @@ table.shop_table.shop_table {
           font-size: 12px;
           letter-spacing: 4px;
           text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            background-color: transparent !important;
+            padding: 0 !important;
+            svg {
+                  width: 20px;
+                    height: 20px;
+            }
+          }
         }
 
         display: block;

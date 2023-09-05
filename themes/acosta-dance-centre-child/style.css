@@ -1649,10 +1649,9 @@ table.shop_table.shop_table {
       font-family: 'Oswald', sans-serif;
       background-color: transparent !important; }
       #calendar .gc-calendar table td .btn-gc-cell .day-number {
-        padding: 0;
         color: var(--black-color) !important;
         font-size: 30px;
-        padding: 5px;
+        padding: 15px 5px 5px;
         line-height: 1; }
         @media (max-width: 1199px) {
           #calendar .gc-calendar table td .btn-gc-cell .day-number {
@@ -1677,7 +1676,8 @@ table.shop_table.shop_table {
       text-align: center;
       padding: 5px;
       line-height: 1;
-      background: var(--black-color); }
+      background: var(--black-color);
+      font-weight: 500; }
   #calendar .gc-calendar .my-class {
     white-space: nowrap;
     overflow: hidden;

@@ -61,9 +61,7 @@ wp_reset_postdata();
                         $html .= '<span class="the-time">';
                         $html .= $ticket_time ;
                         $html .= '<a href="?add-to-cart=2375" data-quantity="1"
-					class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2375"
-					data-product_sku="BALLDEN1-1" aria-label="Add &ldquo;Ballet with Denzil Bailey&rdquo; to your cart"
-					aria-describedby="" rel="nofollow">ss</a>';
+					class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2375"rel="nofollow">ss</a>';
                         $html .= '</span>';
                         $html .= '</div>';
                         $html .= '</div>';

@@ -487,3 +487,17 @@ function limit_string($string, $limit = 500)
 	}
 	return $string;
 }
+
+function action_wp_footer()
+{
+	?>
+	<script>
+		jQuery(window).scroll(function () {
+			var $scroll = jQuery(window).scrollTop();
+			console.log($scroll);
+		});
+	</script>
+	<?php
+}
+
+add_action('wp_footer', 'action_wp_footer');

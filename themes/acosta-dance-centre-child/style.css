@@ -1619,7 +1619,8 @@ table.shop_table.shop_table {
     border-radius: 50%; }
 
 #calendar .gc-calendar {
-  overflow: auto; }
+  overflow: auto;
+  padding: 0; }
   #calendar .gc-calendar table {
     border-collapse: collapse;
     border-radius: 0; }

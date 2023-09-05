@@ -2498,7 +2498,8 @@ table.shop_table.shop_table {
       padding: 5px;
 
       a {
-
+        color: inherit !important;
+        padding: 0 !important;
         &.the-title {
           display: -webkit-box;
           -webkit-line-clamp: 2;

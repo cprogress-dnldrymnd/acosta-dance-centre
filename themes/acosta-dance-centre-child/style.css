@@ -1719,6 +1719,8 @@ table.shop_table.shop_table {
     justify-content: center;
     padding: 5px; }
     #calendar .class-html .title a {
+      color: inherit !important;
+      padding: 0 !important;
       display: block; }
       #calendar .class-html .title a.the-title {
         display: -webkit-box;

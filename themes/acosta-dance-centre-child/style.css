@@ -1605,4 +1605,17 @@ table.shop_table.shop_table {
       background-color: var(--adc-color-1);
       color: var(--black-color) !important; }
 
+.cart-icon {
+  position: relative; }
+  .cart-icon .cart-items {
+    top: -15px;
+    right: -15px;
+    background-color: var(--adc-color-2);
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */

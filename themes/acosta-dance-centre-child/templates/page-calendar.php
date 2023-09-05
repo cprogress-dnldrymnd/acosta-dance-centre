@@ -19,9 +19,9 @@ $args = array(
 $query = new WP_Query($args);
 while ($query->have_posts()) {
   $query->the_post();
-  echo '<pre>';
+  //echo '<pre>';
   //var_dump(get_post_meta(get_the_ID()));
-  echo '</pre>';
+//echo '</pre>';
 }
 wp_reset_postdata();
 
@@ -45,7 +45,7 @@ wp_reset_postdata();
               $_ticket_checkin_availability_from_date = get_post_meta( get_the_ID(), '_ticket_checkin_availability_from_date', true );
             ?>
             {
-            date: new Date(<?= $_ticket_checkin_availability_from_date ?>),
+            date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
             eventName: "Holiday",
             className: "my-class",
             onclick(e, data) {

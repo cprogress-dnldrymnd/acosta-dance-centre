@@ -2448,6 +2448,7 @@ table.shop_table.shop_table {
     font-family: 'Hind', sans-serif;
     background-color: var(--adc-color-2);
     color: var(--black-color);
+    padding: 5px;
 
     .image {
       flex: 0 0 80px;
@@ -2459,6 +2460,7 @@ table.shop_table.shop_table {
 
     .title {
       flex: 1 0 0%;
+      padding: 5px;
     }
   }
 }

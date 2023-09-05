@@ -48,13 +48,17 @@ wp_reset_postdata();
                         <?php
                         $query->the_post();
                         $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+                        $dateformat = strtotime($_ticket_checkin_availability_from_date);
+                        $ticket_time = date('g:i a', $dateformat);
                         global $product;
                         $image = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
                         $html = '<div class="class-html">';
                         $html .= '<div class="image" style="background-image: url('.$image.')">';
                         $html .= '</div>';
                         $html .= '<div class="title">';
-                        $html .= get_the_title();
+                        $html .= '<span class="the-title">'+ get_the_title()+'</span>';
+                        $html .= '<span class="the-price">'+ $product->get_regular_price() +'</span>';
+                        $html .= '<span class="the-time">'+ $ticket_time +'</span>';
                         $html .= '</div>';
                         $html .= '</div>';
                         ?>{

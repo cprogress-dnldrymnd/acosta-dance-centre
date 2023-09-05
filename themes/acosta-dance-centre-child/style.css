@@ -1680,7 +1680,8 @@ table.shop_table.shop_table {
   display: flex;
   font-family: 'Hind', sans-serif;
   background-color: var(--adc-color-2);
-  color: var(--black-color); }
+  color: var(--black-color);
+  padding: 5px; }
   #calendar .class-html .image {
     flex: 0 0 80px;
     max-width: 80px;
@@ -1688,6 +1689,7 @@ table.shop_table.shop_table {
     background-size: cover;
     background-position: center; }
   #calendar .class-html .title {
-    flex: 1 0 0%; }
+    flex: 1 0 0%;
+    padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */

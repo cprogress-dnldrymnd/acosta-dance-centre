@@ -1699,7 +1699,8 @@ table.shop_table.shop_table {
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0; }
+        letter-spacing: 0;
+        font-family: 'Oswald', sans-serif; }
       #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
 

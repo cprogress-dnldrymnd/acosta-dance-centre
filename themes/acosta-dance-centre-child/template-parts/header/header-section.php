@@ -59,7 +59,7 @@
         </a>
       </li>
       <li>
-        <a href="<?= wc_get_cart_url() ?>">
+        <a href="<?= wc_get_cart_url() ?>" class="cart-icon">
           <div class="cart-items">
             <?= WC()->cart->get_cart_contents_count() ?>
           </div>

@@ -2439,13 +2439,17 @@ table.shop_table.shop_table {
       tr {
         &:nth-child(even) {
           td {
-            background-color: #F5F5F5;
+            &:nth-child(even) {
+              background-color: #F5F5F5;
+            }
           }
         }
 
         &:nth-child(odd) {
           td {
-            background-color: #F5F5F5;
+            &:nth-child(even) {
+              background-color: #F5F5F5;
+            }
           }
         }
       }

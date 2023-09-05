@@ -1631,7 +1631,32 @@ table.shop_table.shop_table {
       color: var(--black-color); }
   #calendar .gc-calendar table {
     border-collapse: collapse;
-    border-radius: 0; }
+    border-radius: 0;
+      /*tr {
+        &:nth-child(even) {
+          td {
+            &:nth-child(even) {
+              background-color: #F5F5F5;
+
+              &:hover {
+                background: #F5F5F5 !important;
+              }
+            }
+          }
+        }
+
+        &:nth-child(odd) {
+          td {
+            &:nth-child(odd) {
+              background-color: #F5F5F5;
+
+              &:hover {
+                background: #F5F5F5 !important;
+              }
+            }
+          }
+        }
+      }*/ }
     #calendar .gc-calendar table td,
     #calendar .gc-calendar table th {
       padding: 0; }
@@ -1669,14 +1694,6 @@ table.shop_table.shop_table {
           margin-right: -5px;
           margin-top: -5px;
           width: calc(100% + 10px); } }
-    #calendar .gc-calendar table tr:nth-child(even) td:nth-child(even) {
-      background-color: #F5F5F5; }
-      #calendar .gc-calendar table tr:nth-child(even) td:nth-child(even):hover {
-        background: #F5F5F5 !important; }
-    #calendar .gc-calendar table tr:nth-child(odd) td:nth-child(odd) {
-      background-color: #F5F5F5; }
-      #calendar .gc-calendar table tr:nth-child(odd) td:nth-child(odd):hover {
-        background: #F5F5F5 !important; }
     #calendar .gc-calendar table .dayname {
       font-family: 'Oswald', sans-serif;
       font-size: 15px;
@@ -1770,8 +1787,8 @@ table.shop_table.shop_table {
           border-radius: 0;
           letter-spacing: 1px; }
           #calendar .class-html .title span.atc a.loading:after {
-            right: 0;
-            top: 2px;
+            top: 9px;
+            right: 2px;
             position: absolute;
             content: '';
             display: inline-block;

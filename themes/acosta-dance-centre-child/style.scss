@@ -2482,6 +2482,10 @@ table.shop_table.shop_table {
       @media(max-width: 1600px) {
         margin-bottom: 5px;
       }
+
+      @media(max-width: 767px) {
+        min-height: 50px;
+      }
     }
 
     .title {

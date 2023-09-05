@@ -49,7 +49,7 @@ wp_reset_postdata();
                 $query->the_post();
                 $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
                 $dateformat = strtotime($_ticket_checkin_availability_from_date);
-                $ticket_time = date('g:i a', $dateformat);
+                $ticket_time = date('g:ia', $dateformat);
                 global $product;
                 $image = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
                 $html = '<div class="class-html">';

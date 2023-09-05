@@ -2550,6 +2550,13 @@ table.shop_table.shop_table {
             }
           }
 
+          .added_to_cart {
+            font-size: 0;
+            &:before {
+
+            }
+          }
+
           @media(max-width: 1199px) {
             flex-direction: column;
             align-items: flex-start;
@@ -2565,9 +2572,6 @@ table.shop_table.shop_table {
 
     }
 
-    &:hover {
-      background-color: var(--black-color);
-      color: var(--white-color)
-    }
+    
   }
 }

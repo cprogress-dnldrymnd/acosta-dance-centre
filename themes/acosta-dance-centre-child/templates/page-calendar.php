@@ -17,47 +17,47 @@ $args = array(
   ),
 );
 $query = new WP_Query($args);
-if ($query->have_posts()) {
-  while ($query->have_posts()) {
-    $query->the_post();
-    echo '<pre>';
-    var_dump(get_post_meta(get_the_ID()));
-    echo '</pre>';
-  }
-  wp_reset_postdata();
+while ($query->have_posts()) {
+  $query->the_post();
+  echo '<pre>';
+  var_dump(get_post_meta(get_the_ID()));
+  echo '</pre>';
 }
+wp_reset_postdata();
 
 ?>
 <section class="calendar">
   <div id="calendar"></div>
 </section>
 <?php get_footer(); ?>
-<script>
-  var $ = jQuery;
-  var calendar = jQuery("#calendar").calendarGC({
-    events: [
-      {
-        date: new Date("2023-09-09"),
-        eventName: "Holiday",
-        className: "my-class",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor: "red"
-      },
-      {
-        date: new Date("2022-02-07"),
-        eventName: "Holiday with wife",
-        className: "my-class",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor: "red"
-      },
-      // ... more events
-    ],
-    onclickDate: function (e, data) {
-      console.log(e, data);
-    }
-  });
-</script>
+
+<?php if ($query->have_posts()) { ?>
+  <?php
+  $query = new WP_Query($args);
+  ?>
+  <script>
+    var $ = jQuery;
+    var calendar = jQuery("#calendar").calendarGC({
+      events: [
+        <?php while ($query->have_posts()) { ?>
+            <?php
+              $query->the_post();
+              $_ticket_checkin_availability_from_date = get_post_meta( get_the_ID(), '_ticket_checkin_availability_from_date', true );
+            ?>
+            {
+            date: new Date(<?= $_ticket_checkin_availability_from_date ?>),
+            eventName: "Holiday",
+            className: "my-class",
+            onclick(e, data) {
+              console.log(data);
+            },
+            dateColor: "red"
+          },
+        <?php } ?>
+      ],
+      onclickDate: function (e, data) {
+        console.log(e, data);
+      }
+    });
+  </script>
+<?php } ?>

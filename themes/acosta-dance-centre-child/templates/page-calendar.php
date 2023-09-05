@@ -45,25 +45,25 @@ wp_reset_postdata();
       dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       events: [
         <?php while ($query->have_posts()) { ?>
-                        <?php
-                        $query->the_post();
-                        $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
-                        $dateformat = strtotime($_ticket_checkin_availability_from_date);
-                        $ticket_time = date('g:i a', $dateformat);
-                        global $product;
-                        $image = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
-                        $html = '<div class="class-html">';
-                        $html .= '<div class="image" style="background-image: url('.$image.')">';
-                        $html .= '</div>';
-                        $html .= '<div class="title">';
-                        $html .= '<span class="the-title">'. get_the_title().'</span>';
-                        $html .= '<span class="the-price">£ '. number_format((float) $product->get_regular_price(), 2, '.', '').'</span>';
-                        $html .= '<span class="the-time">'. $ticket_time . do_shortcode( '[add_to_cart id='.get_the_ID().' show_price=false style]').'</span>';
-                        $html .= '</div>';
-                        $html .= '</div>';
-                        ?>{
+                            <?php
+                            $query->the_post();
+                            $_ticket_checkin_availability_from_date = get_post_meta(get_the_ID(), '_ticket_checkin_availability_from_date', true);
+                            $dateformat = strtotime($_ticket_checkin_availability_from_date);
+                            $ticket_time = date('g:i a', $dateformat);
+                            global $product;
+                            $image = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
+                            $html = "<div class='class-html'>";
+                            $html .= "<div class='image' style='background-image: url('.$image.')'>";
+                            $html .= "</div>";
+                            $html .= "<div class='title'>";
+                            $html .= "<span class='the-title'>" . get_the_title() . "</span>";
+                            $html .= "<span class='the-price'>£ " . number_format((float) $product->get_regular_price(), 2, '.', '') . "</span>";
+                            $html .= "<span class='the-time'>" . $ticket_time . do_shortcode('[add_to_cart id=' . get_the_ID() . ' show_price=false style]') . "</span>";
+                            $html .= "</div>";
+                            $html .= "</div>";
+                            ?>{
             date: new Date("<?= $_ticket_checkin_availability_from_date ?>"),
-            eventName: '<?= $html ?>',
+            eventName: "<?= $html ?>",
             className: "my-class",
             onclick(e, data) {
               window.location.href = "<?= get_permalink() ?>"

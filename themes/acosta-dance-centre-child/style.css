@@ -1691,7 +1691,8 @@ table.shop_table.shop_table {
     background-position: center; }
   #calendar .class-html .title {
     flex: 1 0 0%;
-    padding: 5px; }
+    padding: 5px;
+    font-family: 'Oswald', sans-serif; }
     #calendar .class-html .title span {
       display: block; }
       #calendar .class-html .title span.the-title {
@@ -1699,8 +1700,15 @@ table.shop_table.shop_table {
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0;
-        font-family: 'Oswald', sans-serif; }
+        letter-spacing: 0; }
+      #calendar .class-html .title span.the-price {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px; }
+      #calendar .class-html .title span.the-time {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px; }
       #calendar .class-html .title span:not(:last-child) {
         margin-bottom: 5px; }
 

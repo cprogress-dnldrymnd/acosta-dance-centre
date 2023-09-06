@@ -1096,6 +1096,10 @@ section.featured-product {
     }
 
     li.product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       .meta-date {
         position: absolute;
         bottom: 0;

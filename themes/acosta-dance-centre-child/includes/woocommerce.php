@@ -435,47 +435,6 @@ function action_order_by_date($query)
   }
 }
 
-function action_wp_footer()
-{
-?>
-  <script>
-    jQuery(document).ready(function() {
-      jQuery('.thwcfd-field-checkbox').each(function(index, element) {
-        jQuery('<span class="bg"> <span class="wpcf7-spinner"></span> </span>').insertAfter(jQuery(this).find('input'));
-      });
-    });
-
-    auto_coupon('#discount_disabled', 'adc_disabled');
-    auto_coupon('#discount_student', 'adc_student');
-    auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
-
-    function auto_coupon($id, $name) {
-      jQuery($id).change(function(e) {
-        var $this = jQuery(this);
-        jQuery('.thwcfd-field-checkbox').addClass('disabled');
-        jQuery(this).next().addClass('adding-discounts');
-        setTimeout(function() {
-          if (jQuery($id).is(':checked')) {
-            jQuery('input[name="coupon_code"]').val($name);
-            jQuery('button[name="apply_coupon"]').click();
-          } else {
-            jQuery('a[data-coupon="' + $name + '"]').click();
-          }
-          jQuery('input[name="coupon_code"]').val('');
-        }, 500);
-
-      });
-    }
-    jQuery('body').on('updated_checkout', function() {
-      jQuery('.thwcfd-field-checkbox').removeClass('disabled');
-      jQuery('.thwcfd-field-checkbox span.bg').removeClass('adding-discounts');
-
-    });
-  </script>
-<?php
-}
-
-add_action('wp_footer', 'action_wp_footer');
 
 
 add_action('woocommerce_before_cart', 'bbloomer_apply_matched_coupons');
@@ -495,4 +454,20 @@ function action_woocommerce_before_order_notes()
   WC()->cart->remove_coupon('adc_disabled');
   WC()->cart->remove_coupon('adc_student');
   WC()->cart->remove_coupon('adc_universal_credit_recipient');
+}
+
+
+add_filter('woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1);
+function refresh_cart_count($fragments)
+{
+  ob_start();
+  ?>
+      <span class="counter" id="cart-count"><?php
+      $cart_count = WC()->cart->get_cart_contents_count();
+      echo sprintf(_n('%d', '%d', $cart_count), $cart_count);
+      ?></span>
+      <?php
+      $fragments['#cart-count'] = ob_get_clean();
+
+      return $fragments;
 }

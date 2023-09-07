@@ -36,6 +36,34 @@ echo apply_filters(
 );
 */
 $button_text = _product_category(get_the_ID(), 'BOOK', 'BOOK');
-?>
 
-<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>
+if (_product_category_id(get_the_ID()) != 79) {
+	?>
+
+	<a href="<?= get_permalink() ?>" class="button-book"><?= $button_text ?></a>
+
+<?php }
+else { ?>
+	<div class="button-group-box-loop">
+		<?php
+		global $product;
+
+		echo apply_filters(
+			'woocommerce_loop_add_to_cart_link',
+			// WPCS: XSS ok.
+			sprintf(
+				'<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+				esc_url($product->add_to_cart_url()),
+				esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
+				esc_attr(isset($args['class']) ? $args['class'] : 'button'),
+				isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
+				esc_html('ADD TO CART')
+			),
+			$product,
+			$args
+		);
+
+		?>
+		<a href="<?= get_permalink() ?>" class="button-book">READ <br> MORE</a>
+	</div>
+<?php } ?>

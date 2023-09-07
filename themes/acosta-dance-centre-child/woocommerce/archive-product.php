@@ -65,7 +65,7 @@ if (is_shop()) {
 ?>
 
 <section class="product-loop ">
-	<div class="sec-title text-left">
+	<div class="sec-title sec-title-with-button text-left">
 		<div>
 			<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
 			<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>

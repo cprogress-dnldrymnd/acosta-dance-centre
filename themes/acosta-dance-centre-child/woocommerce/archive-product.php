@@ -71,7 +71,7 @@ if (is_shop()) {
 			<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>
 		</div>
 
-		<?php if ($name == 'class') { ?>
+		<?php if ($name == 'Class') { ?>
 			<div class="button-group-box-loop">
 				<a href="https://acostadancecentre.com/classes-calendar/"class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 					CALENDAR

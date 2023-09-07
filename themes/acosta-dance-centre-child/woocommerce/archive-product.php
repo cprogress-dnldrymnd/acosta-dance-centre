@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
  *
@@ -32,13 +33,12 @@ $slug = get_queried_object()->slug;
 ?>
 
 <header class="woocommerce-products-header">
-	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
+	<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 		<h1 class="woocommerce-products-header__title page-title big-title">
 			<?php
 			if ($alt_title) {
 				echo $alt_title;
-			}
-			else {
+			} else {
 				woocommerce_page_title();
 			}
 			?>
@@ -58,8 +58,7 @@ $slug = get_queried_object()->slug;
 <?php
 if (is_shop()) {
 	$name = 'CLASS';
-}
-else {
+} else {
 	$name = get_queried_object()->name;
 }
 
@@ -67,8 +66,18 @@ else {
 
 <section class="product-loop ">
 	<div class="sec-title text-left">
-		<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
-		<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>
+		<div>
+			<span class="heading-meta text-uppercase">FIND A <?= $name ?></span>
+			<h2 class="doro-heading text-uppercase">BOOK A <?= $name ?> TODAY</h2>
+		</div>
+
+		<?php if ($name == 'class') { ?>
+			<div class="button-group-box-loop">
+				<a href="https://acostadancecentre.com/classes-calendar/"class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+					CALENDAR
+				</a>
+			</div>
+		<?php } ?>
 	</div>
 	<?php
 	if (woocommerce_product_loop()) {
@@ -105,8 +114,7 @@ else {
 		 * @hooked woocommerce_pagination - 10
 		 */
 		do_action('woocommerce_after_shop_loop');
-	}
-	else {
+	} else {
 		/**
 		 * Hook: woocommerce_no_products_found.
 		 *
@@ -134,8 +142,7 @@ if ($slug == 'workshops' || $slug == 'classes') {
 			'type'    => 'featured_classes',
 			'heading' => 'FEATURED <br> CLASSES'
 		);
-	}
-	else if ($slug == 'classes') {
+	} else if ($slug == 'classes') {
 		$args = array(
 			'type'    => 'featured_workshops',
 			'heading' => 'FEATURED <br> WORKSHOPS'
@@ -145,7 +152,6 @@ if ($slug == 'workshops' || $slug == 'classes') {
 
 	//get_template_part('template-parts/woocommerce/classes-category');
 	get_template_part('template-parts/usable/loop-classes', 'null', $args);
-
 }
 ?>
 <div class="newsletter-box">

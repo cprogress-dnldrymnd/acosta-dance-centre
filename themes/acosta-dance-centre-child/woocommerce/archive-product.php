@@ -73,7 +73,7 @@ if (is_shop()) {
 
 		<?php if ($name == 'Class') { ?>
 			<div class="button-group-box-loop">
-				<a href="https://acostadancecentre.com/classes-calendar/"class="button-book">
+				<a style="white-space: nowrap;" href="https://acostadancecentre.com/classes-calendar/"class="button-book">
 					CALENDAR VIEW
 				</a>
 			</div>

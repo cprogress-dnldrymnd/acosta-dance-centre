@@ -73,15 +73,14 @@ if (is_shop()) {
 
 		<?php if ($name == 'Class') { ?>
 			<div class="button-group-box-loop">
-				<a href="https://acostadancecentre.com/classes-calendar/"class="button product_type_simple add_to_cart_button ajax_add_to_cart">
-					CALENDAR
+				<a href="https://acostadancecentre.com/classes-calendar/"class="button-book">
+					CALENDAR VIEW
 				</a>
 			</div>
 		<?php } ?>
 	</div>
 	<?php
 	if (woocommerce_product_loop()) {
-
 		/**
 		 * Hook: woocommerce_before_shop_loop.
 		 *

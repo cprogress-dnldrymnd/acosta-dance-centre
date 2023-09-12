@@ -881,6 +881,8 @@ section.featured-product {
       background-color: var(--adc-color-1);
       text-transform: uppercase;
       border-radius: 0; }
+      #searchModal .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: 4rem; }
       #searchModal .modal-dialog .modal-content .modal-header .close {
         background-color: transparent;
         padding: 0;

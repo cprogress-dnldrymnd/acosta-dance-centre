@@ -1219,6 +1219,9 @@ section.featured-product {
         background-color: var(--adc-color-1);
         text-transform: uppercase;
         border-radius: 0;
+        .modal-title {
+          font-size: 4rem;
+        }
         .close {
           background-color: transparent;
           padding: 0;

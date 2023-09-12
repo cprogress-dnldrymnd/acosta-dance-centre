@@ -56,7 +56,7 @@ li {
   padding-bottom: 40px;
 }
 
-#doro-aside #doro-main-menu>ul>li>a {
+#doro-aside #doro-main-menu > ul > li > a {
   color: var(--black-color);
 }
 
@@ -84,7 +84,7 @@ h4 {
 }
 
 #doro-hero {
-  .flexslider .slider-text>.slider-text-inner h1 {
+  .flexslider .slider-text > .slider-text-inner h1 {
     font-weight: 500;
     line-height: 1em;
 
@@ -187,32 +187,29 @@ h4 {
 }
 
 .button-box {
-
-  >a,
-  >button,
-  >input[type="submit"],
-  >span,
+  > a,
+  > button,
+  > input[type="submit"],
+  > span,
   .single_add_to_cart_button {
     @include button-style;
   }
 
   &.button-black {
-
-    >a,
-    >button,
-    >input[type="submit"],
-    >span,
+    > a,
+    > button,
+    > input[type="submit"],
+    > span,
     .single_add_to_cart_button {
       @include button-black;
     }
   }
 
   &.button-white {
-
-    >a,
-    >button,
-    >input[type="submit"],
-    >span {
+    > a,
+    > button,
+    > input[type="submit"],
+    > span {
       background-color: var(--white-color);
       color: var(--black-color);
       border: 3px solid var(--white-color);
@@ -225,11 +222,10 @@ h4 {
   }
 
   &.button-bordered {
-
-    >a,
-    >button,
-    >input[type="submit"],
-    >span {
+    > a,
+    > button,
+    > input[type="submit"],
+    > span {
       color: var(--black-color);
       border: 3px solid;
 
@@ -428,7 +424,7 @@ h4 {
   }
 
   .copyright {
-    >div {
+    > div {
       border-top: 1px solid#707070;
       padding-top: 24px;
       margin-top: 24px;
@@ -478,9 +474,9 @@ h4 {
   justify-content: space-between;
 
   #doro-main-menu {
-    >ul {
-      >li {
-        >a {
+    > ul {
+      > li {
+        > a {
           font-size: 20px;
           color: var(--black-color);
         }
@@ -491,7 +487,6 @@ h4 {
   #doro-logo a {
     .minimal-logo {
       display: none;
-
     }
   }
 
@@ -537,7 +532,6 @@ h4 {
           &:not(:last-child) {
             margin-bottom: 25px;
           }
-
         }
       }
     }
@@ -547,7 +541,7 @@ h4 {
     }
 
     #doro-logo a {
-      >img {
+      > img {
         display: none;
       }
 
@@ -1231,11 +1225,11 @@ section.featured-product {
 .woocommerce {
   .product-inner {
     @media (min-width: 992px) {
-      >.row {
+      > .row {
         margin-left: -35px;
         margin-right: -35px;
 
-        >[class*="col-"] {
+        > [class*="col-"] {
           padding-left: 35px;
           padding-right: 35px;
         }
@@ -1566,7 +1560,7 @@ section.featured-product {
 }
 
 .content-margin {
-  >* {
+  > * {
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
@@ -1653,7 +1647,6 @@ section.featured-product {
 
 .woocommerce {
   .col2-set {
-
     .col-1,
     .col-2 {
       max-width: 48%;
@@ -2068,7 +2061,6 @@ table.shop_table.shop_table {
 }
 
 .cart-discount {
-
   &.coupon-adc_disabled,
   &.coupon-adc_student,
   &.coupon-adc_universal_credit_recipient {
@@ -2166,7 +2158,7 @@ table.shop_table.shop_table {
       display: none !important;
 
       &:checked {
-        &+span.bg {
+        & + span.bg {
           background-color: var(--primary-color);
           border-color: var(--primary-color);
 
@@ -2191,7 +2183,6 @@ table.shop_table.shop_table {
 }
 
 @media (max-width: 1199px) {
-
   .woocommerce .col2-set .col-1,
   .woocommerce .col2-set .col-2 {
     max-width: 100%;
@@ -2200,7 +2191,7 @@ table.shop_table.shop_table {
   }
 }
 
-#doro-aside #doro-main-menu>ul>li.open>a {
+#doro-aside #doro-main-menu > ul > li.open > a {
   font-size: 20px;
   color: #b98c43;
 }
@@ -2295,7 +2286,7 @@ table.shop_table.shop_table {
 }
 
 .product-type-pw-gift-card {
-  &+div {
+  & + div {
     #book-now {
       width: 100%;
 
@@ -2349,7 +2340,7 @@ table.shop_table.shop_table {
   }
 
   .row-after-column-right {
-    >div {
+    > div {
       &:not(:last-child) {
         margin-right: 1rem;
       }
@@ -2393,7 +2384,7 @@ table.shop_table.shop_table {
     font-size: 15px !important;
     font-weight: 500 !important;
     letter-spacing: 1px !important;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     border: 2px solid #000 !important;
     border-radius: 0 !important;
     padding: 10px !important;
@@ -2457,7 +2448,7 @@ table.shop_table.shop_table {
       margin-bottom: 26px;
 
       .gc-calendar-month-year {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 30px;
         color: var(--black-color);
       }
@@ -2475,7 +2466,7 @@ table.shop_table.shop_table {
           content: none;
         }
 
-        @media(max-width: 1500px) {
+        @media (max-width: 1500px) {
           padding: 5px;
         }
       }
@@ -2499,7 +2490,7 @@ table.shop_table.shop_table {
         .btn-gc-cell {
           border-radius: 0;
           color: var(--adc-color-1);
-          font-family: 'Oswald', sans-serif;
+          font-family: "Oswald", sans-serif;
           background-color: transparent !important;
 
           .day-number {
@@ -2508,27 +2499,26 @@ table.shop_table.shop_table {
             padding: 15px 5px 5px;
             line-height: 1;
 
-            @media(max-width: 1199px) {
+            @media (max-width: 1199px) {
               font-size: 25px;
             }
 
-            @media(max-width: 991px) {
+            @media (max-width: 991px) {
               font-size: 20px;
             }
 
-            @media(max-width: 767px) {
+            @media (max-width: 767px) {
               font-size: 16px;
             }
           }
 
-          @media(max-width: 1500px) {
+          @media (max-width: 1500px) {
             margin-left: -5px;
             margin-right: -5px;
             margin-top: -5px;
             width: calc(100% + 10px);
           }
         }
-
       }
 
       /*tr {
@@ -2558,7 +2548,7 @@ table.shop_table.shop_table {
       }*/
 
       .dayname {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 15px;
         letter-spacing: 0;
         color: var(--white-color);
@@ -2584,7 +2574,7 @@ table.shop_table.shop_table {
 
   .class-html {
     display: flex;
-    font-family: 'Hind', sans-serif;
+    font-family: "Hind", sans-serif;
     color: var(--black-color);
     padding: 5px;
     transition: 300ms;
@@ -2600,11 +2590,11 @@ table.shop_table.shop_table {
       margin-bottom: 0 !important;
       border-radius: 0 !important;
 
-      @media(max-width: 1600px) {
+      @media (max-width: 1600px) {
         margin-bottom: 5px;
       }
 
-      @media(max-width: 767px) {
+      @media (max-width: 767px) {
         min-height: 50px;
       }
     }
@@ -2612,7 +2602,7 @@ table.shop_table.shop_table {
     .title {
       flex: 1 0 0%;
       line-height: 1;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -2639,9 +2629,6 @@ table.shop_table.shop_table {
       }
 
       span {
-
-
-
         &.the-price {
           font-size: 12px;
           font-weight: 600;
@@ -2656,16 +2643,12 @@ table.shop_table.shop_table {
           justify-content: space-between;
           align-items: center;
           position: relative;
-
-
-
         }
 
         &.atc {
           position: relative;
 
           a {
-
             padding: 7px 10px !important;
             display: block;
             font-size: 14px;
@@ -2685,7 +2668,7 @@ table.shop_table.shop_table {
                 top: 9px;
                 right: 2px;
                 position: absolute;
-                content: '';
+                content: "";
                 display: inline-block;
                 width: 10px;
                 height: 10px;
@@ -2729,12 +2712,9 @@ table.shop_table.shop_table {
             }
           }
 
-
-
           .added_to_cart {
             display: none !important;
           }
-
         }
 
         display: block;
@@ -2743,7 +2723,6 @@ table.shop_table.shop_table {
           margin-bottom: 5px;
         }
       }
-
     }
 
     &:hover {
@@ -2760,4 +2739,33 @@ table.shop_table.shop_table {
   to {
     transform: rotate(360deg);
   }
+}
+
+#pwgc-redeem-gift-card-container {
+  background-color: var(--adc-color-2);
+  padding: 20px;
+  #pwgc-redeem-button {
+    background-color: var(--white-color) !important;
+    color: var(--black-color);
+    border: 3px solid var(--black-color) !important;
+  }
+
+  label[for="pwgc-redeem-gift-card-number"] {
+    font-weight: bold;
+    color: var(--black-color);
+    &:before {
+      content: "";
+      display: block;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 1rem;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16"><path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/></svg>');
+    }
+  }
+}
+
+#pwgc-redeem-gift-card-container * {
+  max-width: 100%;
+  width: 100% !important;
 }

@@ -893,6 +893,8 @@ section.featured-product {
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px; }
+      #searchModal .modal-dialog .modal-content .modal-body .form-control {
+        font-size: 20px; }
       #searchModal .modal-dialog .modal-content .modal-body .btn {
         letter-spacing: 1px;
         background-color: var(--black-color);
@@ -901,7 +903,9 @@ section.featured-product {
         font-family: "Oswald", sans-serif;
         padding: 10px 20px;
         letter-spacing: 1px;
-        width: 100%; }
+        width: 100%;
+        margin-top: 0;
+        min-height: 59px; }
 
 @media (min-width: 992px) {
   .woocommerce .product-inner > .row {

@@ -872,13 +872,35 @@ section.featured-product {
   .woo-icons ul li:not(:last-child) {
     margin-right: 1.5rem; }
 
-#searchModal .close {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  font-size: 40px; }
-#searchModal .btn {
-  letter-spacing: 1px; }
+#searchModal .modal-dialog {
+  max-width: 100%; }
+  #searchModal .modal-dialog .modal-content {
+    border: 0;
+    border-radius: 0; }
+    #searchModal .modal-dialog .modal-content .modal-header {
+      background-color: var(--adc-color-1);
+      text-transform: uppercase;
+      border-radius: 0; }
+      #searchModal .modal-dialog .modal-content .modal-header .close {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        font-size: 40px; }
+    #searchModal .modal-dialog .modal-content .modal-body {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      min-height: 200px; }
+      #searchModal .modal-dialog .modal-content .modal-body .btn {
+        letter-spacing: 1px;
+        background-color: var(--black-color);
+        border: none;
+        border-radius: 0;
+        font-family: "Oswald", sans-serif;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        width: 100%; }
 
 @media (min-width: 992px) {
   .woocommerce .product-inner > .row {

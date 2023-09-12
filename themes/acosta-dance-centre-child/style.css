@@ -891,7 +891,8 @@ section.featured-product {
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      min-height: 200px; }
+      padding-top: 50px;
+      padding-bottom: 50px; }
       #searchModal .modal-dialog .modal-content .modal-body .btn {
         letter-spacing: 1px;
         background-color: var(--black-color);

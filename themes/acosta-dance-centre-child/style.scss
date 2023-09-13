@@ -2832,6 +2832,15 @@ table.shop_table.shop_table {
           object-fit: cover;
         }
       }
+      @media (max-width: 1199px) {
+        width: 33.33333333%;
+      }
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
     .doro-pagination-wrap {
       flex: 0 0 100%;

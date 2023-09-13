@@ -2806,6 +2806,11 @@ table.shop_table.shop_table {
 }
 
 .search-results {
+  .doro-blog {
+    @media(max-width: 767px) {
+      padding-top: 0;
+    }
+  }
   .col-md-8 {
     display: flex;
     flex-wrap: wrap;

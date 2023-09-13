@@ -16,7 +16,7 @@
         <form action="<?= get_site_url() ?>?s">
           <div class="row">
             <div class="col-lg-8">
-              <input class="form-control form-control-lg" name="s" type="text" placeholder="Input text here...">
+              <input class="form-control form-control-lg" name="s" type="text" placeholder="Search here...">
             </div>
             <div class="col-lg-4 text-right">
               <button type="submit" class="btn btn-primary mb-2">SEARCH</button>

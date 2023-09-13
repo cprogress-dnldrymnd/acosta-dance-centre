@@ -1956,6 +1956,9 @@ table.shop_table.shop_table {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+  .search-results .col-md-8 .doro-pagination-wrap {
+    flex: 0 0 100%;
+    width: 100%; }
 .search-results .col-sm-4 {
   display: none; }
 

@@ -1947,7 +1947,8 @@ table.shop_table.shop_table {
     padding-right: 10px; }
     .search-results .col-md-8 .blog-entry .blog-img {
       padding: 60% 0;
-      position: relative; }
+      position: relative;
+      display: block; }
       .search-results .col-md-8 .blog-entry .blog-img img {
         position: absolute;
         left: 0;

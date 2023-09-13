@@ -2811,11 +2811,17 @@ table.shop_table.shop_table {
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
     .blog-entry {
       flex: 0 0 auto;
-      width: 33.333333%;
+      width: 25%;
       padding-left: 10px;
       padding-right: 10px;
     }
+  }
+  .col-sm-4 {
+    display: none;
   }
 }

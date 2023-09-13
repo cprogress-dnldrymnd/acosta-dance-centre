@@ -873,7 +873,8 @@ section.featured-product {
     margin-right: 1.5rem; }
 
 #searchModal .modal-dialog {
-  max-width: 100%; }
+  max-width: 100%;
+  margin-top: 0; }
   #searchModal .modal-dialog .modal-content {
     border: 0;
     border-radius: 0; }

@@ -179,7 +179,7 @@ function action_woocommerce_after_single_product()
         echo '</div>';
       } else if ($_product_category == 'classes') {
         echo '<div class="button-box button-black">';
-        echo do_shortcode('[add_to_cart id="'.$product->get_id().'"]');
+        echo '<a href="?add-to-cart='.$product->get_id().'" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="'.$product->get_id().'"  aria-describedby="" rel="nofollow">ADD TO CART</a>';
         echo '</div>';
       } else if ($_product_category == 'memberships') {
         echo ' <a href="#join-now">JOIN NOW</a>';

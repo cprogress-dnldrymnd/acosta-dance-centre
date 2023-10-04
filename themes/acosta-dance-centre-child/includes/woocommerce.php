@@ -179,7 +179,7 @@ function action_woocommerce_after_single_product()
         echo '</div>';
       } else if ($_product_category == 'classes') {
         echo '<div class="button-box button-black">';
-        echo ' <a href="#book-now">BOOK NOW</a>';
+        echo do_shortcode('[add_to_cart id="'.$product->get_id().'"]');
         echo '</div>';
       } else if ($_product_category == 'memberships') {
         echo ' <a href="#join-now">JOIN NOW</a>';

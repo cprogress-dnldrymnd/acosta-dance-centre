@@ -520,6 +520,8 @@ function action_wp_footer()
 	<?php if (is_checkout()) { ?>
 		<script>
 			jQuery(document).ready(function() {
+
+				jQuery('input[name="donation_note"]').val('ACOSTA DANCE FOUNDATION');
 				jQuery('.donation').click(function(e) {
 					console.log(jQuery(this).attr('value'));
 					$val = parseInt(jQuery(this).attr('value'));

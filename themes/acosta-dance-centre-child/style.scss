@@ -2909,6 +2909,7 @@ table.shop_table.shop_table {
           .input-holder {
             transition: 300ms;
             height: 0;
+            overflow: hidden;
             input {
               width: 100%;
               border: none;

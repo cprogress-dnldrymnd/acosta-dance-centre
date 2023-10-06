@@ -2014,7 +2014,8 @@ table.shop_table.shop_table {
           background-color: var(--adc-color-1); }
       .donation-box .price .donation-price ul li .input-holder {
         transition: 300ms;
-        height: 0; }
+        height: 0;
+        overflow: hidden; }
         .donation-box .price .donation-price ul li .input-holder input {
           width: 100%;
           border: none;

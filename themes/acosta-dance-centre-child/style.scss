@@ -2962,10 +2962,12 @@ table.shop_table.shop_table {
       .button-box {
         a {
           padding: 11px 20px !important;
-          width: 100% !important;
           font-size: 13px !important;
         }
       }
+    }
+    @media (max-width: 991px) {
+      margin-top: 2rem;
     }
   }
 }

@@ -519,13 +519,13 @@ function action_woocommerce_before_checkout_form()
               </ul>
             </div>
             <div class="button-group">
-              <div class="row">
-                <div class="col-lg-6">
+              <div class="row justify-content-between">
+                <div class="col-auto">
                   <div class="button-box">
                     <a class="donation-skip" href="#">SKIP</a>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-auto">
                   <div class="button-box button-black">
                     <a href="#" class="donation-add-to-cart">ADD TO CART</a>
                   </div>

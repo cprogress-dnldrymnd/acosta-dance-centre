@@ -106,95 +106,78 @@ function social_network()
 {
 	$doro_options = get_option('doro');
 	ob_start();
-	?>
+?>
 	<?php if (Doro_AfterSetupTheme::return_thme_option('social-footer') != 'no') { ?>
 		<ul class="social-network">
-			<?php if (!empty($doro_options['facebook'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['facebook']); ?>" target="_blank"><i
-							class="ti-facebook font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['facebook'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['facebook']); ?>" target="_blank"><i class="ti-facebook font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['twitter'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['twitter']); ?>" target="_blank"><i
-							class="ti-twitter-alt font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['twitter'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['twitter']); ?>" target="_blank"><i class="ti-twitter-alt font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['google-plus'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['google-plus']); ?>" target="_blank"><i
-							class="ti-google font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['google-plus'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['google-plus']); ?>" target="_blank"><i class="ti-google font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['linkedin'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['linkedin']); ?>" target="_blank"><i
-							class="ti-linkedin font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['linkedin'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['linkedin']); ?>" target="_blank"><i class="ti-linkedin font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['instagram'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['instagram']); ?>" target="_blank"><i
-							class="ti-instagram font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['instagram'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['instagram']); ?>" target="_blank"><i class="ti-instagram font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['pinterest'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['pinterest']); ?>" target="_blank"><i
-							class="ti-pinterest-alt font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['pinterest'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['pinterest']); ?>" target="_blank"><i class="ti-pinterest-alt font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['soundcloud'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['soundcloud']); ?>" target="_blank"><i
-							class="ti-soundcloud font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['soundcloud'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['soundcloud']); ?>" target="_blank"><i class="ti-soundcloud font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['skype'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['skype']); ?>" target="_blank"><i
-							class="ti-skype font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['skype'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['skype']); ?>" target="_blank"><i class="ti-skype font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['dribbble'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['dribbble']); ?>" target="_blank"><i
-							class="ti-dribbble font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['dribbble'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['dribbble']); ?>" target="_blank"><i class="ti-dribbble font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['youtube'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['youtube']); ?>" target="_blank"><i
-							class="ti-youtube font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['youtube'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['youtube']); ?>" target="_blank"><i class="ti-youtube font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['vimeo'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['vimeo']); ?>" target="_blank"><i
-							class="ti-vimeo font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['vimeo'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['vimeo']); ?>" target="_blank"><i class="ti-vimeo font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['dropbox'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['dropbox']); ?>" target="_blank"><i
-							class="ti-dropbox font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['dropbox'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['dropbox']); ?>" target="_blank"><i class="ti-dropbox font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['github'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['github']); ?>" target="_blank"><i
-							class="ti-github font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['github'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['github']); ?>" target="_blank"><i class="ti-github font-14px black-icon"></i></a></li>
 			<?php endif; ?>
-			<?php if (!empty($doro_options['tumblr'])): ?>
-				<li><a href="<?php echo esc_url($doro_options['tumblr']); ?>" target="_blank"><i
-							class="ti-tumblr-alt font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['tumblr'])) : ?>
+				<li><a href="<?php echo esc_url($doro_options['tumblr']); ?>" target="_blank"><i class="ti-tumblr-alt font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
-			<?php if (!empty($doro_options['email'])): ?>
-				<li><a href="mailto:<?php echo esc_attr($doro_options['email']); ?>" target="_blank"><i
-							class="ti-email font-14px black-icon"></i></a></li>
+			<?php if (!empty($doro_options['email'])) : ?>
+				<li><a href="mailto:<?php echo esc_attr($doro_options['email']); ?>" target="_blank"><i class="ti-email font-14px black-icon"></i></a></li>
 			<?php endif; ?>
 
 			<?php
 			$doro_more_social = Doro_AfterSetupTheme::return_thme_option('opt_add_more_social', '');
 			if (!empty($doro_more_social)) {
-				foreach ($doro_more_social as $doro_more_socials) {
-					; ?>
+				foreach ($doro_more_social as $doro_more_socials) {; ?>
 					<?php echo balanceTags($doro_more_socials); ?>
-				<?php }
-			}
-			; ?>
+			<?php }
+			}; ?>
 		</ul>
 	<?php } ?>
-	<?php
+<?php
 
 	return ob_get_clean();
 }
@@ -217,8 +200,7 @@ function get__post_meta($value)
 {
 	if (function_exists('carbon_get_the_post_meta')) {
 		return carbon_get_the_post_meta($value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -227,8 +209,7 @@ function get__term_meta($term_id, $value)
 {
 	if (function_exists('carbon_get_term_meta')) {
 		return carbon_get_term_meta($term_id, $value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -237,8 +218,7 @@ function get__post_meta_by_id($id, $value)
 {
 	if (function_exists('carbon_get_post_meta')) {
 		return carbon_get_post_meta($id, $value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -246,8 +226,7 @@ function get__theme_option($value)
 {
 	if (function_exists('carbon_get_theme_option')) {
 		return carbon_get_theme_option($value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -377,7 +356,7 @@ function translate_text($translated)
 
 function action_admin_head()
 {
-	?>
+?>
 	<style>
 		#toplevel_page_doro {
 			display: none !important;
@@ -387,7 +366,7 @@ function action_admin_head()
 			display: none;
 		}
 	</style>
-	<?php
+<?php
 }
 
 add_action('admin_head', 'action_admin_head');
@@ -409,26 +388,20 @@ function single_get_date($id, $type = 'date')
 		if ($type == 'date') {
 			if ($ticket_date_from != $ticket_date_to) {
 				return $ticket_date_from . ' - ' . $ticket_date_to . ' ' . $ticket_date_Y;
+			} else {
+				return $ticket_date_from . ' ' . $ticket_date_Y;;
 			}
-			else {
-				return $ticket_date_from . ' ' . $ticket_date_Y;
-				;
-			}
-		}
-		else {
+		} else {
 			if ($ticket_time_from != $ticket_time_to) {
 				return $ticket_time_from . ' - ' . $ticket_time_to;
-			}
-			else {
+			} else {
 				return $ticket_time_from;
 			}
 		}
-	}
-	else {
+	} else {
 		if ($type == 'date') {
 			return $ticket_date_from;
-		}
-		else {
+		} else {
 			return $ticket_time_from;
 		}
 	}
@@ -490,10 +463,10 @@ function limit_string($string, $limit = 500)
 
 function action_wp_footer()
 {
-	?>
+?>
 	<script>
-		jQuery(document).ready(function () {
-			jQuery('.thwcfd-field-checkbox').each(function (index, element) {
+		jQuery(document).ready(function() {
+			jQuery('.thwcfd-field-checkbox').each(function(index, element) {
 				jQuery('<span class="bg"> <span class="wpcf7-spinner"></span> </span>').insertAfter(jQuery(this).find('input'));
 			});
 		});
@@ -503,11 +476,11 @@ function action_wp_footer()
 		auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
 
 		function auto_coupon($id, $name) {
-			jQuery($id).change(function (e) {
+			jQuery($id).change(function(e) {
 				var $this = jQuery(this);
 				jQuery('.thwcfd-field-checkbox').addClass('disabled');
 				jQuery(this).next().addClass('adding-discounts');
-				setTimeout(function () {
+				setTimeout(function() {
 					if (jQuery($id).is(':checked')) {
 						jQuery('input[name="coupon_code"]').val($name);
 						jQuery('button[name="apply_coupon"]').click();
@@ -519,7 +492,7 @@ function action_wp_footer()
 
 			});
 		}
-		jQuery('body').on('updated_checkout', function () {
+		jQuery('body').on('updated_checkout', function() {
 			jQuery('.thwcfd-field-checkbox').removeClass('disabled');
 			jQuery('.thwcfd-field-checkbox span.bg').removeClass('adding-discounts');
 
@@ -528,7 +501,7 @@ function action_wp_footer()
 
 	<script>
 		if (window.innerWidth > 767) {
-			jQuery(window).scroll(function () {
+			jQuery(window).scroll(function() {
 				var $scroll = jQuery(window).scrollTop();
 				console.log($scroll);
 
@@ -537,27 +510,34 @@ function action_wp_footer()
 					jQuery('body').addClass('collapse-sidebar-body');
 				}
 			});
-			jQuery('.menu-opener').click(function (e) {
+			jQuery('.menu-opener').click(function(e) {
 				jQuery('#doro-aside').removeClass('collapse-sidebar');
 				jQuery('body').removeClass('collapse-sidebar-body');
 			});
 		}
 	</script>
+
+	<?php if (is_checkout()) { ?>
+		<script>
+			console.log('cehckoyt')
+		</script>
+	<?php } ?>
 	<?php
 }
 
 add_action('wp_footer', 'action_wp_footer');
 
-function action_wp_head() {
+function action_wp_head()
+{
 
-	if(!current_user_can('administrator') ) {
+	if (!current_user_can('administrator')) {
 	?>
-	<style>
-		.wdgk_donation_content {
-			display: none !important;
-		}
-	</style>
-	<?php
+		<style>
+			.wdgk_donation_content {
+				display: none !important;
+			}
+		</style>
+<?php
 	}
 }
 

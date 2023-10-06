@@ -2863,7 +2863,7 @@ table.shop_table.shop_table {
   transition: 300ms;
   overflow: hidden;
   &.hide-box {
-    height: 0;
+    height: 0 !important;
     overflow: hidden;
   }
   .details {

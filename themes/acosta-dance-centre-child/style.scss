@@ -2878,6 +2878,7 @@ table.shop_table.shop_table {
             font-family: "Oswald", sans-serif;
           }
           .donation {
+            cursor: pointer;
             &:after {
               content: "";
               width: 17px;

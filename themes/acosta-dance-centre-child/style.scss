@@ -2863,10 +2863,8 @@ table.shop_table.shop_table {
   max-width: 1430px;
   margin-bottom: 3rem;
   transition: 300ms;
-  overflow: hidden;
   &.hide-box {
-    height: 0 !important;
-    overflow: hidden;
+    display: none;
   }
   .details {
     padding: 26px;
@@ -2911,7 +2909,7 @@ table.shop_table.shop_table {
     margin-right: auto;
    .wpcf7-spinner {
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     &.show-spinner {

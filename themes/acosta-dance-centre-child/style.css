@@ -2024,6 +2024,8 @@ table.shop_table.shop_table {
       bottom: 0;
       left: 50%;
       transform: translateX(-50%); }
+      .donation-box .price .wpcf7-spinner.show-spinner {
+        visibility: visible; }
     .donation-box .price .heading-box {
       margin-bottom: 80px; }
       @media (max-width: 991px) {

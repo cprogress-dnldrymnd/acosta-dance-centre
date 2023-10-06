@@ -506,9 +506,9 @@ function action_woocommerce_before_checkout_form()
             <div class="heading-box">
               <h4>CHOOSE HOW MUCH TO DONATE</h4>
             </div>
-            <div class="donation-price">  
-              <ul>
-              <li>
+            <div class="donation-price">
+              <ul class="list-inline">
+                <li>
                   <span class="amount">£10</span>
                 </li>
                 <li>

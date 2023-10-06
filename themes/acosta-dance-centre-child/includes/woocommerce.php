@@ -499,7 +499,7 @@ function action_woocommerce_before_checkout_form()
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 position-relative">
           <div class="column-holder price">
             <div class="heading-box">
               <h4>CHOOSE HOW MUCH TO DONATE</h4>
@@ -532,9 +532,7 @@ function action_woocommerce_before_checkout_form()
                 </div>
               </div>
             </div>
-            <div class="adding-to-cart">
-              <span class="wpcf7-spinner"></span>
-            </div>
+            <span class="wpcf7-spinner"></span>
           </div>
         </div>
       </div>

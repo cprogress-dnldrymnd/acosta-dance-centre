@@ -2019,6 +2019,11 @@ table.shop_table.shop_table {
     max-width: 385px;
     margin-left: auto;
     margin-right: auto; }
+    .donation-box .price .wpcf7-spinner {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
     .donation-box .price .heading-box {
       margin-bottom: 80px; }
       @media (max-width: 991px) {

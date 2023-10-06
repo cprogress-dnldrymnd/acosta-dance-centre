@@ -1982,17 +1982,18 @@ table.shop_table.shop_table {
   .donation-box .price .heading-box {
     margin-bottom: 80px; }
   .donation-box .price .donation-price ul {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
     .donation-box .price .donation-price ul li .amount {
       font-size: 22px;
       font-weight: bold;
       font-family: "Oswald", sans-serif; }
-      .donation-box .price .donation-price ul li .amount .donation:after {
-        width: 17px;
-        height: 17px;
-        border: 1px solid #707070;
-        display: inline-block;
-        content: ''; }
+    .donation-box .price .donation-price ul li .donation:after {
+      content: "";
+      width: 17px;
+      height: 17px;
+      border: 1px solid #707070;
+      display: inline-block; }
     .donation-box .price .donation-price ul li:not(:last-child) {
       margin-bottom: 20px; }
 

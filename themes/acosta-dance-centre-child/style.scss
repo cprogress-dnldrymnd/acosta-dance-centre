@@ -2870,19 +2870,20 @@ table.shop_table.shop_table {
     .donation-price {
       ul {
         list-style: none;
+        padding-left: 0;
         li {
           .amount {
             font-size: 22px;
             font-weight: bold;
             font-family: "Oswald", sans-serif;
-            .donation {
-              &:after {
-                width: 17px;
-                height: 17px;
-                border: 1px solid #707070;
-                display: inline-block;
-                content: '';
-              }
+          }
+          .donation {
+            &:after {
+              content: "";
+              width: 17px;
+              height: 17px;
+              border: 1px solid #707070;
+              display: inline-block;
             }
           }
           &:not(:last-child) {

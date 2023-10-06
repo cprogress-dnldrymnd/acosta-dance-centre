@@ -1985,6 +1985,11 @@ table.shop_table.shop_table {
   .donation-box .details {
     padding: 26px;
     border: 3px solid var(--black-color); }
+    @media (max-width: 1439px) {
+      .donation-box .details .col-xl-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%; } }
     .donation-box .details .image {
       background-image: url(https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png);
       background-size: cover;

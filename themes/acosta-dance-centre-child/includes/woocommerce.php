@@ -483,8 +483,8 @@ function action_woocommerce_before_checkout_form()
         <div class="col-lg-7">
           <div class="column-holder details">
             <div class="row">
-              <div class="col-md-6 image">
-                
+              <div class="col-md-6">
+                <div class="image"></div>
               </div>
               <div class="col-md-6 text">
                 <div class="heading-box">

@@ -1993,24 +1993,28 @@ table.shop_table.shop_table {
         font-weight: bold;
         font-family: "Oswald", sans-serif; }
       .donation-box .price .donation-price ul li .donation {
-        cursor: pointer; }
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px; }
         .donation-box .price .donation-price ul li .donation:after {
           content: "";
           width: 17px;
           height: 17px;
           border: 1px solid #707070;
           display: inline-block; }
-        .donation-box .price .donation-price ul li .donation.active:after {
-          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>');
-          background-position: center; }
+        .donation-box .price .donation-price ul li .donation.active {
+          background-color: var(--adc-color-1); }
+          .donation-box .price .donation-price ul li .donation.active:after {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>');
+            background-position: center; }
+        .donation-box .price .donation-price ul li .donation:hover {
+          background-color: var(--adc-color-1); }
       .donation-box .price .donation-price ul li input {
         width: 100%;
         border: none;
         border-bottom: 2px solid;
         margin-top: 1rem;
         display: block; }
-      .donation-box .price .donation-price ul li:not(:last-child) {
-        margin-bottom: 20px; }
     .donation-box .price .button-group .button-box a {
       padding: 11px 20px !important;
       width: 100% !important;

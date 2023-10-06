@@ -2883,6 +2883,7 @@ table.shop_table.shop_table {
           .donation {
             cursor: pointer;
             padding: 10px;
+            transition: 300ms;
             &:after {
               content: "";
               width: 17px;

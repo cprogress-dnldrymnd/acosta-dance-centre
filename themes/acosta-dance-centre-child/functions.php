@@ -548,6 +548,11 @@ function action_wp_footer()
 					jQuery('.wdgk_add_donation').click();
 					e.preventDefault();
 				});
+
+				jQuery('.donation-skip').click(function (e) { 
+					jQuery('.donation-box').addClass('hide-box');
+					e.preventDefault();
+				});
 			});
 		</script>
 	<?php } ?>

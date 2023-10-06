@@ -524,7 +524,7 @@ function action_woocommerce_before_checkout_form()
               <div class="row">
                 <div class="col-lg-6">
                   <div class="button-box">
-                    <a href="">SKIP</a>
+                    <a class="donation-skip" href="#">SKIP</a>
                   </div>
                 </div>
                 <div class="col-lg-6">

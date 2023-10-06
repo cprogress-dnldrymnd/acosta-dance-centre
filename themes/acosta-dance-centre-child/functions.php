@@ -522,7 +522,7 @@ function action_wp_footer()
 			jQuery(document).ready(function() {
 
 				$box_height = jQuery('.donation-box').outerHeight();
-				jQuery('.donation-box').css('height', $box_height);
+				jQuery('.donation-box').css('height', $box_height + 'px');
 
 				jQuery('textarea[name="donation_note"]').val('ACOSTA DANCE FOUNDATION');
 				jQuery('.donation').click(function(e) {

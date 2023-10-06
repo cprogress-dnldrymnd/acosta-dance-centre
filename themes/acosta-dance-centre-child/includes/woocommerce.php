@@ -529,7 +529,7 @@ function action_woocommerce_before_checkout_form()
                 </div>
                 <div class="col-lg-6">
                   <div class="button-box button-black">
-                    <a href="">ADD TO CART</a>
+                    <a href="#" class="donation-add-to-cart">ADD TO CART</a>
                   </div>
                 </div>
               </div>

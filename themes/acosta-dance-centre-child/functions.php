@@ -543,6 +543,11 @@ function action_wp_footer()
 						jQuery('input[name="donation-price"]').val('');
 					}
 				});
+
+				jQuery('.donation-add-to-cart').click(function (e) { 
+					jQuery('.wdgk_add_donation').click();
+					e.preventDefault();
+				});
 			});
 		</script>
 	<?php } ?>

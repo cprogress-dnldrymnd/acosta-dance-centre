@@ -483,10 +483,8 @@ function action_woocommerce_before_checkout_form()
         <div class="col-lg-7">
           <div class="column-holder details">
             <div class="row">
-              <div class="col-md-6">
-                <div class="image-box">
-                  <img src="https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png" alt="">
-                </div>
+              <div class="col-md-6 image">
+                
               </div>
               <div class="col-md-6">
                 <div class="heading-box">

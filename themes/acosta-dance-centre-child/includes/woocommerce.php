@@ -179,7 +179,7 @@ function action_woocommerce_after_single_product()
         echo '</div>';
       } else if ($_product_category == 'classes') {
         echo '<div class="button-box button-black">';
-        echo '<a href="?add-to-cart='.$product->get_id().'" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="'.$product->get_id().'"  aria-describedby="" rel="nofollow">BOOK NOW</a>';
+        echo '<a href="?add-to-cart=' . $product->get_id() . '" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="' . $product->get_id() . '"  aria-describedby="" rel="nofollow">BOOK NOW</a>';
         echo '</div>';
       } else if ($_product_category == 'memberships') {
         echo ' <a href="#join-now">JOIN NOW</a>';
@@ -461,13 +461,23 @@ add_filter('woocommerce_add_to_cart_fragments', 'refresh_cart_count', 50, 1);
 function refresh_cart_count($fragments)
 {
   ob_start();
-  ?>
-      <span class="counter" id="cart-count"><?php
-      $cart_count = WC()->cart->get_cart_contents_count();
-      echo sprintf(_n('%d', '%d', $cart_count), $cart_count);
-      ?></span>
-      <?php
-      $fragments['#cart-count'] = ob_get_clean();
+?>
+  <span class="counter" id="cart-count"><?php
+                                        $cart_count = WC()->cart->get_cart_contents_count();
+                                        echo sprintf(_n('%d', '%d', $cart_count), $cart_count);
+                                        ?></span>
+<?php
+  $fragments['#cart-count'] = ob_get_clean();
 
-      return $fragments;
+  return $fragments;
 }
+
+
+function action_woocommerce_before_checkout_form()
+{
+?>
+  sdsds
+<?php
+}
+
+add_action('woocommerce_before_checkout_form', 'action_woocommerce_before_checkout_form');

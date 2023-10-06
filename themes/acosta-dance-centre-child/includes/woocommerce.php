@@ -486,7 +486,7 @@ function action_woocommerce_before_checkout_form()
               <div class="col-md-6 image">
                 
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 text">
                 <div class="heading-box">
                   <h4>ACOSTA DANCE FOUNDATION</h4>
                 </div>

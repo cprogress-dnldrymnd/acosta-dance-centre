@@ -547,3 +547,18 @@ function action_wp_footer()
 }
 
 add_action('wp_footer', 'action_wp_footer');
+
+function action_wp_head() {
+
+	if(!current_user_can('administrator') ) {
+	?>
+	<style>
+		.wdgk_donation_content {
+			display: none !important;
+		}
+	</style>
+	<?php
+	}
+}
+
+add_action('wp_head', 'action_wp_head');

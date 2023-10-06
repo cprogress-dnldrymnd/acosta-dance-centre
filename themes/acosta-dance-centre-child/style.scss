@@ -2863,6 +2863,7 @@ table.shop_table.shop_table {
   transition: 300ms;
   &.hide-box {
     height: 0;
+    overflow: hidden;
   }
   .details {
     padding: 26px;

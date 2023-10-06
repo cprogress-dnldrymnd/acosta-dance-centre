@@ -522,10 +522,12 @@ function action_woocommerce_before_checkout_form()
             <div class="button-group">
               <div class="row">
                 <div class="col-lg-6">
-                  <a href="">SKIP</a>
+                  <div class="button-box">
+                    <a href="">SKIP</a>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="button-box">
+                  <div class="button-box button-black">
                     <a href="">ADD TO CART</a>
                   </div>
                 </div>

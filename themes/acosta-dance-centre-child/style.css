@@ -1998,6 +1998,10 @@ table.shop_table.shop_table {
       .donation-box .details .image .text {
         padding-top: 15px;
         padding-bottom: 15px; }
+      @media (max-width: 1439px) {
+        .donation-box .details .image {
+          padding: 30%;
+          margin-bottom: 1rem; } }
   .donation-box .price {
     max-width: 385px;
     margin-left: auto;

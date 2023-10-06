@@ -525,6 +525,8 @@ function action_wp_footer()
 					$val = parseInt(jQuery(this).attr('value'));
 					if ($val != 0) {
 						jQuery('input[name="donation-price"]').val($val);
+					} else {
+						jQuery('input[name="donation-price"]').val('');
 					}
 
 					jQuery('.donation').removeClass('active');

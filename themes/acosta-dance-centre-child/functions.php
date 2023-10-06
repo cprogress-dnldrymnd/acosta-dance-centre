@@ -534,7 +534,7 @@ function action_wp_footer()
 				});
 
 				jQuery('.custom-amount').keyup(function(e) {
-					$val = parseInt(jQuery(this).val);
+					$val = parseInt(jQuery(this).val());
 					jQuery('input[name="donation-price"]').val($val);
 				});
 			});

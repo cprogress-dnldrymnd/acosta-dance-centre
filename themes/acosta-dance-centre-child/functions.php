@@ -529,6 +529,11 @@ function action_wp_footer()
 				$val = jQuery('input[name="donation-price"]').val();
 				if($val == 10) {
 					jQuery('.donation[value="10"]').addClass('active');
+				} else if ($val == 15) {
+					jQuery('.donation[value="15"]').addClass('active');
+				} else {
+					jQuery('.donation[value="0"]').addClass('active');
+					jQuery('input.custom-amount').val($val);
 				}
 			}
 

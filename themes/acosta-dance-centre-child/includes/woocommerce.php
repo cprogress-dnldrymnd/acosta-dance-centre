@@ -513,7 +513,7 @@ function action_woocommerce_before_checkout_form()
                   <div value="5" class="donation d-flex justify-content-between align-items-center"><span class="amount">£5</span></div>
                 </li>
                 <li>
-                  <div  value="0" class="donation d-flex justify-content-between align-items-center"><span class="amount">SPECIFY AN AMOUNT</span></div>
+                  <div value="0" class="donation d-flex justify-content-between align-items-center"><span class="amount">SPECIFY AN AMOUNT</span></div>
                   <div class="input-holder"><input type="number" class="custom-amount" placeholder="£"></div>
                 </li>
               </ul>
@@ -531,6 +531,9 @@ function action_woocommerce_before_checkout_form()
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="adding-to-cart">
+              <span class="wpcf7-spinner"></span>
             </div>
           </div>
         </div>

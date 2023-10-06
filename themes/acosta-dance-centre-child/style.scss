@@ -2897,5 +2897,14 @@ table.shop_table.shop_table {
         }
       }
     }
+    .button-group {
+      .button-box {
+        a {
+          padding: 11px 20px;
+          width: 100%;
+          font-size: 13px;
+        }
+      }
+    }
   }
 }

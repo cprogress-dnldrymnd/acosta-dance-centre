@@ -1990,6 +1990,10 @@ table.shop_table.shop_table {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%; } }
+    .donation-box .details .description-box {
+      font-size: 20px; }
+      .donation-box .details .description-box p, .donation-box .details .description-box li {
+        font-size: inherit; }
     .donation-box .details .image {
       background-image: url(https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png);
       background-size: cover;

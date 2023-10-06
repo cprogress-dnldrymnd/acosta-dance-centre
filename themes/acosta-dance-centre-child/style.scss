@@ -2876,6 +2876,12 @@ table.shop_table.shop_table {
         max-width: 100%;
       }
     }
+    .description-box {
+      font-size: 20px;
+      p, li {
+        font-size: inherit;
+      }
+    }
     .image {
       background-image: url(https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png);
       background-size: cover;

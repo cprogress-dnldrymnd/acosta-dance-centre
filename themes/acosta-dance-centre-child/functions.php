@@ -519,13 +519,15 @@ function action_wp_footer()
 
 	<?php if (is_checkout()) { ?>
 		<script>
-			jQuery('.donation').click(function(e) {
-				console.log('cehckoyt')
-				$val = jQuery(this).attr('value');
-				if ($val != 0) {
-					jQuery('input[name="donation-price"]').val($val);
-				}
+			jQuery(document).ready(function() {
+				jQuery('.donation').click(function(e) {
+					console.log('cehckoyt')
+					$val = jQuery(this).attr('value');
+					if ($val != 0) {
+						jQuery('input[name="donation-price"]').val($val);
+					}
 
+				});
 			});
 		</script>
 	<?php } ?>

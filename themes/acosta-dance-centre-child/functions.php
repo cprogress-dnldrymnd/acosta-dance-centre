@@ -521,7 +521,7 @@ function action_wp_footer()
 		<script>
 			jQuery(document).ready(function() {
 
-				jQuery('input[name="donation_note"]').text('ACOSTA DANCE FOUNDATION');
+				jQuery('textarea[name="donation_note"]').val('ACOSTA DANCE FOUNDATION');
 				jQuery('.donation').click(function(e) {
 					console.log(jQuery(this).attr('value'));
 					$val = parseInt(jQuery(this).attr('value'));

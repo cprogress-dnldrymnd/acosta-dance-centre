@@ -501,6 +501,38 @@ function action_woocommerce_before_checkout_form()
             </div>
           </div>
         </div>
+        <div class="col-lg-5">
+          <div class="column-holder price">
+            <div class="heading-box">
+              <h4>CHOOSE HOW MUCH TO DONATE</h4>
+            </div>
+            <div class="donation-price">  
+              <ul>
+              <li>
+                  <span class="amount">£10</span>
+                </li>
+                <li>
+                  <span class="amount">£5</span>
+                </li>
+                <li>
+                  <span class="amount">SPECIFY AN AMOUNT</span>
+                </li>
+              </ul>
+            </div>
+            <div class="button-group">
+              <div class="row">
+                <div class="col-lg-6">
+                  <a href="">SKIP</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="button-box">
+                    <a href="">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 <?php

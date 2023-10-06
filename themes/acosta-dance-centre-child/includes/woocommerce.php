@@ -516,7 +516,7 @@ function action_woocommerce_before_checkout_form()
                 </li>
                 <li>
                   <div  value="0" class="donation d-flex justify-content-between align-items-center"><span class="amount">SPECIFY AN AMOUNT</span></div>
-                  <input type="number" class="custom-amount" placeholder="£">
+                  <div class="input-holder"><input type="number" class="custom-amount" placeholder="£"></div>
                 </li>
               </ul>
             </div>

@@ -482,7 +482,7 @@ function action_woocommerce_before_checkout_form()
       <div class="row">
         <div class="col-lg-7">
           <div class="column-holder details">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-md-6">
                 <div class="image-box">
                   <img src="https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png" alt="">
@@ -493,7 +493,7 @@ function action_woocommerce_before_checkout_form()
                   <h4>ACOSTA DANCE FOUNDATION</h4>
                 </div>
                 <div class="description-box">
-                  <p>
+                  <p class="mb-0">
                     Did you know the Acosta Dance Centre is one of the main pillars of the Acosta Dance Foundation (ADF) Established in 2011 as a charity, the ADF strive to bring dance into every home. Please consider donating to the Acosta Dance Foundation today and make a meaningful difference in our cause.
                   </p>
                 </div>

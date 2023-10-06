@@ -2866,27 +2866,27 @@ table.shop_table.shop_table {
   .price {
     .heading-box {
       margin-bottom: 80px;
-      .donation-price {
-        ul {
-          list-style: none;
-          li {
-            .amount {
-              font-size: 22px;
-              font-weight: bold;
-              font-family: "Oswald", sans-serif;
-              .donation {
-                &:after {
-                  width: 17px;
-                  height: 17px;
-                  border: 1px solid #707070;
-                  display: inline-block;
-                  content: '';
-                }
+    }
+    .donation-price {
+      ul {
+        list-style: none;
+        li {
+          .amount {
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Oswald", sans-serif;
+            .donation {
+              &:after {
+                width: 17px;
+                height: 17px;
+                border: 1px solid #707070;
+                display: inline-block;
+                content: '';
               }
             }
-            &:not(:last-child) {
-              margin-bottom: 20px;
-            }
+          }
+          &:not(:last-child) {
+            margin-bottom: 20px;
           }
         }
       }

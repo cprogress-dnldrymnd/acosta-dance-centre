@@ -508,14 +508,14 @@ function action_woocommerce_before_checkout_form()
             </div>
             <div class="donation-price">
               <ul class="list-inline">
-                <li value="10">
-                  <div class="donation d-flex justify-content-between align-items-center"><span class="amount">£10</span></div>
+                <li>
+                  <div value="10" class="donation d-flex justify-content-between align-items-center"><span class="amount">£10</span></div>
                 </li>
-                <li value="5">
-                  <div class="donation d-flex justify-content-between align-items-center"><span class="amount">£5</span></div>
+                <li>
+                  <div value="5" class="donation d-flex justify-content-between align-items-center"><span class="amount">£5</span></div>
                 </li>
-                <li value="0">
-                  <div class="donation d-flex justify-content-between align-items-center"><span class="amount">SPECIFY AN AMOUNT</span></div>
+                <li>
+                  <div  value="0" class="donation d-flex justify-content-between align-items-center"><span class="amount">SPECIFY AN AMOUNT</span></div>
                   <input type="number" class="custom-amount" placeholder="£">
                 </li>
               </ul>

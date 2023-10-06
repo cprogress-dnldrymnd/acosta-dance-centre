@@ -528,10 +528,14 @@ function action_wp_footer()
 					} else {
 						jQuery('input[name="donation-price"]').val('');
 					}
-
 					jQuery('.donation').removeClass('active');
 					jQuery(this).addClass('active');
 
+				});
+
+				jQuery('.custom-amount').keyup(function(e) {
+					$val = parseInt(jQuery(this).val);
+					jQuery('input[name="donation-price"]').val($val);
 				});
 			});
 		</script>

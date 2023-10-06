@@ -220,7 +220,6 @@ h4 {
       }
     }
   }
-  
 
   &.button-bordered {
     > a,
@@ -2890,6 +2889,13 @@ table.shop_table.shop_table {
               border: 1px solid #707070;
               display: inline-block;
             }
+          }
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid;
+            margin-top: 1rem;
+            display: block;
           }
           &:not(:last-child) {
             margin-bottom: 20px;

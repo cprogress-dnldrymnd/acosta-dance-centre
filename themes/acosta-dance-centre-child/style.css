@@ -2000,6 +2000,12 @@ table.shop_table.shop_table {
           height: 17px;
           border: 1px solid #707070;
           display: inline-block; }
+      .donation-box .price .donation-price ul li input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid;
+        margin-top: 1rem;
+        display: block; }
       .donation-box .price .donation-price ul li:not(:last-child) {
         margin-bottom: 20px; }
     .donation-box .price .button-group .button-box a {

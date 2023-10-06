@@ -2009,8 +2009,8 @@ table.shop_table.shop_table {
       .donation-box .price .donation-price ul li:not(:last-child) {
         margin-bottom: 20px; }
     .donation-box .price .button-group .button-box a {
-      padding: 11px 20px;
-      width: 100%;
-      font-size: 13px; }
+      padding: 11px 20px !important;
+      width: 100% !important;
+      font-size: 13px !important; }
 
 /*# sourceMappingURL=style.css.map */

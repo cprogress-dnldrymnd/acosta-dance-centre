@@ -1988,7 +1988,8 @@ table.shop_table.shop_table {
     .donation-box .details .image {
       background-image: url(https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png);
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      height: 100%; }
       .donation-box .details .image .text {
         padding-top: 15px;
         padding-bottom: 15px; }

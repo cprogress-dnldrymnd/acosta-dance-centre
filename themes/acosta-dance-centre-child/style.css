@@ -1995,7 +1995,7 @@ table.shop_table.shop_table {
       .donation-box .price .donation-price ul li .donation {
         cursor: pointer;
         padding: 10px;
-        padding-bottom: 10px; }
+        transition: 300ms; }
         .donation-box .price .donation-price ul li .donation:after {
           content: "";
           width: 17px;

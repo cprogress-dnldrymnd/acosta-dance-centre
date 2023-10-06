@@ -520,7 +520,19 @@ function action_wp_footer()
 	<?php if (is_checkout()) { ?>
 		<script>
 			jQuery(document).ready(function() {
+				check_if_has_donation();
+				donation_price();
+			});
 
+
+			function check_if_has_donation() {
+				$val = jQuery('input[name="donation-price"]').val();
+				if($val == 10) {
+					jQuery('.donation[value="10"]').addClass('active');
+				}
+			}
+
+			function donation_price() {
 				jQuery('textarea[name="donation_note"]').val('ACOSTA DANCE FOUNDATION');
 				jQuery('.donation').click(function(e) {
 					console.log(jQuery(this).attr('value'));
@@ -544,18 +556,18 @@ function action_wp_footer()
 					}
 				});
 
-				jQuery('.donation-add-to-cart').click(function (e) { 
+				jQuery('.donation-add-to-cart').click(function(e) {
 					jQuery('.wdgk_add_donation').click();
 					jQuery('.donation-box .wpcf7-spinner').addClass('show-spinner');
 
 					e.preventDefault();
 				});
 
-				jQuery('.donation-skip').click(function (e) { 
+				jQuery('.donation-skip').click(function(e) {
 					jQuery('.donation-box').addClass('hide-box');
 					e.preventDefault();
 				});
-			});
+			}
 		</script>
 	<?php } ?>
 	<?php

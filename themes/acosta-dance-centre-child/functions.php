@@ -527,6 +527,9 @@ function action_wp_footer()
 						jQuery('input[name="donation-price"]').val($val);
 					}
 
+					jQuery('.donation').removeClass('active');
+					jQuery(this).addClass('active');
+
 				});
 			});
 		</script>

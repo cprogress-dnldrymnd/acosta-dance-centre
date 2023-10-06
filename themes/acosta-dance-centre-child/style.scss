@@ -2914,6 +2914,9 @@ table.shop_table.shop_table {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    &.show-spinner {
+      visibility: visible;
+    }
    }
     .heading-box {
       margin-bottom: 80px;

@@ -546,6 +546,8 @@ function action_wp_footer()
 
 				jQuery('.donation-add-to-cart').click(function (e) { 
 					jQuery('.wdgk_add_donation').click();
+					jQuery('.donation-box .wpcf7-spinner').addClass('show-spinner');
+
 					e.preventDefault();
 				});
 

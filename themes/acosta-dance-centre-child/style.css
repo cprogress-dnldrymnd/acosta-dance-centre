@@ -1977,7 +1977,8 @@ table.shop_table.shop_table {
 .donation-box {
   max-width: 1430px;
   margin-bottom: 3rem;
-  transition: 300ms; }
+  transition: 300ms;
+  overflow: hidden; }
   .donation-box.hide-box {
     height: 0;
     overflow: hidden; }

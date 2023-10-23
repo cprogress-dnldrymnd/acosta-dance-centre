@@ -2078,8 +2078,8 @@ table.shop_table.shop_table {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  color: blue;
-  background-color: rgba(0, 0, 255, 0.1) !important;
+  color: darkblue;
+  background-color: rgba(0, 0, 139, 0.1) !important;
   font-family: sans-serif; }
   .woocommerce-notices-wrapper .woocommerce-message > a {
     font-size: 0;

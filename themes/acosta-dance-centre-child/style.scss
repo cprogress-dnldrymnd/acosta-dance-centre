@@ -56,7 +56,7 @@ li {
   padding-bottom: 40px;
 }
 
-#doro-aside #doro-main-menu > ul > li > a {
+#doro-aside #doro-main-menu>ul>li>a {
   color: var(--black-color);
 }
 
@@ -84,7 +84,7 @@ h4 {
 }
 
 #doro-hero {
-  .flexslider .slider-text > .slider-text-inner h1 {
+  .flexslider .slider-text>.slider-text-inner h1 {
     font-weight: 500;
     line-height: 1em;
 
@@ -187,29 +187,32 @@ h4 {
 }
 
 .button-box {
-  > a,
-  > button,
-  > input[type="submit"],
-  > span,
+
+  >a,
+  >button,
+  >input[type="submit"],
+  >span,
   .single_add_to_cart_button {
     @include button-style;
   }
 
   &.button-black {
-    > a,
-    > button,
-    > input[type="submit"],
-    > span,
+
+    >a,
+    >button,
+    >input[type="submit"],
+    >span,
     .single_add_to_cart_button {
       @include button-black;
     }
   }
 
   &.button-white {
-    > a,
-    > button,
-    > input[type="submit"],
-    > span {
+
+    >a,
+    >button,
+    >input[type="submit"],
+    >span {
       background-color: var(--white-color);
       color: var(--black-color);
       border: 3px solid var(--white-color);
@@ -222,10 +225,11 @@ h4 {
   }
 
   &.button-bordered {
-    > a,
-    > button,
-    > input[type="submit"],
-    > span {
+
+    >a,
+    >button,
+    >input[type="submit"],
+    >span {
       color: var(--black-color);
       border: 3px solid;
 
@@ -424,7 +428,7 @@ h4 {
   }
 
   .copyright {
-    > div {
+    >div {
       border-top: 1px solid#707070;
       padding-top: 24px;
       margin-top: 24px;
@@ -474,9 +478,9 @@ h4 {
   justify-content: space-between;
 
   #doro-main-menu {
-    > ul {
-      > li {
-        > a {
+    >ul {
+      >li {
+        >a {
           font-size: 20px;
           color: var(--black-color);
         }
@@ -541,7 +545,7 @@ h4 {
     }
 
     #doro-logo a {
-      > img {
+      >img {
         display: none;
       }
 
@@ -1213,16 +1217,20 @@ section.featured-product {
   .modal-dialog {
     max-width: 100%;
     margin-top: 0;
+
     .modal-content {
       border: 0;
       border-radius: 0;
+
       .modal-header {
         background-color: var(--adc-color-1);
         text-transform: uppercase;
         border-radius: 0;
+
         .modal-title {
           font-size: 4rem;
         }
+
         .close {
           background-color: transparent;
           padding: 0;
@@ -1230,6 +1238,7 @@ section.featured-product {
           font-size: 40px;
         }
       }
+
       .modal-body {
         max-width: 1200px;
         margin-left: auto;
@@ -1237,9 +1246,11 @@ section.featured-product {
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
+
         .form-control {
           font-size: 20px;
         }
+
         .btn {
           letter-spacing: 1px;
           background-color: var(--black-color);
@@ -1260,11 +1271,11 @@ section.featured-product {
 .woocommerce {
   .product-inner {
     @media (min-width: 992px) {
-      > .row {
+      >.row {
         margin-left: -35px;
         margin-right: -35px;
 
-        > [class*="col-"] {
+        >[class*="col-"] {
           padding-left: 35px;
           padding-right: 35px;
         }
@@ -1595,7 +1606,7 @@ section.featured-product {
 }
 
 .content-margin {
-  > * {
+  >* {
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
@@ -1682,6 +1693,7 @@ section.featured-product {
 
 .woocommerce {
   .col2-set {
+
     .col-1,
     .col-2 {
       max-width: 48%;
@@ -2096,6 +2108,7 @@ table.shop_table.shop_table {
 }
 
 .cart-discount {
+
   &.coupon-adc_disabled,
   &.coupon-adc_student,
   &.coupon-adc_universal_credit_recipient {
@@ -2193,7 +2206,7 @@ table.shop_table.shop_table {
       display: none !important;
 
       &:checked {
-        & + span.bg {
+        &+span.bg {
           background-color: var(--primary-color);
           border-color: var(--primary-color);
 
@@ -2218,6 +2231,7 @@ table.shop_table.shop_table {
 }
 
 @media (max-width: 1199px) {
+
   .woocommerce .col2-set .col-1,
   .woocommerce .col2-set .col-2 {
     max-width: 100%;
@@ -2226,7 +2240,7 @@ table.shop_table.shop_table {
   }
 }
 
-#doro-aside #doro-main-menu > ul > li.open > a {
+#doro-aside #doro-main-menu>ul>li.open>a {
   font-size: 20px;
   color: #b98c43;
 }
@@ -2321,7 +2335,7 @@ table.shop_table.shop_table {
 }
 
 .product-type-pw-gift-card {
-  & + div {
+  &+div {
     #book-now {
       width: 100%;
 
@@ -2375,7 +2389,7 @@ table.shop_table.shop_table {
   }
 
   .row-after-column-right {
-    > div {
+    >div {
       &:not(:last-child) {
         margin-right: 1rem;
       }
@@ -2779,6 +2793,7 @@ table.shop_table.shop_table {
 #pwgc-redeem-gift-card-container {
   background-color: var(--adc-color-2);
   padding: 20px;
+
   #pwgc-redeem-button {
     background-color: var(--white-color) !important;
     color: var(--black-color);
@@ -2788,6 +2803,7 @@ table.shop_table.shop_table {
   label[for="pwgc-redeem-gift-card-number"] {
     font-weight: bold;
     color: var(--black-color);
+
     &:before {
       content: "";
       display: block;
@@ -2811,6 +2827,7 @@ table.shop_table.shop_table {
       padding-top: 0;
     }
   }
+
   .col-md-8 {
     display: flex;
     flex-wrap: wrap;
@@ -2819,15 +2836,18 @@ table.shop_table.shop_table {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+
     .blog-entry {
       flex: 0 0 auto;
       width: 25%;
       padding-left: 10px;
       padding-right: 10px;
+
       .blog-img {
         padding: 60% 0;
         position: relative;
         display: block;
+
         img {
           position: absolute;
           left: 0;
@@ -2837,38 +2857,48 @@ table.shop_table.shop_table {
           object-fit: cover;
         }
       }
+
       @media (max-width: 1199px) {
         width: 33.33333333%;
       }
+
       @media (max-width: 991px) {
         width: 50%;
       }
+
       @media (max-width: 500px) {
         width: 100%;
       }
     }
+
     .doro-pagination-wrap {
       flex: 0 0 100%;
       width: 100%;
     }
   }
+
   .col-sm-4 {
     display: none;
   }
 }
+
 .wdgk_donation_content {
   display: none !important;
 }
+
 .donation-box {
   max-width: 1430px;
   margin-bottom: 3rem;
   transition: 300ms;
+
   &.hide-box {
     display: none;
   }
+
   .details {
     padding: 26px;
     border: 3px solid var(--black-color);
+
     .col-xl-6 {
       @media (max-width: 1439px) {
         -ms-flex: 0 0 100%;
@@ -2876,66 +2906,82 @@ table.shop_table.shop_table {
         max-width: 100%;
       }
     }
+
     .description-box {
       font-size: 20px;
+
       p,
       li {
         font-size: inherit;
       }
     }
+
     .image {
       background-image: url(https://acostadancecentre.com/wp-content/uploads/2023/10/adc.png);
       background-size: cover;
       background-position: center;
+
       .text {
         padding-top: 15px;
         padding-bottom: 15px;
       }
+
       @media (max-width: 1439px) {
         padding: 30%;
         margin-bottom: 1rem;
       }
+
       @media (min-width: 1440px) {
         height: 100%;
       }
     }
+
     @media(max-width: 575px) {
       padding: 15px;
     }
   }
+
   .price {
     max-width: 385px;
     margin-left: auto;
     margin-right: auto;
-   .wpcf7-spinner {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    &.show-spinner {
-      visibility: visible;
+
+    .wpcf7-spinner {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &.show-spinner {
+        visibility: visible;
+      }
     }
-   }
+
     .heading-box {
       margin-bottom: 80px;
+
       @media (max-width: 991px) {
         margin-bottom: 20px;
       }
     }
+
     .donation-price {
       ul {
         list-style: none;
         padding-left: 0;
+
         li {
           .amount {
             font-size: 22px;
             font-weight: bold;
             font-family: "Oswald", sans-serif;
           }
+
           .donation {
             cursor: pointer;
             padding: 10px;
             transition: 300ms;
+
             &:after {
               content: "";
               width: 17px;
@@ -2943,25 +2989,31 @@ table.shop_table.shop_table {
               border: 1px solid #707070;
               display: inline-block;
             }
+
             &.active {
               background-color: var(--adc-color-1);
+
               &:after {
                 background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>');
                 background-position: center;
               }
-              & + .input-holder {
+
+              &+.input-holder {
                 background-color: var(--adc-color-1);
                 height: 48.25px;
               }
             }
+
             &:hover {
               background-color: var(--adc-color-1);
             }
           }
+
           .input-holder {
             transition: 300ms;
             height: 0;
             overflow: hidden;
+
             input {
               width: 100%;
               border: none;
@@ -2974,6 +3026,7 @@ table.shop_table.shop_table {
         }
       }
     }
+
     .button-group {
       .button-box {
         a {
@@ -2982,8 +3035,29 @@ table.shop_table.shop_table {
         }
       }
     }
+
     @media (max-width: 991px) {
       margin-top: 2rem;
     }
+  }
+}
+
+
+.woocommerce-message {
+  background-color: #d4edda !important;
+  display: flex;
+  justify-content: space-between;
+
+  >a {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:after {
+    display: none;
   }
 }

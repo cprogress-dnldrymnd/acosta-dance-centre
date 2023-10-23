@@ -2074,6 +2074,7 @@ table.shop_table.shop_table {
       .donation-box .price {
         margin-top: 2rem; } }
 
+/*
 .woocommerce-notices-wrapper .woocommerce-message {
   display: flex;
   justify-content: space-between;
@@ -2081,14 +2082,20 @@ table.shop_table.shop_table {
   color: darkblue;
   background-color: #cbe5fe !important;
   font-family: sans-serif;
-  font-size: 1.2em; }
-  .woocommerce-notices-wrapper .woocommerce-message > a {
+  font-size: 1.2em;
+
+  >a {
     font-size: 0;
     width: 25px;
     height: 25px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="darkblue" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>');
-    background-size: contain; }
-  .woocommerce-notices-wrapper .woocommerce-message:after, .woocommerce-notices-wrapper .woocommerce-message:before {
-    display: none; }
+    background-size: contain;
+  }
+
+  &:after,
+  &:before {
+    display: none;
+  }
+}*/
 
 /*# sourceMappingURL=style.css.map */

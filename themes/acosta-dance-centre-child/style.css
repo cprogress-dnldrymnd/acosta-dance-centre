@@ -2075,6 +2075,8 @@ table.shop_table.shop_table {
         margin-top: 2rem; } }
 
 .woocommerce-notices-wrapper .woocommerce-message {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   color: darkblue;
   background-color: #cbe5fe !important;

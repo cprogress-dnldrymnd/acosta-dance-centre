@@ -360,7 +360,6 @@ function action_admin_head()
 	<style>
 		#toplevel_page_doro {
 			display: none !important;
-			display: none !important;
 		}
 
 		#redux-header {

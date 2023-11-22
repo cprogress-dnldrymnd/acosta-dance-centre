@@ -365,9 +365,6 @@ function action_admin_head()
 		#redux-header {
 			display: none;
 		}
-		#toplevel_page_wps-plugins {
-			display: none !important;
-		}
 	</style>
 <?php
 }
@@ -477,6 +474,7 @@ function action_wp_footer()
 		auto_coupon('#discount_disabled', 'adc_disabled');
 		auto_coupon('#discount_student', 'adc_student');
 		auto_coupon('#discount_uc_recipient', 'adc_universal_credit_recipient');
+        auto_coupon('#local_greenwich_residents_disabled', 'adc_local_residents');
 
 		function auto_coupon($id, $name) {
 			jQuery($id).change(function(e) {

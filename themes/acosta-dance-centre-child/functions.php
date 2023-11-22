@@ -365,6 +365,9 @@ function action_admin_head()
 		#redux-header {
 			display: none;
 		}
+		#toplevel_page_wps-plugins {
+			display: none !important;
+		}
 	</style>
 <?php
 }

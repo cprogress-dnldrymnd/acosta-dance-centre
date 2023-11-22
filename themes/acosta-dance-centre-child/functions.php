@@ -365,6 +365,10 @@ function action_admin_head()
 		#redux-header {
 			display: none;
 		}
+
+		#toplevel_page_wps-plugins {
+			display: none !important;
+		}
 	</style>
 <?php
 }
@@ -527,7 +531,7 @@ function action_wp_footer()
 
 			function check_if_has_donation() {
 				$val = jQuery('input[name="donation-price"]').val();
-				if($val == 10) {
+				if ($val == 10) {
 					jQuery('.donation[value="10"]').addClass('active');
 				} else if ($val == 15) {
 					jQuery('.donation[value="15"]').addClass('active');

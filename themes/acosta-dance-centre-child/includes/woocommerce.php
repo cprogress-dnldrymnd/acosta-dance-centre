@@ -307,6 +307,8 @@ function action_single_product_after_image()
           </div>
         </div>
       <?php } ?>
+    <?php } else { ?>
+      <?php do_action('woocommerce_template_single_add_to_cart') ?>
     <?php } ?>
 
     <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>
@@ -379,7 +381,7 @@ function default_no_quantities($individually, $product)
   $individually = true;
   return $individually;
 }
-add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);
+//add_filter('woocommerce_is_sold_individually', 'default_no_quantities', 10, 2);
 
 
 function get_member_discount($memberships, $id)

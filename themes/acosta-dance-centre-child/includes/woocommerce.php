@@ -306,12 +306,10 @@ function action_single_product_after_image()
             <?php } ?>
           </div>
         </div>
+      <?php } else { ?>
+        <?= do_shortcode('[add_to_cart id="' . $product->get_id() . '"]') ?>
       <?php } ?>
-    <?php } else { ?>
-      eddd
-      <?= do_shortcode('[add_to_cart id="' . $product->get_id() . '"]') ?>
     <?php } ?>
-
     <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>
       <div class="classes md-padding ">
         <?= do_shortcode('[adc_classes type="related"]') ?>

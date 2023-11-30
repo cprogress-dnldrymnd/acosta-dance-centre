@@ -284,6 +284,7 @@ function action_single_product_after_image()
       </style>
       <?php
       global $product;
+      echo $product->get_type();
       if ($product->get_type() == 'variable') {
         $variations = $product->get_available_variations();
         $product_variation = array();

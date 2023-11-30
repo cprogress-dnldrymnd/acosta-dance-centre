@@ -308,7 +308,7 @@ function action_single_product_after_image()
         </div>
       <?php } ?>
     <?php } else { ?>
-      <?php do_action('woocommerce_template_single_add_to_cart') ?>
+      <?= do_shortcode('[add_to_cart id="' . $product->get_id() . '"]') ?>
     <?php } ?>
 
     <?php if ($_product_category != 'memberships' && $_product_category != 'others') { ?>

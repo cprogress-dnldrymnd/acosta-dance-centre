@@ -284,8 +284,7 @@ function action_single_product_after_image()
       </style>
       <?php
       global $product;
-      echo $product->get_type();
-      if ($product->get_type() == 'variable') {
+      if ($product->get_type() == 'variable-subscription') {
         $variations = $product->get_available_variations();
         $product_variation = array();
         foreach ($variations as $variation) {
@@ -309,6 +308,7 @@ function action_single_product_after_image()
         </div>
       <?php } ?>
     <?php } else { ?>
+      eddd
       <?= do_shortcode('[add_to_cart id="' . $product->get_id() . '"]') ?>
     <?php } ?>
 
